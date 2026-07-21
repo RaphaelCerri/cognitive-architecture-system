@@ -4,7 +4,7 @@ id: AP-0009
 kind: knowledge
 knowledge_type: architectural_proposal
 title: "Architectural Decision Filter"
-status: proposed
+status: completed
 created_at: 2026-07-21
 author: "Raphael Caveagna — Founder & Chief Vision Officer"
 language: pt-BR
@@ -18,9 +18,7 @@ architectural_impact:
   domains: [foundation, governance, evolution]
   summary: "Define um filtro obrigatório para avaliar a promoção de componentes e conceitos permanentes."
 estimated_complexity: medium
-dependencies:
-  - "Architecture Council review"
-  - "Definition of evidence required for each criterion"
+dependencies: []
 ideal_implementation_time: "Antes da revisão da Ontologia, da Constitution Layer e de qualquer promoção de Core Types."
 acceptance_criteria:
   - "Avalia se a proposta simplifica a arquitetura."
@@ -29,32 +27,34 @@ acceptance_criteria:
   - "Avalia se pode servir de base para gerar outros componentes."
   - "Avalia independência de modelo, runtime e tecnologia."
   - "Define resultados explícitos para aprovação, permanência experimental ou rejeição."
-observations: "Os critérios foram propostos pelo Founder durante a definição da Taxonomia V1. A forma definitiva do ADF depende de revisão do Conselho."
+observations: "Implementada como ADF-001 no milestone V1-M01."
+decision:
+  outcome: approved
+  authority: AD-001
+  decided_at: 2026-07-21
+implementation:
+  status: completed
+  milestone: V1-M01
+  artifact: ADF-001
 relations:
-  - type: required_by
-    target: AP-0002
-  - type: required_by
-    target: AP-0006
+  - type: implemented_by
+    target: ADF-001
+  - type: recorded_by
+    target: ADR-0010
+  - type: completed_in
+    target: V1-M01
 ---
 
 # AP-0009 — Architectural Decision Filter
 
 ## Contexto
 
-Uma arquitetura extensível precisa aceitar experimentação sem transformar toda nova abstração em parte permanente do sistema. O ADF foi proposto como mecanismo de avaliação anterior à promoção arquitetural.
+Uma arquitetura extensível precisa aceitar experimentação sem transformar toda nova abstração em parte permanente do sistema.
 
-## Proposta
+## Implementação
 
-Definir um filtro baseado em evidências que responda, no mínimo:
-
-1. A proposta simplifica a arquitetura?
-2. Continua válida daqui a cinco anos?
-3. Representa um princípio, e não uma implementação ou tecnologia?
-4. Pode servir de base para gerar outros componentes?
-5. Continua válida independentemente de modelo, runtime ou tecnologia?
-
-Uma proposta que não satisfaça os critérios necessários deverá permanecer experimental ou ser rejeitada, preservando a justificativa.
+O ADF-001 estabelece cinco gates baseados em evidência: simplicidade, durabilidade, fundamentality, generativity e agnosticism. Os resultados possíveis são promoção elegível, permanência experimental ou rejeição da promoção.
 
 ## Decisão
 
-Proposta registrada para revisão do Conselho. Nenhum contrato do ADF foi implementado.
+Proposta aprovada pela AD-001, implementada no milestone V1-M01 e registrada no ADR-0010.

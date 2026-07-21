@@ -22,3 +22,4 @@ Na V1, cada ADR é um objeto de `Knowledge` especializado por `knowledge_type: a
 - [ADR-0007 — Logical Status and Derived Views](ADR-0007-logical-status-and-derived-views.md)
 - [ADR-0008 — Human-Governed Evolution](ADR-0008-human-governed-evolution.md)
 - [ADR-0009 — Taxonomy V1 Is Logical and Versioned](ADR-0009-logical-versioned-taxonomy.md)
+- [ADR-0010 — Adopt the Architectural Decision Filter](ADR-0010-adopt-architectural-decision-filter.md)
