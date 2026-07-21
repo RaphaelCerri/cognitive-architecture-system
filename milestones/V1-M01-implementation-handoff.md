@@ -8,7 +8,7 @@ status: pending_review
 version: "1.0"
 created_at: 2026-07-21
 milestone: V1-M01
-related_commits: [7e32023, f74cf1d]
+related_commits: [7e32023, f74cf1d, 7267163]
 language: pt-BR
 relations:
   - type: reports
@@ -69,7 +69,7 @@ relations:
 - `knowledge/backlog/proposals/AP-0010-implementation-handoff-protocol.md`.
 - `milestones/V1-M01-implementation-handoff.md`.
 
-Nenhum arquivo foi removido, movido ou renomeado. Branch: `main`. Commits principais do milestone: `7e32023` e `f74cf1d`.
+Nenhum arquivo foi removido, movido ou renomeado. Branch: `main`. Commits relacionados: `7e32023`, `f74cf1d` e `7267163`.
 
 ## Validação realizada
 
@@ -157,7 +157,7 @@ Revisar este pacote. Após aprovação do encerramento de V1-M01, iniciar V1-M02
 
 ## Evidências
 
-- Commits: `7e32023` e `f74cf1d`.
+- Commits: `7e32023`, `f74cf1d` e `7267163`.
 - ADF: `foundation/protocols/ADF-001-architectural-decision-filter.md`.
 - Decisão: `foundation/decisions/ADR-0010-adopt-architectural-decision-filter.md`.
 - Milestone: `milestones/V1-M01-architectural-decision-filter.md`.
