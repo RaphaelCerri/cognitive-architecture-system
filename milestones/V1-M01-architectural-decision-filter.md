@@ -4,10 +4,11 @@ id: V1-M01
 kind: knowledge
 knowledge_type: milestone_record
 title: "Architectural Decision Filter"
-status: completed
+status: pending_review
 started_at: 2026-07-21
-completed_at: 2026-07-21
+implementation_completed_at: 2026-07-21
 owner: "Chief Execution Architect"
+review_status: pending_csa_review
 language: pt-BR
 relations:
   - type: implements
@@ -18,6 +19,8 @@ relations:
     target: ADR-0010
   - type: produces
     target: ASSESS-0001
+  - type: handed_off_by
+    target: IHR-0001
 ---
 
 # V1-M01 — Architectural Decision Filter
@@ -26,7 +29,7 @@ relations:
 
 Implementar um gate utilizável e agnóstico para avaliar a promoção de componentes permanentes antes da Ontologia e dos schemas estáveis.
 
-## Escopo concluído
+## Escopo implementado
 
 - AD-001 e Roadmap V1 persistidos.
 - ADF-001 definido com entradas, critérios, resultados, processo e responsabilidades.
@@ -51,10 +54,14 @@ Resultado: `eligible_for_promotion`. A AD-001 fornece autorização e o ADR-0010
 
 - A dependência técnica do ADF para AP-0006 foi resolvida.
 - ASSESS-0001 classificou AP-0006 como `remain_experimental` por evidência insuficiente de simplicidade.
-- AP-0002 continua dependente do resultado da Ontologia e não deve avançar.
+- AP-0002 continua dependente do resultado da Ontologia.
 - AP-0003 a AP-0008 permanecem bloqueadas por dependências posteriores.
-- Nenhuma proposta ficou obsoleta e nenhuma fusão é recomendada neste momento.
+- Nenhuma proposta ficou obsoleta e nenhuma fusão é recomendada.
+
+## Estado de encerramento
+
+A implementação terminou, mas o milestone permanece `pending_review` conforme IHP-001. O encerramento formal depende de revisão do CSA e decisão do Conselho sobre o impacto arquitetural.
 
 ## Próximo passo recomendado
 
-Solicitar ao Conselho autorização para executar V1-M02 como milestone experimental e limitada. Ela não poderá promover Ontologia ou metamodelo a componentes permanentes sem nova avaliação ADF.
+Revisar o pacote IHR-0001. Somente depois, decidir se V1-M02 pode começar como milestone experimental e limitada.
