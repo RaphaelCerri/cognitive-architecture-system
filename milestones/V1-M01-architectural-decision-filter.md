@@ -16,6 +16,8 @@ relations:
     target: ADF-001
   - type: recorded_by
     target: ADR-0010
+  - type: produces
+    target: ASSESS-0001
 ---
 
 # V1-M01 — Architectural Decision Filter
@@ -31,10 +33,9 @@ Implementar um gate utilizável e agnóstico para avaliar a promoção de compon
 - Template manual de avaliação criado.
 - ADR-0010 registra a adoção.
 - AP-0009 concluída.
+- ADF aplicado à AP-0006 em ASSESS-0001.
 
-## Validação
-
-O ADF foi aplicado retrospectivamente à própria proposta AP-0009:
+## Validação do próprio ADF
 
 | Critério | Resultado | Evidência resumida |
 |---|---|---|
@@ -44,16 +45,16 @@ O ADF foi aplicado retrospectivamente à própria proposta AP-0009:
 | Generativity | pass | Pode validar Core Types, camadas, contratos e extensões. |
 | Agnosticism | pass | Não depende de modelo, runtime, linguagem ou fornecedor. |
 
-Resultado: `eligible_for_promotion`. A AD-001 fornece a autorização do Conselho e o ADR-0010 registra a decisão.
+Resultado: `eligible_for_promotion`. A AD-001 fornece autorização e o ADR-0010 registra a decisão.
 
 ## Backlog review
 
-- AP-0006 agora teve sua dependência do ADF resolvida e chegou ao momento ideal para avaliação e possível agendamento.
-- AP-0002 continua dependente da Ontologia e não deve avançar.
+- A dependência técnica do ADF para AP-0006 foi resolvida.
+- ASSESS-0001 classificou AP-0006 como `remain_experimental` por evidência insuficiente de simplicidade.
+- AP-0002 continua dependente do resultado da Ontologia e não deve avançar.
 - AP-0003 a AP-0008 permanecem bloqueadas por dependências posteriores.
-- Nenhuma proposta ficou obsoleta.
-- Nenhuma fusão é recomendada neste momento.
+- Nenhuma proposta ficou obsoleta e nenhuma fusão é recomendada neste momento.
 
 ## Próximo passo recomendado
 
-Apresentar AP-0006 ao Conselho usando ADF-001. Não iniciar a Ontologia sem a decisão correspondente.
+Solicitar ao Conselho autorização para executar V1-M02 como milestone experimental e limitada. Ela não poderá promover Ontologia ou metamodelo a componentes permanentes sem nova avaliação ADF.

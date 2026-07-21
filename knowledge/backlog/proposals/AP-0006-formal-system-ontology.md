@@ -14,13 +14,22 @@ architectural_impact:
   domains: [foundation, knowledge, intelligence, governance, runtime, evolution]
   summary: "Define metamodelo, tipos, relações, restrições, identidade, proveniência e extensibilidade."
 estimated_complexity: very_high
-dependencies: ["Architecture Council review", "Architectural Decision Filter"]
+dependencies:
+  - "Architecture Council authorization for an experimental milestone"
 ideal_implementation_time: "Antes de estabilizar schemas, Core Types, Type Registry ou contratos públicos."
 acceptance_criteria: ["Responde às perguntas de competência do sistema.", "Separa metamodelo, ontologia e representação.", "Permite extensões sem alterar o Core.", "É runtime e model agnostic."]
-observations: "Os sete Core Types atuais são hipóteses até a avaliação desta proposta."
-relations: []
+observations: "ADF aplicado em ASSESS-0001: remain_experimental por evidência insuficiente de simplicidade. Os sete Core Types continuam hipóteses."
+relations:
+  - type: assessed_by
+    target: ASSESS-0001
+  - type: governed_by
+    target: ADF-001
 ---
 
 # AP-0006 — Formal System Ontology and Constitutional Metamodel
 
 Projetar primeiro os critérios de existência, identidade, autoridade, proveniência e mudança; depois definir os tipos e relações permitidos. Markdown, YAML, JSON e grafos serão representações, não a Ontologia.
+
+## Estado da avaliação
+
+A ASSESS-0001 recomendou manter a proposta experimental. A próxima milestone poderá investigar e formalizar o conceito, mas não promovê-lo como componente permanente sem uma nova avaliação ADF e decisão do Conselho.
