@@ -75,7 +75,9 @@ evidence_method:
   - Originality, accessibility, provenance and reference-security assessment
   - Design-language, token-architecture and component-pattern responsibility comparison
   - Design-system governance, change-impact, drift and risk assessment
-budget_or_timebox: Design Language, Design Tokens, Components and Patterns slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
+  - Accessibility normative, inclusive-experience and user-needs synthesis
+  - Accessibility requirements, responsibility, evaluation and procurement-criteria analysis
+budget_or_timebox: Accessibility and Inclusive Experience Engineering slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -116,6 +118,10 @@ expected_outputs:
   - Design token architecture options
   - Component and Pattern responsibility framework
   - Design System governance and risk findings
+  - Accessibility and Inclusive Experience evidence synthesis
+  - Accessibility responsibility and requirements framework
+  - Accessibility evaluation and evidence model
+  - Accessibility technology and procurement criteria
   - Technology selection and catalog model options
   - Frontend architecture and evaluation research findings
 evidence:
@@ -135,6 +141,10 @@ evidence:
   - knowledge/research/evidence/design-token-architecture-options.md
   - knowledge/research/evidence/component-pattern-responsibility-framework.md
   - knowledge/research/evidence/design-system-governance-risk-assessment.md
+  - knowledge/research/evidence/accessibility-inclusive-experience-research-report.md
+  - knowledge/research/evidence/accessibility-responsibility-requirements-framework.md
+  - knowledge/research/evidence/accessibility-evaluation-evidence-model.md
+  - knowledge/research/evidence/accessibility-technology-procurement-criteria.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -145,6 +155,10 @@ risks:
   - Tokens may become a parallel Source of Truth or explode across components, modes, brands and platforms.
   - Shared components may amplify accessibility, security, supply-chain or deceptive-design defects.
   - Design-system governance may create either silent drift or disproportionate process overhead.
+  - Accessibility may be reduced to checklist, automated score, vendor claim or late audit.
+  - Legal and normative applicability may be misstated across jurisdictions, versions and product scopes.
+  - Accessibility evidence may become stale across content, platform, browser, assistive-technology and dependency changes.
+  - Security, privacy or supplier controls may create barriers or expose sensitive accessibility preferences.
 relations:
   - type: established_by
     target: AD-004
@@ -164,7 +178,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Design Language, Design Tokens, Components and Patterns
+## Slice ativa — Accessibility and Inclusive Experience Engineering
+
+**[Decisão]** Em 2026-07-22, após o checkpoint 3fa374a2b7f49c0cfc7722842b490dbc04d677c6, o Conselho autorizou exclusivamente esta slice documental. Foram investigados standards/regulation scope, disability/access-needs models, discovery, traceable requirements, responsibility, semantics/native-first, keyboard/focus, visual/content/forms/navigation/dynamic/motion/time/auth/data/document/mobile/cognitive/international accessibility, Design System/component/pattern/AI contracts, evaluation/evidence, governance, procurement, security e privacy. Nenhuma auditoria, conformance claim, tool/library selection, schema, component, frontend ou implementação foi realizada.
+
+Pergunta principal: como transformar accessibility e inclusion needs em requirements rastreáveis, experience decisions, implementation contracts, validation methods e evidence, sem reduzir o tema a checklist ou automated conformance claim?
+
+Entregáveis:
+
+- Accessibility and Inclusive Experience Research Report;
+- Accessibility Responsibility and Requirements Framework;
+- Accessibility Evaluation and Evidence Model;
+- Accessibility Technology and Procurement Criteria.
+
+**[Fato normativo]** WCAG 2.2 e WAI-ARIA 1.2 possuem scopes normativos próprios; APG e WCAG2ICT são informative guidance. **[Requisito legal potencial]** EN 301 549, Section 508 e Directive (EU) 2019/882 dependem de jurisdiction, covered scope, version/date e exceptions, exigindo verificação concreta. **[Orientação institucional]** WAI, WHO/UN, platform guidance, Access Board/Section508.gov, NIST e OWASP informaram user needs, evaluation, procurement, security e privacy boundaries.
+
+**[Hipótese]** O resultado favorece access need → barrier risk → requirement → experience/implementation responsibility → test → scoped evidence → residual risk, com native-first semantics, triangulated evaluation, explicit consumer duties e lifecycle revalidation. Accessibility, compliance, usability, inclusive design, AT compatibility, test result e certification permanecem distintos.
+
+O programa permanece active e evidence_gathering. Technology Catalog, Frontend Architecture, integrated evaluation e benchmarks não são iniciados automaticamente.
+
+## Slice concluída — Design Language, Design Tokens, Components and Patterns
 
 **[Decisão]** Em 2026-07-22, após o checkpoint 42cd6ce338b09f12e1e1bd81f9c95445ab04de39, o Conselho autorizou exclusivamente esta slice documental. Foram investigados Design Direction/Language/System, maturity, foundations, token options/layers/naming/modes, component/pattern responsibilities, responsive/multi-platform adaptation, governance, change impact, debt/drift, accessibility, security e riscos de geração por IA. Nenhum token, component, UI, schema, catalog, framework, package ou implementação foi criado.
 
@@ -480,4 +513,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice não cria Design System executável, tokens/components reais, schema, UI Technology Catalog, Frontend Architecture, benchmark ou implementação. Accessibility aprofundada também permanece aguardando autorização. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Qualquer nova slice exige autorização explícita e nenhuma ação começa automaticamente.
+Esta slice não executa audit, test automation, conformance claim, certification, library/tool selection, catalog, frontend, benchmark, schema ou implementação. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Qualquer nova slice exige autorização explícita e nenhuma ação começa automaticamente.
