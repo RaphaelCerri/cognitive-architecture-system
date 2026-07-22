@@ -4,8 +4,10 @@ id: IHR-0001
 kind: knowledge
 knowledge_type: implementation_handoff_report
 title: "V1-M01 Architectural Decision Filter — Implementation Handoff"
-status: pending_review
+status: reviewed
 version: "1.0"
+reviewed_at: 2026-07-22
+review_outcome: approved
 created_at: 2026-07-21
 milestone: V1-M01
 related_commits: [7e32023, f74cf1d, 7267163]
@@ -15,8 +17,9 @@ relations:
     target: V1-M01
   - type: governed_by
     target: IHP-001
-  - type: requests_decision_on
-    target: AP-0006
+
+  - type: reviewed_by
+    target: AD-003
 ---
 
 # Pacote para revisão do CSA
@@ -26,7 +29,8 @@ relations:
 - **Milestone:** V1-M01 — Architectural Decision Filter.
 - **Objetivo aprovado:** criar um gate utilizável, baseado em evidências e agnóstico para impedir promoção prematura de componentes permanentes.
 - **Escopo previsto:** persistir AD-001 e Roadmap V1; definir ADF-001; criar template de avaliação; registrar ADR-0010; concluir AP-0009; revisar o backlog.
-- **Estado atual:** implementação concluída, milestone `pending_review` por exigência do IHP-001.
+- **Estado atual no momento do handoff:** implementação concluída e aguardando revisão pelo IHP-001.
+- **Resultado da revisão:** aprovado pelo Conselho em 2026-07-22; V1-M01 encerrada como `completed` pela AD-003.
 
 ## O que foi executado
 

@@ -5,7 +5,7 @@ kind: knowledge
 knowledge_type: architectural_protocol
 title: "Implementation Handoff Protocol"
 status: operational
-version: "1.0"
+version: "1.1"
 created_at: 2026-07-21
 owner: "Architecture Council"
 language: pt-BR
@@ -34,7 +34,7 @@ Alterações triviais não exigem relatório completo.
 
 ## Conteúdo obrigatório
 
-Todo relatório deve conter exatamente estas seções:
+Todo relatório completo deve conter exatamente estas seções:
 
 1. Contexto.
 2. O que foi executado.
@@ -51,9 +51,13 @@ Todo relatório deve conter exatamente estas seções:
 
 O conteúdo deve declarar itens incompletos, desvios, arquivos removidos ou movidos, testes não executados e riscos ausentes ou existentes. Frases genéricas não satisfazem o protocolo.
 
+## Regra de comunicação
+
+Toda entrega relevante do CEA termina com `## Pacote para revisão do CSA`, autocontido e transportável. Respostas comuns podem usar um pacote compacto; checkpoints cobertos pelos gatilhos obrigatórios usam as doze seções completas.
+
 ## Persistência
 
-O mesmo conteúdo entregue na conversa deve ser persistido em Markdown no local semanticamente associado ao ponto de controle. Relatórios de milestone ficam ao lado do respectivo milestone.
+O conteúdo entregue na conversa deve ser persistido em Markdown no local semanticamente associado ao ponto de controle. Relatórios de milestone ficam ao lado do respectivo milestone.
 
 Cada relatório registra data, milestone, status, versão e commits relacionados. Handoffs são especializações experimentais de `Knowledge`, não Core Types.
 
@@ -71,3 +75,4 @@ Implementação terminada não encerra um milestone. Antes da revisão, o estado
 ## Evolução
 
 - 2026-07-21: versão 1.0 instituída pela AD-002.
+- 2026-07-22: versão 1.1 registra o pacote CSA como padrão de comunicação para entregas relevantes.

@@ -4,7 +4,7 @@ id: AP-0006
 kind: knowledge
 knowledge_type: architectural_proposal
 title: "Formal System Ontology and Constitutional Metamodel"
-status: proposed
+status: scheduled
 created_at: 2026-07-21
 author: "Raphael Caveagna — Founder & Chief Vision Officer"
 language: pt-BR
@@ -15,21 +15,26 @@ architectural_impact:
   summary: "Define metamodelo, tipos, relações, restrições, identidade, proveniência e extensibilidade."
 estimated_complexity: very_high
 dependencies:
-  - "Architecture Council authorization for an experimental milestone"
-ideal_implementation_time: "Antes de estabilizar schemas, Core Types, Type Registry ou contratos públicos."
+  - "Council review of the System Overview structure checkpoint"
+scheduled_milestone: V1-M02
+ideal_implementation_time: "Após a revisão estrutural do System Overview e antes de estabilizar schemas, Core Types, Type Registry ou contratos públicos."
 acceptance_criteria: ["Responde às perguntas de competência do sistema.", "Separa metamodelo, ontologia e representação.", "Permite extensões sem alterar o Core.", "É runtime e model agnostic."]
-observations: "ADF aplicado em ASSESS-0001: remain_experimental por evidência insuficiente de simplicidade. Os sete Core Types continuam hipóteses."
+observations: "ADF aplicado em ASSESS-0001: remain_experimental. V1-M02 foi autorizada, mas nenhuma promoção permanente ocorreu."
 relations:
   - type: assessed_by
     target: ASSESS-0001
   - type: governed_by
     target: ADF-001
+  - type: scheduled_by
+    target: AD-003
+  - type: contextualized_by
+    target: ARCH-001
 ---
 
 # AP-0006 — Formal System Ontology and Constitutional Metamodel
 
-Projetar primeiro os critérios de existência, identidade, autoridade, proveniência e mudança; depois definir os tipos e relações permitidos. Markdown, YAML, JSON e grafos serão representações, não a Ontologia.
+Projetar critérios de existência, identidade, autoridade, proveniência e mudança; depois definir tipos e relações permitidos. Markdown, YAML, JSON e grafos serão representações, não a Ontologia.
 
-## Estado da avaliação
+## Estado
 
-A ASSESS-0001 recomendou manter a proposta experimental. A próxima milestone poderá investigar e formalizar o conceito, mas não promovê-lo como componente permanente sem uma nova avaliação ADF e decisão do Conselho.
+Agendada experimentalmente para V1-M02. O primeiro checkpoint é a estrutura do System Overview. Ontologia e metamodelo não serão promovidos sem nova avaliação ADF.
