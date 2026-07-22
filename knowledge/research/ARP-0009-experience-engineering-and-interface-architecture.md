@@ -81,7 +81,9 @@ evidence_method:
   - Catalog lifecycle, selection profile, hard-gate and qualitative decision analysis
   - Frontend rendering, boundary, state, data, quality and runtime responsibility analysis
   - Framework-neutral architecture option, adaptation, risk and evaluation comparison
-budget_or_timebox: Frontend Architecture and Interface Runtime Engineering slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Integrated requirement-to-evidence, method-portfolio and complete-task evaluation analysis
+  - Proportional assurance, release evidence, production feedback and freshness comparison
+budget_or_timebox: Integrated Experience Evaluation, Quality Assurance and Production Evidence slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -132,6 +134,10 @@ expected_outputs:
   - Frontend responsibility and boundary framework
   - Frontend architecture options and decision matrix
   - Frontend quality, risk and evaluation framework
+  - Integrated experience evaluation research synthesis
+  - Requirement, evaluation and evidence traceability framework
+  - Evaluation methods and proportional assurance profiles
+  - Quality gates, release evidence and production feedback framework
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -161,6 +167,10 @@ evidence:
   - knowledge/research/evidence/frontend-responsibility-boundary-framework.md
   - knowledge/research/evidence/frontend-architecture-options-decision-matrix.md
   - knowledge/research/evidence/frontend-quality-risk-evaluation-framework.md
+  - knowledge/research/evidence/integrated-experience-evaluation-research-report.md
+  - knowledge/research/evidence/requirement-evaluation-evidence-traceability-framework.md
+  - knowledge/research/evidence/evaluation-methods-assurance-profiles.md
+  - knowledge/research/evidence/quality-gates-release-production-feedback-framework.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -181,6 +191,9 @@ risks:
   - Framework conventions, folder structures or rendering trends may silently replace requirement-derived architecture.
   - State, data, authorization, cache and server-client authority may be duplicated or assigned to untrusted boundaries.
   - Observability, analytics, offline storage and AI-generated content may expose sensitive data or create unsafe runtime behavior.
+  - Aggregate scores, passing automation or stakeholder approval may conceal critical task, accessibility, security or recovery failures.
+  - Evidence may be reused beyond its version, environment, population, method or validity conditions.
+  - Production monitoring, user participation and AI evaluation may create privacy, representation, ethics or causal-inference errors.
 relations:
   - type: established_by
     target: AD-004
@@ -200,7 +213,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Frontend Architecture and Interface Runtime Engineering
+## Slice ativa — Integrated Experience Evaluation, Quality Assurance and Production Evidence
+
+**[Decisão]** Em 2026-07-22, após o checkpoint c4eba5c64afc9116e1bed145436fc076eff052f0, o Conselho autorizou exclusivamente esta slice documental. Foram investigados concepts, inputs/readiness, requirement-to-evidence traceability, quality scenarios, complete tasks/flows/states, usability/user participation, visual/Design QA/reference/content, accessibility/security/privacy/performance, responsive/i18n/components/patterns/Design System/frontend architecture, AI-generated/AI-native evaluation, automation/visual regression/expert review, evidence/freshness/findings/remediation/exceptions, proportional profiles, gates/release/production/feedback/regressions/governance/metrics e benchmark preparation. Nenhum test, audit, scan, screenshot, baseline, user study, benchmark, analytics/monitoring implementation, frontend, schema, scorecard, conformance report ou certification foi executado/criado.
+
+Pergunta principal: como combinar múltiplos tipos de avaliação e evidência em um processo proporcional, rastreável e governado sem reduzir quality a score universal ou permitir que um resultado positivo oculte falhas críticas?
+
+Entregáveis:
+
+- Integrated Experience Evaluation Research Report;
+- Requirement, Evaluation and Evidence Traceability Framework;
+- Evaluation Methods and Assurance Profiles;
+- Quality Gates, Release Evidence and Production Feedback Framework.
+
+**[Fato normativo]** WCAG 2.2 e ACT Rules Format 1.1 possuem requirements em seus scopes; ISO 9241-11:2018, ISO/IEC 25010:2023 e ISO/IEC/IEEE 29119-1:2022 fornecem conceitos/modelos standards sem escolher processo local. **[Orientação institucional]** WAI recomenda combinar conformance evaluation e users; GOV.UK combina metrics, user research e outras sources; NIST/OWASP informam security/privacy/AI assurance. **[Claim contextual]** tool documentation ilustra visual-baseline sensitivity, sem tool approval.
+
+**[Hipótese]** O resultado favorece requirement/risk → acceptance claim/quality scenario → method portfolio → scoped evidence → finding/uncertainty → remediation/exception/decision → release scope → privacy-bounded production revalidation. Evidence strength é claim-relative; blockers não são averaged; approval não é certification; evidence expira quando scope/version/environment/population/method assumptions mudam.
+
+O programa permanece active e evidence_gathering. Concepts, traceability fields, profiles, gates, packages, roles, metrics e benchmark criteria são candidates. Benchmarks interno/externo, executable evaluation e implementation não são iniciados automaticamente.
+
+## Slice concluída — Frontend Architecture and Interface Runtime Engineering
 
 **[Decisão]** Em 2026-07-22, após o checkpoint 549a0a567da2d95feaa28cd907b5d9cf3fc474f1, o Conselho autorizou exclusivamente esta slice documental. Foram investigados concepts e boundaries, architectural inputs/readiness, rendering, server/client authority, routing/URL, feature/domain/component organization, state/data/contracts/forms, error/loading/long-running work, auth/tenancy, accessibility/i18n/content/Design System/styling/responsiveness, offline/resilience, performance/security/privacy, observability/analytics, testing/platform/build/dependencies/deployment/release/flags, framework adaptation e AI-assisted risks. Nenhum frontend, schema, adapter, framework, stack, package, code, test, benchmark, prototype, deployment, ADR, AP ou RFC foi criado ou escolhido.
 
@@ -573,4 +605,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice não cria frontend, framework adapter, schema, folder structure, package/config/source/test executável, POC, benchmark, component, Design System, deployment, ADR, AP, RFC ou implementação; e não aprova rendering model, framework, stack, library, platform, option ou artifact. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Experience Evaluation integrada, benchmarks e qualquer implementation exigem autorização explícita e nenhuma ação começa automaticamente.
+Esta slice não executa test, browser automation, audit, security/performance scan, screenshot, visual baseline, user study, analytics/monitoring, benchmark ou prototype; não cria schema, scorecard, conformance report, certification, frontend, CI, code ou implementation; e não aprova gate, profile, metric, method, release ou benchmark. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Benchmarks interno/externo e qualquer implementation exigem autorização explícita e nenhuma ação começa automaticamente.
