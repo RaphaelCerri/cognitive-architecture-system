@@ -77,7 +77,9 @@ evidence_method:
   - Design-system governance, change-impact, drift and risk assessment
   - Accessibility normative, inclusive-experience and user-needs synthesis
   - Accessibility requirements, responsibility, evaluation and procurement-criteria analysis
-budget_or_timebox: Accessibility and Inclusive Experience Engineering slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
+  - Official technology identity, release, license, maintenance and provenance comparison
+  - Catalog lifecycle, selection profile, hard-gate and qualitative decision analysis
+budget_or_timebox: Governed UI Technology Catalog and Technology Selection slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -123,6 +125,7 @@ expected_outputs:
   - Accessibility evaluation and evidence model
   - Accessibility technology and procurement criteria
   - Technology selection and catalog model options
+  - UI technology landscape snapshot and representative decision matrices
   - Frontend architecture and evaluation research findings
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
@@ -145,6 +148,10 @@ evidence:
   - knowledge/research/evidence/accessibility-responsibility-requirements-framework.md
   - knowledge/research/evidence/accessibility-evaluation-evidence-model.md
   - knowledge/research/evidence/accessibility-technology-procurement-criteria.md
+  - knowledge/research/evidence/ui-technology-landscape-research-report.md
+  - knowledge/research/evidence/governed-ui-technology-catalog-framework.md
+  - knowledge/research/evidence/technology-selection-decision-framework.md
+  - knowledge/research/evidence/representative-technology-decision-matrices.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -159,6 +166,9 @@ risks:
   - Legal and normative applicability may be misstated across jurisdictions, versions and product scopes.
   - Accessibility evidence may become stale across content, platform, browser, assistive-technology and dependency changes.
   - Security, privacy or supplier controls may create barriers or expose sensitive accessibility preferences.
+  - Technology evidence may become stale or conflate upstream, package, wrapper, fork, registry item and local copy.
+  - Popularity, vendor claims, AI familiarity or aggregate scoring may bypass hard constraints and contextual evidence.
+  - Open-code registries and agent integrations may expand provenance, prompt-content and supply-chain attack surfaces.
 relations:
   - type: established_by
     target: AD-004
@@ -178,7 +188,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Accessibility and Inclusive Experience Engineering
+## Slice ativa — Governed UI Technology Catalog and Technology Selection
+
+**[Decisão]** Em 2026-07-22, após o checkpoint 22d1cc0ef2781af347d7e22637c054a9cafc4f8a, o Conselho autorizou exclusivamente esta slice documental. A pesquisa comparou uma amostra representativa de frameworks, styling, primitives, open-code registries, component systems, forms, grids, visualization, graphs, editors, maps, calendars, motion, drag-and-drop, virtualization, state/data, i18n, token tooling, workbenches, testing, performance, security e licensing. Nenhum pacote/repositório foi instalado, baixado, clonado ou executado; nenhuma tecnologia foi adotada, implementada ou aprovada.
+
+Pergunta principal: como manter evidence temporal e selecionar tecnologias UI por needs, hard constraints, responsibility model, accessibility, security, lifecycle e total ownership, sem transformar o catálogo em ranking de popularidade ou autoridade automática?
+
+Entregáveis:
+
+- UI Technology Landscape Research Report;
+- Governed UI Technology Catalog Framework;
+- Technology Selection and Decision Framework;
+- Representative Technology Decision Matrices.
+
+**[Fato oficial]** Sources oficiais confirmaram identities, models e alguns snapshots, incluindo React 19.2, Angular 22 active, Base UI 1.6.0, Material UI 9.0.0, Carbon React ^1.112.0, DTCG 2025.10, Storybook 10.4, Playwright 1.61 e axe-core 4.11.4. Versões/licenças não confirmadas foram registradas como `unknown`. **[Fato normativo]** DTCG 2025.10 possui trechos normativos em seu próprio scope, mas é Community Group Report, não W3C Standard. **[Orientação institucional]** NIST SSDF, npm provenance, SLSA, OpenSSF e official project policies informaram critérios de supply chain sem produzir garantia.
+
+**[Hipótese]** O resultado favorece need/profile → candidate class → verified identity/snapshot → hard gates → qualitative contextual evidence → human recommendation/decision → validation → monitored lifecycle. Dependency, primitive, source absorption e full system possuem ownership models distintos. Catalog evidence não decide; `Adopt`, `Adapt`, `Absorb`, `Integrate` ou `Trial` exigem autorização separada, scope/version/conditions/expiry e, quando executáveis, uma nova diretiva.
+
+O programa permanece active e evidence_gathering. Frontend Architecture, implementation, package installation, executable catalog/selection engine, Design System, schema, POC, benchmark e technology adoption não são iniciados automaticamente.
+
+## Slice concluída — Accessibility and Inclusive Experience Engineering
 
 **[Decisão]** Em 2026-07-22, após o checkpoint 3fa374a2b7f49c0cfc7722842b490dbc04d677c6, o Conselho autorizou exclusivamente esta slice documental. Foram investigados standards/regulation scope, disability/access-needs models, discovery, traceable requirements, responsibility, semantics/native-first, keyboard/focus, visual/content/forms/navigation/dynamic/motion/time/auth/data/document/mobile/cognitive/international accessibility, Design System/component/pattern/AI contracts, evaluation/evidence, governance, procurement, security e privacy. Nenhuma auditoria, conformance claim, tool/library selection, schema, component, frontend ou implementação foi realizada.
 
@@ -513,4 +542,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice não executa audit, test automation, conformance claim, certification, library/tool selection, catalog, frontend, benchmark, schema ou implementação. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Qualquer nova slice exige autorização explícita e nenhuma ação começa automaticamente.
+Esta slice não instala, baixa, clona ou executa tecnologia; não cria catálogo/engine/schema/registry executável, POC, benchmark, component, Design System, frontend ou implementação; e não aprova framework, stack, library, service ou disposition. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Qualquer trial, adoption, Frontend Architecture ou nova slice exige autorização explícita e nenhuma ação começa automaticamente.
