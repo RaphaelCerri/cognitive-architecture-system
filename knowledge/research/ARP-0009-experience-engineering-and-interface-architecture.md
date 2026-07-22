@@ -69,7 +69,9 @@ evidence_method:
   - Adaptive discovery analysis
   - Responsibility and traceability mapping
   - Proportional package option analysis
-budget_or_timebox: Experience Foundations slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
+  - Information architecture and navigation model comparison
+  - Flow, state, recovery and artifact selection analysis
+budget_or_timebox: Information Architecture, Navigation and User Flow Engineering slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -113,6 +115,10 @@ evidence:
   - knowledge/research/evidence/experience-discovery-question-framework.md
   - knowledge/research/evidence/prd-experience-responsibility-matrix.md
   - knowledge/research/evidence/experience-architecture-package-options.md
+  - knowledge/research/evidence/information-architecture-navigation-research-report.md
+  - knowledge/research/evidence/navigation-model-decision-matrix.md
+  - knowledge/research/evidence/user-flow-state-modeling-framework.md
+  - knowledge/research/evidence/ia-flow-artifact-selection-guide.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -139,7 +145,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Experience Foundations
+## Slice ativa — Information Architecture, Navigation and User Flow Engineering
+
+**[Decisão]** Em 2026-07-22, após o checkpoint e5104dc47bbfeabf58be24046359f50d072f0932, o Conselho autorizou exclusivamente esta slice. Foram investigados IA, objects, taxonomy, labels, navigation, search/filter, flows, states, recovery, permissions, proportional artifact selection, responsive/accessibility e AI-native implications. Nenhuma UI, wireframe, schema, engine, tecnologia ou implementação foi produzida.
+
+Pergunta principal: como organizar informação e comportamento para permitir que usuários encontrem, compreendam e concluam tarefas com ambiguidade, carga e risco apropriados ao contexto?
+
+Entregáveis:
+
+- Information Architecture and Navigation Research Report;
+- Navigation Model Decision Matrix;
+- User Flow and State Modeling Framework;
+- IA, Flow and Artifact Selection Guide.
+
+**[Fato normativo]** WCAG 2.2 condiciona a realização web quando aplicável, inclusive orientation, navigation consistency, complete processes, errors, status e reflow; não escolhe uma IA ou menu. **[Orientação institucional]** WAI, GOV.UK e USWDS informaram patterns e proportional selection dentro de seus contextos. **[Evidência empírica]** estudos selecionados mostraram que card/tree testing e menu/evaluation methods dependem de configuração, contexto e pergunta.
+
+**[Hipótese]** O resultado favorece task/object/state/authority before pages, escolha contextual de navigation, flow completeness proporcional e question → minimum artifact → evidence → decision → expiry. Definições, minimum sets, thresholds, cardinalidades, states compartilhados e engine de seleção permanecem abertos.
+
+O programa permanece active e evidence_gathering. Visual Reference Interpretation, Design System, catalog, frontend e benchmark não são iniciados automaticamente.
+
+## Slice concluída — Experience Foundations
 
 **[Decisão]** Em 2026-07-22, o Conselho autorizou **Experience Foundations — Discovery, PRD Boundaries and Experience Architecture**. Os requisitos de início foram satisfeitos por autorização explícita, questão priorizada, fontes primárias selecionadas, timebox/limite de seis arquivos e fronteiras preservadas com ARP-0002, ARP-0007 e ARP-0008.
 
