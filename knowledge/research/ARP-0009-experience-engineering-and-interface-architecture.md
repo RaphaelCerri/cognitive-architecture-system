@@ -79,7 +79,9 @@ evidence_method:
   - Accessibility requirements, responsibility, evaluation and procurement-criteria analysis
   - Official technology identity, release, license, maintenance and provenance comparison
   - Catalog lifecycle, selection profile, hard-gate and qualitative decision analysis
-budget_or_timebox: Governed UI Technology Catalog and Technology Selection slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Frontend rendering, boundary, state, data, quality and runtime responsibility analysis
+  - Framework-neutral architecture option, adaptation, risk and evaluation comparison
+budget_or_timebox: Frontend Architecture and Interface Runtime Engineering slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -127,6 +129,9 @@ expected_outputs:
   - Technology selection and catalog model options
   - UI technology landscape snapshot and representative decision matrices
   - Frontend architecture and evaluation research findings
+  - Frontend responsibility and boundary framework
+  - Frontend architecture options and decision matrix
+  - Frontend quality, risk and evaluation framework
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -152,6 +157,10 @@ evidence:
   - knowledge/research/evidence/governed-ui-technology-catalog-framework.md
   - knowledge/research/evidence/technology-selection-decision-framework.md
   - knowledge/research/evidence/representative-technology-decision-matrices.md
+  - knowledge/research/evidence/frontend-architecture-research-report.md
+  - knowledge/research/evidence/frontend-responsibility-boundary-framework.md
+  - knowledge/research/evidence/frontend-architecture-options-decision-matrix.md
+  - knowledge/research/evidence/frontend-quality-risk-evaluation-framework.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -169,6 +178,9 @@ risks:
   - Technology evidence may become stale or conflate upstream, package, wrapper, fork, registry item and local copy.
   - Popularity, vendor claims, AI familiarity or aggregate scoring may bypass hard constraints and contextual evidence.
   - Open-code registries and agent integrations may expand provenance, prompt-content and supply-chain attack surfaces.
+  - Framework conventions, folder structures or rendering trends may silently replace requirement-derived architecture.
+  - State, data, authorization, cache and server-client authority may be duplicated or assigned to untrusted boundaries.
+  - Observability, analytics, offline storage and AI-generated content may expose sensitive data or create unsafe runtime behavior.
 relations:
   - type: established_by
     target: AD-004
@@ -188,7 +200,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Governed UI Technology Catalog and Technology Selection
+## Slice ativa — Frontend Architecture and Interface Runtime Engineering
+
+**[Decisão]** Em 2026-07-22, após o checkpoint 549a0a567da2d95feaa28cd907b5d9cf3fc474f1, o Conselho autorizou exclusivamente esta slice documental. Foram investigados concepts e boundaries, architectural inputs/readiness, rendering, server/client authority, routing/URL, feature/domain/component organization, state/data/contracts/forms, error/loading/long-running work, auth/tenancy, accessibility/i18n/content/Design System/styling/responsiveness, offline/resilience, performance/security/privacy, observability/analytics, testing/platform/build/dependencies/deployment/release/flags, framework adaptation e AI-assisted risks. Nenhum frontend, schema, adapter, framework, stack, package, code, test, benchmark, prototype, deployment, ADR, AP ou RFC foi criado ou escolhido.
+
+Pergunta principal: como representar e decidir a arquitetura técnica de uma interface sem permitir que framework, library, preference ou folder structure definam prematuramente a arquitetura do produto?
+
+Entregáveis:
+
+- Frontend Architecture Research Report;
+- Frontend Responsibility and Boundary Framework;
+- Frontend Architecture Options and Decision Matrix;
+- Frontend Quality, Risk and Evaluation Framework.
+
+**[Fato normativo]** HTML/HTTP definem semantics de navigation, forms, requests e caches em seus scopes; WCAG 2.2 condiciona web content aplicável. **[Especificação]** Service Workers, Storage, CSP/Trusted Types, Web Performance, WebDriver, Web App Manifest, OpenAPI/JSON Schema e related standards oferecem mechanisms com status/version próprios, sem escolher arquitetura. **[Orientação oficial]** OWASP recomenda enforcement de authorization em toda request, não client visibility. **[Claim contextual]** React/Next server-client boundaries ilustram um framework mapping e incluem version/tooling constraints; não são modelo canônico.
+
+**[Hipótese]** O resultado favorece requirements/quality scenarios → responsibility/authority → rendering/route/state/data/failure boundaries → canonical decisions → explicit framework adaptation → implementation/production evidence. Feature, route, page, component e domain permanecem distintos; rendering, security, data ownership e deployment boundaries não são equivalentes; local UI, shared UI, server, domain, workflow, URL e persistent client state possuem owners/lifecycles diferentes.
+
+O programa permanece active e evidence_gathering. Definitions, inputs/readiness, maps, artifacts, options, evaluation criteria e adaptation model são candidates. Experience Evaluation integrada, executable benchmark, framework choice, frontend e implementation não são iniciados automaticamente.
+
+## Slice concluída — Governed UI Technology Catalog and Technology Selection
 
 **[Decisão]** Em 2026-07-22, após o checkpoint 22d1cc0ef2781af347d7e22637c054a9cafc4f8a, o Conselho autorizou exclusivamente esta slice documental. A pesquisa comparou uma amostra representativa de frameworks, styling, primitives, open-code registries, component systems, forms, grids, visualization, graphs, editors, maps, calendars, motion, drag-and-drop, virtualization, state/data, i18n, token tooling, workbenches, testing, performance, security e licensing. Nenhum pacote/repositório foi instalado, baixado, clonado ou executado; nenhuma tecnologia foi adotada, implementada ou aprovada.
 
@@ -542,4 +573,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice não instala, baixa, clona ou executa tecnologia; não cria catálogo/engine/schema/registry executável, POC, benchmark, component, Design System, frontend ou implementação; e não aprova framework, stack, library, service ou disposition. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Qualquer trial, adoption, Frontend Architecture ou nova slice exige autorização explícita e nenhuma ação começa automaticamente.
+Esta slice não cria frontend, framework adapter, schema, folder structure, package/config/source/test executável, POC, benchmark, component, Design System, deployment, ADR, AP, RFC ou implementação; e não aprova rendering model, framework, stack, library, platform, option ou artifact. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Experience Evaluation integrada, benchmarks e qualquer implementation exigem autorização explícita e nenhuma ação começa automaticamente.
