@@ -17,7 +17,8 @@ relations:
     target: V1-M01
   - type: governed_by
     target: IHP-001
-
+  - type: requests_decision_on
+    target: AP-0006
   - type: reviewed_by
     target: AD-003
 ---

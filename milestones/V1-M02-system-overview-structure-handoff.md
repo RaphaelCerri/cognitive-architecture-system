@@ -8,7 +8,7 @@ status: pending_review
 version: "1.0"
 created_at: 2026-07-22
 milestone: V1-M02
-related_commits: []
+related_commits: [da8cc5d]
 language: pt-BR
 relations:
   - type: reports
@@ -130,7 +130,7 @@ Revisar a estrutura do ARCH-001. Não expandir conteúdo até a decisão. Após 
 
 ## Evidências
 
-- AD-003, ADR-0012, ARCH-001, V1-M02, AP-0011 e AP-0012.
+- Commit `da8cc5d`: AD-003, ADR-0012, ARCH-001, V1-M02, AP-0011 e AP-0012.
 - Roadmap V1 versão 1.1.
 - V1-M01 marcado `completed` pela decisão do Conselho.
 - Validação: 39 IDs únicos, relações e links resolvidos, 28 seções, JSON válido, 12/12 seções IHP e escopo somente Markdown.
