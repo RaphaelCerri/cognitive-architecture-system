@@ -71,7 +71,9 @@ evidence_method:
   - Proportional package option analysis
   - Information architecture and navigation model comparison
   - Flow, state, recovery and artifact selection analysis
-budget_or_timebox: Information Architecture, Navigation and User Flow Engineering slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
+  - Visual reference decomposition and interpretation analysis
+  - Originality, accessibility, provenance and reference-security assessment
+budget_or_timebox: Visual Reference Interpretation and Design Intent Extraction slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -119,6 +121,10 @@ evidence:
   - knowledge/research/evidence/navigation-model-decision-matrix.md
   - knowledge/research/evidence/user-flow-state-modeling-framework.md
   - knowledge/research/evidence/ia-flow-artifact-selection-guide.md
+  - knowledge/research/evidence/visual-reference-interpretation-research-report.md
+  - knowledge/research/evidence/visual-decomposition-framework.md
+  - knowledge/research/evidence/reference-translation-decision-framework.md
+  - knowledge/research/evidence/reference-risk-guardrail-assessment.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -145,7 +151,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Information Architecture, Navigation and User Flow Engineering
+## Slice ativa — Visual Reference Interpretation and Design Intent Extraction
+
+**[Decisão]** Em 2026-07-22, após o checkpoint 0cb6b4fd9aa1cd99d459cbe42ad47aee65e19919, o Conselho autorizou exclusivamente esta slice documental. Foram investigados context-first reference intake, visual decomposition, observation/inference separation, confidence, Visual DNA, design intent, comparison/conflict, translation/traceability, accessibility, originality/IP, deceptive design, provenance, reference security e multimodal prompt injection. Nenhuma referência real foi processada e nenhuma UI, direction visual, schema, vision/OCR pipeline, integration ou implementação foi criada.
+
+Pergunta principal: como transformar referências visuais em evidence estruturada e orientação de design, preservando intenção, contexto, originalidade, acessibilidade, rastreabilidade e incerteza?
+
+Entregáveis:
+
+- Visual Reference Interpretation Research Report;
+- Visual Decomposition Framework;
+- Reference Translation and Decision Framework;
+- Reference Risk and Guardrail Assessment.
+
+**[Fato normativo]** WCAG 2.2 condiciona eventual implementação web aplicável, mas pixels isolados não comprovam conformance. **[Orientação institucional]** WAI/USWDS/GOV.UK informaram evidence/context discipline; FTC/EDPB, deceptive design; Copyright Office/USPTO, IP boundaries; C2PA/NIST/OWASP, provenance/privacy/untrusted-content risks. **[Evidência empírica]** visual-aesthetics/cultural studies and emerging visual-prompt-injection research support multidimensional/contextual assessment and explicit security uncertainty.
+
+**[Hipótese]** O resultado favorece context → observation → inference/alternatives/confidence → relevance → adaptation → governed decision, tradução de principles em vez de pixels e referência como untrusted data without authority. Visual DNA, confidence vocabulary, inventory fields, artifact identity, guardrails, relations, thresholds e automated interpretation permanecem abertos.
+
+O programa permanece active e evidence_gathering. Design Language, Design System, tokens, components, catalog, frontend e benchmarks não são iniciados automaticamente.
+
+## Slice concluída — Information Architecture, Navigation and User Flow Engineering
 
 **[Decisão]** Em 2026-07-22, após o checkpoint e5104dc47bbfeabf58be24046359f50d072f0932, o Conselho autorizou exclusivamente esta slice. Foram investigados IA, objects, taxonomy, labels, navigation, search/filter, flows, states, recovery, permissions, proportional artifact selection, responsive/accessibility e AI-native implications. Nenhuma UI, wireframe, schema, engine, tecnologia ou implementação foi produzida.
 
