@@ -7,9 +7,9 @@ title: "Context, Retrieval and Compression"
 status: experimental
 research_form: program
 document_state: complete
-governance_state: approved_experimental
-research_state: scoped
-knowledge_maturity: hypothesis
+governance_state: authorized
+research_state: active
+knowledge_maturity: evidence_gathering
 outcome: null
 implementation_state: not_started
 operational_state: not_applicable
@@ -28,9 +28,20 @@ research_questions:
   - "Quando leitura integral, índice, grafo, resumo ou estratégia híbrida é superior?"
 scope: ["Problemas", "Princípios", "Algoritmos", "Métricas", "Custos", "Riscos"]
 out_of_scope: ["Implementação", "Escolha de fornecedor", "Alteração de ARCH-001", "Promoção de domínio"]
+evidence_method: ["Primary-source documentary review", "Repository corpus measurement", "Deterministic retrieval benchmark", "Comparative architecture analysis"]
+budget_or_timebox: "One bounded research session: max 6 iterations, 45 minutes and 10 changed files"
+start_criteria: ["Council authorization", "Primary sources identified", "Local corpus available", "Security criteria supplied by ARP-0007"]
+split_criteria: ["Independent adoption decision", "Method requiring implementation", "Scope exceeding the authorized wave"]
+pause_criteria: ["Missing primary evidence", "Unresolved authority", "Session limit reached", "Two iterations without evidence"]
+closure_criteria: ["Strategies compared", "Benchmark and token model recorded", "Security implications assessed", "Residual questions explicit", "Council review"]
 evaluation_criteria: ["Token reduction", "Decision quality", "Authority preservation", "Provenance", "Maintenance cost", "No parallel Source of Truth"]
 expected_outputs: ["Evidence map", "Comparative analysis", "Possible AP or no-change conclusion"]
-evidence: []
+evidence:
+  - "knowledge/research/evidence/context-retrieval-evidence-report.md"
+  - "knowledge/research/evidence/context-retrieval-technology-matrix.md"
+  - "knowledge/research/evidence/context-architecture-options.md"
+  - "knowledge/research/evidence/context-token-economics.md"
+  - "knowledge/research/evidence/context-security-assessment.md"
 risks: ["Compressão pode remover contexto decisivo.", "Retrieval pode privilegiar relevância sem autoridade."]
 relations:
   - type: established_by

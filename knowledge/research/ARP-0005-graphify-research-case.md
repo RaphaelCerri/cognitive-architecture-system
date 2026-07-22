@@ -7,9 +7,9 @@ title: "Graphify Research Case"
 status: experimental
 research_form: case
 document_state: complete
-governance_state: approved_experimental
-research_state: scoped
-knowledge_maturity: hypothesis
+governance_state: authorized
+research_state: active
+knowledge_maturity: evidence_gathering
 outcome: null
 implementation_state: not_started
 operational_state: not_applicable
@@ -17,6 +17,8 @@ created_at: 2026-07-22
 owner: "Architecture Council"
 language: pt-BR
 subject: "Graphify"
+subject_identity: "Graphify-Labs/graphify (working identification; generic name remains collision-prone)"
+subject_version: "Repository and documentation inspected 2026-07-22; no release pinned for adoption"
 research_questions:
   - "Qual problema Graphify resolve e esse problema existe no sistema?"
   - "Como funciona e quais algoritmos utiliza?"
@@ -26,9 +28,19 @@ research_questions:
   - "É possível construir uma arquitetura superior baseada nos mesmos princípios?"
 scope: ["Problem analysis", "Architecture", "Algorithms", "Costs", "Quality", "Limitations", "Alternatives"]
 out_of_scope: ["Adoption decision", "Implementation", "Integration", "Dependency addition"]
+evidence_method: ["Official repository and documentation review", "Architecture decomposition", "Comparison with repository-native alternatives"]
+budget_or_timebox: "One bounded research session; no installation or execution"
+start_criteria: ["Council authorization", "Candidate identity linked", "Official documentation available", "No-install boundary"]
+split_criteria: ["Another unrelated Graphify candidate becomes relevant", "Execution benchmark requires separate authorization"]
+pause_criteria: ["Identity cannot be verified", "License or provenance unclear", "Primary documentation unavailable", "Session limit reached"]
+closure_criteria: ["Identity and claims qualified", "Architecture decomposed", "Costs and limitations compared", "Adopt/Adapt/Absorb/Integrate/Reject/Defer recommendation reviewed"]
 evaluation_criteria: ["Problem fit", "Token cost", "Generation cost", "Update cost", "Quality", "Governance", "Maintainability", "No new Source of Truth"]
 expected_outputs: ["Evidence dossier", "Architecture decomposition", "Comparative assessment", "Recommendation or no-change conclusion"]
-evidence: []
+evidence:
+  - "https://github.com/Graphify-Labs/graphify"
+  - "https://graphify.com/docs"
+  - "https://graphify.com/what-is-graphify"
+  - "knowledge/research/evidence/context-retrieval-evidence-report.md"
 risks: ["Confundir análise com recomendação de adoção.", "Avaliar claims sem evidência reproduzível.", "Importar decisões específicas da ferramenta como princípios universais."]
 relations:
   - type: established_by

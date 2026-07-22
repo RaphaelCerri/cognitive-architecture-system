@@ -48,6 +48,8 @@ relations:
     target: ARP-0003
   - type: related_to
     target: ARP-0004
+  - type: informs
+    target: ARP-0006
 ---
 
 # ARP-0007 — Security Architecture, Guardrails and Assurance
@@ -175,4 +177,4 @@ Os nomes são experimentais e não representam Core Types.
 - não permitir autoaprovação de exceções;
 - não permitir que memória derivada altere regras canônicas de segurança.
 
-Nenhuma pesquisa externa substantiva foi iniciada.
+Nesta onda, ARP-0007 permaneceu `scoped`: seus critérios foram aplicados ao contexto e retrieval, sem ativar o programa de segurança. A avaliação derivada está em `knowledge/research/evidence/context-security-assessment.md` e usa OWASP GenAI e NIST AI 600-1 como fontes primárias consultadas em 2026-07-22.
