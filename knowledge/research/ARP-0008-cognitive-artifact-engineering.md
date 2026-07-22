@@ -7,9 +7,9 @@ title: "Cognitive Artifact Engineering"
 status: experimental
 research_form: program
 document_state: complete
-governance_state: approved_experimental
-research_state: scoped
-knowledge_maturity: hypothesis
+governance_state: authorized
+research_state: active
+knowledge_maturity: evidence_gathering
 outcome: null
 implementation_state: not_started
 operational_state: not_applicable
@@ -37,15 +37,23 @@ research_questions:
   - "Como impedir autoaprovação, claims falsos de capacidade, escalada de privilégio e autocertificação?"
 scope: ["Artifact identity", "Canonical contracts", "Lifecycle", "Versioning", "Portability", "Risk derivation", "Evaluation", "Certification", "Compilation boundaries"]
 out_of_scope: ["Implementation", "Executable Agents or Skills", "Schemas", "Core Type promotion", "Framework integration", "Runtime changes", "ARCH-001 changes", "Ontology decisions"]
-evidence_method: []
-budget_or_timebox: null
+evidence_method:
+  - Primary official source comparison
+  - Boundary analysis
+  - Responsibility matrix
+  - Relationship mapping
+budget_or_timebox: Cognitive Artifact Foundations slice; max 6 iterations, 40 minutes, 6 changed files, 2 no-progress iterations
 start_criteria: ["Council authorization for substantive research", "Prioritized artifact slice", "Primary-source evidence plan", "Explicit timebox", "Overlap boundary confirmed"]
 split_criteria: ["Independent artifact family", "Distinct evidence method", "Different owner or authority", "Scope incompatible with timebox", "Implementation question requiring AP"]
 pause_criteria: ["Ontological conflict", "Missing primary evidence", "Unresolved authority", "Overlap with active ARP", "Budget reached", "Two iterations without evidence"]
 closure_criteria: ["Artifact identities classified", "Alternatives compared", "Canonical and derived boundaries explicit", "Security and evaluation requirements assessed", "Residual questions recorded", "Council review"]
 evaluation_criteria: ["Problem fit", "Identity clarity", "No duplication", "Ontology compatibility", "Source of Truth", "Lifecycle", "Authority", "Security", "Evaluation", "Observability", "Portability", "Cost"]
 expected_outputs: ["Artifact taxonomy hypothesis", "Blueprint and contract options", "Guardrail and Security Profile boundaries", "Compilation model", "Evaluation and certification model", "Possible APs or no-change conclusions"]
-evidence: []
+evidence:
+  - knowledge/research/evidence/cognitive-artifact-boundary-report.md
+  - knowledge/research/evidence/cognitive-artifact-responsibility-matrix.md
+  - knowledge/research/evidence/cognitive-artifact-relationship-map.md
+  - knowledge/research/evidence/cognitive-artifact-external-model-comparison.md
 risks: ["Schemas prematuros podem conflitar com a Ontologia.", "Frameworks podem definir indevidamente o Core.", "Perfis derivados podem virar fontes canônicas paralelas.", "Artefatos podem autocertificar autoridade ou capacidades.", "Guardrails genéricos podem ser insuficientes ou excessivos."]
 relations:
   - type: established_by
@@ -59,6 +67,14 @@ relations:
 ---
 
 # ARP-0008 — Cognitive Artifact Engineering
+
+## Slice ativa — Cognitive Artifact Foundations
+
+Em 2026-07-22, o Conselho autorizou a primeira slice substantiva: **Capability, Skill, Strategy, Workflow and Agent Boundaries**. Os critérios de início foram satisfeitos por autorização explícita, prioridade definida, plano de fontes oficiais, timebox de seis iterações/quarenta minutos e fronteiras confirmadas com ARP-0002, ARP-0004 e ARP-0007.
+
+Foram produzidos quatro documentos derivados: boundary report, responsibility matrix, relationship map e comparação de modelos externos. Os resultados são evidência e recomendações preliminares; não promovem tipos, estabilizam cardinalidades, criam schemas ou autorizam implementação.
+
+O programa permanece `active` e `evidence_gathering`: Agent Engineering, Skill Engineering, Guardrail Profile Derivation, Evaluation/Certification e Compilation/Runtime Portability continuam como decisões futuras do Conselho, não como próximas ações automáticas.
 
 ## Visão experimental
 
@@ -293,7 +309,7 @@ ARP-0002 mantém a pesquisa sobre compilação; ARP-0004 mantém economia e augm
 
 Antes de schemas próprios, pesquisar agent specifications/cards, A2A Agent Cards, MCP contracts, OpenAI Agents SDK, LangGraph, Semantic Kernel, AutoGen, CrewAI, Letta, BeeAI, Google ADK, Claude Skills/tool patterns, workflow specifications, policy engines, capability-based security, NIST, OWASP, secure agent architectures e evaluation frameworks.
 
-Classificações futuras permitidas: Adopt, Adapt, Absorb, Integrate, Reject, Defer ou Insufficient Evidence. Esta sessão não coletou nem avaliou evidência externa.
+Classificações futuras permitidas: Adopt, Adapt, Absorb, Integrate, Reject, Defer ou Insufficient Evidence. Esta slice comparou uma amostra proporcional de fontes oficiais — A2A, MCP, OpenAI Agents SDK, Google ADK, LangGraph, NIST e OWASP — exclusivamente para esclarecer fronteiras. Nenhuma estrutura foi adotada e a amostra não pretende cobertura exaustiva.
 
 ## Roadmap macro-to-micro — hipótese
 
@@ -349,7 +365,7 @@ As setas não obrigam pipeline; composição poderá variar por complexidade, ri
 - Runtime Adapter pertence ao Core ou Integration?
 - Qual parte é canônica e qual é derivada?
 
-Nenhuma questão é decidida nesta sessão.
+As questões permanecem abertas à canonização. A slice produziu definições candidatas, separações e classificações preliminares que exigem revisão do Conselho e pesquisa posterior.
 
 ## Critérios para futura implementação
 
@@ -357,4 +373,4 @@ Antes de implementação, qualquer contrato deverá demonstrar problema real, id
 
 ## Restrições e próximo checkpoint
 
-Não criar schemas, código, Agent, Skill, Task Force, Orchestrator, Compiler, Runtime Adapter ou integração. Não alterar ARCH-001, Ontologia ou Roadmap V1. Pesquisa substantiva requer nova autorização, slice priorizado, fontes primárias, timebox e confirmação de fronteira com ARP-0002, ARP-0004 e ARP-0007.
+Não criar schemas, código, Agent, Skill, Task Force, Orchestrator, Compiler, Runtime Adapter ou integração. Não alterar ARCH-001, Ontologia ou Roadmap V1. O próximo checkpoint é a revisão desta slice pelo CSA e pelo Conselho. Qualquer nova slice exige escolha e autorização explícitas; este documento não inicia Agent Engineering, Skill Engineering ou implementação.
