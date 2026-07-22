@@ -7,9 +7,9 @@ title: Experience Engineering and Interface Architecture
 status: experimental
 research_form: program
 document_state: complete
-governance_state: approved_experimental
-research_state: scoped
-knowledge_maturity: hypothesis
+governance_state: authorized
+research_state: active
+knowledge_maturity: evidence_gathering
 outcome: null
 implementation_state: not_started
 operational_state: not_applicable
@@ -56,15 +56,20 @@ scope:
   - Technology selection, frontend architecture and evaluation research
   - Runtime-neutral artifact, compilation and provenance questions
 out_of_scope:
-  - Deep Research in this session
+  - Exhaustive research across later Experience Engineering tracks
   - Frontend implementation
   - Pages, components, design systems or schemas
   - Framework or library selection
   - Repository downloads or design-tool integrations
   - Benchmarks
   - Core Type, Ontology, ARCH-001, PRD or Roadmap V1 changes
-evidence_method: []
-budget_or_timebox: null
+evidence_method:
+  - Primary normative and official source comparison
+  - Empirical literature synthesis
+  - Adaptive discovery analysis
+  - Responsibility and traceability mapping
+  - Proportional package option analysis
+budget_or_timebox: Experience Foundations slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -103,7 +108,11 @@ expected_outputs:
   - Reference interpretation and originality boundaries
   - Technology selection and catalog model options
   - Frontend architecture and evaluation research findings
-evidence: []
+evidence:
+  - knowledge/research/evidence/experience-foundations-research-report.md
+  - knowledge/research/evidence/experience-discovery-question-framework.md
+  - knowledge/research/evidence/prd-experience-responsibility-matrix.md
+  - knowledge/research/evidence/experience-architecture-package-options.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -129,6 +138,25 @@ relations:
 ---
 
 # ARP-0009 — Experience Engineering and Interface Architecture
+
+## Slice ativa — Experience Foundations
+
+**[Decisão]** Em 2026-07-22, o Conselho autorizou **Experience Foundations — Discovery, PRD Boundaries and Experience Architecture**. Os requisitos de início foram satisfeitos por autorização explícita, questão priorizada, fontes primárias selecionadas, timebox/limite de seis arquivos e fronteiras preservadas com ARP-0002, ARP-0007 e ARP-0008.
+
+Pergunta principal: qual processo mínimo, adaptativo e governado transforma intention em Experience Architecture confiável sem UI prematura ou bureaucracy uniforme?
+
+Entregáveis:
+
+- Experience Foundations Research Report;
+- Discovery Question Framework;
+- PRD and Experience Responsibility Matrix;
+- Experience Architecture Package Options.
+
+**[Fato normativo]** A slice consultou ISO 9241-210, ISO/IEC/IEEE 29148 e WCAG 2.2 dentro do escopo declarado por suas fontes. **[Heurística institucional]** GOV.UK, W3C WAI, USWDS e NIST informaram discovery, accessibility, success e privacy de forma contextual. **[Evidência empírica]** Estudos/revisões sobre user involvement indicaram contribuição potencial e condicionada, sem justificar cerimônia universal.
+
+**[Hipótese]** O resultado favorece discovery adaptativo, readiness explícita, traceability bidirecional e package core+modules proporcional. Identidade canônica, thresholds, cardinalidades, Question Selection Engine e minimum artifact sets permanecem abertos.
+
+O programa permanece `active` e `evidence_gathering` porque outras slices continuam necessárias. Nenhuma próxima slice, schema, engine, frontend ou technology selection é iniciada automaticamente.
 
 ## Natureza e hipótese estratégica
 
@@ -337,7 +365,7 @@ Benchmark interno futuro: o frontend do Cognitive Architecture System, incluindo
 
 Benchmark externo futuro: uma aplicação fictícia atravessando discovery, PRD, Experience Architecture, referências, direção, tecnologia, design system, protótipo, implementação, avaliação, correções e entrega. Nenhum benchmark é iniciado.
 
-Fontes futuras: W3C/WCAG/WAI-ARIA, Design Tokens Community Group, platform guidelines, design systems, accessible/headless/open-code components, frontend/CSS ecosystems, documentation/testing/accessibility/visual tools, design-to-code, multimodal understanding, HCI, service/content/interaction design, behavioral science e usability research. Nenhuma claim externa é coletada nesta sessão.
+Fontes futuras: W3C/WCAG/WAI-ARIA, Design Tokens Community Group, platform guidelines, design systems, accessible/headless/open-code components, frontend/CSS ecosystems, documentation/testing/accessibility/visual tools, design-to-code, multimodal understanding, HCI, service/content/interaction design, behavioral science e usability research. A slice Experience Foundations coletou somente a amostra registrada em seus entregáveis; outras tracks permanecem sem pesquisa substantiva.
 
 ## Guardrails
 
@@ -370,4 +398,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Este registro não inicia Deep Research, primeira slice, implementação, frontend, schema, catalog, benchmark, library selection ou integration. O programa permanece `scoped` e `hypothesis`. O próximo passo exige revisão do CSA/Conselho e autorização explícita de uma única slice bounded; nenhuma ação começa automaticamente.
+Esta slice não inicia Information Architecture/User Flows, Visual Reference Interpretation, Design System, UI Technology Catalog, Frontend Architecture, benchmark ou implementação. O programa permanece `active` e `evidence_gathering`; o próximo passo é revisão do CSA/Conselho. Qualquer nova slice exige autorização explícita e nenhuma ação começa automaticamente.
