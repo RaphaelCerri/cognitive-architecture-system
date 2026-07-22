@@ -85,7 +85,9 @@ evidence_method:
   - Proportional assurance, release evidence, production feedback and freshness comparison
   - Internal benchmark construct, vertical-scope, journey and representativeness analysis
   - Benchmark repeatability, staged-readiness, governance and evidence-plan comparison
-budget_or_timebox: Cognitive Architecture Frontend Internal Benchmark Definition slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
+  - C-lite product, requirement, authority, journey, flow and state baseline derivation
+  - Content, ontology-leakage, accessibility, security, AI-native and prototype-readiness review
+budget_or_timebox: Cognitive Frontend Benchmark Stage 1 Documentary Baseline; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -144,6 +146,10 @@ expected_outputs:
   - Benchmark experience and flow specification
   - Benchmark quality scenarios and evidence plan
   - Benchmark stages, governance and execution readiness
+  - C-lite product and experience baseline
+  - C-lite journeys, flows, states and authority specification
+  - C-lite content, accessibility, security and AI-native requirements
+  - C-lite evaluation, evidence and prototype readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -181,6 +187,10 @@ evidence:
   - knowledge/research/evidence/benchmark-experience-flow-specification.md
   - knowledge/research/evidence/benchmark-quality-scenarios-evidence-plan.md
   - knowledge/research/evidence/benchmark-stages-governance-execution-readiness.md
+  - knowledge/research/evidence/clite-product-experience-baseline.md
+  - knowledge/research/evidence/clite-journeys-flows-states-authority-specification.md
+  - knowledge/research/evidence/clite-content-accessibility-security-ai-native-requirements.md
+  - knowledge/research/evidence/clite-evaluation-evidence-prototype-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -207,6 +217,9 @@ risks:
   - A self-referential benchmark may reward repository familiarity, preferred terminology, a stack or artifacts designed for the case.
   - A benchmark may be too shallow to exercise authority, evidence and recovery or too broad to diagnose failure proportionally.
   - Synthetic inputs, AI nondeterminism, scope drift and non-equivalent versions may make comparisons invalid or gameable.
+  - A technical-founder baseline may be universalized before user, access-needs, organizational or domain evidence exists.
+  - Ontology, repository layout, governance jargon or documentary states may leak into navigation, content or runtime concepts.
+  - Prototype pressure may silently stabilize candidate terminology, authority, state transitions, architecture or visual preferences.
 relations:
   - type: established_by
     target: AD-004
@@ -226,7 +239,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Cognitive Architecture Frontend Internal Benchmark Definition
+## Slice ativa — Cognitive Frontend Benchmark Stage 1 Documentary Baseline
+
+**[Decisão]** Em 2026-07-22, após o checkpoint 3c56302e7a5abf8b68ee1d39e1224355c7fac413, o Conselho aceitou C-lite como escopo de trabalho e autorizou exclusivamente Stage 1 documental. Fixou para a baseline o Individual Creator / Technical Founder, a tarefa “idea → structured project → bounded research authorization/execution → evidence-backed review” e output limitado a Project Context, plan, one research execution, one primary artifact/small evidence set, review decision e Project Memory update. Nenhum PRD, prototype, wireframe, image, UI, dataset, architecture decision, framework, component, code, test ou benchmark run foi criado.
+
+Pergunta principal: C-lite possui contexto, requisitos, autoridade, experiência, riscos e evidências suficientemente definidos para permitir futuramente um protótipo sem inventar decisões durante o design?
+
+Entregáveis:
+
+- C-lite Product and Experience Baseline;
+- C-lite Journeys, Flows, States and Authority Specification;
+- C-lite Content, Accessibility, Security and AI-native Requirements;
+- C-lite Evaluation, Evidence and Prototype Readiness.
+
+**[Council decisions]** C-lite/actor/task/output são autoritativos somente para esta baseline. **[Requirement candidates]** product/user/accessibility/security/governance/architecture/evaluation needs foram classificados e rastreados por âncoras locais, não schemas. **[Candidate design decisions]** hybrid IA, terminology, state names, content, Visual Direction inputs e architecture needs permanecem reviewable. **[Unknown]** nenhum user/runtime evidence confirma comprehension, accessibility, security ou product value.
+
+**[Recomendação]** `Ready with bounded conditions` para uma futura Stage 2 proposal, não execution. Antes de autorização: Council review desta baseline; owners; authority/emergency/delegation confirmation; frozen package; explicit prototype questions/fidelity/artifacts/budget; accessibility/security specialist review; participant/privacy plan quando aplicável; change/invalidation/acceptance rules. Candidate IA, terms, states, authority, visual/language and architecture are not stabilized.
+
+O programa permanece active/evidence_gathering. Stage 2, prototype, user study, dataset, frontend architecture decision, executable benchmark e implementation continuam bloqueados até autorização explícita.
+
+## Slice concluída — Cognitive Architecture Frontend Internal Benchmark Definition
 
 **[Decisão]** Em 2026-07-22, após o checkpoint a98a30803a372dc3aab03940cd0e3f9c1715d1d8, o Conselho autorizou exclusivamente a definição documental do benchmark interno do futuro frontend cognitivo. Foram analisados thesis/construct, options A/B/C, actors/users/jobs/objects, IA/navigation, five journeys, task flows/states, long-running work/approvals, Agents/Skills, Project Memory/graph/search, onboarding/“Tenho uma ideia”/references, accessibility/security/privacy/AI-native requirements, visual/language/technology/architecture inputs, scenarios/success/evidence, stages/boundaries/dataset/repeatability/governance/stopping/readiness. Nenhum PRD, dataset, wireframe, prototype, UI, benchmark, test, code, framework, component, token, schema ou implementation foi criado/executado.
 
@@ -637,4 +669,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice define apenas um benchmark interno documental. Não cria PRD, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, framework, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não executa benchmark ou user study; e não aprova C-lite, Stage 1, actor, object/state model, IA, authority, artifact, requirement baseline ou success criterion. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 1, prototype, executable vertical slice, benchmark e implementation exigem autorizações separadas e nada começa automaticamente.
+Esta slice cria somente a baseline documental C-lite. Não cria/atualiza PRD, Ontology, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, architecture decision, framework, library, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não executa benchmark/user study; e não estabiliza actor beyond baseline, term, IA/menu, authority model, state enum, content, Visual Direction, Design Language ou technology. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 2 e qualquer executable work exigem autorização explícita e nada começa automaticamente.
