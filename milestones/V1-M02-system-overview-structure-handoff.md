@@ -5,10 +5,11 @@ kind: knowledge
 knowledge_type: implementation_handoff_report
 title: "V1-M02 System Overview Structure — Implementation Handoff"
 status: pending_review
-version: "1.0"
+version: "1.1"
 created_at: 2026-07-22
+updated_at: 2026-07-22
 milestone: V1-M02
-related_commits: [da8cc5d]
+related_commits: [da8cc5d, 4a064cc, 6fb9fbe]
 language: pt-BR
 relations:
   - type: reports
@@ -17,6 +18,8 @@ relations:
     target: ARCH-001
   - type: governed_by
     target: IHP-001
+  - type: incorporates
+    target: AD-003
 ---
 
 # Pacote para revisão do CSA
@@ -24,117 +27,127 @@ relations:
 ## Contexto
 
 - **Milestone:** V1-M02 — System Overview and Ontology Framing.
-- **Objetivo aprovado:** criar primeiro a estrutura canônica do System Overview; interromper antes da redação definitiva.
-- **Escopo:** fechar V1-M01, abrir V1-M02 experimental, estruturar ARCH-001, iniciar enquadramento de Skills e AI-DX, registrar Orchestrator como AP e sincronizar Project Memory.
-- **Estado:** checkpoint estrutural implementado e `pending_review`; milestone permanece `in_progress`.
+- **Objetivo aprovado:** criar primeiro a estrutura canônica do System Overview e interromper antes da redação definitiva.
+- **Delta incorporado:** Cognitive Pipeline, RFC, Architecture Interview, propriedade sistêmica das Skills, responsabilidades ampliadas do Orchestrator e três ideias estratégicas de backlog.
+- **Identidade da diretiva:** o material recebido como `AD-002` atualiza a decisão já canonizada como `AD-003`, pois `AD-002` pertence ao IHP. AD-003 passou à versão 1.1; nenhum AD-004 foi criado.
+- **Estado:** checkpoint estrutural implementado e `pending_review`; V1-M02 permanece `in_progress`.
 
 ## O que foi executado
 
-- V1-M01 foi formalmente encerrada como `completed`.
-- A nova diretiva foi canonizada como AD-003 devido a conflito com o ID AD-002 existente.
-- Roadmap V1 foi atualizado para versão 1.1, priorizando System Overview antes da Ontologia.
-- ARCH-001 foi criado como documento canônico separado do README, em `draft` e versão `0.1-structure`.
-- Foram estruturadas 28 seções editoriais cobrindo propósito, filosofia, arquitetura, fluxo cognitivo, componentes, governança, Project Memory, Capability System, Agents, Skills, Orchestrator, Graph, Compiler, exemplos, roadmap, glossário, backlog e próximos passos.
-- Skills foram relacionadas preliminarmente a Capability, Agent e Orchestrator sem schema, migração ou integração.
-- AI-DX foi registrada em AP-0011 e Orchestrator em AP-0012.
-- AP-0006 foi movida para `scheduled` em V1-M02, mantendo resultado ADF `remain_experimental`.
-- IHP-001 foi atualizado para versão 1.1 com a regra de comunicação aprovada.
+- ARCH-001 foi revisado de `0.1-structure` para `0.2-structure`, passando de 28 para 30 seções.
+- Cognitive Pipeline ganhou seção própria e cadeia inicial completa, explicitamente sem automação ou promoção ontológica.
+- RFC ganhou seção própria e ADR-0013, que o enquadra como `Knowledge` especializado e não como Source of Truth.
+- Architecture Interview ganhou seção própria e AP-0013 em `approved` apenas como candidata a Skill.
+- AP-0012 foi ampliada para incluir coordenação do processo cognitivo, necessidade de RFC, seleção de processos e recursos, escalada e autonomia.
+- AP-0014 registrou Cognitive Pipeline como direção conceitual aprovada, ainda sem contratos.
+- AP-0015, AP-0016 e AP-0017 registraram, respectivamente, frontend de visualização arquitetural, onboarding interativo e NotebookLM como consumidor documental.
+- Roadmap 1.2, milestone V1-M02, índice de ADRs e Project Memory foram sincronizados.
+- A revisão do backlog identificou sobreposição entre AP-0014 e AP-0005; ela foi registrada sem fusão automática.
 
 ## Arquivos afetados
 
 ### Criados
 
-- `foundation/directives/AD-003-v1-m02-system-overview.md`: autorização, fechamento e correção de ID.
-- `foundation/decisions/ADR-0012-prioritize-system-overview.md`: decisão de prioridade.
-- `architecture/system-overview.md`: estrutura canônica em revisão.
-- `knowledge/backlog/proposals/AP-0011-ai-developer-experience.md`: proposta de AI-DX.
-- `knowledge/backlog/proposals/AP-0012-orchestrator.md`: proposta de Orchestrator.
-- `milestones/V1-M02-system-overview-and-ontology-framing.md`: milestone experimental.
-- `milestones/V1-M02-system-overview-structure-handoff.md`: este handoff.
+- `foundation/decisions/ADR-0013-rfc-as-specialized-knowledge.md`
+- `knowledge/backlog/proposals/AP-0013-architecture-interview.md`
+- `knowledge/backlog/proposals/AP-0014-cognitive-pipeline.md`
+- `knowledge/backlog/proposals/AP-0015-architecture-visualization-frontend.md`
+- `knowledge/backlog/proposals/AP-0016-interactive-onboarding-experience.md`
+- `knowledge/backlog/proposals/AP-0017-notebooklm-documentation-consumer.md`
 
 ### Modificados
 
-- `README.md`: System Overview passa a ser a primeira entrada.
-- `foundation/protocols/IHP-001-implementation-handoff-protocol.md`: versão 1.1.
-- `foundation/decisions/README.md`: índice ADR-0012.
-- `roadmap/V1.md`: versão 1.1 e novo escopo de V1-M02.
-- `knowledge/backlog/proposals/AP-0006-formal-system-ontology.md`: `proposed` para `scheduled` experimental.
-- `milestones/README.md`: estados de V1-M01 e V1-M02.
-- `milestones/V1-M01-architectural-decision-filter.md`: fechamento aprovado.
-- `milestones/V1-M01-implementation-handoff.md`: revisão aprovada.
+- `foundation/directives/AD-003-v1-m02-system-overview.md`
+- `architecture/system-overview.md`
+- `foundation/decisions/README.md`
+- `knowledge/backlog/proposals/AP-0012-orchestrator.md`
+- `roadmap/V1.md`
+- `milestones/V1-M02-system-overview-and-ontology-framing.md`
+- `milestones/V1-M02-system-overview-structure-handoff.md`
 
-Nenhum arquivo foi removido, movido ou renomeado.
+Nenhum arquivo foi removido, movido ou renomeado. Nenhum código executável foi criado.
 
 ## Validação realizada
 
-- Validador PowerShell confirmou 39 IDs únicos e todas as relações e links Markdown locais resolvidos.
-- ARCH-001 foi verificado com 28 seções e cobertura de todos os tópicos exigidos pela AD-003.
-- A lista real de arquivos modificados confirmou escopo exclusivamente Markdown; nenhum inventário de Skills, integração, Agent, Orchestrator, adapter, schema ou código executável foi criado.
-- `git diff --check` foi executado sem erros.
-- O Project Status Snapshot foi convertido com `ConvertFrom-Json` sem erro.
+- 49 IDs canônicos únicos foram encontrados; nenhuma duplicidade.
+- Todos os alvos de relações explícitas existem.
+- Todos os links Markdown locais resolvem.
+- ARCH-001 possui exatamente 30 seções numeradas e contém a cadeia completa do Cognitive Pipeline.
+- RFC está explicitamente marcado como não sendo Source of Truth independente.
+- Architecture Interview está explicitamente marcada como candidata a Skill não implementada.
+- O escopo do delta é exclusivamente Markdown.
+- `git diff --check` passou sem erro.
+- O JSON do Project Status Snapshot foi validado por parser.
 - O handoff contém 12/12 seções obrigatórias do IHP.
-- A primeira checagem de escopo gerou falso positivo porque `git status --short` resumiu diretórios novos; ela foi substituída por `git diff --name-only` e `git ls-files --others --exclude-standard`, passando com escopo somente Markdown.
-- Build, lint e type-check não se aplicam ao checkpoint documental.
+- Build, lint e type-check não se aplicam ao checkpoint exclusivamente documental.
 
 ## Plano versus execução
 
-- Todos os itens do checkpoint estrutural foram implementados.
-- Nenhuma redação definitiva foi iniciada.
-- O ID recebido `AD-002` foi alterado para `AD-003` exclusivamente para evitar colisão canônica.
-- AP-0011 foi adicionada porque AI-DX é uma ideia arquitetural que não poderia permanecer somente na diretiva.
-- Nenhuma Skill foi migrada e nenhum Orchestrator foi implementado.
+- Todo o delta estrutural solicitado foi incorporado.
+- Nenhuma redação definitiva do System Overview foi iniciada.
+- Nenhuma Skill foi migrada ou implementada.
+- Nenhum RFC, Cognitive Pipeline, Orchestrator, Agent, adapter, frontend, onboarding interativo ou integração com NotebookLM foi implementado.
+- A estrutura do System Overview aumentou de 28 para 30 seções para evitar diluir RFC e Architecture Interview dentro de seções genéricas.
+- A diretiva foi versionada dentro de AD-003 devido à colisão de ID já documentada.
 
 ## Decisões tomadas pelo CEA
 
-- **AD-003 como ID canônico:** preserva unicidade; `source_designation` mantém fidelidade. Reversível somente por migração de IDs, não recomendada.
-- **System Overview em `architecture/`:** separa visão arquitetural de onboarding breve do README. IDs permanecem independentes do caminho.
-- **Estrutura antes de narrativa:** reduz risco de consolidar lacunas ou conceitos não aprovados. Totalmente reversível durante `draft`.
-- **Maturidade explícita por seção:** impede que menção de conceitos seja confundida com promoção ontológica.
-- **Sem inventário físico de Skills:** o primeiro checkpoint apenas define informações futuras; evita schema prematuro.
+- **Versionar AD-003 em vez de criar AD-004:** o conteúdo novo amplia a mesma decisão de encerramento/início e veio novamente designado AD-002. Preserva identidade e evita uma diretiva artificial.
+- **Registrar ADR-0013 para RFC:** o Conselho aprovou uma classificação arquitetural; ADR preserva a decisão, enquanto o schema permanece aberto.
+- **AP-0013 e AP-0014 em `approved`:** o Conselho aprovou Architecture Interview como candidata e Cognitive Pipeline como direção conceitual. `approved` não significa implementado nem ontologicamente permanente.
+- **AP-0015 a AP-0017 em `proposed`:** são ideias estratégicas para avaliação futura, sem autorização de execução.
+- **Manter AP-0012 em `proposed`:** as novas responsabilidades tornam a hipótese mais ampla e aumentam a necessidade de delimitação antes de promoção.
+- **Não fundir AP-0014 e AP-0005:** há sobreposição, mas ainda existe distinção plausível entre pipeline cognitivo amplo e pipeline de evolução arquitetural/automação. A decisão exige Conselho.
 
 ## Estado da documentação
 
-- Diretiva, ADR, Roadmap, milestones, APs e README estão sincronizados com o novo checkpoint.
-- ARCH-001 referencia maturidade e fontes previstas, mas ainda não contém narrativa definitiva.
-- Não há código para sincronizar.
-- O handoff da V1-M01 será atualizado como revisado pelo Conselho.
+- AD-003, ADR-0013, ARCH-001, Roadmap 1.2, milestone V1-M02, APs e handoff estão sincronizados.
+- O System Overview continua sendo síntese e navegação, não autoridade superior às fontes especializadas.
+- Project Memory registra tudo que passou a influenciar a arquitetura neste delta.
+- Não há implementação que exija documentação adicional.
+- A redação definitiva continua deliberadamente ausente até revisão.
 
 ## Backlog e propostas
 
-- AP-0006: `scheduled`, experimental em V1-M02.
-- AP-0011: `proposed`, AI-DX.
-- AP-0012: `proposed`, Orchestrator.
-- AP-0002 a AP-0005, AP-0007 e AP-0008 permanecem sem implementação.
-- AP-0001, AP-0009 e AP-0010 continuam concluídas.
-- Nenhuma proposta ficou obsoleta ou deve ser fundida neste checkpoint.
+- **AP-0006:** `scheduled`, experimental em V1-M02; nenhuma dependência nova foi resolvida.
+- **AP-0013:** `approved` como candidata a Skill; implementação não agendada.
+- **AP-0014:** `approved` como direção conceitual; automação não agendada.
+- **AP-0015, AP-0016 e AP-0017:** `proposed`; dependem de Compiler, contratos estáveis, System Overview aprovado ou políticas externas.
+- **AP-0012:** permanece `proposed` e agora depende do amadurecimento do Cognitive Pipeline.
+- **Obsolescência:** nenhuma AP foi declarada obsoleta.
+- **Fusão:** AP-0014 sobrepõe AP-0005. Recomenda-se avaliar AP-0005 como possível especialização de evolução/automação, sem fusão imediata.
+- **Implementação agora:** nenhuma nova AP deve ser iniciada antes da revisão deste checkpoint.
 
 ## Riscos e pontos de atenção
 
-- System Overview pode duplicar fontes especializadas se a redação futura copiar em vez de sintetizar e referenciar.
-- Capability, Skill, Agent e Orchestrator ainda não possuem definição ontológica aprovada.
-- O escopo do documento é amplo e exige redação incremental após revisão.
-- AP-0006 continua combinando Ontologia e metamodelo; o problema não foi resolvido neste checkpoint.
-- Não existe inventário de Skills; isso é deliberado.
+- A cadeia do Cognitive Pipeline pode ser interpretada como linear e obrigatória, embora ainda seja hipótese revisável.
+- RFC pode ser confundido com fonte de autoridade; ADR-0013 reduz, mas não elimina esse risco até existir documentação definitiva.
+- Orchestrator acumula responsabilidades de inteligência, governança e coordenação; sem fronteiras pode tornar-se um “god component”.
+- AP-0014 e AP-0005 podem gerar vocabulário concorrente se não forem diferenciadas ou reorganizadas.
+- Architecture Interview pode virar ritual excessivo se não houver critérios de ativação e encerramento.
+- NotebookLM envolve privacidade, acesso, atualização e dependência externa, ainda não avaliados.
+- O System Overview pode duplicar fontes especializadas se a redação futura copiar conteúdo em vez de sintetizar e referenciar.
 
 ## Questões para o Conselho
 
-1. A estrutura de 28 seções cobre a visão necessária sem transformar o documento em uma segunda fonte conflitante?
-2. A separação entre README e System Overview está aprovada?
-3. As marcações de maturidade protegem adequadamente conceitos experimentais?
-4. O Conselho confirma `AD-003` como correção canônica do ID duplicado recebido?
-5. Após ajustes, a redação definitiva pode começar incrementalmente?
+1. A estrutura revisada de 30 seções está aprovada para redação definitiva incremental?
+2. O Conselho confirma a versão 1.1 de AD-003 como forma canônica do delta recebido novamente como AD-002?
+3. AP-0013 e AP-0014 devem permanecer `approved`, distinguindo aprovação conceitual de autorização de implementação?
+4. AP-0005 deve ser mantida independente, tratada como especialização de AP-0014 ou preparada para fusão/supersession futura?
+5. O escopo ampliado do Orchestrator deve ser decomposto antes de qualquer avaliação ADF?
 
 ## Próxima ação recomendada
 
-Revisar a estrutura do ARCH-001. Não expandir conteúdo até a decisão. Após aprovação, redigir primeiro as seções 0 a 5 usando somente fontes canônicas e produzir novo checkpoint antes dos modelos conceituais.
+O Conselho deve revisar ARCH-001 0.2, ADR-0013 e a relação entre AP-0014 e AP-0005. Não iniciar redação definitiva nem implementar propostas enquanto o checkpoint estiver `pending_review`. Se aprovado, redigir incrementalmente as seções 0 a 5 usando apenas fontes canônicas e produzir novo checkpoint antes de consolidar os conceitos experimentais das seções 6 em diante.
 
 ## Evidências
 
-- Commit `da8cc5d`: AD-003, ADR-0012, ARCH-001, V1-M02, AP-0011 e AP-0012.
-- Roadmap V1 versão 1.1.
-- V1-M01 marcado `completed` pela decisão do Conselho.
-- Validação: 39 IDs únicos, relações e links resolvidos, 28 seções, JSON válido, 12/12 seções IHP e escopo somente Markdown.
-- Snapshot derivado incluído ao final deste handoff.
+- Commit `6fb9fbe`: delta estrutural do Cognitive Pipeline, RFC, Architecture Interview, Orchestrator e novas APs.
+- Commits-base `da8cc5d` e `4a064cc`: primeira estrutura e evidências do checkpoint.
+- Validação documental: 49 IDs únicos, relações e links resolvidos, 30 seções, escopo somente Markdown e `git diff --check` aprovado.
+- ADR-0013 registra a classificação de RFC sem estabilizar schema.
+- AP-0013 a AP-0017 preservam todas as novas ideias fora da conversa.
+- Snapshot derivado incluído abaixo; não constitui fonte de verdade.
 
 ## Project Status Snapshot
 
@@ -144,28 +157,34 @@ Revisar a estrutura do ARCH-001. Não expandir conteúdo até a decisão. Após 
     "id": "V1-M02",
     "status": "in_progress",
     "current_checkpoint": "system_overview_structure_review",
-    "completion_percentage": 20,
+    "completion_percentage": 25,
     "closure_recommended": false
   },
   "completed": [
     "V1-M01 formally closed",
-    "System Overview structure created",
-    "Roadmap V1.1 synchronized",
-    "AP-0011 and AP-0012 registered"
+    "System Overview 0.2 structure with 30 sections",
+    "Cognitive Pipeline initial vision documented",
+    "RFC classified as specialized Knowledge",
+    "Architecture Interview candidate registered",
+    "Strategic APs AP-0015 through AP-0017 registered",
+    "Roadmap 1.2 and Project Memory synchronized"
   ],
   "pending": [
-    "CSA review of ARCH-001 structure",
-    "Council authorization to begin definitive content",
+    "CSA and Council review of ARCH-001 structure",
+    "Decision on AP-0014 overlap with AP-0005",
+    "Authorization for incremental definitive content",
     "Ontology and metamodel framing",
     "Skill discovery and inventory"
   ],
   "blocked": [
-    "System Overview content expansion until checkpoint review"
+    "System Overview definitive content until checkpoint review",
+    "Implementation of Cognitive Pipeline, RFC automation, Skills, Orchestrator and strategic integrations"
   ],
   "decisions_required": [
-    "Approve System Overview structure",
-    "Confirm canonical directive ID AD-003",
-    "Authorize incremental content drafting"
+    "Approve System Overview 0.2 structure",
+    "Confirm AD-003 version 1.1 as canonical directive identity",
+    "Confirm approved status of AP-0013 and AP-0014",
+    "Determine future relationship between AP-0014 and AP-0005"
   ],
   "active_architectural_proposals": [
     "AP-0002",
@@ -176,17 +195,25 @@ Revisar a estrutura do ARCH-001. Não expandir conteúdo até a decisão. Após 
     "AP-0007",
     "AP-0008",
     "AP-0011",
-    "AP-0012"
+    "AP-0012",
+    "AP-0013",
+    "AP-0014",
+    "AP-0015",
+    "AP-0016",
+    "AP-0017"
   ],
   "technical_debt": [
     "Schemas remain experimental",
     "No Compiler or executable validator",
-    "No Skill inventory yet"
+    "No Skill inventory",
+    "Cognitive Pipeline transitions and optionality are undefined"
   ],
   "risks": [
-    "System Overview may duplicate specialized sources",
-    "Core concepts remain ontologically provisional",
-    "AP-0006 still combines ontology and metamodel"
+    "Cognitive Pipeline may be mistaken for a mandatory linear workflow",
+    "Orchestrator scope may become overly broad",
+    "AP-0014 overlaps AP-0005",
+    "RFC may be mistaken for an independent source of truth",
+    "System Overview may duplicate specialized sources"
   ],
   "documentation_status": {
     "synchronized": true,
@@ -194,11 +221,11 @@ Revisar a estrutura do ARCH-001. Não expandir conteúdo até a decisão. Após 
   },
   "validation": {
     "tests_passed": true,
-    "test_scope": "Markdown structure, IDs, relations, links and directive coverage",
+    "test_scope": "Markdown structure, IDs, relations, links, directive coverage and JSON parsing",
     "build_passed": null,
     "lint_passed": null,
     "typecheck_passed": null
   },
-  "recommended_next_action": "Review ARCH-001 structure before any content expansion."
+  "recommended_next_action": "Review ARCH-001 0.2, ADR-0013 and the AP-0014/AP-0005 boundary before any content expansion."
 }
 ```

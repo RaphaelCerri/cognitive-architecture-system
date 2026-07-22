@@ -34,6 +34,8 @@ relations:
     target: AP-0013
   - type: coordinates_with
     target: AP-0012
+  - type: overlaps_with
+    target: AP-0005
 ---
 
 # AP-0014 — Cognitive Pipeline
@@ -45,3 +47,7 @@ relations:
 ## Decisão
 
 Aprovado como direção conceitual a ser documentada e amadurecida. Não há autorização para automação, contratos ou promoção ontológica.
+
+## Sobreposição identificada
+
+AP-0005 descreve um Architectural Evolution Pipeline mais estreito e orientado ao ciclo de mudança arquitetural e sua futura automação. O Cognitive Pipeline é uma visão cognitiva mais ampla. O Conselho deverá decidir, após amadurecimento conceitual, se AP-0005 será especialização, segmento ou proposta parcialmente substituída por AP-0014; nenhuma fusão foi aplicada neste checkpoint.
