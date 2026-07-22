@@ -5,8 +5,9 @@ kind: knowledge
 knowledge_type: architecture_document
 title: "System Overview"
 status: draft
-version: "0.1-structure"
+version: "0.2-structure"
 created_at: 2026-07-22
+updated_at: 2026-07-22
 owner: "Architecture Council"
 audience: [human, ai]
 language: pt-BR
@@ -23,7 +24,7 @@ relations:
 
 # System Overview
 
-> **Checkpoint estrutural:** este documento contém somente a arquitetura editorial aprovada para revisão. A redação definitiva não foi iniciada. Conceitos experimentais são identificados explicitamente e não se tornam Core Types por aparecerem aqui.
+> **Checkpoint estrutural:** este documento contém somente a arquitetura editorial submetida à revisão. A redação definitiva não foi iniciada. Conceitos experimentais são identificados explicitamente e não se tornam Core Types por aparecerem aqui.
 
 ## 0. Como usar este documento
 
@@ -57,13 +58,15 @@ relations:
 
 **Maturidade:** Taxonomia V1 lógica e revisável; não representa Ontologia definitiva nem estrutura física obrigatória.
 
-## 6. Fluxo cognitivo ponta a ponta
+## 6. Cognitive Pipeline
 
-**Finalidade:** estruturar o percurso futuro:
+**Finalidade:** documentar a visão inicial do fluxo cognitivo completo:
 
-`Intent → Context → Knowledge → Capabilities → Policies → Strategies → Workflow → Runtime → Validation → Evolution`
+`Idea → Knowledge Capture → Architecture Interview → RFC → Council Review → ADR → Planning → Orchestrator → Capability Selection → Skill Selection → Agent Selection → Execution → Validation → Documentation → Project Memory → Evolution`
 
-**Questões abertas:** quais etapas são objetos, processos, decisões ou artefatos derivados?
+**Maturidade:** direção conceitual registrada em AP-0014. A cadeia ainda não define tipos, contratos, obrigatoriedade universal nem automação.
+
+**Questões abertas:** quais etapas são objetos, processos, decisões, gates ou artefatos derivados; quais são opcionais; e como registrar transições e autoridade.
 
 ## 7. Metamodelo e Ontologia
 
@@ -75,19 +78,27 @@ relations:
 
 **Finalidade:** explicar fonte canônica Markdown + YAML, identidade, proveniência, maturidade, relações explícitas e inferidas e compilação futura.
 
-## 9. Capability System
+## 9. RFC
+
+**Finalidade:** apresentar RFC como Knowledge Object especializado para especificar mudanças antes da implementação, derivado da Project Memory e consistente com Manifestos, Principles, ADRs, APs e demais Knowledge Objects.
+
+**Autoridade:** RFC não é uma Source of Truth independente e não supera a hierarquia de autoridade do PMM-001.
+
+**Maturidade:** conceito aprovado em ADR-0013; schema, relações obrigatórias e lifecycle permanecem experimentais.
+
+## 10. Capability System
 
 **Finalidade:** definir Capability como descrição do que o sistema pode realizar, separada de ferramenta, agente ou runtime.
 
 **Questões abertas:** composição, pré-condições, efeitos, seleção e relação com Strategy, Skill e Workflow.
 
-## 10. Strategies e Workflows
+## 11. Strategies e Workflows
 
 **Finalidade:** distinguir abordagem reutilizável de composição executável. Ralph Loop será tratado como possível Strategy, não exceção arquitetural.
 
-## 11. Skills
+## 12. Skills
 
-**Finalidade:** documentar Skills como conhecimento procedural reutilizável que pode apoiar Capabilities e ser aplicado por Agents ou runtimes.
+**Finalidade:** documentar Skills como conhecimento procedural reutilizável pertencente ao sistema, capaz de apoiar Capabilities e ser aplicado por Agents ou runtimes.
 
 **Relação inicial, ainda não ontológica:**
 
@@ -100,78 +111,84 @@ relations:
 
 **Levantamento futuro deverá registrar:** origem, finalidade, capacidades relacionadas, dependências, compatibilidade, maturidade, licença, proveniência e necessidade de adaptação.
 
-## 12. Agents
+## 13. Architecture Interview
+
+**Finalidade:** apresentar a candidata a Skill que conduz questionamento arquitetural exaustivo antes de um RFC, inspirada no padrão “Grill Me”.
+
+**Maturidade:** candidata aprovada em AP-0013; conteúdo, contrato, gatilhos e integração não foram implementados.
+
+## 14. Agents
 
 **Finalidade:** explicar Agents como artefatos ou configurações de execução derivados de capacidades, estratégias, políticas e contexto — nunca origem da arquitetura.
 
-## 13. Orchestrator
+## 15. Orchestrator
 
-**Finalidade:** apresentar a hipótese registrada em AP-0012: compreender contexto, selecionar Capabilities, Skills e Agents e coordenar execução.
+**Finalidade:** apresentar a hipótese AP-0012: compreender contexto; coordenar o processo cognitivo; avaliar necessidade de RFC; selecionar processos, Capabilities, Skills e Agents; e aplicar regras de escalada e autonomia.
 
-**Maturidade:** proposta; nenhuma implementação ou promoção arquitetural autorizada.
+**Maturidade:** proposta; sua natureza como componente, Capability ou outra forma permanece aberta. Nenhuma implementação ou promoção arquitetural foi autorizada.
 
-## 14. Governance
+## 16. Governance
 
 **Finalidade:** reunir papéis, autoridade, escalada, AIP, ACP, ADF, IHP, políticas, risco, aprovação e auditoria.
 
-## 15. Project Memory
+## 17. Project Memory
 
-**Finalidade:** explicar a responsabilidade institucional de persistir decisões, hierarquia de autoridade, ADRs, APs, milestones e handoffs sem criar uma fonte paralela.
+**Finalidade:** explicar a responsabilidade institucional de persistir decisões, hierarquia de autoridade, ADRs, APs, RFCs, milestones e handoffs sem criar uma fonte paralela.
 
-## 16. Compiler
+## 18. Compiler
 
 **Finalidade:** explicar como fontes canônicas poderão gerar JSON, índices, grafos, documentação, adapters e outros artefatos reproduzíveis.
 
 **Maturidade:** planejado; não implementado.
 
-## 17. Graph
+## 19. Graph
 
 **Finalidade:** distinguir Knowledge Graph, Capability Graph, Dependency Graph, Decision Graph, Memory Graph e Execution Graph como visões derivadas, não novas fontes de verdade.
 
-## 18. Runtime e Adapters
+## 20. Runtime e Adapters
 
 **Finalidade:** documentar runtime agnosticism, contratos de distribuição e isolamento de Codex, Claude Code, Fable, n8n e outros consumidores.
 
 **Maturidade:** AP-0007 proposta; nenhum adapter implementado.
 
-## 19. Evolution
+## 21. Evolution
 
 **Finalidade:** explicar avaliações, aprendizado, propostas, backlog, milestones e a regra “A IA propõe; o humano aprova”.
 
-## 20. AI Developer Experience
+## 22. AI Developer Experience
 
 **Finalidade:** introduzir a hipótese AP-0011 para que uma nova IA saiba como pensar, navegar, decidir, usar capacidades e contribuir com coerência.
 
-**Maturidade:** proposta experimental; nenhuma camada, capability ou skill permanente foi criada.
+**Maturidade:** proposta experimental; nenhuma camada, Capability ou Skill permanente foi criada.
 
-## 21. Exemplos completos
+## 23. Exemplos completos
 
-**Finalidade:** futuramente demonstrar fluxos ponta a ponta com decisões, políticas, capacidades, Skills, Agents, runtime, validação e evolução.
+**Finalidade:** futuramente demonstrar fluxos ponta a ponta com decisões, políticas, RFCs, capacidades, Skills, Agents, runtime, validação e evolução.
 
 **Exemplos previstos:** construir software, avaliar uma proposta arquitetural e reconstruir o PVA Knowledge Inbox.
 
-## 22. Roadmap e milestones
+## 24. Roadmap e milestones
 
 **Finalidade:** apresentar estado atual, sequência da V1, gates de encerramento e dependências sem duplicar o Roadmap canônico.
 
-## 23. Backlog arquitetural
+## 25. Backlog arquitetural
 
 **Finalidade:** explicar APs ativas, dependências, critérios de revisão e por que backlog arquitetural não é lista de tarefas.
 
-## 24. Glossário
+## 26. Glossário
 
 **Finalidade:** oferecer definições oficiais e referências para termos arquiteturais, indicando quando uma definição ainda é experimental.
 
-**Termos iniciais:** Knowledge, Knowledge Object, Capability, Strategy, Skill, Agent, Workflow, Policy, Runtime, Adapter, Orchestrator, Compiler, Graph, Project Memory, AP, ADR, milestone, ADF, ACP, AIP e IHP.
+**Termos iniciais:** Knowledge, Knowledge Object, Capability, Strategy, Skill, Architecture Interview, Agent, Workflow, Policy, RFC, Runtime, Adapter, Orchestrator, Cognitive Pipeline, Compiler, Graph, Project Memory, AP, ADR, milestone, ADF, ACP, AIP e IHP.
 
-## 25. Lacunas e decisões abertas
+## 27. Lacunas e decisões abertas
 
 **Finalidade:** tornar explícitas ambiguidades, hipóteses, propostas e informações ainda ausentes.
 
-## 26. Próximos passos
+## 28. Próximos passos
 
 **Finalidade:** orientar a próxima contribuição sem confundir recomendação com autoridade para executar.
 
-## 27. Referências canônicas
+## 29. Referências canônicas
 
 **Finalidade:** indexar manifestos, governança, princípios, protocolos, diretivas, ADRs, APs, roadmap, milestones e artefatos implementados utilizados na redação.

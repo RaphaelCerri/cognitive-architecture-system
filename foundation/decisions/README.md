@@ -25,3 +25,4 @@ Na V1, cada ADR é um objeto de `Knowledge` especializado por `knowledge_type: a
 - [ADR-0010 — Adopt the Architectural Decision Filter](ADR-0010-adopt-architectural-decision-filter.md)
 - [ADR-0011 — Adopt the Implementation Handoff Protocol](ADR-0011-adopt-implementation-handoff-protocol.md)
 - [ADR-0012 — Prioritize System Overview in V1-M02](ADR-0012-prioritize-system-overview.md)
+- [ADR-0013 — Model RFC as Specialized Knowledge](ADR-0013-rfc-as-specialized-knowledge.md)
