@@ -61,7 +61,7 @@ out_of_scope:
   - Pages, components, design systems or schemas
   - Framework or library selection
   - Repository downloads or design-tool integrations
-  - Benchmarks
+  - Executable benchmarks except Council-authorized documentary benchmark definition
   - Core Type, Ontology, ARCH-001, PRD or Roadmap V1 changes
 evidence_method:
   - Primary normative and official source comparison
@@ -83,7 +83,9 @@ evidence_method:
   - Framework-neutral architecture option, adaptation, risk and evaluation comparison
   - Integrated requirement-to-evidence, method-portfolio and complete-task evaluation analysis
   - Proportional assurance, release evidence, production feedback and freshness comparison
-budget_or_timebox: Integrated Experience Evaluation, Quality Assurance and Production Evidence slice; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Internal benchmark construct, vertical-scope, journey and representativeness analysis
+  - Benchmark repeatability, staged-readiness, governance and evidence-plan comparison
+budget_or_timebox: Cognitive Architecture Frontend Internal Benchmark Definition slice; max 6 iterations, 45 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -138,6 +140,10 @@ expected_outputs:
   - Requirement, evaluation and evidence traceability framework
   - Evaluation methods and proportional assurance profiles
   - Quality gates, release evidence and production feedback framework
+  - Cognitive Architecture frontend benchmark definition
+  - Benchmark experience and flow specification
+  - Benchmark quality scenarios and evidence plan
+  - Benchmark stages, governance and execution readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -171,6 +177,10 @@ evidence:
   - knowledge/research/evidence/requirement-evaluation-evidence-traceability-framework.md
   - knowledge/research/evidence/evaluation-methods-assurance-profiles.md
   - knowledge/research/evidence/quality-gates-release-production-feedback-framework.md
+  - knowledge/research/evidence/cognitive-architecture-frontend-benchmark-definition.md
+  - knowledge/research/evidence/benchmark-experience-flow-specification.md
+  - knowledge/research/evidence/benchmark-quality-scenarios-evidence-plan.md
+  - knowledge/research/evidence/benchmark-stages-governance-execution-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -194,6 +204,9 @@ risks:
   - Aggregate scores, passing automation or stakeholder approval may conceal critical task, accessibility, security or recovery failures.
   - Evidence may be reused beyond its version, environment, population, method or validity conditions.
   - Production monitoring, user participation and AI evaluation may create privacy, representation, ethics or causal-inference errors.
+  - A self-referential benchmark may reward repository familiarity, preferred terminology, a stack or artifacts designed for the case.
+  - A benchmark may be too shallow to exercise authority, evidence and recovery or too broad to diagnose failure proportionally.
+  - Synthetic inputs, AI nondeterminism, scope drift and non-equivalent versions may make comparisons invalid or gameable.
 relations:
   - type: established_by
     target: AD-004
@@ -213,7 +226,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Integrated Experience Evaluation, Quality Assurance and Production Evidence
+## Slice ativa — Cognitive Architecture Frontend Internal Benchmark Definition
+
+**[Decisão]** Em 2026-07-22, após o checkpoint a98a30803a372dc3aab03940cd0e3f9c1715d1d8, o Conselho autorizou exclusivamente a definição documental do benchmark interno do futuro frontend cognitivo. Foram analisados thesis/construct, options A/B/C, actors/users/jobs/objects, IA/navigation, five journeys, task flows/states, long-running work/approvals, Agents/Skills, Project Memory/graph/search, onboarding/“Tenho uma ideia”/references, accessibility/security/privacy/AI-native requirements, visual/language/technology/architecture inputs, scenarios/success/evidence, stages/boundaries/dataset/repeatability/governance/stopping/readiness. Nenhum PRD, dataset, wireframe, prototype, UI, benchmark, test, code, framework, component, token, schema ou implementation foi criado/executado.
+
+Pergunta principal: qual é o menor benchmark interno suficientemente representativo para provar que o sistema consegue arquitetar uma experiência complexa, governada e AI-native antes de autorizar sua implementação?
+
+Entregáveis:
+
+- Cognitive Architecture Frontend Benchmark Definition;
+- Benchmark Experience and Flow Specification;
+- Benchmark Quality Scenarios and Evidence Plan;
+- Benchmark Stages, Governance and Execution Readiness.
+
+**[Fato normativo]** ISO/IEC 25040:2024 fornece framework para quality evaluation em seu scope sem definir métodos locais. **[Regra contextual]** SPEC CPU 2026 trata result como observation sob conditions/versioned rules em seu domínio. **[Orientação institucional]** W3C WCAG-EM 2.0 draft enfatiza scope, samples e complete processes; NIST TEVV/AI 800-2 IPD/AI 800-3 enfatizam construct, context, transparency, reproducibility, assumptions e uncertainty; GOV.UK orienta tasks believable/stable e repeated comparison. Nenhuma fonte aprova o benchmark local.
+
+**[Recomendação, confiança moderada]** Uma variante C-lite — “Tenho uma ideia” até uma única pesquisa governada, um deliverable/evidence review, failure/recovery e Project Memory/return — equilibra profundidade e limite melhor que A, B ou C integral. Recommendation não autoriza Stage 1. Benchmark Definition, Execution, Prototype, Implementation e Production Frontend permanecem distintos.
+
+O programa permanece active e evidence_gathering. C-lite, actors, objects, IA, states, scenarios, criteria, evidence plan, stages e governance são candidates. Stage 1 ainda depende de Council decisions sobre construct/scope owner, primary actor, representative research task, authoritative requirements, artifact set, authority/ontology review, budget e acceptance; nenhum estágio começa automaticamente.
+
+## Slice concluída — Integrated Experience Evaluation, Quality Assurance and Production Evidence
 
 **[Decisão]** Em 2026-07-22, após o checkpoint c4eba5c64afc9116e1bed145436fc076eff052f0, o Conselho autorizou exclusivamente esta slice documental. Foram investigados concepts, inputs/readiness, requirement-to-evidence traceability, quality scenarios, complete tasks/flows/states, usability/user participation, visual/Design QA/reference/content, accessibility/security/privacy/performance, responsive/i18n/components/patterns/Design System/frontend architecture, AI-generated/AI-native evaluation, automation/visual regression/expert review, evidence/freshness/findings/remediation/exceptions, proportional profiles, gates/release/production/feedback/regressions/governance/metrics e benchmark preparation. Nenhum test, audit, scan, screenshot, baseline, user study, benchmark, analytics/monitoring implementation, frontend, schema, scorecard, conformance report ou certification foi executado/criado.
 
@@ -605,4 +637,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice não executa test, browser automation, audit, security/performance scan, screenshot, visual baseline, user study, analytics/monitoring, benchmark ou prototype; não cria schema, scorecard, conformance report, certification, frontend, CI, code ou implementation; e não aprova gate, profile, metric, method, release ou benchmark. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Benchmarks interno/externo e qualquer implementation exigem autorização explícita e nenhuma ação começa automaticamente.
+Esta slice define apenas um benchmark interno documental. Não cria PRD, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, framework, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não executa benchmark ou user study; e não aprova C-lite, Stage 1, actor, object/state model, IA, authority, artifact, requirement baseline ou success criterion. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 1, prototype, executable vertical slice, benchmark e implementation exigem autorizações separadas e nada começa automaticamente.
