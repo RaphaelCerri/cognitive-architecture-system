@@ -75,7 +75,7 @@ areas:
       canonicality: canonical
     evidence:
       path: knowledge/research/evidence/
-      purpose: evidence artifacts (ARP-xxxx-Eyy)
+      purpose: evidence artifacts — nomes de arquivo descritivos em kebab-case; o ID autoritativo (ARP-xxxx-Eyy) vive no frontmatter de cada arquivo
       authority: produzidos por slices autorizadas; aceitos via review
       mutability: append_only (nova versão, nunca reescrita silenciosa)
       canonicality: canonical_evidence
@@ -121,7 +121,11 @@ areas:
       canonicality: canonical
     experiments:
       path: experiments/
-      purpose: código executável experimental e descartável (ex. clite-stage3-vertical-slice)
+      purpose: código executável experimental e descartável; matriz derivada de papéis em experiments/EXPERIMENTS.md
+      current_experiments:   # atualizado pela auditoria macro (Tier A, 2026-07-23)
+        - clite-stage3-vertical-slice (estímulo oficial do estudo mínimo — IHR-0032)
+        - clite-domain-extraction-feasibility (domínio extraído — IHR-0029)
+        - clite-memory-adapter-feasibility (adapter de Project Memory — IHR-0031)
       authority: diretivas específicas; contratos internos NÃO são canônicos
       mutability: per_authorized_slice
       canonicality: disposable_experimental

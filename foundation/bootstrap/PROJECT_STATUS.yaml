@@ -15,59 +15,58 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: ebc2d6b375cb70c787cb4c57c90c760d211efdea   # último checkpoint ACEITO (IHR-0032); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0032 + Council approval of executable stimulus, Option D and limited G-15 waiver + authorization of operational gate closure
+  observed_head: 2b89c8332da42475ff0a04377a01146300994c57   # último checkpoint ACEITO (IHR-0033); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0033 + Council Decision authorizing System-Wide Architecture Gap Audit and Selective Hardening
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: product-experience-validation-minimal-study-readiness
+  id: minimal-study-operational-gate-closure
   state: accepted
-  handoff: milestones/V1-M02-product-experience-study-readiness-handoff.md
-  notes:
-    - executable_vertical_slice_approved_as_official_study_stimulus
-    - option_d_study_design_approved
-    - g15_waiver_approved_minimal_first_study_only_not_reusable
-    - process_observation_csa_obs_boot_05_session_reuse_not_counted
+  handoff: milestones/V1-M02-minimal-study-gate-closure-handoff.md
 
 accepted_checkpoints_this_round:
-  - product-experience-validation-minimal-study-readiness (IHR-0032)
+  - minimal-study-operational-gate-closure (IHR-0033)
 
 pending_review_checkpoints:
-  - id: minimal-study-operational-gate-closure
+  - id: system-wide-architecture-gap-audit
     state: pending_review
-    handoff: milestones/V1-M02-minimal-study-gate-closure-handoff.md
+    handoff: milestones/V1-M02-system-audit-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: Minimal Product Experience Study — Operational Gate Closure and G-17 Authorization Readiness
-  directive_reference: Council Decision "Minimal Product Experience Study Operational Closure" fornecida via CSA em 2026-07-23; evidências ARP-0009-E65..E69
+  title: System-Wide Cognitive Architecture Gap Audit and Selective Tier-A Hardening
+  directive_reference: Council Decision "System-Wide Cognitive Architecture Gap Audit and Selective Hardening" fornecida via CSA em 2026-07-23; evidências ARP-0009-E70..E74
 
-human_decisions_outstanding:   # DH — nenhuma presumida; ver ARP-0009-E69 §3
+human_decisions_outstanding:   # DH do estudo mínimo — inalteradas; ver ARP-0009-E69 §3
   - DH-1 compensacao_valor_metodo_teto (candidato R$120 fixo PIX)
   - DH-2 local_de_armazenamento (candidato volume cifrado local)
   - DH-3 confirmacao_raphael_papeis_candidatos
-  - DH-4 note_taker_nomeacao (BLOCKING_UNASSIGNED — única lacuna de pessoas)
+  - DH-4 note_taker_nomeacao (BLOCKING_UNASSIGNED)
   - DH-5 aceite_final_consentimento_acessivel
   - DH-6 canal_recrutamento_e_janela_de_datas
-  - DH-7 g17_autorizacao_do_estudo (Council; recomendação authorize_with_conditions)
+  - DH-7 g17_autorizacao_do_estudo (Council)
+  - NOVA (auditoria) backup_do_repositorio_definir_copia_externa (G-A07 — candidato a maior risco operacional)
+
+audit_headline:   # síntese de E74 (derivada, não autoritativa)
+  macro_verdict: strong_foundation_conceptual_and_domain / insufficient_execution_and_observability / early_personal_mode
+  largest_existential_risk: sistema nunca virar ferramenta de uso real (G-A03 intake + G-A15 dogfooding)
+  highest_leverage_improvement: Real Project Intake (ideia real → Memory válida sem editar YAML)
+  tier_a_applied: 5 correções de índice/normativo + EXPERIMENTS.md + reader size guard (164 testes verdes)
+  tier_b_proposals_pending_council: ver ARP-0009-E74 §2 (portfolio Now/Next/Later)
 
 decided_slice_sequence:
-  - 1. Domain Extraction Feasibility (aceita — IHR-0029)
-  - 2. Identity and Authority Model (aceita — IHR-0030)
-  - 3. Canonical Project Memory Adapter (aceita — IHR-0031)
-  - 4. Product Experience Validation (readiness aceita — IHR-0032; gate closure pending_review; G-17 aberto)
-  - 5. Real Execution Boundary (aguardando)
-  - 6. Production Architecture Proposal (bloqueada)
+  - 1..4 concluídas/aceitas (IHR-0029..0032); gate closure aceita (IHR-0033)
+  - Estudo mínimo: aguardando DH-1..6 + G-17 (Council)
+  - 5. Real Execution Boundary (aguardando; reforçada pela auditoria como Next)
+  - 6. Production Architecture Proposal (bloqueada; decidirá referência entre experimentos)
 
 blocked_work:
-  - Recrutamento, divulgação de screener, contato, agendamento, consentimento, pagamento, sessões, coleta (G-17 aberto — decisão absoluta do Council)
-  - Real Execution Boundary e Production Architecture Proposal
-  - Avaliação externa COMPLETA (E40 segue governando; waiver G-15 não reutilizável)
-  - HV-01–07 / sessão dirigida de acessibilidade (CM-0001 registra sem autorizar)
-  - Promoção de formato de Memory, adapter, domínio extraído ou ScenarioFixture a canon
-  - Autenticação real, enforcement, credenciais (ARP-0007 permanece scoped)
-  - Production frontend, deploy, integrações reais, persistência real, motor de execução real
-  - Bootstrap automation / context compiler / integração LLM
+  - Recrutamento/sessões do estudo (G-17 aberto)
+  - Real Execution Engine (spec primeiro — slice 5); autenticação; enforcement; credenciais
+  - Team Mode e Product Mode (intentionally_deferred — E70/E74)
+  - Promoção de contratos experimentais a canon
+  - Redação de ARCH-001, Mode Boundary doc, processo de aceite de update proposal, audit artifact, perfil personal-low-risk de governança, Real Project Intake (propostas Tier B — exigem decisão do Council)
+  - Production frontend, deploy, integrações, CI/observabilidade (Tier C — não construir ainda)
 
 active_programs:
   - ARP-0008
@@ -78,7 +77,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_ihr_0033_then_human_decisions_dh1_dh6_then_g17
+  type: csa_council_review_of_system_audit_ihr_0034_then_tier_b_portfolio_prioritization
   automatic_continuation: false
 
 authority_notice:

@@ -304,7 +304,47 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Minimal Study Operational Gate Closure and G-17 Readiness
+## Slice ativa — System-Wide Architecture Gap Audit and Selective Hardening
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0033 (checkpoint
+`2b89c8332da42475ff0a04377a01146300994c57`), o Council autorizou uma auditoria
+macro adversarial e interdisciplinar do sistema completo + hardening seletivo
+Tier A (baixo risco, reversível, sem mudança de arquitetura/autoridade/
+Ontologia). Registrada neste ARP por continuidade do milestone V1-M02.
+
+**[Entregáveis]** Cinco evidence artifacts: `ARP-0009-E70` (Capability and
+Maturity Map — ~60 capacidades classificadas em 12 estados; fronteiras
+Personal/Team/Product), `E71` (Architecture Coherence — ARCH-001 não
+representa o sistema; fluxo canônico com 3 transições inexistentes;
+divergência gerenciada dos experimentos), `E72` (Threat Model — 8 perfis de
+implantação; ~19 ameaças aplicáveis com controle/evidência/risco residual;
+achado central: o risco real hoje está no processo de desenvolvimento por
+executores, coberto por controles processuais), `E73` (UX/Acessibilidade/
+Confiabilidade/Dados/Testes/Governança — gap dominante de experiência é a
+inexistência de criação de projeto real; governança protege mas é
+desproporcional para uso pessoal diário) e `E74` (Gap Register com 22 gaps —
+1 blocker-para-próxima-fase, 10 materiais, 1 false_positive; Improvement
+Portfolio Now/Next/Later/DoNotBuild; relatório Tier A; veredito macro;
+segunda leitura adversarial). **Tier A aplicado:** 5 correções documentais
+comprovadas (índice de milestones 2→34 IHRs; portfólio de research +ARP-0008/
+0009; foundation README +bootstrap; REPOSITORY_MAP com os 3 experimentos e
+convenção de evidência corrigida; roadmap V1-M06 sem nome de fornecedor),
+matriz derivada `experiments/EXPERIMENTS.md`, e guard de tamanho (1 MiB) no
+reader do memory-adapter + teste (47/47; 164 testes totais verdes).
+
+**[Veredito macro — síntese]** conceptual_architecture/domain/testing/
+security_design: strong_foundation · canonical_memory:
+ready_for_next_boundary · execution/observability: insufficient ·
+personal_mode/ux/security_enforcement/operations: early · Team/Product/
+production: intentionally_deferred. Maior risco existencial: o sistema nunca
+virar ferramenta de uso real (G-A03/G-A15); maior alavancagem: **Real Project
+Intake**; segunda urgência operacional: backup do repositório (G-A07).
+
+**[Readiness]** Pronta para revisão do CSA/Council (IHR-0034). Propostas
+Tier B ao Council em E74 §2; nada além de Tier A foi implementado. Nada
+começa automaticamente.
+
+## Slice concluída — Minimal Study Operational Gate Closure and G-17 Readiness
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0032 (checkpoint
 `ebc2d6b375cb70c787cb4c57c90c760d211efdea`) e o Council aprovar E61–E64, o
@@ -339,6 +379,13 @@ decisões humanas (DH-1..7: compensação, armazenamento, confirmação de papé
 **note taker**, consentimento final, canal/datas, e a própria G-17). Pronta
 para revisão do CSA/Council (IHR-0033). Recrutamento e sessões seguem **não
 autorizados**. Nada começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0033
+(`proceed`, 0 blockers): a redução de 11 gates críticos para 6 pendências
+operacionais + G-17 foi reconhecida sem fingir estudo autorizado. As DH-1..7
+permanecem abertas com o Chief/Council. O Council autorizou em seguida a
+auditoria macro System-Wide Gap Audit (ativa acima); recrutamento e sessões
+seguem não autorizados até G-17.
 
 ## Slice concluída — Product Experience Validation Minimal Study Readiness (Stage 4, quarta candidate slice)
 

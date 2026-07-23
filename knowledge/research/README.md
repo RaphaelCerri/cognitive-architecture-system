@@ -90,7 +90,7 @@ O inventário inclui Graphify, GraphRAG, knowledge graphs, deterministic graph c
 
 Nenhum claim será registrado sem evidência primária. Avaliações futuras poderão recomendar `Adopt`, `Adapt`, `Absorb`, `Integrate`, `Reject` ou `Defer`, considerando problema, aderência, qualidade, custo, tokens, segurança, determinismo, auditabilidade, interoperabilidade, manutenção, maturidade, licença, lock-in, TypeScript e risco de Source of Truth paralela.
 
-## Portfólio inicial
+## Portfólio
 
 - `ARP-0001`: Context, Retrieval and Compression.
 - `ARP-0002`: Compilation, Planning and Cognitive Systems.
@@ -99,5 +99,14 @@ Nenhum claim será registrado sem evidência primária. Avaliações futuras pod
 - `ARP-0005`: Graphify Research Case.
 - `ARP-0006`: Context Retrieval Engine Hypothesis.
 - `ARP-0007`: Security Architecture, Guardrails and Assurance.
+- `ARP-0008`: Cognitive Artifact Engineering.
+- `ARP-0009`: Experience Engineering and Interface Architecture.
+
+Os evidence artifacts vivem em [`evidence/`](evidence/) com IDs lógicos
+`ARP-xxxx-Eyy` declarados no frontmatter (os nomes de arquivo são descritivos
+em kebab-case; o ID autoritativo é o do frontmatter). Não há índice manual de
+evidências — a listagem é derivável do frontmatter e um índice compilado é
+trabalho futuro do Compiler. (Portfólio atualizado pela auditoria macro,
+Tier A, 2026-07-23.)
 
 Use o [template de pesquisa arquitetural](_templates/architectural-research-program.md) para novos programas.
