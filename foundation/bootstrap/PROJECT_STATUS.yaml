@@ -15,48 +15,49 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: e28f9afd395cc0248d33319b464dc4f9c5a1550e   # último checkpoint ACEITO (IHR-0029); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0029 (Domain Extraction Feasibility, outcome Feasible) + Council Decision authorizing Identity and Authority Model
+  observed_head: 1cbf07da5696f17e8a2c1e96d4700e2d06c6d9cf   # último checkpoint ACEITO (IHR-0030); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0030 (identity/authority vocabulary accepted) + Council Decision authorizing Canonical Project Memory Adapter Feasibility
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: clite-domain-extraction-feasibility
+  id: identity-and-authority-model
   state: accepted
-  handoff: milestones/V1-M02-clite-domain-extraction-feasibility-handoff.md
+  handoff: milestones/V1-M02-identity-and-authority-model-handoff.md
   notes:
-    - interface_state_split_approved_as_experimental_boundary
-    - second_valid_live_bootstrap_test_confirmed
-    - obs_1_2_3_accepted_no_immediate_correction
+    - eleven_candidate_contracts_accepted_as_experimental_working_vocabulary
+    - proportional_solo_operator_sod_policy_adopted_as_research_boundary
+    - process_observation_csa_obs_boot_03_session_reuse_not_counted_as_portability_test
 
 accepted_checkpoints_this_round:
-  - clite-domain-extraction-feasibility (IHR-0029)
+  - identity-and-authority-model (IHR-0030)
 
 pending_review_checkpoints:
-  - id: identity-and-authority-model
+  - id: canonical-project-memory-adapter-feasibility
     state: pending_review
-    handoff: milestones/V1-M02-identity-and-authority-model-handoff.md
+    handoff: milestones/V1-M02-project-memory-adapter-feasibility-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: Stage 4 — Identity and Authority Model (segunda candidate slice; documental, sem código)
-  directive_reference: Council Decision "Identity and Authority Model" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidências ARP-0009-E56..E59
+  title: Stage 4 — Canonical Project Memory Adapter Feasibility (terceira candidate slice)
+  directive_reference: Council Decision "Canonical Project Memory Adapter Feasibility" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidência ARP-0009-E60
 
-decided_slice_sequence:   # ordem definida pelo Council em 2026-07-23; sem paralelismo entre 1 e 2
+decided_slice_sequence:
   - 1. Domain Extraction Feasibility (aceita — IHR-0029, Feasible)
-  - 2. Identity and Authority Model (esta slice — pending_review)
-  - 3. Canonical Project Memory Adapter (aguardando)
+  - 2. Identity and Authority Model (aceita — IHR-0030, vocabulário experimental)
+  - 3. Canonical Project Memory Adapter (esta slice — pending_review, Feasible)
   - 4. Product Experience Validation (necessária posteriormente)
   - 5. Real Execution Boundary (aguardando)
   - 6. Production Architecture Proposal (bloqueada)
 
 blocked_work:
-  - Canonical Project Memory Adapter (próxima da sequência; NÃO autorizada)
-  - Real Execution Boundary, Product Experience Validation, Production Architecture Proposal
-  - Identity Representation Feasibility e demais slices candidatas de E59 (nenhuma autorizada)
+  - Product Experience Validation e Real Execution Boundary (próximas da sequência; NÃO autorizadas)
+  - Production Architecture Proposal
+  - Slices candidatas de E59 (Identity Representation Feasibility etc.; nenhuma autorizada)
+  - Promoção do adapter de Memory ou do formato memory-format-0.1-experimental a canon
   - Stage 4 implementation / promoção do domínio extraído a pacote canônico
-  - Autenticação real, enforcement de autorização, credenciais, identidade criptográfica (ARP-0007 permanece scoped)
+  - Autenticação real, enforcement, credenciais (ARP-0007 permanece scoped)
   - External user evaluation (adiada; gates E40 abertos, 11 críticos)
-  - C-lite directed empirical accessibility session (pendência nomeada; manifest CM-0001 registra sem autorizar)
+  - C-lite directed empirical accessibility session (manifest CM-0001 registra sem autorizar)
   - Production frontend, deploy, integrações reais, persistência real, motor de execução real
   - Bootstrap automation / context compiler / integração LLM
 
@@ -69,7 +70,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_identity_authority_model_ihr_0030
+  type: csa_council_review_of_memory_adapter_feasibility_ihr_0031
   automatic_continuation: false
 
 authority_notice:

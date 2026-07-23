@@ -304,7 +304,50 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Identity and Authority Model (Stage 4, segunda candidate slice)
+## Slice ativa — Canonical Project Memory Adapter Feasibility (Stage 4, terceira candidate slice)
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0030 (checkpoint
+`1cbf07da5696f17e8a2c1e96d4700e2d06c6d9cf`; 11 contratos aceitos como
+vocabulário de trabalho experimental; política proporcional de separation of
+duties para operador único adotada como boundary de pesquisa; observação
+CSA-OBS-BOOT-03 registrada), o Council autorizou a terceira candidate slice:
+determinar empiricamente se uma Project Memory humana e versionável em
+Markdown + YAML pode alimentar e reconstruir o domínio experimental C-lite sem
+transformar runtime state, snapshot, event log ou derived view em Source of
+Truth.
+
+**[Nota de fronteira]** Sem banco/backend/API/sincronização/multiusuário;
+sem autenticação ou enforcement; sem alteração do domínio extraído, do
+vertical slice, da Ontologia, de ARCH-001 ou de ARP-0007/0008; o adapter
+nunca escreve em artifacts canônicos; máximo de uma dependência de runtime
+nova justificada.
+
+**[Execução]** O experimento vive em
+`experiments/clite-memory-adapter-feasibility/`: formato candidato
+`memory-format-0.1-experimental` (Markdown + frontmatter YAML, o padrão do
+repositório); pipeline reader → normalize → initialize com perdas declaradas;
+matriz de classificação canonical/derived/runtime/audit/fixture/reject testada
+em código; duas Memories experimentais (Oficina Horizonte em `awaiting_input`;
+Estufa Vertical em `under_review` com `solo_operator_exception` de baixo
+risco); gerador de `memory_update_proposal` (status sempre `proposed`; teste
+prova byte-igualdade do arquivo original após o ciclo completo); staleness e
+conflitos classificados (reject / require_human_decision / warn), nunca
+resolvidos silenciosamente; dependência nova única: `yaml` (justificada).
+46/46 testes novos; typecheck sem lib DOM; 117 testes existentes preservados.
+
+**[Resultado — E60]** Outcome: **Feasible**. Três pontos de retomada provados
+(pós-discovery, awaiting_input, under_review), com continuação até acceptance
+e guards (stale context, self-review) sobrevivendo à restauração. Event
+history: recomendação Opção D (marcadores aceitos + provenance na Memory;
+audit/event log em artifact separado — não construído). Limites declarados:
+event log não reconstruível (por design), atividades de retomada e ticks
+originais não reconstruíveis, escala/merge/multiusuário não provados.
+
+**[Readiness]** Pronta para revisão do CSA/Council (IHR-0031). Product
+Experience Validation e Real Execution Boundary seguem **não autorizadas**.
+Nada começa automaticamente.
+
+## Slice concluída — Identity and Authority Model (Stage 4, segunda candidate slice)
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0029 (checkpoint
 `e28f9afd395cc0248d33319b464dc4f9c5a1550e`, outcome **Feasible**; decisão de
@@ -337,6 +380,18 @@ questões abertas, 6 slices candidatas não autorizadas).
 **[Readiness]** Pronta para revisão do CSA/Council (IHR-0030). Próxima slice
 da sequência decidida — Canonical Project Memory Adapter — segue **não
 autorizada**. Nada começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0030
+(`accept_as_experimental_working_vocabulary`): os 11 contratos candidatos
+viram vocabulário de trabalho experimental (sem alterar Ontologia, sem API
+pública, sem schema estável, sem claim de segurança); as dez distinções de
+boundary foram aprovadas; `permission asserted` confirmada como afirmação sem
+enforcement; política proporcional de SoD para operador único adotada como
+boundary de pesquisa (exceção explícita `solo_operator_exception` somente para
+baixo risco; nunca apresentada como revisão independente; sem autoaprovação em
+alto risco). Observação processual CSA-OBS-BOOT-03 (sessão reutilizada; teste
+de portabilidade não contado; sem impacto material). O Council autorizou em
+seguida a slice Canonical Project Memory Adapter Feasibility (ativa acima).
 
 ## Slice concluída — C-lite Domain Extraction Feasibility (Stage 4, primeira candidate slice)
 
