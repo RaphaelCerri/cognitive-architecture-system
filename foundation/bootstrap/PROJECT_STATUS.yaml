@@ -15,38 +15,49 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 5f2bf9ac1c96993219a9b3acb321a70a0ace0c9b   # último checkpoint ACEITO (IHR-0027); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0026 + IHR-0027 (bootstrap foundation and continuity)
+  observed_head: 375390adf8afc461fdd1133e435dd51a44eb27cc   # último checkpoint ACEITO (IHR-0028); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0028 (accepted_with_process_note, CSA-OBS-BOOT-02) + Council Decision authorizing Domain Extraction Feasibility
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: bootstrap-continuity-maintenance
-  state: accepted
-  handoff: milestones/V1-M02-bootstrap-continuity-maintenance-handoff.md
-  evidence:
-    - foundation/directives/AD-005-bootstrap-continuity-maintenance.md
+  id: clite-stage4-productization-boundary-proposal
+  state: accepted_with_process_note
+  handoff: milestones/V1-M02-clite-stage4-productization-boundary-proposal-handoff.md
+  process_observation:
+    id: CSA-OBS-BOOT-02
+    finding: executor_reused_conversation_context_instead_of_reloading_repository_bootstrap
+    impact_on_research: none_material
+    impact_on_portability_evidence: execution_not_counted
 
 accepted_checkpoints_this_round:
-  - agent-agnostic-bootstrap-foundation (IHR-0026)
-  - bootstrap-continuity-maintenance (IHR-0027)
+  - clite-stage4-productization-boundary-proposal (IHR-0028)
 
 pending_review_checkpoints:
-  - id: clite-stage4-productization-boundary-proposal
+  - id: clite-domain-extraction-feasibility
     state: pending_review
-    handoff: milestones/V1-M02-clite-stage4-productization-boundary-proposal-handoff.md
+    handoff: milestones/V1-M02-clite-domain-extraction-feasibility-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: C-lite Stage 4 Productization Boundary and Evolution Proposal — Research Micro-Slice (no implementation)
-  directive_reference: Council Decision fornecida via CSA em 2026-07-23 (registrada em IHR-0028 ao fechar); ARP-0009 slice ativa
+  title: C-lite Stage 4 — Domain Extraction Feasibility (primeira candidate slice de E54)
+  directive_reference: Council Decision "C-lite Domain Extraction Feasibility" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidência ARP-0009-E55
+
+decided_slice_sequence:   # ordem definida pelo Council em 2026-07-23; sem paralelismo entre 1 e 2
+  - 1. Domain Extraction Feasibility (esta slice)
+  - 2. Identity and Authority Model (aguardando)
+  - 3. Canonical Project Memory Adapter (aguardando)
+  - 4. Product Experience Validation (necessária posteriormente)
+  - 5. Real Execution Boundary (aguardando)
+  - 6. Production Architecture Proposal (bloqueada)
 
 blocked_work:
-  - Stage 4 implementation (research proposal em revisão; nenhuma das 6 candidate slices autorizada)
+  - Identity and Authority Model (próxima da sequência; NÃO autorizada)
+  - Canonical Project Memory Adapter, Real Execution Boundary, Product Experience Validation, Production Architecture Proposal
+  - Stage 4 implementation / promoção do domínio extraído a pacote canônico
   - External user evaluation (adiada; gates E40 abertos, 11 críticos)
   - C-lite directed empirical accessibility session (pendência nomeada; manifest CM-0001 registra sem autorizar)
-  - Production frontend, deploy, integrações reais
+  - Production frontend, deploy, integrações reais, persistência real, identidade real, motor de execução real
   - Bootstrap automation / context compiler / integração LLM
-  - Domain extraction, real persistence adapter, real identity/authorization, real execution engine (todas candidate slices não autorizadas — ver ARP-0009-E54)
 
 active_programs:
   - ARP-0008
@@ -57,7 +68,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_stage4_productization_proposal_and_candidate_slice_authorization
+  type: csa_council_review_of_domain_extraction_feasibility_ihr_0029
   automatic_continuation: false
 
 authority_notice:

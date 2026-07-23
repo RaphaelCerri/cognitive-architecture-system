@@ -304,7 +304,48 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 4 Productization Boundary and Evolution Proposal (Research)
+## Slice ativa — C-lite Domain Extraction Feasibility (Stage 4, primeira candidate slice)
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0028 (checkpoint
+`375390adf8afc461fdd1133e435dd51a44eb27cc`, `accepted_with_process_note` —
+observação CSA-OBS-BOOT-02: o executor anterior reutilizou contexto de conversa
+em vez de reler o bootstrap; sem impacto material), o Council autorizou
+exclusivamente a primeira das seis candidate slices de E54: uma extração
+técnica **limitada e reversível** para determinar se o núcleo de domínio do
+vertical slice sobrevive sem interface, DOM, navegador, `localStorage`, cenário
+único ou simulação visual. Sequência decidida pelo Council: 1) Domain
+Extraction Feasibility; 2) Identity and Authority Model; 3) Canonical Project
+Memory Adapter; 4) Product Experience Validation; 5) Real Execution Boundary;
+6) Production Architecture Proposal — **sem paralelismo** entre 1 e 2.
+
+**[Nota de fronteira]** Não altera o vertical slice existente, ARCH-001, a
+Ontologia, o Compiler ou outros ARPs. Não promove nada a `packages/` ou domínio
+canônico. Não autoriza Identity/Authority Model, Memory Adapter, produto,
+Stage 5 ou avaliação externa.
+
+**[Execução]** O domínio extraído vive em
+`experiments/clite-domain-extraction-feasibility/`: contrato experimental
+`ScenarioFixture` invertendo a dependência de fixture; TypeScript strict
+compilando **sem a lib DOM**; boundary de persistência com adapter in-memory;
+dois fixtures (Oficina Horizonte portado + Estufa Vertical mínimo); 74/74
+testes com `node --test`. Decisão de Interface State: dividida — stale context
+(`context.stale` + guard) é domínio; navegação de views é apresentação e ficou
+fora. Os 43 testes do Stage 3 permanecem verdes e o slice original permanece
+intacto.
+
+**[Resultado — E55]** Outcome: **Feasible**. Behavior parity preservada;
+acoplamentos removidos registrados; contratos classificados
+(reusable_as_is / reusable_with_adapter / experimental_only / scenario_bound /
+ui_bound); limitações declaradas (não prova concorrência, escala, Memory
+canônica, identidade nem produto). Recomendação de pesquisa: usar a extração
+como referência para a trilha Option C; resolver a duplicação Stage 3 ×
+extração na futura decisão de arquitetura (slice 6).
+
+**[Readiness]** Pronta para revisão do CSA/Council (IHR-0029). Próxima slice da
+sequência (Identity and Authority Model) segue **não autorizada**. Nada começa
+automaticamente.
+
+## Slice concluída — C-lite Stage 4 Productization Boundary and Evolution Proposal (Research)
 
 **[Decisão]** Em 2026-07-23, após o Council aceitar os dois checkpoints da linha
 de bootstrap (IHR-0026 fundação; IHR-0027 continuidade — GOV-001 agnóstico,
@@ -335,6 +376,13 @@ candidate slices (Domain Extraction Feasibility; Identity and Authority Model;
 Canonical Project Memory Adapter; Real Execution Simulation Boundary; Product
 Experience Validation; Production Architecture Proposal) está autorizada. Nada
 começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0028 com uma ressalva processual
+(CSA-OBS-BOOT-02: a execução não contou como segundo teste vivo de bootstrap,
+pois o executor reutilizou contexto de conversa; conteúdo da pesquisa válido).
+O Council então autorizou a primeira candidate slice — Domain Extraction
+Feasibility — como slice ativa (acima), definindo a sequência 1–6 sem
+paralelismo entre as duas primeiras.
 
 ## Slice concluída — Agent-Agnostic Project Bootstrap and Context Portability (Foundation)
 
