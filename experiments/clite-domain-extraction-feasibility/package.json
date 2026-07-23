@@ -1,0 +1,15 @@
+{
+  "name": "clite-domain-extraction-feasibility",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "description": "C-lite domain extraction feasibility experiment — extracted state machine, commands, events, guards and Memory derivation running with no browser, no DOM, no localStorage and no single scenario. Experimental only; NOT a canonical domain package, NOT production-ready.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.6.0"
+  }
+}
