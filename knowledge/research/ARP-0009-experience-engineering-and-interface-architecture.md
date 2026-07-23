@@ -87,7 +87,9 @@ evidence_method:
   - Benchmark repeatability, staged-readiness, governance and evidence-plan comparison
   - C-lite product, requirement, authority, journey, flow and state baseline derivation
   - Content, ontology-leakage, accessibility, security, AI-native and prototype-readiness review
-budget_or_timebox: Cognitive Frontend Benchmark Stage 1 Documentary Baseline; max 8 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Prototype-question, hypothesis, scenario, fidelity, surface and interaction-scope analysis
+  - Participant, specialist, ethics, evaluation, budget, governance and authorization-readiness closure
+budget_or_timebox: C-lite Stage 2 Non-functional Prototype Proposal and Readiness Closure; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -150,6 +152,10 @@ expected_outputs:
   - C-lite journeys, flows, states and authority specification
   - C-lite content, accessibility, security and AI-native requirements
   - C-lite evaluation, evidence and prototype readiness
+  - C-lite non-functional prototype proposal
+  - C-lite prototype content, state and interaction plan
+  - C-lite prototype evaluation, participants and ethics plan
+  - C-lite Stage 2 governance, budget and authorization readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -191,6 +197,10 @@ evidence:
   - knowledge/research/evidence/clite-journeys-flows-states-authority-specification.md
   - knowledge/research/evidence/clite-content-accessibility-security-ai-native-requirements.md
   - knowledge/research/evidence/clite-evaluation-evidence-prototype-readiness.md
+  - knowledge/research/evidence/clite-non-functional-prototype-proposal.md
+  - knowledge/research/evidence/clite-prototype-content-state-interaction-plan.md
+  - knowledge/research/evidence/clite-prototype-evaluation-participants-ethics-plan.md
+  - knowledge/research/evidence/clite-stage2-governance-budget-authorization-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -220,6 +230,9 @@ risks:
   - A technical-founder baseline may be universalized before user, access-needs, organizational or domain evidence exists.
   - Ontology, repository layout, governance jargon or documentary states may leak into navigation, content or runtime concepts.
   - Prototype pressure may silently stabilize candidate terminology, authority, state transitions, architecture or visual preferences.
+  - A simulated prototype may be mistaken for real AI behavior, security enforcement, accessibility, data integrity or implementation readiness.
+  - Scenario, fidelity, participant selection, staged tasks or tool limitations may bias evidence and hide access or authority failures.
+  - Visual plausibility and qualitative observations may be overgeneralized into product, architecture or Stage 3 approval.
 relations:
   - type: established_by
     target: AD-004
@@ -239,7 +252,26 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Cognitive Frontend Benchmark Stage 1 Documentary Baseline
+## Slice ativa — C-lite Stage 2 Non-functional Prototype Proposal and Readiness Closure
+
+**[Decisão]** Em 2026-07-23, após o checkpoint 420aec0034ebaeacc4af2ae00998b169a593c9d4, o Conselho aceitou Stage 1 e autorizou exclusivamente a proposta governada de Stage 2. Foram definidos PQ-01–20, HP-01–09, fidelity options, scenario comparison, eight surface families, six-journey/eighteen-flow/state coverage, content and simulation boundaries, authority/long-running/failure/Memory, search/graph decisions, accessibility/security/privacy representation, participant/specialist/ethics/method/evidence plans, four future artifacts, tool capabilities, budget caps, entry/exit/invalidation/stopping/governance and readiness. Nenhum wireframe, prototype, image, UI, tool selection, participant contact, dataset, code, test, benchmark ou implementation foi criado/executado.
+
+Pergunta principal: qual é o menor protótipo não funcional capaz de validar as maiores incertezas de experiência do C-lite sem simular arquitetura, comportamento ou autoridade que ainda não existem?
+
+Entregáveis:
+
+- C-lite Non-functional Prototype Proposal;
+- C-lite Prototype Content, State and Interaction Plan;
+- C-lite Prototype Evaluation, Participants and Ethics Plan;
+- C-lite Stage 2 Governance, Budget and Authorization Readiness.
+
+**[Recomendação]** Option B — structured interactive prototype with neutral structural treatment, eight surface families, two-cycle ceiling and a fictitious small repair-shop operations scenario. Seventeen flows would be interactive and one represented as a state transition; global search is excluded from interactive scope and graph deferred. These are proposal recommendations, not prototype/design/tool decisions.
+
+**[Epistemic boundary]** PQ/HP/scenario/content/counts/budget/methods are candidates; future observations will be participant/version/context scoped. Prototype representation cannot prove runtime accessibility, security enforcement, performance, data integrity, architecture, package suitability or production behavior.
+
+**[Readiness]** `Ready with conditions` for a separate Council authorization: accept scenario/fidelity/surfaces/artifacts/budget; name owners/reviewers; confirm authority/delegation; approve tool-capability, participant/privacy/compensation/storage, specialist and protocol plans. Stage 2 creation, recruitment, user study, tool selection, wireframes, frontend and implementation remain blocked.
+
+## Slice concluída — Cognitive Frontend Benchmark Stage 1 Documentary Baseline
 
 **[Decisão]** Em 2026-07-22, após o checkpoint 3c56302e7a5abf8b68ee1d39e1224355c7fac413, o Conselho aceitou C-lite como escopo de trabalho e autorizou exclusivamente Stage 1 documental. Fixou para a baseline o Individual Creator / Technical Founder, a tarefa “idea → structured project → bounded research authorization/execution → evidence-backed review” e output limitado a Project Context, plan, one research execution, one primary artifact/small evidence set, review decision e Project Memory update. Nenhum PRD, prototype, wireframe, image, UI, dataset, architecture decision, framework, component, code, test ou benchmark run foi criado.
 
@@ -669,4 +701,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente a baseline documental C-lite. Não cria/atualiza PRD, Ontology, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, architecture decision, framework, library, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não executa benchmark/user study; e não estabiliza actor beyond baseline, term, IA/menu, authority model, state enum, content, Visual Direction, Design Language ou technology. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 2 e qualquer executable work exigem autorização explícita e nada começa automaticamente.
+Esta slice cria somente a proposta documental de Stage 2. Não cria/atualiza PRD, Ontology, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, architecture decision, framework, library, tool selection, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não recruta/contata participantes nem executa evaluation/benchmark; e não estabiliza scenario, content, visual treatment, state representation, authority, method, budget ou artifact. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 2 creation e qualquer executable work exigem autorização explícita e nada começa automaticamente.
