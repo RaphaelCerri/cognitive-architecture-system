@@ -90,4 +90,15 @@ describe('reader — parse and structural validation', () => {
     const b = normalizeMemory(readMemoryFile(OFICINA_PATH));
     assert.deepEqual(a, b);
   });
+
+  it('rejects an oversized document explicitly instead of parsing it (G-A13)', () => {
+    const oversized = oficinaContent() + '\n' + 'x'.repeat(1_100_000);
+    assert.throws(
+      () => parseMemoryDocument(oversized),
+      (err: unknown) => err instanceof MemoryValidationError
+        && err.issues.some((i) => i.code === 'document_too_large'),
+    );
+    // and the real memory files remain far below the ceiling
+    assert.ok(oficinaContent().length < 100_000);
+  });
 });

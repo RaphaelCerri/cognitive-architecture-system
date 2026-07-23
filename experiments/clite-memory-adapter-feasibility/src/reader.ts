@@ -23,8 +23,21 @@ const REQUIRED_TOP_LEVEL_FIELDS = [
   'execution', 'result', 'continuity',
 ];
 
+/** Boundary guard: a Project Memory document is human-scale by design (E60
+ * content boundaries). Oversized input is rejected explicitly instead of
+ * being parsed — cheap local-DoS hardening (audit G-A13, Tier A). */
+export const MAX_MEMORY_DOCUMENT_BYTES = 1_048_576; // 1 MiB
+
 /** Split a Markdown document into YAML frontmatter and narrative body. */
 export function splitFrontmatter(content: string): { yamlText: string; body: string } {
+  if (content.length > MAX_MEMORY_DOCUMENT_BYTES) {
+    throw new MemoryValidationError('Documento de Memory excede o tamanho máximo suportado.', [
+      {
+        severity: 'reject', code: 'document_too_large',
+        message: `Documento com ${content.length} bytes excede o limite de ${MAX_MEMORY_DOCUMENT_BYTES} bytes; a Project Memory canônica é enxuta por design — conteúdo grande pertence a artifacts referenciados.`,
+      },
+    ]);
+  }
   const normalized = content.replace(/\r\n/g, '\n');
   const match = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(normalized);
   if (!match) {
