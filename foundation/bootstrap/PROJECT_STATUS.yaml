@@ -1,0 +1,56 @@
+# PROJECT_STATUS — view operacional DERIVADA e NÃO AUTORITATIVA (BOOT-003).
+# Fonte de verdade: os artifacts referenciados abaixo + o próprio Git.
+# Atualizado manualmente pelo executor a cada checkpoint aceito, como parte do
+# commit de documentação da slice (update policy: ver REPOSITORY_MAP.yaml).
+# Sem timestamps voláteis: a referência temporal é o checkpoint, não o relógio.
+
+schema_version: 0.1.0-experimental
+id: BOOT-003
+canonicality: derived_operational_snapshot
+
+project:
+  id: cognitive-architecture
+  milestone: V1-M02
+  milestone_state: in_progress
+
+repository:
+  expected_branch: main
+  observed_head: 4108d8b581bae09fc71421ba7f9958580e8412a2   # último checkpoint ACEITO; commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: IHR-0025 acceptance + Council Decision (Agent-Agnostic Bootstrap)
+  generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
+
+current_checkpoint:
+  id: clite-stage3-accessibility-verification
+  state: accepted
+  handoff: milestones/V1-M02-clite-stage3-accessibility-verification-handoff.md
+  evidence:
+    - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md
+
+authorized_work:
+  state: authorized
+  title: Agent-Agnostic Project Bootstrap and Context Portability — Foundation Slice
+  directive_reference: Council Decision fornecida via CSA em 2026-07-23 (registrada em IHR-0026 ao fechar)
+
+blocked_work:
+  - Stage 4 (sem proposta; não autorizado)
+  - External user evaluation (adiada; gates E40 abertos)
+  - C-lite directed empirical accessibility session (pendência nomeada; manifest CM-0001 registra sem autorizar)
+  - Production frontend, deploy, integrações reais
+  - Bootstrap automation / context compiler / integração LLM
+
+active_programs:
+  - ARP-0008
+  - ARP-0009
+
+preserved_local_paths:
+  - .obsidian/
+  - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
+
+next_required_decision:
+  type: csa_council_review_of_bootstrap_checkpoint
+  automatic_continuation: false
+
+authority_notice:
+  derived_view: true
+  source_of_truth: false
+  on_conflict: os artifacts canônicos e o Git prevalecem; divergência material deve ser relatada, não corrigida silenciosamente pelo executor

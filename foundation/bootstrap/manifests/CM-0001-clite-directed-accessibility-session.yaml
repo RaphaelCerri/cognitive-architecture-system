@@ -1,0 +1,91 @@
+# CONTEXT_MANIFEST piloto (BOOT-007). Registra a futura sessão dirigida de
+# acessibilidade SEM autorizá-la: authority.state = registered_not_authorized.
+# A execução exigirá uma Council/Chief Decision explícita referenciando este manifest.
+
+context_manifest:
+  version: "1.0"
+  id: CM-0001
+  task_id: CLITE-DIRECTED-A11Y-SESSION
+  title: C-lite Directed Empirical Accessibility Session
+
+  authority:
+    decision: pending — exige decisão explícita do Chief/Council antes de executar
+    state: registered_not_authorized
+
+  repository:
+    required_branch: main
+    required_head: definido na decisão que autorizar (usar o checkpoint aceito vigente)
+
+  required_reading:
+    - AGENT_START_HERE.md
+    - foundation/bootstrap/EXECUTION_CONTRACT.md
+    - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md   # E49: blocos not_executed e hipóteses HV-01..07
+    - knowledge/research/evidence/clite-stage3-architecture-limitation-report.md              # E48: criterion 10
+    - experiments/clite-stage3-vertical-slice/README.md
+
+  optional_reading:
+    - knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md        # E47: exit criteria
+    - milestones/V1-M02-clite-stage3-accessibility-verification-handoff.md                    # IHR-0025
+
+  writable_paths:
+    - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md   # nova versão OU novo evidence artifact, conforme a decisão
+    - knowledge/research/ARP-0009-experience-engineering-and-interface-architecture.md
+    - milestones/   # somente o novo IHR desta sessão
+    - experiments/clite-stage3-vertical-slice/   # somente correção de blocker observado (máx. 1 ciclo material)
+
+  prohibited_paths:
+    - foundation/**            # exceto PROJECT_STATUS.yaml no commit de docs
+    - knowledge/backlog/**
+    - architecture/**
+    - roadmap/**
+    - .obsidian/**
+
+  preserved_untracked:
+    - .obsidian/
+    - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
+
+  allowed_actions:
+    - preflight técnico (build/typecheck/testes existentes)
+    - abrir a aplicação local no navegador para o operador
+    - conduzir os 3 blocos empíricos com o operador humano: keyboard full cycle; zoom 200–400% + reflow 320px; Narrator básico
+    - registrar resultados exclusivamente a partir de declarações do operador
+    - revalidar hipóteses HV-01..07 quando observadas
+    - corrigir blocker de acessibilidade observado (máx. 1 ciclo material) e reexecutar testes/build
+
+  prohibited_actions:
+    - declarar resultado empírico sem relato do operador
+    - instalar tecnologia assistiva ou dependência nova
+    - emitir claim WCAG/conformidade/usabilidade
+    - iniciar Stage 4, avaliação externa ou qualquer slice
+    - redesign, polish, novas features ou views
+
+  budgets:
+    files: 4
+    commits: 2
+    duration_minutes: 45
+    iterations: 5
+
+  validation:
+    - starting HEAD vs decisão autorizadora
+    - testes/build/typecheck existentes após qualquer correção
+    - classificação por bloco (passed/failed/limited/not_executed) rastreada a declaração literal
+    - exit criterion 10 reavaliado (satisfied | partially_satisfied | not_satisfied)
+    - IHP 12/12; UTF-8; git diff --check; worktree final limpo
+
+  commit_contract:
+    messages:
+      - "test: close c-lite empirical accessibility session"
+      - "fix: resolve c-lite accessibility blockers"   # somente se blocker observado
+
+  return_contract:
+    schema: foundation/bootstrap/RETURN_SCHEMA.yaml
+    required_sections:
+      - resultados por bloco com declarações do operador
+      - reavaliação do exit criterion 10
+      - estado das hipóteses HV-01..07
+
+  stopping_rules:
+    - operador humano indisponível
+    - ambiente divergente do registrado em E49 sem re-registro
+    - mais de 1 ciclo material necessário
+    - qualquer limite de budget atingido

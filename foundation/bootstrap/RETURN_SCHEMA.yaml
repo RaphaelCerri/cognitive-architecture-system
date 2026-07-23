@@ -1,0 +1,73 @@
+# RETURN_SCHEMA — contrato de retorno em duas camadas para qualquer executor (BOOT-006).
+# Estilo narrativo é livre; ESTES CAMPOS não são. Extensível por slice: uma diretiva
+# pode adicionar campos/seções, nunca remover os mínimos. Versionar via schema_version
+# por decisão do Council. Seções sem conteúdo material podem declarar "none" — não
+# obrigar texto vazio.
+
+schema_version: 1.0.0
+id: BOOT-006
+canonicality: governing_return_contract
+
+layer_1_executive_summary:
+  description: bloco YAML machine-readable no INÍCIO de todo retorno final
+  required_fields:
+    execution_summary:
+      schema_version: string            # deste schema
+      status: completed | blocked | stopped | failed
+      recommendation: accept | revise | request_evidence | reject
+      task_id: string                   # id da diretiva/manifest
+      starting_branch: string
+      starting_head: string
+      final_head: string | null
+      files_changed: integer
+      commits: integer
+      tests:
+        passed: integer
+        failed: integer
+        not_executed: integer | string  # "n/a" quando não houver suíte
+      validations:
+        passed: [string]
+        failed: [string]
+        limited: [string]
+        not_executed: [string]
+      findings:
+        blocker: integer
+        material: integer
+        minor: integer
+        observation: integer
+      scope:
+        respected: boolean
+        deviations: [string]            # desvios DECLARADOS, com referência
+      governance:
+        unauthorized_work_started: false   # true exige explicação e é finding
+        next_stage_started: false
+      next_decision: string             # a decisão que o CSA/Council precisa tomar
+
+layer_2_detailed_csa_review_package:
+  description: relatório humano após a Layer 1; profundidade proporcional ao material
+  required_sections:
+    - purpose                 # o que a slice devia produzir e por quê
+    - sources                 # artifacts/decisões usados como fonte
+    - execution_loop          # iterações/sessões e progresso de cada uma
+    - decisions_applied       # decisões do executor dentro do escopo, com rationale
+    - work_performed          # o que foi feito, rastreável a arquivos/commits
+    - validations             # executadas E não executadas, com comandos reais
+    - findings                # por severidade; vazio declarado como none
+    - limitations             # o que este trabalho NÃO prova
+    - files                   # criados/modificados, por path
+    - commits                 # hash + mensagem
+    - git_state               # branch, HEAD, worktree, untracked preservados
+    - residual_risks
+    - future_decisions        # o que fica para o Council decidir
+    - project_status_snapshot # JSON/YAML do estado, coerente com PROJECT_STATUS
+    - package_for_csa_review  # recomendação final + evidência + decisões requeridas
+  rules:
+    - nenhuma seção pode contradizer a Layer 1
+    - resultados não executados aparecem como not_executed, nunca omitidos
+    - claims empíricas citam a declaração literal do operador humano
+    - terminar declarando interrupção; nada inicia automaticamente
+
+extension_policy:
+  per_slice_additions: allowed          # ex. campos de acessibilidade, renderer, etc.
+  removals: prohibited
+  breaking_changes: exigem incremento de major version por decisão do Council

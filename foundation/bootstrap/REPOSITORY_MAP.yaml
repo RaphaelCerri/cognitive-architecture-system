@@ -1,0 +1,156 @@
+# REPOSITORY_MAP — mapa institucional de navegação para agentes e mantenedores (BOOT-004).
+# NÃO é a Ontologia do produto nem a experiência do usuário final: paths físicos
+# jamais devem vazar para a interface. Mantido manualmente; atualizar quando uma
+# área nova for criada ou uma autoridade mudar (nunca por checkpoint comum).
+
+schema_version: 0.1.0-experimental
+id: BOOT-004
+canonicality: maintained_institutional_navigation_map
+
+areas:
+  entry_points:
+    human_readme:
+      path: README.md
+      purpose: porta de entrada humana e índice "Comece aqui"
+      authority: Architecture Council
+      mutability: low
+      canonicality: advisory
+    agent_bootstrap:
+      path: AGENT_START_HERE.md
+      purpose: ponto de entrada obrigatório para executores
+      authority: Architecture Council (via bootstrap slice)
+      mutability: low
+      canonicality: advisory_entry_point
+
+  governance:
+    protocols:
+      path: foundation/protocols/
+      purpose: protocolos operacionais (ex. IHP-001 handoff)
+      authority: Council Decisions/ADRs que os instituem
+      mutability: by_council_decision
+      canonicality: canonical
+    decisions:
+      path: foundation/decisions/
+      purpose: ADRs — decisões arquiteturais aceitas
+      authority: Architecture Council
+      mutability: append_only (supersede, nunca reescrever)
+      canonicality: canonical
+    directives:
+      path: foundation/directives/
+      purpose: ADs/ACDs — diretivas e transições do Council
+      authority: Architecture Council
+      mutability: append_only
+      canonicality: canonical
+    governance_policies:
+      path: foundation/governance/
+      purpose: papéis e escalada (GOV-001)
+      authority: CVO + Council
+      mutability: by_council_decision
+      canonicality: canonical
+    principles:
+      path: foundation/principles/
+      purpose: princípios (AIP-001)
+      authority: Council
+      mutability: by_council_decision
+      canonicality: canonical
+    manifestos:
+      path: foundation/manifestos/
+      purpose: manifestos (PMM-001 — inclui a hierarquia de autoridade)
+      authority: Council
+      mutability: by_council_decision
+      canonicality: canonical
+    bootstrap:
+      path: foundation/bootstrap/
+      purpose: camada agent-agnostic (Charter, Status, Map, Contract, Return Schema, manifests/)
+      authority: Council (criada pela bootstrap slice; ver canonicality por arquivo)
+      mutability: per_artifact_update_policy
+      canonicality: mixed (ver matriz abaixo)
+
+  research:
+    programs:
+      path: knowledge/research/
+      purpose: ARPs — programas de pesquisa com estados de governança
+      authority: Council autoriza slices; executor registra
+      mutability: per_authorized_slice
+      canonicality: canonical
+    evidence:
+      path: knowledge/research/evidence/
+      purpose: evidence artifacts (ARP-xxxx-Eyy)
+      authority: produzidos por slices autorizadas; aceitos via review
+      mutability: append_only (nova versão, nunca reescrita silenciosa)
+      canonicality: canonical_evidence
+    assessments:
+      path: knowledge/assessments/
+      purpose: avaliações; contém drafts locais não rastreados a preservar
+      authority: variável por artifact
+      mutability: per_artifact
+      canonicality: mixed
+    backlog:
+      path: knowledge/backlog/
+      purpose: APs — propostas arquiteturais (ex. AP-0002 constitution layer)
+      authority: Council decide promoção
+      mutability: by_proposal_lifecycle
+      canonicality: proposals_not_decisions
+
+  architecture:
+    docs:
+      path: architecture/
+      purpose: visão de sistema (system-overview)
+      authority: CSA + Council
+      mutability: by_council_decision
+      canonicality: canonical
+    ontology:
+      path: (não existe como diretório; questões ontológicas vivem nos ARPs/ADRs)
+      purpose: registrar que Ontologia é decisão futura — nenhum executor cria tipos canônicos
+      authority: Council
+      mutability: prohibited_for_executors
+      canonicality: reserved
+
+  delivery:
+    milestones:
+      path: milestones/
+      purpose: IHRs (handoffs 12/12 via IHP-001)
+      authority: executor produz; CSA/Council aceita
+      mutability: append_only
+      canonicality: canonical_record
+    roadmap:
+      path: roadmap/
+      purpose: roadmap V1
+      authority: Council
+      mutability: by_council_decision
+      canonicality: canonical
+    experiments:
+      path: experiments/
+      purpose: código executável experimental e descartável (ex. clite-stage3-vertical-slice)
+      authority: diretivas específicas; contratos internos NÃO são canônicos
+      mutability: per_authorized_slice
+      canonicality: disposable_experimental
+      required_validation: typecheck + tests + boundary scans da própria slice
+
+  local_only:
+    obsidian:
+      path: .obsidian/
+      purpose: configuração local do editor — NUNCA versionar, NUNCA alterar
+      mutability: prohibited
+    drafts:
+      path: knowledge/assessments/DRAFT-*.md (untracked)
+      purpose: rascunhos locais — preservar fora de staging
+      mutability: prohibited_for_executors
+    derived_outputs:
+      path: experiments/*/dist/, experiments/*/node_modules/
+      purpose: artefatos de build — fora do Git via .gitignore
+      mutability: regenerable
+
+# Matriz de canonicidade da camada bootstrap
+bootstrap_canonicality:
+  AGENT_START_HERE: { class: advisory_entry_point, update: quando o fluxo de bootstrap mudar }
+  PROJECT_CHARTER: { class: stable_canonical_orientation, update: somente por decisão do Council sobre princípios/estrutura }
+  PROJECT_STATUS: { class: derived_operational_snapshot, update: pelo executor, no commit de docs de cada checkpoint aceito }
+  REPOSITORY_MAP: { class: maintained_institutional_navigation_map, update: quando áreas/autoridades mudarem }
+  EXECUTION_CONTRACT: { class: governing_execution_protocol, update: por decisão do Council; versão explícita }
+  RETURN_SCHEMA: { class: governing_return_contract, update: por decisão do Council; schema_version incrementada }
+  CONTEXT_MANIFEST: { class: per_task_execution_envelope, update: um por tarefa; imutável após emitido, salvo nova decisão }
+
+# Nenhum arquivo desta camada assume autoridade de Council Decisions, ARPs, IHRs,
+# Ontologia futura ou ARCH-001. Drift entre este mapa e o repositório real é um
+# finding a relatar, não a corrigir silenciosamente.
