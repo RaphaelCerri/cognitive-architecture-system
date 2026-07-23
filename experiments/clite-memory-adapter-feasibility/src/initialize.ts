@@ -31,7 +31,28 @@ export interface InitializationResult {
   unreconstructable: string[];
 }
 
-export function resolveFixture(record: NormalizedMemoryRecord): ScenarioFixture {
+export function resolveFixture(record: NormalizedMemoryRecord, fixtureOverride?: ScenarioFixture): ScenarioFixture {
+  // Real Project Intake (G-A03): a real project supplies its own generated
+  // fixture instead of a registry entry. Same version/id validation applies.
+  if (fixtureOverride) {
+    if (fixtureOverride.projectId !== record.scenario_id) {
+      throw new MemoryValidationError('Fixture fornecido não corresponde ao cenário da Memory.', [
+        {
+          severity: 'reject', code: 'fixture_scenario_mismatch',
+          message: `Memory referencia "${record.scenario_id}", mas o fixture fornecido é "${fixtureOverride.projectId}".`,
+        },
+      ]);
+    }
+    if (fixtureOverride.version !== record.scenario_fixture_version) {
+      throw new MemoryValidationError('Versão de fixture incompatível.', [
+        {
+          severity: 'reject', code: 'fixture_version_mismatch',
+          message: `Memory referencia fixture "${record.scenario_fixture_version}", mas o fornecido é "${fixtureOverride.version}".`,
+        },
+      ]);
+    }
+    return fixtureOverride;
+  }
   const fx = FIXTURE_REGISTRY[record.scenario_id];
   if (!fx) {
     throw new MemoryValidationError(`Cenário desconhecido: "${record.scenario_id}".`, [
@@ -49,8 +70,8 @@ export function resolveFixture(record: NormalizedMemoryRecord): ScenarioFixture 
   return fx;
 }
 
-export function initializeFromMemory(record: NormalizedMemoryRecord): InitializationResult {
-  const fx = resolveFixture(record);
+export function initializeFromMemory(record: NormalizedMemoryRecord, fixtureOverride?: ScenarioFixture): InitializationResult {
+  const fx = resolveFixture(record, fixtureOverride);
   // Conflicts are never resolved silently: a record carrying
   // require_human_decision issues refuses to initialize.
   const humanNeeded = record.issues.filter((i) => i.severity === 'require_human_decision');

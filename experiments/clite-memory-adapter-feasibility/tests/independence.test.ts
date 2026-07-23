@@ -37,11 +37,17 @@ describe('browser independence — adapter source', () => {
     }
   });
 
-  it('READ adapter: src never imports any fs write capability', () => {
-    for (const file of walk(SRC)) {
+  it('READ adapter: core src never imports any fs write capability (intake is the sole, deliberate writer)', () => {
+    // intake.ts (Real Project Intake, G-A03) writes NEW project files outside
+    // the institutional repo and refuses overwrite (tested); the canonical
+    // read pipeline (reader/normalize/initialize/proposal) stays read-only.
+    const readOnlyCore = walk(SRC).filter((f) => !f.endsWith('intake.ts'));
+    for (const file of readOnlyCore) {
       const text = readFileSync(file, 'utf-8');
       assert.doesNotMatch(text, /writeFile|appendFile|createWriteStream|\bunlink|\brmSync|\bmkdir/, `escrita de arquivo em ${file}`);
     }
+    const intake = readFileSync(walk(SRC).find((f) => f.endsWith('intake.ts'))!, 'utf-8');
+    assert.match(intake, /não sobrescrevo/, 'intake deve recusar overwrite de Memory existente');
   });
 
   it('tsconfig compiles without the DOM lib', () => {

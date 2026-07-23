@@ -3,6 +3,11 @@
 dist/
 coverage/
 
+# Real personal projects (Real Project Intake, CSA-34-3/G-A18):
+# real-project Memories contain the owner's personal content and never enter
+# the institutional repository by default.
+projects/
+
 # Dependencies
 node_modules/
 
