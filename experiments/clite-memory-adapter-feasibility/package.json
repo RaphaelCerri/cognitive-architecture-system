@@ -1,0 +1,18 @@
+{
+  "name": "clite-memory-adapter-feasibility",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "description": "Canonical Project Memory Adapter feasibility — reads a human-readable Markdown/YAML Project Memory and deterministically initializes the extracted C-lite domain, without turning runtime, snapshot or event log into Source of Truth. Experimental only; NOT production persistence.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/*.test.ts\""
+  },
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "typescript": "^5.6.0"
+  }
+}
