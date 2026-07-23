@@ -91,7 +91,8 @@ evidence_method:
   - Participant, specialist, ethics, evaluation, budget, governance and authorization-readiness closure
   - Deterministic documentary prototype creation, annotation, traceability and evaluation-readiness review
   - Evaluation claim, protocol, participant, ethics, evidence, synthesis and authorization-readiness closure
-budget_or_timebox: C-lite Stage 2 Evaluation Proposal and Protocol Closure; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Evaluation role, renderer, recruitment, consent, data-operation, incident and launch-gate closure
+budget_or_timebox: C-lite Stage 2 Evaluation Operational Readiness Closure; max 6 iterations, 50 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -166,6 +167,10 @@ expected_outputs:
   - C-lite Participants, Consent, Privacy and Accessibility Plan
   - C-lite Evidence, Findings and Synthesis Framework
   - C-lite Evaluation Governance and Authorization Readiness
+  - C-lite Evaluation Operations Plan
+  - C-lite Consent, Compensation, Privacy and Data Handling Specification
+  - C-lite Accessibility, Renderer and Specialist Readiness Plan
+  - C-lite Evaluation Launch Gates and Authorization Readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -219,6 +224,10 @@ evidence:
   - knowledge/research/evidence/clite-participants-consent-privacy-accessibility-plan.md
   - knowledge/research/evidence/clite-evidence-findings-synthesis-framework.md
   - knowledge/research/evidence/clite-evaluation-governance-authorization-readiness.md
+  - knowledge/research/evidence/clite-evaluation-operations-plan.md
+  - knowledge/research/evidence/clite-consent-compensation-privacy-data-handling-specification.md
+  - knowledge/research/evidence/clite-accessibility-renderer-specialist-readiness-plan.md
+  - knowledge/research/evidence/clite-evaluation-launch-gates-authorization-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -270,7 +279,30 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 2 Evaluation Proposal and Protocol Closure
+## Slice ativa — C-lite Stage 2 Evaluation Operational Readiness Closure
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `3e21e46c0e11eb1550236fac73c7c1fb52feba73`, o Conselho aceitou o protocolo arquiteturalmente pronto e autorizou exclusivamente fechar readiness operacional documental. Recruitment, participant contact, consent collection, payment, sessions, reviews executados, recording, storage setup/data collection, renderer installation/testing, prototype modification, Stage 3, frontend e implementation continuam bloqueados.
+
+Pergunta principal: as condições humanas, técnicas, éticas, operacionais e de governança estão suficientemente definidas para que uma futura autorização de avaliação não dependa de decisões improvisadas durante recrutamento ou sessões?
+
+Entregáveis `1.0-proposal`:
+
+- C-lite Evaluation Operations Plan;
+- C-lite Consent, Compensation, Privacy and Data Handling Specification;
+- C-lite Accessibility, Renderer and Specialist Readiness Plan;
+- C-lite Evaluation Launch Gates and Authorization Readiness.
+
+**[Operations]** Quatorze required roles, competence/independence/conflict rules, recruitment/screening/session/note/checklist/calendar models estão definidos; todos os assignments reais permanecem `unassigned`. In-person controlled-device é a delivery baseline candidata e remote controlled-device é backup condicionado.
+
+**[Renderer]** VS Code built-in Markdown Preview em controlled device é o selected candidate for validation; um trusted browser-based renderer é backup. Nenhum renderer foi instalado, aberto, testado ou aprovado. Exact version/environment, keyboard/focus/zoom/reflow/AT/privacy/network/telemetry evidence permanecem gates.
+
+**[Ethics and data]** No recording e paraphrased-observations-only são recomendações baseline. Consent structure, compensation criteria, separated identity/admin/evidence storage, repository prohibition, retention recommendation, accommodations and incident workflow estão definidos; nenhum artifact jurídico final, valor, sistema real ou dado existe.
+
+**[Launch gates]** G-01–G-17 cobrem roles, conflicts, prototype, renderer, disclosure, recruitment, participants, consent/quotes, recording, compensation, storage, retention, accommodations, protocol, specialists, budget/calendar and explicit authorization. Onze gates críticos estão abertos; os demais possuem somente candidate documentation/approval gaps.
+
+**[Readiness]** `Not Ready for evaluation authorization or execution`. O pacote permite assignments e evidence requests sem improvisação, mas nenhuma recomendação concede autoridade. Evaluation Authorization deve aguardar fechamento dos gates e nova decisão explícita do Conselho.
+
+## Slice concluída — C-lite Stage 2 Evaluation Proposal and Protocol Closure
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `c0fec73c18b34473b7610d00b8ad5a4cbf860e56`, o Conselho aceitou o protótipo `1.0` como objeto candidato e o Evaluation Package `0.1-draft` como input. Autorizou exclusivamente fechar uma proposta de avaliação governada; recruitment, participant contact, sessions, reviews executados, recording, consent/data collection, analytics, automation, prototype changes, Stage 3, frontend e implementation continuam proibidos.
 
@@ -763,4 +795,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente quatro artifacts documentais de protocolo e atualiza este programa/IHR. O protótipo `1.0`, Scenario Pack e Annotation Pack permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, ARCH-001, Compiler, Runtime, Orchestrator, frontend, code, package, test, CI, Design System, token, component ou draft; não recruta/contata/consente/compensa/grava participantes, não coleta/armazena dados, não executa sessions, interviews, user/accessibility testing ou specialist reviews. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review. User Evaluation exige fechamento de todos os entry criteria e autorização explícita separada; Stage 3 e frontend real permanecem bloqueados; nada começa automaticamente.
+Esta slice cria somente quatro artifacts documentais de readiness operacional e atualiza este programa/IHR. Prototype `1.0`, Scenario/Annotation Packs e Evaluation Protocol permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, frontend, code, package, CI ou draft; não recruta/contata/consente/compensa participantes, não instala/testa renderer, não configura storage, não coleta evidence/data e não executa session/interview/user test/specialist review. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review e assignments/evidence fora de execução. Evaluation Authorization, Evaluation Execution, Stage 3 e frontend permanecem bloqueados; nada começa automaticamente.
