@@ -93,7 +93,8 @@ evidence_method:
   - Evaluation claim, protocol, participant, ethics, evidence, synthesis and authorization-readiness closure
   - Evaluation role, renderer, recruitment, consent, data-operation, incident and launch-gate closure
   - Internal renderer validation, deterministic walkthrough, assisted-review and Stage 3 readiness analysis
-budget_or_timebox: C-lite Internal Pre-Evaluation and Stage 3 Readiness Review; max 7 iterations, 60 minutes, 6 changed files, 1 material correction cycle, 2 no-progress iterations
+  - Vertical-slice scope, state/event/data contract, persistence, architecture-option and authorization-readiness analysis
+budget_or_timebox: C-lite Stage 3 Executable Vertical Slice Proposal; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -175,6 +176,10 @@ expected_outputs:
   - C-lite Renderer Validation Report
   - C-lite Internal Walkthrough and Assisted Review Findings
   - C-lite Stage 3 Readiness Assessment
+  - C-lite Stage 3 Executable Vertical Slice Proposal
+  - C-lite State, Event and Data Contract Candidates
+  - C-lite Technical Architecture, Persistence and Technology Options
+  - C-lite Stage 3 Testing, Risk and Authorization Readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -235,6 +240,10 @@ evidence:
   - knowledge/research/evidence/clite-renderer-validation-report.md
   - knowledge/research/evidence/clite-internal-walkthrough-assisted-review-findings.md
   - knowledge/research/evidence/clite-stage3-readiness-assessment.md
+  - knowledge/research/evidence/clite-stage3-executable-vertical-slice-proposal.md
+  - knowledge/research/evidence/clite-state-event-data-contract-candidates.md
+  - knowledge/research/evidence/clite-technical-architecture-persistence-technology-options.md
+  - knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -286,7 +295,28 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Internal Pre-Evaluation and Stage 3 Readiness Review
+## Slice ativa — C-lite Stage 3 Executable Vertical Slice Proposal
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `5fca035ed519e0d3f1fd15e4e9d562ba9b2ca9dc`, o Conselho aprovou a pré-avaliação interna, reconheceu `Ready with conditions` e autorizou exclusivamente a proposta documental do Stage 3: definir o menor vertical slice executável, seus contratos candidatos, opções de arquitetura/persistência/tecnologia e critérios de autorização. Determinou que F-01 seja resolvido no conteúdo do futuro slice, sem `CEA` como label primário e sem modificar o protótipo 1.0. Implementação, frontend, código, packages, frameworks, backend, deploy, user testing e Stage 3 executable work permanecem proibidos.
+
+Pergunta principal: qual é o menor sistema local e executável capaz de representar um ciclo governado de ideia até revisão, preservando estados, autoridade, failure/recovery, artifact, evidence e Project Memory, sem criar arquitetura de produção prematuramente?
+
+Entregáveis `1.0-proposal`:
+
+- C-lite Stage 3 Executable Vertical Slice Proposal;
+- C-lite State, Event and Data Contract Candidates;
+- C-lite Technical Architecture, Persistence and Technology Options;
+- C-lite Stage 3 Testing, Risk and Authorization Readiness.
+
+**[Proposta]** O slice cobre o ciclo integral Idea→…→Return com seis views cobrindo as oito famílias SF-01–08; execução vira uma superfície com substates; transições, guards, eventos, autoridade consequente, failure/recovery, artifact/evidence e Memory são executáveis; pesquisa, fontes e agente permanecem roteirizados por fixture determinístico derivado de E29. F-01 é tratado com o label candidato "Responsável pela pesquisa" (ID interno `research_executor`); F-02–F-05 recebem tratamentos definidos (recoveries executáveis vs. documentais; retry explícito Failed→Queued→Running; efeito observável de input; Discovery com substates).
+
+**[Contratos]** Dez famílias de estado com estados/eventos/guards/transições inválidas candidatos; 34 eventos e 14 commands candidatos preservando `User Intent != Command != Event != State`; 17 entidades de dados com campos mínimos; Memory mínima executável. Nenhum schema estável, tipo canônico ou Ontologia foi criado.
+
+**[Arquitetura]** Persistência recomendada: Option D — hybrid (fixture canônico versionado + runtime em memória + snapshot local opcional descartável). Arquitetura recomendada: Option D — hybrid document-driven state-machine application, com B (SPA com state machine explícita) como fallback. Tecnologia: needs-first, sem seleção; decisão humana nos entry criteria. Acessibilidade distingue automated/manual/AT check/user evidence, sem conformance claim; security boundaries aplicam ARP-0007 proporcionalmente sem modificá-lo.
+
+**[Readiness]** `Ready for Council decision on Stage 3 authorization`: 13 entry criteria (incluindo decisão F-01, opções de arquitetura/persistência/tecnologia, orçamento candidato de ≤30 arquivos/≤5 commits/3 sessões e rollback) e 13 exit criteria definidos. Nada é iniciado por esta proposta. A avaliação externa permanece adiada com os gates E40 abertos; a iniciativa futura Agent-Agnostic Project Bootstrap and Context Portability foi registrada sem criação de arquivos.
+
+## Slice concluída — C-lite Internal Pre-Evaluation and Stage 3 Readiness Review
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `d3c8d4397dc36d9022b8c85d47ed4c379752363b`, o Chief adiou a avaliação externa com participantes e autorizou exclusivamente uma revisão interna limitada: validar o renderer candidato, executar walkthrough estrutural determinístico, realizar revisões assistidas sob seis perspectivas, identificar blockers e avaliar readiness para uma futura proposta separada de Stage 3. Participantes externos, recrutamento, consentimento, compensação, user testing, gravação, dados pessoais, expert review independente, frontend, Stage 3, código de produto e claims de usabilidade/acessibilidade/segurança/validação permanecem proibidos.
 
@@ -822,4 +852,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente três artifacts documentais de pré-avaliação interna e atualiza este programa/IHR. Prototype `1.0`, Scenario/Annotation Packs, Evaluation Protocol e artifacts de operational readiness permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, frontend, code, package, CI ou draft; não recruta/contata/consente/compensa participantes, não executa session/interview/user test/independent expert review, não coleta dados pessoais e não inicia Stage 3. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review deste checkpoint e, se aceito, uma decisão explícita sobre encomendar a proposta de Stage 3 e sobre a correção de F-01. Evaluation Authorization, Evaluation Execution, Stage 3 e frontend permanecem bloqueados; nada começa automaticamente.
+Esta slice cria somente quatro artifacts documentais de proposta de Stage 3 e atualiza este programa/IHR. Prototype `1.0`, E29–E31, Evaluation Protocol e artifacts anteriores permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, ARCH-001, frontend, code, package, lockfile, teste, CI ou draft; não instala dependências, não seleciona tecnologia autoritativamente, não executa testes, não recruta participantes e não inicia implementação. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review desta proposta e decisão explícita sobre os 13 entry criteria de autorização do Stage 3. Evaluation Authorization, Evaluation Execution, Stage 3 executable work e frontend permanecem bloqueados; nada começa automaticamente.
