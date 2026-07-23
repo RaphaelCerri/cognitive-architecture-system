@@ -90,7 +90,8 @@ evidence_method:
   - Prototype-question, hypothesis, scenario, fidelity, surface and interaction-scope analysis
   - Participant, specialist, ethics, evaluation, budget, governance and authorization-readiness closure
   - Deterministic documentary prototype creation, annotation, traceability and evaluation-readiness review
-budget_or_timebox: C-lite Stage 2 Non-functional Structured Interactive Prototype Creation; max 8 iterations, 90 minutes, 6 changed files, 2 material cycles, 2 no-progress iterations
+  - Evaluation claim, protocol, participant, ethics, evidence, synthesis and authorization-readiness closure
+budget_or_timebox: C-lite Stage 2 Evaluation Proposal and Protocol Closure; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -161,6 +162,10 @@ expected_outputs:
   - C-lite Structured Interactive Prototype
   - C-lite Prototype Annotation Pack
   - C-lite Evaluation Package Draft
+  - C-lite Evaluation Protocol
+  - C-lite Participants, Consent, Privacy and Accessibility Plan
+  - C-lite Evidence, Findings and Synthesis Framework
+  - C-lite Evaluation Governance and Authorization Readiness
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -210,6 +215,10 @@ evidence:
   - knowledge/research/evidence/clite-structured-interactive-prototype.md
   - knowledge/research/evidence/clite-prototype-annotation-pack.md
   - knowledge/research/evidence/clite-evaluation-package-draft.md
+  - knowledge/research/evidence/clite-evaluation-protocol.md
+  - knowledge/research/evidence/clite-participants-consent-privacy-accessibility-plan.md
+  - knowledge/research/evidence/clite-evidence-findings-synthesis-framework.md
+  - knowledge/research/evidence/clite-evaluation-governance-authorization-readiness.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -261,7 +270,28 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 2 Non-functional Structured Interactive Prototype Creation
+## Slice ativa — C-lite Stage 2 Evaluation Proposal and Protocol Closure
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `c0fec73c18b34473b7610d00b8ad5a4cbf860e56`, o Conselho aceitou o protótipo `1.0` como objeto candidato e o Evaluation Package `0.1-draft` como input. Autorizou exclusivamente fechar uma proposta de avaliação governada; recruitment, participant contact, sessions, reviews executados, recording, consent/data collection, analytics, automation, prototype changes, Stage 3, frontend e implementation continuam proibidos.
+
+Pergunta principal: existe um protocolo suficientemente seguro, ético, limitado e rastreável para avaliar o protótipo C-lite sem transformar observações locais em claims universais?
+
+Entregáveis `1.0-proposal`:
+
+- C-lite Evaluation Protocol;
+- C-lite Participants, Consent, Privacy and Accessibility Plan;
+- C-lite Evidence, Findings and Synthesis Framework;
+- C-lite Evaluation Governance and Authorization Readiness.
+
+**[Protocol]** EC-01–09 rastreiam E21–E32, requirements, PQ-01–20, T-01–18, methods, evidence, limitations and affected decisions. O plano preserva Group A até 5 e Group B até 3, cinco specialist perspectives, máximo de 60 minutos por sessão, dois ciclos e coleta mínima. No-recording é a baseline recomendada; qualquer exceção reabre consent/privacy approval.
+
+**[Ethics and evidence]** Inclusion/exclusion, sampling limitations, accessible consent requirements, compensation principles, separated storage, proposed retention, privacy minimization, accommodations and renderer gate estão definidos. Observation, interpretation, finding, recommendation and decision permanecem separados; blockers são não compensáveis e não existe score universal.
+
+**[Governance]** Functional roles, authority matrix, budget ceilings, entry/exit/stopping/invalidation and decision rules estão definidos. Pessoas, renderer/environment, recruitment channel, consent artifact, compensation value, storage system, retention confirmation, accommodations and explicit evaluation authorization permanecem entry evidence pendente.
+
+**[Readiness]** `Ready with conditions for a separate evaluation authorization; Not Ready to execute`. A recomendação permite revisão CSA/Council do pacote, não recrutamento, consentimento, specialist review ou sessão. Nenhum PQ/HP/claim foi avaliado e não há findings de usuários.
+
+## Slice concluída — C-lite Stage 2 Non-functional Structured Interactive Prototype Creation
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `68bde3fdd41d0509b653189592a4f061c87c4717`, o Conselho aceitou `Ready with conditions` e autorizou exclusivamente a criação do protótipo não funcional estruturado. Fixou cenário fictício da pequena oficina, tratamento neutro/estrutural, uma execução governada, SF-01–08, máximo de 24 variantes, seis jornadas, 18 task flows, até dois ciclos materiais e quatro artifacts. Busca interativa e graph foram excluídos; graph é substituído por lista textual de relações.
 
@@ -733,4 +763,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente quatro artifacts documentais de protótipo e atualiza este programa/IHR. Não cria/atualiza PRD, Ontology, mockup, image, dataset externo, UI de produção, component, Design System, token, frontend, architecture decision, framework, library, package, source code, executable test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não recruta/contata participantes nem executa avaliação. O programa permanece `active` e `evidence_gathering`; o próximo passo é revisão do CSA/Conselho e, se aceito, uma autorização separada para **Evaluation Proposal**. User Evaluation, Stage 3, executable benchmark e frontend real permanecem bloqueados; nada começa automaticamente.
+Esta slice cria somente quatro artifacts documentais de protocolo e atualiza este programa/IHR. O protótipo `1.0`, Scenario Pack e Annotation Pack permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, ARCH-001, Compiler, Runtime, Orchestrator, frontend, code, package, test, CI, Design System, token, component ou draft; não recruta/contata/consente/compensa/grava participantes, não coleta/armazena dados, não executa sessions, interviews, user/accessibility testing ou specialist reviews. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review. User Evaluation exige fechamento de todos os entry criteria e autorização explícita separada; Stage 3 e frontend real permanecem bloqueados; nada começa automaticamente.
