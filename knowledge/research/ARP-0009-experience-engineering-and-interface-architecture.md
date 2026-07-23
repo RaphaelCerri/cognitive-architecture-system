@@ -304,7 +304,39 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Agent-Agnostic Project Bootstrap and Context Portability (Foundation)
+## Slice ativa — C-lite Stage 4 Productization Boundary and Evolution Proposal (Research)
+
+**[Decisão]** Em 2026-07-23, após o Council aceitar os dois checkpoints da linha
+de bootstrap (IHR-0026 fundação; IHR-0027 continuidade — GOV-001 agnóstico,
+README com link para `AGENT_START_HERE.md`, persistência de Council Decisions
+via `foundation/directives/`), e após o teste vivo de portabilidade confirmar
+que uma sessão nova reconstrói contexto a partir do repositório dado o path
+correto, o Council autorizou exclusivamente uma pesquisa (sem implementação)
+sobre o boundary de produtização do C-lite Stage 3.
+
+**[Nota de fronteira]** Esta slice não altera o vertical slice existente, o
+próprio ARCH-001, a Ontologia, o Compiler, ou os estados de outros ARPs. Não
+autoriza Stage 4 implementation, avaliação externa ou frontend de produção.
+
+**[Entregáveis]** Quatro evidence artifacts: `ARP-0009-E51` (Asset Reuse and
+Disposal Assessment — classifica cada elemento do slice como disposable/
+reusable-concept/reusable-implementation-candidate), `E52` (Productization
+Architecture Options — boundaries candidatas, opções A–D, recomendação C+D não
+autorizada, Source of Truth relationship preservando PMM-001, identity/
+authority gap, execution engine gap), `E53` (Evidence, UX and Production Gaps —
+Project Memory evolution, implicações de UX das 6 views, accessibility boundary
+honesto contra E49, user-evidence boundary contra os gates E40, production
+requirements candidates, reavaliação de adiamento de avaliação externa) e `E54`
+(Candidate Slices and Authorization Readiness — 6 slices candidatas sequenciadas,
+nenhuma autorizada).
+
+**[Readiness]** Pesquisa pronta para revisão do CSA/Conselho. Nenhuma das seis
+candidate slices (Domain Extraction Feasibility; Identity and Authority Model;
+Canonical Project Memory Adapter; Real Execution Simulation Boundary; Product
+Experience Validation; Production Architecture Proposal) está autorizada. Nada
+começa automaticamente.
+
+## Slice concluída — Agent-Agnostic Project Bootstrap and Context Portability (Foundation)
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `4108d8b581bae09fc71421ba7f9958580e8412a2` (verificação de acessibilidade aceita; criterion 10 parcial), o Conselho autorizou a fundação da camada agent-agnostic: ponto de entrada, charter, status derivado, mapa do repositório, contrato de execução, contrato de retorno, manifest piloto e avaliação de portabilidade. A troca real de executor (Codex → Claude Code) motivou a slice. Automação, compiler de contexto, integração LLM, Stage 4, sessão empírica e avaliação externa permanecem proibidos.
 
@@ -315,6 +347,8 @@ relations:
 **[Avaliação — E50]** Comparação qualitativa Codex×Fable por 13 dimensões sem score: conteúdo convergente, formato divergente; elementos de ambos incorporados ao RETURN_SCHEMA. Simulação documental de portabilidade: as nove necessidades de reconstrução do cenário são atendidas pela sequência START_HERE→Charter→Status→Contract→Manifest (~6–8k tokens de bootstrap). Lacunas nomeadas: GOV-001 vincula papéis a modelos específicos; README não referencia o novo entry point; Council Decisions recentes persistem primariamente em citações de IHR (directives param em AD-004); precedência operacional aguarda confirmação; ARCH-001 mapeado a `architecture/system-overview.md`. Portabilidade **não** foi validada com outro modelo real.
 
 **[Readiness]** Fundação pronta para revisão do CSA/Conselho. Decisões futuras: confirmar precedência e canonicidade; tratar as lacunas 1–3; decidir teste vivo (próxima slice iniciando por AGENT_START_HERE); escolher entre sessão empírica (CM-0001), Stage 4 proposal e gates E40. Nada começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0026 (fundação) e IHR-0027 (continuidade — GOV-001 agnóstico, README com link, persistência via `foundation/directives/AD-005`), confirmando que uma sessão nova reconstruiu contexto, autoridade e escopo a partir do repositório após receber o path correto. Council escolheu como próximo passo a pesquisa de productização (slice ativa acima), não a sessão empírica (CM-0001) nem os gates E40.
 
 ## Slice concluída — C-lite Stage 3 Human-Operated Accessibility Verification
 

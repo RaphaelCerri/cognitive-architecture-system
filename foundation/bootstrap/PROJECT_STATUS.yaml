@@ -15,36 +15,38 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 4108d8b581bae09fc71421ba7f9958580e8412a2   # último checkpoint ACEITO; commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: IHR-0025 acceptance + Council Decision (Agent-Agnostic Bootstrap)
+  observed_head: 5f2bf9ac1c96993219a9b3acb321a70a0ace0c9b   # último checkpoint ACEITO (IHR-0027); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0026 + IHR-0027 (bootstrap foundation and continuity)
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: clite-stage3-accessibility-verification
+  id: bootstrap-continuity-maintenance
   state: accepted
-  handoff: milestones/V1-M02-clite-stage3-accessibility-verification-handoff.md
+  handoff: milestones/V1-M02-bootstrap-continuity-maintenance-handoff.md
   evidence:
-    - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md
+    - foundation/directives/AD-005-bootstrap-continuity-maintenance.md
+
+accepted_checkpoints_this_round:
+  - agent-agnostic-bootstrap-foundation (IHR-0026)
+  - bootstrap-continuity-maintenance (IHR-0027)
 
 pending_review_checkpoints:
-  - id: agent-agnostic-bootstrap-foundation
+  - id: clite-stage4-productization-boundary-proposal
     state: pending_review
-    handoff: milestones/V1-M02-agent-agnostic-bootstrap-handoff.md
-  - id: bootstrap-continuity-maintenance
-    state: pending_review
-    handoff: milestones/V1-M02-bootstrap-continuity-maintenance-handoff.md
+    handoff: milestones/V1-M02-clite-stage4-productization-boundary-proposal-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: Live Bootstrap Portability and Continuity Maintenance Test — Foundation Micro-Slice
-  directive_reference: AD-005 (foundation/directives/AD-005-bootstrap-continuity-maintenance.md), executada em IHR-0027
+  title: C-lite Stage 4 Productization Boundary and Evolution Proposal — Research Micro-Slice (no implementation)
+  directive_reference: Council Decision fornecida via CSA em 2026-07-23 (registrada em IHR-0028 ao fechar); ARP-0009 slice ativa
 
 blocked_work:
-  - Stage 4 (sem proposta; não autorizado)
-  - External user evaluation (adiada; gates E40 abertos)
+  - Stage 4 implementation (research proposal em revisão; nenhuma das 6 candidate slices autorizada)
+  - External user evaluation (adiada; gates E40 abertos, 11 críticos)
   - C-lite directed empirical accessibility session (pendência nomeada; manifest CM-0001 registra sem autorizar)
   - Production frontend, deploy, integrações reais
   - Bootstrap automation / context compiler / integração LLM
+  - Domain extraction, real persistence adapter, real identity/authorization, real execution engine (todas candidate slices não autorizadas — ver ARP-0009-E54)
 
 active_programs:
   - ARP-0008
@@ -55,7 +57,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_bootstrap_foundation_and_continuity_checkpoints
+  type: csa_council_review_of_stage4_productization_proposal_and_candidate_slice_authorization
   automatic_continuation: false
 
 authority_notice:
