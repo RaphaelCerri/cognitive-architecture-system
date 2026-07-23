@@ -38,15 +38,15 @@ authorized_work:
   directive_reference: AD-006 + decisão CSA incorporada registrada em ARP-0009; entregas GOV-002, E75, E76, E77, backup operacional, Real Project Intake v0, ARCH-001 pointer
 
 human_decisions_outstanding:   # o resto irredutível — só o CVO responde
-  - DH-1 compensacao_valor_metodo_teto (candidato R$120 fixo PIX)
-  - DH-2 local_de_armazenamento_do_estudo (candidato volume cifrado local)
-  - DH-3 confirmacao_raphael_papeis_candidatos
-  - DH-4 note_taker_nomeacao (BLOCKING_UNASSIGNED)
-  - DH-5 aceite_final_consentimento_acessivel
-  - DH-6 canal_recrutamento_e_janela_de_datas
-  - DH-7 g17_autorizacao_do_estudo (Council; recomendação authorize_with_conditions)
   - DH-backup destino_EXTERNO_do_bundle (script e restore prontos/testados — falta onde guardar a cópia)
   - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15)
+
+deferred_by_cvo_to_backlog:    # decisão do CVO em 2026-07-23: "questões de produto ficam pra backlog"
+  reason: foco em uso pessoal; nada vira produto agora
+  items:
+    - Estudo com usuários reais COMPLETO (DH-1..7, G-17, recrutamento, sessões) — o pacote E61–E69 permanece pronto para quando for reativado
+    - Product Experience Validation como um todo (slice 4 da sequência)
+    - Tudo que já era Team/Product Mode (GOV-002 mantém intentionally_deferred)
 
 decided_slice_sequence:
   - 1..4 aceitas (IHR-0029..0032); gate closure aceita (IHR-0033); auditoria aceita (IHR-0034)
