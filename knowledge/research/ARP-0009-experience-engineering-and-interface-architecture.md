@@ -89,7 +89,8 @@ evidence_method:
   - Content, ontology-leakage, accessibility, security, AI-native and prototype-readiness review
   - Prototype-question, hypothesis, scenario, fidelity, surface and interaction-scope analysis
   - Participant, specialist, ethics, evaluation, budget, governance and authorization-readiness closure
-budget_or_timebox: C-lite Stage 2 Non-functional Prototype Proposal and Readiness Closure; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Deterministic documentary prototype creation, annotation, traceability and evaluation-readiness review
+budget_or_timebox: C-lite Stage 2 Non-functional Structured Interactive Prototype Creation; max 8 iterations, 90 minutes, 6 changed files, 2 material cycles, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -156,6 +157,10 @@ expected_outputs:
   - C-lite prototype content, state and interaction plan
   - C-lite prototype evaluation, participants and ethics plan
   - C-lite Stage 2 governance, budget and authorization readiness
+  - C-lite Scenario and Content Pack
+  - C-lite Structured Interactive Prototype
+  - C-lite Prototype Annotation Pack
+  - C-lite Evaluation Package Draft
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -201,6 +206,10 @@ evidence:
   - knowledge/research/evidence/clite-prototype-content-state-interaction-plan.md
   - knowledge/research/evidence/clite-prototype-evaluation-participants-ethics-plan.md
   - knowledge/research/evidence/clite-stage2-governance-budget-authorization-readiness.md
+  - knowledge/research/evidence/clite-scenario-content-pack.md
+  - knowledge/research/evidence/clite-structured-interactive-prototype.md
+  - knowledge/research/evidence/clite-prototype-annotation-pack.md
+  - knowledge/research/evidence/clite-evaluation-package-draft.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -252,7 +261,30 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 2 Non-functional Prototype Proposal and Readiness Closure
+## Slice ativa — C-lite Stage 2 Non-functional Structured Interactive Prototype Creation
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `68bde3fdd41d0509b653189592a4f061c87c4717`, o Conselho aceitou `Ready with conditions` e autorizou exclusivamente a criação do protótipo não funcional estruturado. Fixou cenário fictício da pequena oficina, tratamento neutro/estrutural, uma execução governada, SF-01–08, máximo de 24 variantes, seis jornadas, 18 task flows, até dois ciclos materiais e quatro artifacts. Busca interativa e graph foram excluídos; graph é substituído por lista textual de relações.
+
+Pergunta principal: o protótipo representa de modo compreensível, rastreável e recuperável um ciclo governado de ideia até revisão, sem aparentar capacidades técnicas ou autoridade inexistentes?
+
+Entregáveis versão 1.0:
+
+- C-lite Scenario and Content Pack;
+- C-lite Structured Interactive Prototype;
+- C-lite Prototype Annotation Pack;
+- C-lite Evaluation Package Draft.
+
+**[Representação]** Markdown versionado com headings e links internos foi selecionado como representação documental navegável equivalente. Ele permite reset determinístico, revisão, exportação e anotações sem ferramenta externa, framework, package ou código de terceiros. Não mantém estado, executa lógica, aplica permissões ou prova foco, teclado, reflow e tecnologia assistiva.
+
+**[Creation findings]** O baseline cobre SF-01–08, exatamente 24 variantes, J1–J6, estados separados, plan/authorization/start/acceptance distintos, execução longa sem percentual, requested input específico, falha de fonte com preservação/recovery, artifact/evidence, accept/revise/reject e Project Memory/return. Os 18 fluxos E22 estão cobertos; `inspect assumption` e `correct assumption` aparecem como dois resultados navegáveis do mesmo fluxo, e `approve project understanding` permanece transição integrada. PQ-01–20 e HP-01–09 estão anotados, mas nenhum foi respondido ou validado.
+
+**[Cycles]** Cycle 1 encontrou uma inconsistência de contagem entre os 18 flows do baseline e 19 resultados enumerados na autorização. Cycle 2 foi executado somente para documentar a reconciliação sem remover comportamento. Não houve outro gap de superfície, estado, autoridade, recovery, conteúdo crítico ou ontology leakage; nenhum terceiro ciclo ocorreu.
+
+**[Epistemic boundary]** Conteúdo, fonte, atividade, tempo, agente, estado, controle, decisão e evidência mostrados são sintéticos/simulados. O protótipo não prova runtime accessibility, security enforcement, performance, data integrity, architecture, usability, product fit ou implementation readiness.
+
+**[Readiness]** `Ready with conditions for a separate evaluation proposal`. Tasks, neutral prompts, probes, observations, blockers, evidence fields, privacy questions e stopping conditions existem. Owners, participant plan, recruitment, compensation, consent, recording, storage, retention, accommodations, session tool and final synthesis protocol continuam pendentes. User evaluation, Stage 3 e frontend permanecem bloqueados.
+
+## Slice concluída — C-lite Stage 2 Non-functional Prototype Proposal and Readiness Closure
 
 **[Decisão]** Em 2026-07-23, após o checkpoint 420aec0034ebaeacc4af2ae00998b169a593c9d4, o Conselho aceitou Stage 1 e autorizou exclusivamente a proposta governada de Stage 2. Foram definidos PQ-01–20, HP-01–09, fidelity options, scenario comparison, eight surface families, six-journey/eighteen-flow/state coverage, content and simulation boundaries, authority/long-running/failure/Memory, search/graph decisions, accessibility/security/privacy representation, participant/specialist/ethics/method/evidence plans, four future artifacts, tool capabilities, budget caps, entry/exit/invalidation/stopping/governance and readiness. Nenhum wireframe, prototype, image, UI, tool selection, participant contact, dataset, code, test, benchmark ou implementation foi criado/executado.
 
@@ -701,4 +733,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente a proposta documental de Stage 2. Não cria/atualiza PRD, Ontology, wireframe, mockup, image, prototype, dataset, UI, component, Design System, token, frontend, architecture decision, framework, library, tool selection, package, code, test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não recruta/contata participantes nem executa evaluation/benchmark; e não estabiliza scenario, content, visual treatment, state representation, authority, method, budget ou artifact. O programa permanece active e evidence_gathering; o próximo passo é revisão do CSA/Conselho. Stage 2 creation e qualquer executable work exigem autorização explícita e nada começa automaticamente.
+Esta slice cria somente quatro artifacts documentais de protótipo e atualiza este programa/IHR. Não cria/atualiza PRD, Ontology, mockup, image, dataset externo, UI de produção, component, Design System, token, frontend, architecture decision, framework, library, package, source code, executable test, browser automation, screenshot, deploy, schema, ADR, AP ou RFC; não recruta/contata participantes nem executa avaliação. O programa permanece `active` e `evidence_gathering`; o próximo passo é revisão do CSA/Conselho e, se aceito, uma autorização separada para **Evaluation Proposal**. User Evaluation, Stage 3, executable benchmark e frontend real permanecem bloqueados; nada começa automaticamente.
