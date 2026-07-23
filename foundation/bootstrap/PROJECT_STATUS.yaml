@@ -15,45 +15,54 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 4676b2462bd79f07886bc04d6286ce1764a773c5   # último checkpoint ACEITO (IHR-0031); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0031 (memory adapter Feasible; Option D event-history hypothesis approved) + Council Decision authorizing Product Experience Validation Minimal Study Readiness
+  observed_head: ebc2d6b375cb70c787cb4c57c90c760d211efdea   # último checkpoint ACEITO (IHR-0032); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0032 + Council approval of executable stimulus, Option D and limited G-15 waiver + authorization of operational gate closure
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: canonical-project-memory-adapter-feasibility
+  id: product-experience-validation-minimal-study-readiness
   state: accepted
-  handoff: milestones/V1-M02-project-memory-adapter-feasibility-handoff.md
+  handoff: milestones/V1-M02-product-experience-study-readiness-handoff.md
   notes:
-    - memory_format_0_1_experimental_accepted_as_working_format_not_canonical_schema
-    - option_d_hybrid_event_history_approved_as_architectural_hypothesis
-    - audit_event_artifact_remains_explicit_gap
-    - process_observation_csa_obs_boot_04_session_reuse_not_counted
+    - executable_vertical_slice_approved_as_official_study_stimulus
+    - option_d_study_design_approved
+    - g15_waiver_approved_minimal_first_study_only_not_reusable
+    - process_observation_csa_obs_boot_05_session_reuse_not_counted
 
 accepted_checkpoints_this_round:
-  - canonical-project-memory-adapter-feasibility (IHR-0031)
+  - product-experience-validation-minimal-study-readiness (IHR-0032)
 
 pending_review_checkpoints:
-  - id: product-experience-validation-minimal-study-readiness
+  - id: minimal-study-operational-gate-closure
     state: pending_review
-    handoff: milestones/V1-M02-product-experience-study-readiness-handoff.md
+    handoff: milestones/V1-M02-minimal-study-gate-closure-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: Stage 4 — Product Experience Validation Minimal Study Readiness (quarta candidate slice; documental)
-  directive_reference: Council Decision "Product Experience Validation Minimal Study Readiness" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidências ARP-0009-E61..E64
+  title: Minimal Product Experience Study — Operational Gate Closure and G-17 Authorization Readiness
+  directive_reference: Council Decision "Minimal Product Experience Study Operational Closure" fornecida via CSA em 2026-07-23; evidências ARP-0009-E65..E69
+
+human_decisions_outstanding:   # DH — nenhuma presumida; ver ARP-0009-E69 §3
+  - DH-1 compensacao_valor_metodo_teto (candidato R$120 fixo PIX)
+  - DH-2 local_de_armazenamento (candidato volume cifrado local)
+  - DH-3 confirmacao_raphael_papeis_candidatos
+  - DH-4 note_taker_nomeacao (BLOCKING_UNASSIGNED — única lacuna de pessoas)
+  - DH-5 aceite_final_consentimento_acessivel
+  - DH-6 canal_recrutamento_e_janela_de_datas
+  - DH-7 g17_autorizacao_do_estudo (Council; recomendação authorize_with_conditions)
 
 decided_slice_sequence:
-  - 1. Domain Extraction Feasibility (aceita — IHR-0029, Feasible)
-  - 2. Identity and Authority Model (aceita — IHR-0030, vocabulário experimental)
-  - 3. Canonical Project Memory Adapter (aceita — IHR-0031, Feasible; Option D aprovada)
-  - 4. Product Experience Validation (readiness desta slice — pending_review; sessões NÃO autorizadas)
+  - 1. Domain Extraction Feasibility (aceita — IHR-0029)
+  - 2. Identity and Authority Model (aceita — IHR-0030)
+  - 3. Canonical Project Memory Adapter (aceita — IHR-0031)
+  - 4. Product Experience Validation (readiness aceita — IHR-0032; gate closure pending_review; G-17 aberto)
   - 5. Real Execution Boundary (aguardando)
   - 6. Production Architecture Proposal (bloqueada)
 
 blocked_work:
-  - Recrutamento, contato, screener, consentimento, agendamento, sessões, compensação, gravação, coleta de dados (estudo mínimo definido mas NÃO autorizado — G-17 pendente)
+  - Recrutamento, divulgação de screener, contato, agendamento, consentimento, pagamento, sessões, coleta (G-17 aberto — decisão absoluta do Council)
   - Real Execution Boundary e Production Architecture Proposal
-  - Avaliação externa COMPLETA (E40 segue governando; gates abertos)
+  - Avaliação externa COMPLETA (E40 segue governando; waiver G-15 não reutilizável)
   - HV-01–07 / sessão dirigida de acessibilidade (CM-0001 registra sem autorizar)
   - Promoção de formato de Memory, adapter, domínio extraído ou ScenarioFixture a canon
   - Autenticação real, enforcement, credenciais (ARP-0007 permanece scoped)
@@ -69,7 +78,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_minimal_study_readiness_ihr_0032_and_gate_closure_authorization
+  type: csa_council_review_of_ihr_0033_then_human_decisions_dh1_dh6_then_g17
   automatic_continuation: false
 
 authority_notice:

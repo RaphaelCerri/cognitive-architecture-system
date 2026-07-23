@@ -304,7 +304,43 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Product Experience Validation Minimal Study Readiness (Stage 4, quarta candidate slice)
+## Slice ativa — Minimal Study Operational Gate Closure and G-17 Readiness
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0032 (checkpoint
+`ebc2d6b375cb70c787cb4c57c90c760d211efdea`) e o Council aprovar E61–E64, o
+vertical slice executável como estímulo oficial, o desenho Option D e o
+waiver limitado de G-15 (não reutilizável; moderador ≠ note taker; revisão de
+síntese pelo CSA; divulgação nos findings — CSA-OBS-BOOT-05 registrada), o
+Council autorizou exclusivamente o fechamento das seis pendências
+operacionais e a produção do pacote de decisão G-17 — **sem recrutamento,
+contato, consentimento, pagamento ou sessões**.
+
+**[Nota de fronteira]** Sem código; sem alteração do estímulo, de
+E33/E34/E40/E61–E64, da Ontologia ou de ARCH-001; nenhum participante
+contatado; G-17 permanece aberto e absoluto.
+
+**[Entregáveis]** Cinco evidence artifacts: `ARP-0009-E65` (Screener de 8
+perguntas + consentimento em linguagem clara com autorizações explícitas, sem
+promessa de anonimato absoluto e sem claims), `E66` (Compensação — 4 opções
+comparadas, recomendação R$ 120 fixo via PIX; armazenamento R1/R2/R3 separados
+em volume cifrado local; retenção 30/90/180 com deleção auditável; 10
+procedimentos de incidente), `E67` (Matriz de papéis com candidatos — Raphael
+em 6 papéis com conflitos registrados; **note taker `blocking_unassigned`**;
+template de session log; procedimento de acomodação; registro formal do
+waiver G-15), `E68` (Validação técnica do estímulo **executada**: typecheck +
+build 76.770 bytes + 43/43 testes + CSP/zero-network no commit `4c80585`;
+checklist empírico de ~30 min pendente de operador humano) e `E69` (Matriz de
+fechamento G-01–17: 8 ready_for_council_closure, 7 conditionally_ready
+dependendo só das decisões humanas DH-1..6, G-15 closed por waiver, G-17
+aberto; pacote de decisão G-17 com recomendação `authorize_with_conditions`).
+
+**[Readiness]** Nenhuma lacuna de pesquisa restante — todas as pendências são
+decisões humanas (DH-1..7: compensação, armazenamento, confirmação de papéis,
+**note taker**, consentimento final, canal/datas, e a própria G-17). Pronta
+para revisão do CSA/Council (IHR-0033). Recrutamento e sessões seguem **não
+autorizados**. Nada começa automaticamente.
+
+## Slice concluída — Product Experience Validation Minimal Study Readiness (Stage 4, quarta candidate slice)
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0031 (checkpoint
 `4676b2462bd79f07886bc04d6286ce1764a773c5`, outcome **Feasible**; formato
@@ -341,6 +377,18 @@ restam 6 pendências operacionais pequenas (~2 dias) + autorização explícita
 do Council. Pronta para revisão do CSA/Council (IHR-0032). Recrutamento,
 sessões, Real Execution Boundary e Production Architecture seguem **não
 autorizados**. Nada começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0032
+(`proceed_to_operational_gate_closure`) e o Council aprovou: E61–E64; o
+vertical slice executável como **estímulo oficial** do estudo mínimo
+(substituindo o protótipo Markdown, sem transformá-lo em produto); o desenho
+**Option D**; e o **waiver limitado de G-15** (escopo: somente o primeiro
+estudo mínimo; não reutilizável; condições: moderador ≠ note taker, notas
+separando observação de interpretação, revisão de síntese pelo CSA,
+divulgação do waiver nos findings). CSA-OBS-BOOT-05: sessão reutilizada, não
+contada como portabilidade. O Council autorizou em seguida a slice de
+fechamento operacional (ativa acima) — recrutamento e sessões seguem não
+autorizados.
 
 ## Slice concluída — Canonical Project Memory Adapter Feasibility (Stage 4, terceira candidate slice)
 
