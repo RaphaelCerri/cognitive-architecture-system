@@ -96,7 +96,8 @@ evidence_method:
   - Vertical-slice scope, state/event/data contract, persistence, architecture-option and authorization-readiness analysis
   - Local executable vertical-slice implementation with domain tests, boundary scans and structural accessibility checks
   - Human-operated accessibility verification with honest not-executed classification and future-verification hypotheses
-budget_or_timebox: C-lite Stage 3 Human-Operated Accessibility Verification; max 5 tracked files, 2 commits, 1 material correction cycle
+  - Cross-executor response comparison and documentary bootstrap-portability simulation
+budget_or_timebox: Agent-Agnostic Project Bootstrap and Context Portability — Foundation Slice; max 8 iterations, 90 minutes, 10 changed files, 2 commits
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -184,6 +185,7 @@ expected_outputs:
   - C-lite Stage 3 Testing, Risk and Authorization Readiness
   - C-lite Stage 3 Architecture and Limitation Report
   - C-lite Human-Operated Accessibility Verification Report
+  - Cross-Executor Response and Portability Assessment
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -250,6 +252,7 @@ evidence:
   - knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md
   - knowledge/research/evidence/clite-stage3-architecture-limitation-report.md
   - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md
+  - knowledge/research/evidence/cross-executor-response-portability-assessment.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -301,7 +304,19 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 3 Human-Operated Accessibility Verification
+## Slice ativa — Agent-Agnostic Project Bootstrap and Context Portability (Foundation)
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `4108d8b581bae09fc71421ba7f9958580e8412a2` (verificação de acessibilidade aceita; criterion 10 parcial), o Conselho autorizou a fundação da camada agent-agnostic: ponto de entrada, charter, status derivado, mapa do repositório, contrato de execução, contrato de retorno, manifest piloto e avaliação de portabilidade. A troca real de executor (Codex → Claude Code) motivou a slice. Automação, compiler de contexto, integração LLM, Stage 4, sessão empírica e avaliação externa permanecem proibidos.
+
+**[Nota de fronteira]** Bootstrap e portabilidade de contexto tangenciam ARP-0002 (compilação/planejamento) e ARP-0004 (context economics); esta slice foi registrada aqui por continuidade do milestone V1-M02 e da cadeia de decisões, **sem alterar** os estados daqueles programas. Uma futura decisão do Conselho pode realocar a linha (ACP se necessário). O Charter criado **não é** a Constitution Layer de AP-0002 (que permanece `proposed`).
+
+**[Entregáveis]** `AGENT_START_HERE.md` (raiz, entry point de executores; README permanece a porta humana); em `foundation/bootstrap/`: `PROJECT_CHARTER.md` (orientação canônica estável consolidando PMM-001/GOV-001/AIP-001/ADRs), `PROJECT_STATUS.yaml` (snapshot derivado não autoritativo, atualizado por checkpoint), `REPOSITORY_MAP.yaml` (navegação institucional com autoridade/mutabilidade/canonicidade por área e matriz da camada bootstrap), `EXECUTION_CONTRACT.md` (regras universais: preflight, Git, evidência, budgets, precedência operacional subordinada a PMM-001, staleness, retorno, rollback), `RETURN_SCHEMA.yaml` v1.0.0 (duas camadas: executive summary machine-readable + CSA review package; extensível, sem remoções) e `manifests/CM-0001` (piloto: sessão dirigida de acessibilidade, `registered_not_authorized`).
+
+**[Avaliação — E50]** Comparação qualitativa Codex×Fable por 13 dimensões sem score: conteúdo convergente, formato divergente; elementos de ambos incorporados ao RETURN_SCHEMA. Simulação documental de portabilidade: as nove necessidades de reconstrução do cenário são atendidas pela sequência START_HERE→Charter→Status→Contract→Manifest (~6–8k tokens de bootstrap). Lacunas nomeadas: GOV-001 vincula papéis a modelos específicos; README não referencia o novo entry point; Council Decisions recentes persistem primariamente em citações de IHR (directives param em AD-004); precedência operacional aguarda confirmação; ARCH-001 mapeado a `architecture/system-overview.md`. Portabilidade **não** foi validada com outro modelo real.
+
+**[Readiness]** Fundação pronta para revisão do CSA/Conselho. Decisões futuras: confirmar precedência e canonicidade; tratar as lacunas 1–3; decidir teste vivo (próxima slice iniciando por AGENT_START_HERE); escolher entre sessão empírica (CM-0001), Stage 4 proposal e gates E40. Nada começa automaticamente.
+
+## Slice concluída — C-lite Stage 3 Human-Operated Accessibility Verification
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `1837d4492d122d16c263c3ab78bbb0cbb9df9ef3` (implementação aceita com 12/13 exit criteria), o Conselho autorizou exclusivamente a verificação empírica de acessibilidade operada pelo Chief e assistida pelo executor. Não é user research, avaliação externa, teste de usabilidade nem certificação; não produz claim WCAG; não autoriza Stage 4, produção ou frontend definitivo.
 
