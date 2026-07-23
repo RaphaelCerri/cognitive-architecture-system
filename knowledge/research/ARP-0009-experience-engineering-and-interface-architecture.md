@@ -304,7 +304,38 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — System-Wide Architecture Gap Audit and Selective Hardening
+## Slice ativa — Personal Mode Foundation (pós-auditoria, sob AD-006)
+
+**[Decisão]** Em 2026-07-23, o CVO autorizou papel duplo temporário
+(AD-006). Sob essa diretiva, o CSA incorporado **aceitou IHR-0034** com 4
+findings (CSA-34-1: rejeitada a mudança do IHP-001 para campo de custo —
+prática voluntária primeiro; CSA-34-2: E75 antes/junto do intake; CSA-34-3:
+Memories reais nunca entram no Git institucional por default; CSA-34-4:
+redação de ARCH-001 adiada — somente ponteiro datado) e autorizou a slice
+omnibus do portfolio Now/Next de E74.
+
+**[Entregáveis]** GOV-002 (modos de operação + perfil personal-low-risk —
+fecha G-A02/G-A14); `ARP-0009-E75` (processo de aceite de update proposal —
+fecha G-A05); `E76` (desenho do audit artifact NDJSON com hash chain — fecha
+documentalmente G-A06); `E77` (Real Execution Boundary spec — slice 5 da
+sequência; WorkOrder, obrigações do engine, proposta de 1ª implementação
+supervisionada); backup operacional (`scripts/backup-repo.ps1` + `BACKUP.md`
+— ciclo completo backup→restore TESTADO, com achado real corrigido:
+`core.longpaths=true` obrigatório no restore em paths longos do Windows —
+G-A07 parcialmente fechado, resta a decisão humana do destino externo);
+**Real Project Intake v0** (G-A03 — `project-fixture.ts` + `intake.ts` +
+override de fixture no adapter + `projects/` no .gitignore raiz; 54/54 testes
+no adapter incl. 7 novos; CLI exercitado de ponta a ponta); ponteiro datado
+em ARCH-001 (CSA-34-4).
+
+**[Fora do alcance desta slice]** DH-1..7 do estudo (decisões pessoais do
+CVO + G-17), destino externo do backup, e tudo que é Tier C.
+
+## Slice concluída — System-Wide Architecture Gap Audit and Selective Hardening
+
+**[Aceite]** Em 2026-07-23, o CSA (incorporado sob AD-006, acumulação
+divulgada) aceitou IHR-0034 com os findings CSA-34-1..4 registrados na slice
+ativa acima.
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0033 (checkpoint
 `2b89c8332da42475ff0a04377a01146300994c57`), o Council autorizou uma auditoria

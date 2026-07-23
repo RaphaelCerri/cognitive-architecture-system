@@ -26,6 +26,14 @@ relations:
 
 > **Checkpoint estrutural:** este documento contém somente a arquitetura editorial submetida à revisão. A redação definitiva não foi iniciada. Conceitos experimentais são identificados explicitamente e não se tornam Core Types por aparecerem aqui.
 
+> **Estado atual (ponteiro datado — 2026-07-23, auditoria macro E71/CSA-34-4):**
+> este esqueleto reflete a visão de 2026-07-22 e **não descreve o sistema
+> real atual**. O que existe de fato vive em: camada de bootstrap
+> (`foundation/bootstrap/`), programas ARP-0008/ARP-0009 e suas evidências
+> (E01–E77), experimentos executáveis (`experiments/EXPERIMENTS.md`),
+> GOV-002 (modos de operação) e PROJECT_STATUS. A redação incremental deste
+> documento é proposta Tier B pendente de decisão do Council (gap G-A01).
+
 ## 0. Como usar este documento
 
 **Finalidade:** explicar autoridade, ordem de leitura, convenções, estados de maturidade e como seguir referências canônicas.

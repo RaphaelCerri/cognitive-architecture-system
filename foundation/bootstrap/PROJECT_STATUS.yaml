@@ -15,69 +15,71 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 2b89c8332da42475ff0a04377a01146300994c57   # último checkpoint ACEITO (IHR-0033); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0033 + Council Decision authorizing System-Wide Architecture Gap Audit and Selective Hardening
+  observed_head: af0401cd269416c676625004f26b9c4d21dac62c   # último checkpoint ACEITO (IHR-0034, via CSA sob AD-006); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0034 under AD-006 (dual-role, disclosed) + omnibus Personal Mode Foundation slice
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: minimal-study-operational-gate-closure
+  id: system-wide-architecture-gap-audit
   state: accepted
-  handoff: milestones/V1-M02-minimal-study-gate-closure-handoff.md
-
-accepted_checkpoints_this_round:
-  - minimal-study-operational-gate-closure (IHR-0033)
+  handoff: milestones/V1-M02-system-audit-handoff.md
+  notes:
+    - accepted_by_csa_incorporated_under_AD-006_dual_role_disclosed
+    - findings_csa_34_1_to_4_recorded_in_arp_0009
 
 pending_review_checkpoints:
-  - id: system-wide-architecture-gap-audit
+  - id: personal-mode-foundation
     state: pending_review
-    handoff: milestones/V1-M02-system-audit-handoff.md
+    handoff: milestones/V1-M02-personal-mode-foundation-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: System-Wide Cognitive Architecture Gap Audit and Selective Tier-A Hardening
-  directive_reference: Council Decision "System-Wide Cognitive Architecture Gap Audit and Selective Hardening" fornecida via CSA em 2026-07-23; evidências ARP-0009-E70..E74
+  title: Personal Mode Foundation (omnibus Tier-B Now/Next de E74, sob AD-006)
+  directive_reference: AD-006 + decisão CSA incorporada registrada em ARP-0009; entregas GOV-002, E75, E76, E77, backup operacional, Real Project Intake v0, ARCH-001 pointer
 
-human_decisions_outstanding:   # DH do estudo mínimo — inalteradas; ver ARP-0009-E69 §3
+human_decisions_outstanding:   # o resto irredutível — só o CVO responde
   - DH-1 compensacao_valor_metodo_teto (candidato R$120 fixo PIX)
-  - DH-2 local_de_armazenamento (candidato volume cifrado local)
+  - DH-2 local_de_armazenamento_do_estudo (candidato volume cifrado local)
   - DH-3 confirmacao_raphael_papeis_candidatos
   - DH-4 note_taker_nomeacao (BLOCKING_UNASSIGNED)
   - DH-5 aceite_final_consentimento_acessivel
   - DH-6 canal_recrutamento_e_janela_de_datas
-  - DH-7 g17_autorizacao_do_estudo (Council)
-  - NOVA (auditoria) backup_do_repositorio_definir_copia_externa (G-A07 — candidato a maior risco operacional)
-
-audit_headline:   # síntese de E74 (derivada, não autoritativa)
-  macro_verdict: strong_foundation_conceptual_and_domain / insufficient_execution_and_observability / early_personal_mode
-  largest_existential_risk: sistema nunca virar ferramenta de uso real (G-A03 intake + G-A15 dogfooding)
-  highest_leverage_improvement: Real Project Intake (ideia real → Memory válida sem editar YAML)
-  tier_a_applied: 5 correções de índice/normativo + EXPERIMENTS.md + reader size guard (164 testes verdes)
-  tier_b_proposals_pending_council: ver ARP-0009-E74 §2 (portfolio Now/Next/Later)
+  - DH-7 g17_autorizacao_do_estudo (Council; recomendação authorize_with_conditions)
+  - DH-backup destino_EXTERNO_do_bundle (script e restore prontos/testados — falta onde guardar a cópia)
+  - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15)
 
 decided_slice_sequence:
-  - 1..4 concluídas/aceitas (IHR-0029..0032); gate closure aceita (IHR-0033)
-  - Estudo mínimo: aguardando DH-1..6 + G-17 (Council)
-  - 5. Real Execution Boundary (aguardando; reforçada pela auditoria como Next)
+  - 1..4 aceitas (IHR-0029..0032); gate closure aceita (IHR-0033); auditoria aceita (IHR-0034)
+  - Personal Mode Foundation (esta slice — pending_review)
+  - Estudo mínimo: aguardando DH-1..7
+  - Slice 5 Real Execution Boundary: ESPECIFICADA em E77; implementação (Supervised Execution Engine) proposta, não autorizada
   - 6. Production Architecture Proposal (bloqueada; decidirá referência entre experimentos)
 
 blocked_work:
   - Recrutamento/sessões do estudo (G-17 aberto)
-  - Real Execution Engine (spec primeiro — slice 5); autenticação; enforcement; credenciais
-  - Team Mode e Product Mode (intentionally_deferred — E70/E74)
-  - Promoção de contratos experimentais a canon
-  - Redação de ARCH-001, Mode Boundary doc, processo de aceite de update proposal, audit artifact, perfil personal-low-risk de governança, Real Project Intake (propostas Tier B — exigem decisão do Council)
-  - Production frontend, deploy, integrações, CI/observabilidade (Tier C — não construir ainda)
+  - Supervised Execution Engine e qualquer autonomia de agente (E77 §5-6: audit → identity enforcement → engine)
+  - Autenticação, enforcement, credenciais (ARP-0007 scoped)
+  - Team Mode e Product Mode (GOV-002; intentionally_deferred)
+  - Redação incremental de ARCH-001 (Tier B pendente — CSA-34-4 autorizou só o ponteiro)
+  - Implementação do audit artifact (E76 é desenho; implementação = slice candidata)
+  - Campo de custo no IHP-001 (CSA-34-1: prática voluntária primeiro)
+  - Tier C (CI, observabilidade-plataforma, parity test acoplando experimentos, embeddings)
 
 active_programs:
   - ARP-0008
   - ARP-0009
 
+operational_tools:
+  - scripts/backup-repo.ps1 (+ scripts/BACKUP.md) — backup/restore testados 2026-07-23
+  - experiments/clite-memory-adapter-feasibility/src/intake.ts — Real Project Intake v0 (saída em projects/, fora do Git)
+
 preserved_local_paths:
   - .obsidian/
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
+  - projects/ (Memories de projetos reais — NUNCA versionar; CSA-34-3/G-A18)
 
 next_required_decision:
-  type: csa_council_review_of_system_audit_ihr_0034_then_tier_b_portfolio_prioritization
+  type: csa_review_of_personal_mode_foundation_ihr_0035_then_cvo_answers_dh_list
   automatic_continuation: false
 
 authority_notice:
