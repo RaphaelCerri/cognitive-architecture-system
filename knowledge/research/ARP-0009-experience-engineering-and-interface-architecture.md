@@ -92,7 +92,8 @@ evidence_method:
   - Deterministic documentary prototype creation, annotation, traceability and evaluation-readiness review
   - Evaluation claim, protocol, participant, ethics, evidence, synthesis and authorization-readiness closure
   - Evaluation role, renderer, recruitment, consent, data-operation, incident and launch-gate closure
-budget_or_timebox: C-lite Stage 2 Evaluation Operational Readiness Closure; max 6 iterations, 50 minutes, 6 changed files, 2 no-progress iterations
+  - Internal renderer validation, deterministic walkthrough, assisted-review and Stage 3 readiness analysis
+budget_or_timebox: C-lite Internal Pre-Evaluation and Stage 3 Readiness Review; max 7 iterations, 60 minutes, 6 changed files, 1 material correction cycle, 2 no-progress iterations
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -171,6 +172,9 @@ expected_outputs:
   - C-lite Consent, Compensation, Privacy and Data Handling Specification
   - C-lite Accessibility, Renderer and Specialist Readiness Plan
   - C-lite Evaluation Launch Gates and Authorization Readiness
+  - C-lite Renderer Validation Report
+  - C-lite Internal Walkthrough and Assisted Review Findings
+  - C-lite Stage 3 Readiness Assessment
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -228,6 +232,9 @@ evidence:
   - knowledge/research/evidence/clite-consent-compensation-privacy-data-handling-specification.md
   - knowledge/research/evidence/clite-accessibility-renderer-specialist-readiness-plan.md
   - knowledge/research/evidence/clite-evaluation-launch-gates-authorization-readiness.md
+  - knowledge/research/evidence/clite-renderer-validation-report.md
+  - knowledge/research/evidence/clite-internal-walkthrough-assisted-review-findings.md
+  - knowledge/research/evidence/clite-stage3-readiness-assessment.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -279,7 +286,27 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 2 Evaluation Operational Readiness Closure
+## Slice ativa — C-lite Internal Pre-Evaluation and Stage 3 Readiness Review
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `d3c8d4397dc36d9022b8c85d47ed4c379752363b`, o Chief adiou a avaliação externa com participantes e autorizou exclusivamente uma revisão interna limitada: validar o renderer candidato, executar walkthrough estrutural determinístico, realizar revisões assistidas sob seis perspectivas, identificar blockers e avaliar readiness para uma futura proposta separada de Stage 3. Participantes externos, recrutamento, consentimento, compensação, user testing, gravação, dados pessoais, expert review independente, frontend, Stage 3, código de produto e claims de usabilidade/acessibilidade/segurança/validação permanecem proibidos.
+
+Pergunta principal: existe base interna suficiente — renderer, ciclo navegável, autoridade, estados, recovery e contratos identificáveis — para preparar uma proposta separada de Stage 3 sem depender de decisões improvisadas?
+
+Entregáveis versão `1.0`:
+
+- C-lite Renderer Validation Report;
+- C-lite Internal Walkthrough and Assisted Review Findings;
+- C-lite Stage 3 Readiness Assessment.
+
+**[Renderer]** VS Code built-in Markdown Preview 1.129.1 em Windows 11 foi validado técnica e documentalmente: 65 links internos íntegros, 24 variantes alcançáveis, zero requisições externas, reinício determinístico e nenhuma modificação de repositório. Resultado: **suitable with limitations** — keyboard/focus/zoom/reflow avaliados documentalmente, tecnologia assistiva não testada e ambiente não é o dispositivo controlado dedicado. G-04 permanece aberto para avaliação com participantes.
+
+**[Walkthrough e findings]** O ciclo completo entry→idea→discovery→assumptions→contradição→understanding→plan→revision→authorization→queued→running→input→failure→recovery→artifact→evidence→accept/revise/reject→Memory→return foi percorrido sem interrupção, cobrindo J1–J6 e os 18 flows. Nenhum blocker. Um finding material (F-01: vocabulário interno `CEA` na superfície de autorização SV-09), quatro minors e seis observations — incluindo confirmações positivas de autoridade consistente, ausência de fake progress, separação artifact/evidence e plausibilidade técnica integral. O protótipo `1.0` **não foi alterado**: o único ciclo material de correção não foi consumido, preservando os hashes candidatos ao freeze G-03.
+
+**[Epistemic boundary]** Todo o material desta slice é revisão interna assistida por agente único. Não é user evidence, não é expert review independente, não responde PQ-01–20 e não valida HP-01–09.
+
+**[Readiness]** `Ready with conditions` para preparar uma **proposta** separada de Stage 3 — não para executá-lo. Recomendação de menor vertical slice: protótipo executável local-only de um ciclo governado, state machine determinística, dados sintéticos, sem backend/autenticação/agentes reais/deploy/claims, com correção prévia de F-01 no conteúdo usado. Evaluation Authorization, Evaluation Execution, Stage 3 e frontend permanecem bloqueados; a avaliação externa permanece adiada com os gates de E40 abertos.
+
+## Slice concluída — C-lite Stage 2 Evaluation Operational Readiness Closure
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `3e21e46c0e11eb1550236fac73c7c1fb52feba73`, o Conselho aceitou o protocolo arquiteturalmente pronto e autorizou exclusivamente fechar readiness operacional documental. Recruitment, participant contact, consent collection, payment, sessions, reviews executados, recording, storage setup/data collection, renderer installation/testing, prototype modification, Stage 3, frontend e implementation continuam bloqueados.
 
@@ -795,4 +822,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente quatro artifacts documentais de readiness operacional e atualiza este programa/IHR. Prototype `1.0`, Scenario/Annotation Packs e Evaluation Protocol permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, frontend, code, package, CI ou draft; não recruta/contata/consente/compensa participantes, não instala/testa renderer, não configura storage, não coleta evidence/data e não executa session/interview/user test/specialist review. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review e assignments/evidence fora de execução. Evaluation Authorization, Evaluation Execution, Stage 3 e frontend permanecem bloqueados; nada começa automaticamente.
+Esta slice cria somente três artifacts documentais de pré-avaliação interna e atualiza este programa/IHR. Prototype `1.0`, Scenario/Annotation Packs, Evaluation Protocol e artifacts de operational readiness permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, frontend, code, package, CI ou draft; não recruta/contata/consente/compensa participantes, não executa session/interview/user test/independent expert review, não coleta dados pessoais e não inicia Stage 3. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review deste checkpoint e, se aceito, uma decisão explícita sobre encomendar a proposta de Stage 3 e sobre a correção de F-01. Evaluation Authorization, Evaluation Execution, Stage 3 e frontend permanecem bloqueados; nada começa automaticamente.
