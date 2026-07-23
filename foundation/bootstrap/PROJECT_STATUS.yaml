@@ -15,49 +15,48 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 1cbf07da5696f17e8a2c1e96d4700e2d06c6d9cf   # último checkpoint ACEITO (IHR-0030); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0030 (identity/authority vocabulary accepted) + Council Decision authorizing Canonical Project Memory Adapter Feasibility
+  observed_head: 4676b2462bd79f07886bc04d6286ce1764a773c5   # último checkpoint ACEITO (IHR-0031); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0031 (memory adapter Feasible; Option D event-history hypothesis approved) + Council Decision authorizing Product Experience Validation Minimal Study Readiness
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: identity-and-authority-model
+  id: canonical-project-memory-adapter-feasibility
   state: accepted
-  handoff: milestones/V1-M02-identity-and-authority-model-handoff.md
+  handoff: milestones/V1-M02-project-memory-adapter-feasibility-handoff.md
   notes:
-    - eleven_candidate_contracts_accepted_as_experimental_working_vocabulary
-    - proportional_solo_operator_sod_policy_adopted_as_research_boundary
-    - process_observation_csa_obs_boot_03_session_reuse_not_counted_as_portability_test
+    - memory_format_0_1_experimental_accepted_as_working_format_not_canonical_schema
+    - option_d_hybrid_event_history_approved_as_architectural_hypothesis
+    - audit_event_artifact_remains_explicit_gap
+    - process_observation_csa_obs_boot_04_session_reuse_not_counted
 
 accepted_checkpoints_this_round:
-  - identity-and-authority-model (IHR-0030)
+  - canonical-project-memory-adapter-feasibility (IHR-0031)
 
 pending_review_checkpoints:
-  - id: canonical-project-memory-adapter-feasibility
+  - id: product-experience-validation-minimal-study-readiness
     state: pending_review
-    handoff: milestones/V1-M02-project-memory-adapter-feasibility-handoff.md
+    handoff: milestones/V1-M02-product-experience-study-readiness-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: Stage 4 — Canonical Project Memory Adapter Feasibility (terceira candidate slice)
-  directive_reference: Council Decision "Canonical Project Memory Adapter Feasibility" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidência ARP-0009-E60
+  title: Stage 4 — Product Experience Validation Minimal Study Readiness (quarta candidate slice; documental)
+  directive_reference: Council Decision "Product Experience Validation Minimal Study Readiness" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidências ARP-0009-E61..E64
 
 decided_slice_sequence:
   - 1. Domain Extraction Feasibility (aceita — IHR-0029, Feasible)
   - 2. Identity and Authority Model (aceita — IHR-0030, vocabulário experimental)
-  - 3. Canonical Project Memory Adapter (esta slice — pending_review, Feasible)
-  - 4. Product Experience Validation (necessária posteriormente)
+  - 3. Canonical Project Memory Adapter (aceita — IHR-0031, Feasible; Option D aprovada)
+  - 4. Product Experience Validation (readiness desta slice — pending_review; sessões NÃO autorizadas)
   - 5. Real Execution Boundary (aguardando)
   - 6. Production Architecture Proposal (bloqueada)
 
 blocked_work:
-  - Product Experience Validation e Real Execution Boundary (próximas da sequência; NÃO autorizadas)
-  - Production Architecture Proposal
-  - Slices candidatas de E59 (Identity Representation Feasibility etc.; nenhuma autorizada)
-  - Promoção do adapter de Memory ou do formato memory-format-0.1-experimental a canon
-  - Stage 4 implementation / promoção do domínio extraído a pacote canônico
+  - Recrutamento, contato, screener, consentimento, agendamento, sessões, compensação, gravação, coleta de dados (estudo mínimo definido mas NÃO autorizado — G-17 pendente)
+  - Real Execution Boundary e Production Architecture Proposal
+  - Avaliação externa COMPLETA (E40 segue governando; gates abertos)
+  - HV-01–07 / sessão dirigida de acessibilidade (CM-0001 registra sem autorizar)
+  - Promoção de formato de Memory, adapter, domínio extraído ou ScenarioFixture a canon
   - Autenticação real, enforcement, credenciais (ARP-0007 permanece scoped)
-  - External user evaluation (adiada; gates E40 abertos, 11 críticos)
-  - C-lite directed empirical accessibility session (manifest CM-0001 registra sem autorizar)
   - Production frontend, deploy, integrações reais, persistência real, motor de execução real
   - Bootstrap automation / context compiler / integração LLM
 
@@ -70,7 +69,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_memory_adapter_feasibility_ihr_0031
+  type: csa_council_review_of_minimal_study_readiness_ihr_0032_and_gate_closure_authorization
   automatic_continuation: false
 
 authority_notice:

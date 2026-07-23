@@ -304,7 +304,45 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — Canonical Project Memory Adapter Feasibility (Stage 4, terceira candidate slice)
+## Slice ativa — Product Experience Validation Minimal Study Readiness (Stage 4, quarta candidate slice)
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0031 (checkpoint
+`4676b2462bd79f07886bc04d6286ce1764a773c5`, outcome **Feasible**; formato
+`memory-format-0.1-experimental` aceito como formato experimental de trabalho;
+classificação canonical/derived/fora aprovada; Opção D de event history
+aprovada como hipótese; OBS-A/B/C aceitas; CSA-OBS-BOOT-04 registrada), o
+Council reconheceu que o maior risco do programa deixou de ser viabilidade
+técnica e passou a ser compreensão humana, e autorizou exclusivamente a
+definição do **menor estudo com pessoas reais** capaz de testar as hipóteses
+de maior risco da experiência C-lite — sem recrutamento e sem sessões.
+
+**[Nota de fronteira]** Sem código; sem alteração do vertical slice, dos
+adapters, da Ontologia, de ARCH-001 ou de ARP-0007/0008; sem recrutamento,
+contato, consentimento, sessão, compensação, gravação ou coleta; E33/E34/E40
+permanecem intactos como aparato da avaliação completa.
+
+**[Entregáveis]** Quatro evidence artifacts: `ARP-0009-E61` (Gap and
+Hypothesis Matrix — 13 gaps classificados; 8 hipóteses SH-1..8 selecionadas
+por risco; decisão de pesquisa: o estímulo do estudo mínimo é o **vertical
+slice executável**, que já corrigiu F-01 e as limitações de meio F-03/F-04/
+F-06 do protótipo Markdown), `E62` (Minimal Study Protocol — Option D híbrida
+recomendada; 8 tarefas MT-1..8 derivadas de T-01–18 em ≤60 min; probes de
+autoridade e evidência; avaliação de Memory item a item; findings model e
+decision criteria sem score agregado), `E63` (Participants, Ethics,
+Accessibility and Data Operations — 4–6 participantes em 2 cohorts; sem
+gravação; minimização de dados; papéis reduzidos a 2 operadores + CSA reviewer
++ Council com acumulações registradas pela política proporcional de SoD) e
+`E64` (Launch Gates and Authorization Readiness — G-01–17 reavaliados para o
+mínimo; pacote de lançamento de 13 itens; recomendação concreta; G-17
+permanece absoluto).
+
+**[Readiness]** **Not Ready para sessões — Ready para fechamento de gates:**
+restam 6 pendências operacionais pequenas (~2 dias) + autorização explícita
+do Council. Pronta para revisão do CSA/Council (IHR-0032). Recrutamento,
+sessões, Real Execution Boundary e Production Architecture seguem **não
+autorizados**. Nada começa automaticamente.
+
+## Slice concluída — Canonical Project Memory Adapter Feasibility (Stage 4, terceira candidate slice)
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0030 (checkpoint
 `1cbf07da5696f17e8a2c1e96d4700e2d06c6d9cf`; 11 contratos aceitos como
@@ -346,6 +384,21 @@ originais não reconstruíveis, escala/merge/multiusuário não provados.
 **[Readiness]** Pronta para revisão do CSA/Council (IHR-0031). Product
 Experience Validation e Real Execution Boundary seguem **não autorizadas**.
 Nada começa automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0031 (outcome **Feasible**;
+163/163 testes; nenhuma escrita automática no artifact canônico):
+`memory-format-0.1-experimental` aceito como formato experimental de trabalho
+(não schema canônico); classificação canônico/derivado/fora-da-Memory
+aprovada; **Opção D híbrida de event history aprovada como hipótese
+arquitetural** (Memory ≠ audit log ≠ event log ≠ database dump; o artifact de
+auditoria separado permanece gap explícito); comportamento de staleness/
+conflito confirmado (rejeitar/exigir humano/alertar; nunca normalizar
+contradição em silêncio; nunca aplicar proposta sobre versão antiga);
+OBS-A/B/C aceitas (Memory preserva contexto para continuidade, não reproduz
+cada operação; tempo operacional pertence a audit/observability; registry
+aceitável até Compiler futuro). CSA-OBS-BOOT-04: execução na mesma sessão não
+contou como teste de portabilidade. O Council autorizou em seguida a slice
+Product Experience Validation Minimal Study Readiness (ativa acima).
 
 ## Slice concluída — Identity and Authority Model (Stage 4, segunda candidate slice)
 
