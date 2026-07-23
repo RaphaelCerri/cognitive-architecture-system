@@ -304,7 +304,41 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Domain Extraction Feasibility (Stage 4, primeira candidate slice)
+## Slice ativa — Identity and Authority Model (Stage 4, segunda candidate slice)
+
+**[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0029 (checkpoint
+`e28f9afd395cc0248d33319b464dc4f9c5a1550e`, outcome **Feasible**; decisão de
+Interface State aprovada como boundary experimental; OBS-1/2/3 aceitas sem
+correção imediata; execução contada como **segundo teste vivo válido** do
+bootstrap), o Council autorizou exclusivamente a segunda candidate slice:
+pesquisa documental de um modelo **candidato, não canônico e não implementado**
+de identidade, papel, capability, authority, permission, approval, delegation e
+accountability. Pergunta central: qual é o menor modelo conceitual capaz de
+representar quem/o que age, em qual papel, com quais capabilities, sob qual
+autoridade, para qual ação, em qual escopo e validade, **sem fingir
+autenticação ou enforcement inexistentes**?
+
+**[Nota de fronteira]** Sem código; sem alteração do domínio extraído, do
+vertical slice, da Ontologia, de ARCH-001 ou de ARP-0007/0008; sem
+autenticação, enforcement, frontend ou avaliação externa.
+
+**[Entregáveis]** Quatro evidence artifacts: `ARP-0009-E56` (Identity, Actor
+and Role Model — taxonomia humano/agente/sistema, cinco dimensões de identidade,
+role assignments, fronteiras de agentes, lifecycle), `E57` (Capability,
+Authority, Permission and Approval Model — declared≠verified, AuthorityGrant
+candidato, permission asserted≠enforced, ApprovalDecision, classes de ação),
+`E58` (Delegation, Accountability, Audit and Risk Boundaries — proibições de
+delegação, separation of duties proporcional, AccountabilityLink, audit trail ≠
+event log ≠ Memory ≠ evidence, fronteiras de segurança não resolvidas, 10
+anti-patterns) e `E59` (Implementation Readiness — relação com o domínio
+extraído, 11 contratos candidatos `experimental_only`, implicações de UX,
+questões abertas, 6 slices candidatas não autorizadas).
+
+**[Readiness]** Pronta para revisão do CSA/Council (IHR-0030). Próxima slice
+da sequência decidida — Canonical Project Memory Adapter — segue **não
+autorizada**. Nada começa automaticamente.
+
+## Slice concluída — C-lite Domain Extraction Feasibility (Stage 4, primeira candidate slice)
 
 **[Decisão]** Em 2026-07-23, após o CSA aceitar IHR-0028 (checkpoint
 `375390adf8afc461fdd1133e435dd51a44eb27cc`, `accepted_with_process_note` —
@@ -344,6 +378,20 @@ extração na futura decisão de arquitetura (slice 6).
 **[Readiness]** Pronta para revisão do CSA/Council (IHR-0029). Próxima slice da
 sequência (Identity and Authority Model) segue **não autorizada**. Nada começa
 automaticamente.
+
+**[Aceite]** Em 2026-07-23, o CSA aceitou IHR-0029 (outcome **Feasible**, 0
+blockers, 0 findings materiais): decisão de Interface State aprovada como
+boundary experimental (stale context é domínio; views são apresentação);
+candidatos fortes a reuso confirmados (famílias de estado, commands/events/
+guards, rejeições explicadas, separações approval/execution/acceptance e
+artifact/evidence, failure/retry, replay determinístico, derivação de Memory,
+boundary de persistência); permanecem experimentais o `ScenarioFixture`, as
+mensagens de guard em pt-BR (futuro: guards produzem reason_code/context/
+recoverability/required_authority e a aplicação deriva a mensagem — sem
+correção agora), a duplicação Stage 3 × extração (resolver na Production
+Architecture Proposal) e qualquer leitura de "Feasible" como produção. A
+execução contou como **segundo teste vivo válido** do bootstrap. O Council
+autorizou em seguida a slice Identity and Authority Model (ativa acima).
 
 ## Slice concluída — C-lite Stage 4 Productization Boundary and Evolution Proposal (Research)
 

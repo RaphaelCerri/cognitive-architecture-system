@@ -15,48 +15,49 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 375390adf8afc461fdd1133e435dd51a44eb27cc   # último checkpoint ACEITO (IHR-0028); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0028 (accepted_with_process_note, CSA-OBS-BOOT-02) + Council Decision authorizing Domain Extraction Feasibility
+  observed_head: e28f9afd395cc0248d33319b464dc4f9c5a1550e   # último checkpoint ACEITO (IHR-0029); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
+  status_generated_from: CSA acceptance of IHR-0029 (Domain Extraction Feasibility, outcome Feasible) + Council Decision authorizing Identity and Authority Model
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: clite-stage4-productization-boundary-proposal
-  state: accepted_with_process_note
-  handoff: milestones/V1-M02-clite-stage4-productization-boundary-proposal-handoff.md
-  process_observation:
-    id: CSA-OBS-BOOT-02
-    finding: executor_reused_conversation_context_instead_of_reloading_repository_bootstrap
-    impact_on_research: none_material
-    impact_on_portability_evidence: execution_not_counted
+  id: clite-domain-extraction-feasibility
+  state: accepted
+  handoff: milestones/V1-M02-clite-domain-extraction-feasibility-handoff.md
+  notes:
+    - interface_state_split_approved_as_experimental_boundary
+    - second_valid_live_bootstrap_test_confirmed
+    - obs_1_2_3_accepted_no_immediate_correction
 
 accepted_checkpoints_this_round:
-  - clite-stage4-productization-boundary-proposal (IHR-0028)
+  - clite-domain-extraction-feasibility (IHR-0029)
 
 pending_review_checkpoints:
-  - id: clite-domain-extraction-feasibility
+  - id: identity-and-authority-model
     state: pending_review
-    handoff: milestones/V1-M02-clite-domain-extraction-feasibility-handoff.md
+    handoff: milestones/V1-M02-identity-and-authority-model-handoff.md
 
 authorized_work:
   state: completed_pending_review
-  title: C-lite Stage 4 — Domain Extraction Feasibility (primeira candidate slice de E54)
-  directive_reference: Council Decision "C-lite Domain Extraction Feasibility" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidência ARP-0009-E55
+  title: Stage 4 — Identity and Authority Model (segunda candidate slice; documental, sem código)
+  directive_reference: Council Decision "Identity and Authority Model" fornecida via CSA em 2026-07-23; ARP-0009 slice ativa; evidências ARP-0009-E56..E59
 
 decided_slice_sequence:   # ordem definida pelo Council em 2026-07-23; sem paralelismo entre 1 e 2
-  - 1. Domain Extraction Feasibility (esta slice)
-  - 2. Identity and Authority Model (aguardando)
+  - 1. Domain Extraction Feasibility (aceita — IHR-0029, Feasible)
+  - 2. Identity and Authority Model (esta slice — pending_review)
   - 3. Canonical Project Memory Adapter (aguardando)
   - 4. Product Experience Validation (necessária posteriormente)
   - 5. Real Execution Boundary (aguardando)
   - 6. Production Architecture Proposal (bloqueada)
 
 blocked_work:
-  - Identity and Authority Model (próxima da sequência; NÃO autorizada)
-  - Canonical Project Memory Adapter, Real Execution Boundary, Product Experience Validation, Production Architecture Proposal
+  - Canonical Project Memory Adapter (próxima da sequência; NÃO autorizada)
+  - Real Execution Boundary, Product Experience Validation, Production Architecture Proposal
+  - Identity Representation Feasibility e demais slices candidatas de E59 (nenhuma autorizada)
   - Stage 4 implementation / promoção do domínio extraído a pacote canônico
+  - Autenticação real, enforcement de autorização, credenciais, identidade criptográfica (ARP-0007 permanece scoped)
   - External user evaluation (adiada; gates E40 abertos, 11 críticos)
   - C-lite directed empirical accessibility session (pendência nomeada; manifest CM-0001 registra sem autorizar)
-  - Production frontend, deploy, integrações reais, persistência real, identidade real, motor de execução real
+  - Production frontend, deploy, integrações reais, persistência real, motor de execução real
   - Bootstrap automation / context compiler / integração LLM
 
 active_programs:
@@ -68,7 +69,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_domain_extraction_feasibility_ihr_0029
+  type: csa_council_review_of_identity_authority_model_ihr_0030
   automatic_continuation: false
 
 authority_notice:
