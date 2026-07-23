@@ -1,0 +1,17 @@
+{
+  "name": "clite-stage3-vertical-slice",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "description": "C-lite Stage 3 local executable vertical slice — experimental, synthetic, local-only. Not a product. Demonstrates flow and comprehension; enforces no real access control.",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/app/main.ts --bundle --format=iife --outfile=dist/app.js --target=es2020",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"tests/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.6.0"
+  }
+}
