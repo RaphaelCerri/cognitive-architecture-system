@@ -95,7 +95,8 @@ evidence_method:
   - Internal renderer validation, deterministic walkthrough, assisted-review and Stage 3 readiness analysis
   - Vertical-slice scope, state/event/data contract, persistence, architecture-option and authorization-readiness analysis
   - Local executable vertical-slice implementation with domain tests, boundary scans and structural accessibility checks
-budget_or_timebox: C-lite Stage 3 Local Executable Vertical Slice Implementation; max 30 tracked files, 5 commits, 3 sessions, 2 material correction cycles
+  - Human-operated accessibility verification with honest not-executed classification and future-verification hypotheses
+budget_or_timebox: C-lite Stage 3 Human-Operated Accessibility Verification; max 5 tracked files, 2 commits, 1 material correction cycle
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -182,6 +183,7 @@ expected_outputs:
   - C-lite Technical Architecture, Persistence and Technology Options
   - C-lite Stage 3 Testing, Risk and Authorization Readiness
   - C-lite Stage 3 Architecture and Limitation Report
+  - C-lite Human-Operated Accessibility Verification Report
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -247,6 +249,7 @@ evidence:
   - knowledge/research/evidence/clite-technical-architecture-persistence-technology-options.md
   - knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md
   - knowledge/research/evidence/clite-stage3-architecture-limitation-report.md
+  - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -298,7 +301,17 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 3 Local Executable Vertical Slice Implementation
+## Slice ativa — C-lite Stage 3 Human-Operated Accessibility Verification
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `1837d4492d122d16c263c3ab78bbb0cbb9df9ef3` (implementação aceita com 12/13 exit criteria), o Conselho autorizou exclusivamente a verificação empírica de acessibilidade operada pelo Chief e assistida pelo executor. Não é user research, avaliação externa, teste de usabilidade nem certificação; não produz claim WCAG; não autoriza Stage 4, produção ou frontend definitivo.
+
+**[Execução]** Preflight verde (build/typecheck/43 testes/zero requests). Ambiente registrado: Windows 11 Pro 26200, Chrome 150, aplicação via `file://`, Narrator disponível, operador Raphael (interno, não independente). O operador realizou **revisão visual e funcional geral** sem problema evidente; declarou explicitamente **não** ter executado o ciclo completo por teclado, os testes de zoom 200–400%/320 px e o Narrator. A aprovação geral **não foi convertida** em evidência empírica.
+
+**[Resultado]** E49: passed 0 · failed 0 · limited 5 · not_executed 4; `general_review: no_obvious_issue_found`; nenhum finding empírico confirmado; FP-01 (limitação de protocolo) e sete hipóteses de verificação futura HV-01–07 registradas sem correção especulativa. Nenhum ciclo material consumido; nenhuma correção; E48 atualizado. **Exit criterion 10: `partially_satisfied`** — mesmo um futuro `satisfied` significará somente *technical accessibility verification completed*, nunca *accessibility validated for users*.
+
+**[Próximo]** CSA/Council review; opções: nova sessão empírica dirigida (~15–20 min) para fechar o criterion 10, e decisão entre Stage 4 proposal, retomada dos gates E40 e a iniciativa Agent-Agnostic Bootstrap. Nada começa automaticamente.
+
+## Slice concluída — C-lite Stage 3 Local Executable Vertical Slice Implementation
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `4e9ec43b3c96dc787b6e344ab9d3cc8ff8312fcd`, o Conselho aprovou a proposta de Stage 3, decidiu os entry criteria (label F-01 "Responsável pela pesquisa"; arquitetura e persistência Option D; escopo local/single-user/sintético; AT check autorizado como verificação técnica básica; orçamento de 30 arquivos/5 commits/3 sessões; rollback por reversão) e autorizou exclusivamente a implementação experimental local do vertical slice. Produto final, frontend de produção, backend, autenticação real, agentes reais, deploy, dados pessoais, claims e Stage 4 permanecem proibidos.
 

@@ -106,7 +106,7 @@ Zero chamadas externas em runtime (CSP `default-src 'self'; connect-src 'none'` 
 | 7. failure/recovery com preservação | atendido (testes) |
 | 8. Memory update e return | atendido (derivação + snapshot + stale view) |
 | 9. zero chamadas externas | atendido (CSP + varredura) |
-| 10. technical checks executados | atendido (typecheck, build, 43 testes) — exceto empíricos de acessibilidade |
+| 10. technical checks executados | **partially_satisfied** (ver E49): checks técnicos completos; sessão humana em 2026-07-23 fez revisão geral (`no_obvious_issue_found`), mas keyboard/zoom/reflow/screen reader permanecem `not_executed` |
 | 11. limitações registradas | este relatório |
 | 12. nenhuma claim de produção | atendido (boundaries em código, UI e docs) |
 | 13. recomendação de Stage 4 | ver IHR-0024 §11 |
@@ -121,7 +121,7 @@ Zero chamadas externas em runtime (CSP `default-src 'self'; connect-src 'none'` 
 
 ## Limitações conhecidas
 
-1. Nenhuma evidência empírica de navegador/teclado/AT/usuário — ver acima.
+1. Evidência empírica limitada: revisão geral humana sem problema evidente (E49), porém keyboard/zoom/reflow/AT sem observação dirigida; hipóteses HV-01–07 registradas em E49 para verificação futura.
 2. Um único cenário (Oficina Horizonte); generalização não demonstrada (risco de overfitting aceito em E47).
 3. Snapshot em localStorage acopla o retorno ao mesmo navegador/perfil — aceitável no escopo single-user local.
 4. O event log cresce sem paginação; irrelevante no volume do cenário.
