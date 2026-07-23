@@ -26,10 +26,18 @@ current_checkpoint:
   evidence:
     - knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md
 
+pending_review_checkpoints:
+  - id: agent-agnostic-bootstrap-foundation
+    state: pending_review
+    handoff: milestones/V1-M02-agent-agnostic-bootstrap-handoff.md
+  - id: bootstrap-continuity-maintenance
+    state: pending_review
+    handoff: milestones/V1-M02-bootstrap-continuity-maintenance-handoff.md
+
 authorized_work:
-  state: authorized
-  title: Agent-Agnostic Project Bootstrap and Context Portability — Foundation Slice
-  directive_reference: Council Decision fornecida via CSA em 2026-07-23 (registrada em IHR-0026 ao fechar)
+  state: completed_pending_review
+  title: Live Bootstrap Portability and Continuity Maintenance Test — Foundation Micro-Slice
+  directive_reference: AD-005 (foundation/directives/AD-005-bootstrap-continuity-maintenance.md), executada em IHR-0027
 
 blocked_work:
   - Stage 4 (sem proposta; não autorizado)
@@ -47,7 +55,7 @@ preserved_local_paths:
   - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
 
 next_required_decision:
-  type: csa_council_review_of_bootstrap_checkpoint
+  type: csa_council_review_of_bootstrap_foundation_and_continuity_checkpoints
   automatic_continuation: false
 
 authority_notice:

@@ -4,6 +4,8 @@ Repositório canônico e agnóstico de runtime para a arquitetura do sistema. O 
 
 O repositório é a memória institucional do projeto. Nenhuma conversa, pessoa, modelo ou runtime é fonte de verdade por si só.
 
+Este README é a porta de entrada **humana**. Se você é um executor — humano ou IA — assumindo trabalho neste repositório, comece por [`AGENT_START_HERE.md`](AGENT_START_HERE.md), a porta de entrada **institucional** para reconstrução de contexto, autoridade e contrato de retorno.
+
 ## Comece aqui
 
 1. [System Overview](architecture/system-overview.md)
