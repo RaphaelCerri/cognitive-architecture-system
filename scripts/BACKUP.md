@@ -15,9 +15,11 @@ Gera `~\Backups\cognitive-architecture\cognitive-architecture-<data>-<sha>.bundl
 
 ## Regras
 
-1. **Copie o bundle para FORA do disco** (decisão pendente: remoto Git privado
-   — recomendado —, drive externo ou nuvem pessoal). Bundle no mesmo disco
-   protege contra `rm` acidental, não contra falha de hardware.
+1. **Backup externo RESOLVIDO (2026-07-23):** remoto Git privado configurado
+   (`origin` → github.com/RaphaelCerri/cognitive-architecture-system) e
+   primeiro push feito pelo CVO. Rotina primária: `git push` após cada
+   checkpoint. O bundle continua como segunda camada (restore offline
+   testado) — mantê-lo é opcional, recomendado 1×/mês.
 2. Untracked NÃO entram no bundle: `.obsidian/` (config local, dispensável) e
    `knowledge/assessments/DRAFT-*.md` (copiar manualmente se importar).
 3. Reter pelo menos os 3 bundles mais recentes; apagar o resto.

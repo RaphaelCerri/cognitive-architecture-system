@@ -38,8 +38,10 @@ authorized_work:
   directive_reference: AD-006 + decisão CSA incorporada registrada em ARP-0009; entregas GOV-002, E75, E76, E77, backup operacional, Real Project Intake v0, ARCH-001 pointer
 
 human_decisions_outstanding:   # o resto irredutível — só o CVO responde
-  - DH-backup destino_EXTERNO_do_bundle (script e restore prontos/testados — falta onde guardar a cópia)
-  - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15)
+  - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15; em andamento pelo CVO em 2026-07-23)
+
+resolved_human_decisions:
+  - DH-backup: RESOLVIDA em 2026-07-23 — remoto Git privado (origin: github.com/RaphaelCerri/cognitive-architecture-system); primeiro push feito pelo CVO; rotina = push por checkpoint + bundle mensal (scripts/BACKUP.md)
 
 deferred_by_cvo_to_backlog:    # decisão do CVO em 2026-07-23: "questões de produto ficam pra backlog"
   reason: foco em uso pessoal; nada vira produto agora
