@@ -94,7 +94,8 @@ evidence_method:
   - Evaluation role, renderer, recruitment, consent, data-operation, incident and launch-gate closure
   - Internal renderer validation, deterministic walkthrough, assisted-review and Stage 3 readiness analysis
   - Vertical-slice scope, state/event/data contract, persistence, architecture-option and authorization-readiness analysis
-budget_or_timebox: C-lite Stage 3 Executable Vertical Slice Proposal; max 7 iterations, 60 minutes, 6 changed files, 2 no-progress iterations
+  - Local executable vertical-slice implementation with domain tests, boundary scans and structural accessibility checks
+budget_or_timebox: C-lite Stage 3 Local Executable Vertical Slice Implementation; max 30 tracked files, 5 commits, 3 sessions, 2 material correction cycles
 start_criteria:
   - Council authorization for a bounded substantive slice
   - Prioritized research question
@@ -180,6 +181,7 @@ expected_outputs:
   - C-lite State, Event and Data Contract Candidates
   - C-lite Technical Architecture, Persistence and Technology Options
   - C-lite Stage 3 Testing, Risk and Authorization Readiness
+  - C-lite Stage 3 Architecture and Limitation Report
 evidence:
   - knowledge/research/evidence/experience-foundations-research-report.md
   - knowledge/research/evidence/experience-discovery-question-framework.md
@@ -244,6 +246,7 @@ evidence:
   - knowledge/research/evidence/clite-state-event-data-contract-candidates.md
   - knowledge/research/evidence/clite-technical-architecture-persistence-technology-options.md
   - knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md
+  - knowledge/research/evidence/clite-stage3-architecture-limitation-report.md
 risks:
   - Design may be reduced to decoration, prompt style or subjective scoring.
   - Frameworks, libraries or generated outputs may define the Core or a parallel Source of Truth.
@@ -295,7 +298,21 @@ relations:
 
 # ARP-0009 — Experience Engineering and Interface Architecture
 
-## Slice ativa — C-lite Stage 3 Executable Vertical Slice Proposal
+## Slice ativa — C-lite Stage 3 Local Executable Vertical Slice Implementation
+
+**[Decisão]** Em 2026-07-23, após o checkpoint `4e9ec43b3c96dc787b6e344ab9d3cc8ff8312fcd`, o Conselho aprovou a proposta de Stage 3, decidiu os entry criteria (label F-01 "Responsável pela pesquisa"; arquitetura e persistência Option D; escopo local/single-user/sintético; AT check autorizado como verificação técnica básica; orçamento de 30 arquivos/5 commits/3 sessões; rollback por reversão) e autorizou exclusivamente a implementação experimental local do vertical slice. Produto final, frontend de produção, backend, autenticação real, agentes reais, deploy, dados pessoais, claims e Stage 4 permanecem proibidos.
+
+Pergunta principal: as transições, guards, autoridade representada, failure/recovery, distinção artifact/evidence, Project Memory e reset determinístico funcionam quando deixam de ser documento e viram comportamento executável?
+
+**[Implementação]** O slice vive em `experiments/clite-stage3-vertical-slice/`: TypeScript strict, **zero dependências de runtime** (devDependencies: typescript, esbuild, @types/node), bundle único aberto via `file://` com CSP bloqueando qualquer recurso externo, domínio independente da camada visual, 10 famílias de estado, 34 eventos, 14 commands, fixture sintético determinístico derivado de E29 com F-01 corrigido, persistência Option D (snapshot local descartável com invalidação por versão) e 6 views cobrindo SF-01–SF-08 com HTML semântico, foco gerenciado, live regions e boundary textual permanente.
+
+**[Verificação]** `tsc --noEmit` passou; build passou; **43/43 testes** passaram (`node --test`): ciclo completo, as 10 transições inválidas da diretiva (aprovação não inicia; retry de concluída; failed→completed proibido; executor não decide o próprio resultado; stale view bloqueia ações sensíveis; e demais), F-01–F-05 tratados e testados, determinismo de duas execuções, invalidação de snapshot, varredura de segurança em fonte e bundle. Lint não configurado (registrado). **Nenhuma evidência empírica de navegador/teclado/AT/usuário existe** — o executor não opera navegador nem screen reader; verificação de acessibilidade foi estrutural/estática (E48).
+
+**[Findings]** IMPL-01–05 em E48: state machine de E45 integralmente viável sem redefinir o produto; fricção do refresh pós-retorno e alcance do estado `paused` só mensuráveis com usuários; simulação por avanço explícito é honesta porém menos realista; regra de conteúdo F-01 refinada para distinguir literais renderizáveis de placeholders.
+
+**[Readiness]** Exit criteria de E47: 12 de 13 atendidos; o criterion 10 é parcial (checks técnicos executados, empíricos de acessibilidade pendentes de operador humano). `implementation_state` permanece `not_started` por ausência de valor taxonômico para implementação experimental — decisão de taxonomia solicitada. Stage 4, avaliação externa (gates E40) e frontend de produção permanecem bloqueados; nada começa automaticamente.
+
+## Slice concluída — C-lite Stage 3 Executable Vertical Slice Proposal
 
 **[Decisão]** Em 2026-07-23, após o checkpoint `5fca035ed519e0d3f1fd15e4e9d562ba9b2ca9dc`, o Conselho aprovou a pré-avaliação interna, reconheceu `Ready with conditions` e autorizou exclusivamente a proposta documental do Stage 3: definir o menor vertical slice executável, seus contratos candidatos, opções de arquitetura/persistência/tecnologia e critérios de autorização. Determinou que F-01 seja resolvido no conteúdo do futuro slice, sem `CEA` como label primário e sem modificar o protótipo 1.0. Implementação, frontend, código, packages, frameworks, backend, deploy, user testing e Stage 3 executable work permanecem proibidos.
 
@@ -852,4 +869,4 @@ Nenhum documento vizinho é alterado. Caso pesquisa futura revele sobreposição
 
 ## Restrições e próximo checkpoint
 
-Esta slice cria somente quatro artifacts documentais de proposta de Stage 3 e atualiza este programa/IHR. Prototype `1.0`, E29–E31, Evaluation Protocol e artifacts anteriores permanecem inalterados. Não cria/atualiza PRD, AP, outros ARPs, Ontology, ARCH-001, frontend, code, package, lockfile, teste, CI ou draft; não instala dependências, não seleciona tecnologia autoritativamente, não executa testes, não recruta participantes e não inicia implementação. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review desta proposta e decisão explícita sobre os 13 entry criteria de autorização do Stage 3. Evaluation Authorization, Evaluation Execution, Stage 3 executable work e frontend permanecem bloqueados; nada começa automaticamente.
+Esta slice criou a implementação experimental em `experiments/clite-stage3-vertical-slice/` (código, fixture, testes), o relatório E48 e este registro/IHR. Prototype `1.0`, E29–E31, Evaluation Protocol, PRDs, APs, outros ARPs, Ontology e ARCH-001 permanecem inalterados. Nenhum deploy, push, dado real, participante, claim ou Stage 4 existe. O código é experimental e reversível por revert; seus contratos internos não são canônicos. O programa permanece `active` e `evidence_gathering`; o próximo passo é CSA/Council review deste checkpoint, decisão sobre a taxonomia de `implementation_state`, decisão sobre verificação empírica de acessibilidade por operador humano e decisão sobre próximos passos (Stage 4 proposal ou retomada dos gates E40). Evaluation Authorization, Evaluation Execution, Stage 4 e frontend de produção permanecem bloqueados; nada começa automaticamente.
