@@ -7,6 +7,7 @@ title: "Knowledge Object Contracts"
 status: planning
 governance_state: planning_authorized
 implementation_state: not_started
+experiment_state: e05_reviewed_experimental
 created_at: 2026-08-07
 owner: Architecture Council
 language: pt-BR
@@ -15,6 +16,10 @@ relations:
     target: AD-012
   - type: informed_by
     target: ARP-0010-E04
+  - type: evidenced_by
+    target: ARP-0010-E05
+  - type: reviewed_by
+    target: ASSESS-0005
   - type: follows
     target: V1-M02
 ---
@@ -77,8 +82,9 @@ São conjuntos de exemplos para experimentação, não Core Types ou schemas.
 Todos os gates G0–G7 precisam de evidência aceita. O boundary ontológico
 experimental orienta o plano, mas não substitui o ADF contratual de G7. O estado
 atual é `blocked` para estabilização porque não há profiles confirmados, teste
-humano de autoria, parser YAML robusto, equivalência de authority fields ou
-migration dry-run.
+humano de autoria, equivalência de authority fields ou migration dry-run. E05
+produziu evidência experimental de parser YAML robusto, ainda sem converter G2
+em `pass` ou iniciar implementação do contrato.
 
 ## Exit criterion do planejamento
 

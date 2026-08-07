@@ -2,6 +2,7 @@
 
 | Data | Tipo | Escopo | Título | Arquivo |
 |------|------|--------|--------|---------|
+| 2026-08-07 | feature | experiments/ontology-framing | Experimento read-only de parser e corpus V1-M03 | [.](2026-08-07-experimento-parser-corpus-v1-m03.md) |
 | 2026-08-07 | feature | ontology-framing | Planejamento de contratos da V1-M03 | [.](2026-08-07-planejamento-contratos-v1-m03.md) |
 | 2026-08-07 | melhoria | governance | Resolução da dívida de revisão | [.](2026-08-07-resolucao-divida-revisao.md) |
 | 2026-08-07 | feature | governance | Orquestração governada de papéis | [.](2026-08-07-orquestracao-governada-papeis.md) |

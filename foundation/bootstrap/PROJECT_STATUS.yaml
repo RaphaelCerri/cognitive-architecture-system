@@ -15,26 +15,26 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: 7fe78f8f2d8cf1ef7b0f819bf527a0a537d73b0a
-  status_generated_from: AD-012 + ASSESS-0004 V1-M03 planning review
+  observed_head: 23f1121
+  status_generated_from: AD-013 + ASSESS-0005 V1-M03 parser/corpus review
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: v1-m03-contract-readiness-planning
+  id: v1-m03-contract-parser-corpus-experiment
   state: reviewed
-  handoff: milestones/V1-M02-v1-m03-contract-readiness-planning-handoff.md
+  handoff: milestones/V1-M02-v1-m03-contract-parser-corpus-experiment-handoff.md
   notes:
-    - planning_ready_schema_stabilization_blocked
-    - no_core_types_or_public_schema_promoted
-    - accepted_as_v1m03_planning_readiness_only
-    - previous_review_debt_resolution_preserved_in_ASSESS_0003
+    - yaml_1_2_parser_and_corpus_evidence_ready
+    - source_hash_drift_zero
+    - accepted_as_bounded_experimental_evidence_only
+    - schema_stabilization_still_blocked
 
 pending_review_checkpoints: []
 
 authorized_work:
   state: completed_reviewed
-  title: V1-M03 Knowledge Object Contract Readiness Planning
-  directive_reference: AD-012 + IHR-0040 + ARP-0010-E04
+  title: V1-M03 Contract Parser and Corpus Experiment
+  directive_reference: AD-013 + ARP-0010-E05
 
 human_decisions_outstanding:   # o resto irredutível — só o CVO responde
   - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15; em andamento pelo CVO em 2026-07-23)
@@ -56,6 +56,7 @@ decided_slice_sequence:
   - AP-0006 framing/kernel/envelope revisados, remain_experimental (IHR-0038..0040)
   - Governed Role Orchestration revisado somente como experimento (IHR-0041)
   - V1-M03 Contract Readiness Planning revisado; estabilização não iniciada (IHR-0042/ASSESS-0004)
+  - V1-M03 parser/corpus E05 revisado somente como evidência experimental (IHR-0043/ASSESS-0005)
   - Estudo mínimo: aguardando DH-1..7
   - Slice 5 Real Execution Boundary: ESPECIFICADA em E77; implementação (Supervised Execution Engine) proposta, não autorizada
   - 6. Production Architecture Proposal (bloqueada; decidirá referência entre experimentos)
@@ -89,7 +90,7 @@ tracked_local_scope_finding:
   disposition: preserved_as_committed_pending_separate_git_scope_decision
 
 next_required_decision:
-  type: cvo_authorizes_or_defers_v1_m03_contract_experiment
+  type: cvo_authorizes_or_defers_v1_m03_human_authorship_gate
   automatic_continuation: false
 
 authority_notice:

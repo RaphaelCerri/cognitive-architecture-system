@@ -7,7 +7,11 @@
     "evaluate:envelope": "node evaluate-envelope.js",
     "evaluate": "node evaluate.js",
     "inventory": "node inventory.js",
+    "experiment:v1m03-contract": "node contract-experiment-demo.js",
     "plan:v1m03": "node v1m03-plan-demo.js",
     "test": "node --test --test-isolation=none"
+  },
+  "dependencies": {
+    "yaml": "2.8.1"
   }
 }

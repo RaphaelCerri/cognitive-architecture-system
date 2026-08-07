@@ -61,6 +61,7 @@ não promovem propostas, Ontologia, schemas ou runtimes.
 - [IHR-0040 — Knowledge Object Envelope Candidate](V1-M02-knowledge-object-envelope-candidate-handoff.md)
 - [IHR-0041 — Governed Role Orchestration Guard](V1-M02-governed-role-orchestration-handoff.md)
 - [IHR-0042 — V1-M03 Contract Readiness Planning](V1-M02-v1-m03-contract-readiness-planning-handoff.md)
+- [IHR-0043 — V1-M03 Contract Parser and Corpus Experiment](V1-M02-v1-m03-contract-parser-corpus-experiment-handoff.md) — `reviewed`, experimental only
 
 ## V1-M03
 

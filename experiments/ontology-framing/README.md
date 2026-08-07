@@ -40,6 +40,10 @@ Nenhuma dessas estruturas é promovida a canon por existir neste diretório.
 - `fixtures/`: exemplos Markdown/YAML válidos e inválidos;
 - `evaluate-envelope.js`: mede compatibilidade do candidato no repositório.
 - `inventory.js`: inventário derivado do vocabulário que já existe no repo;
+- `yaml-frontmatter-reader.js`: parser YAML 1.2 real, limitado e read-only;
+- `corpus-classifier.js`: classifica o corpus em quatro categorias disjuntas;
+- `contract-profile-candidates.js`: avalia profiles composicionais sem registry;
+- `evaluate-contract-experiment.js`: prova invariantes e ausência de mutação;
 - `model.test.js`: valida fronteiras, proveniência, respostas, extensibilidade,
   agnosticismo e ausência de promoção silenciosa.
 
@@ -51,6 +55,7 @@ npm run inventory
 npm run evaluate
 npm run examples
 npm run evaluate:envelope
+npm run experiment:v1m03-contract
 ```
 
 ## Limites
@@ -61,3 +66,5 @@ npm run evaluate:envelope
 - não declara que os conceitos candidatos são completos;
 - não transforma paths físicos em semântica;
 - não inicia Compiler, Type Registry, Orchestrator ou Runtime Adapter.
+- o experimento E05 não transforma parsing bem-sucedido em schema, authority ou
+  validade semântica.
