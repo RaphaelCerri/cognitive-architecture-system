@@ -4,7 +4,11 @@ id: IHR-0041
 kind: knowledge
 knowledge_type: implementation_handoff_report
 title: Governed Role Orchestration Guard
-status: pending_review
+status: reviewed
+reviewed_at: 2026-08-07
+review_outcome: accepted_experimental_only
+acceptance_scope: experimental_only
+review_basis: ASSESS-0003
 version: "1.0"
 created_at: 2026-08-07
 milestone: V1-M02
@@ -46,7 +50,8 @@ Execution Contract, AP-0012 e auditoria independente da governança recente.
 - Air gap manual usa a mesma cadeia verificável e sessões distintas.
 - Sessão única não produz claim independente nem autoaceite.
 - Router possui authority institucional zero.
-- GOV-003 e GRP-001 ficam experimentais e `pending_review`.
+- GOV-003 e GRP-001 ficam experimentais; ASSESS-0003 posteriormente os ratificou
+  como candidatos não operacionais.
 - Verificação de referências reais é uma porta obrigatória da integração.
 
 ## Work performed
@@ -68,8 +73,8 @@ envelopes com digest e um guard de eventos. AP-0022 registra a evolução futura
 
 - blocker: none após corrigir a contradição de GOV-002 e os bypasses encontrados
   na primeira revisão adversarial.
-- material: AD-007/008/009 foram autorizadas, mas seus IHRs não receberam review
-  independente e permanecem `pending_review`.
+- material histórico: AD-007/008/009 foram autorizadas sem review independente
+  naquela sessão; ASSESS-0003 posteriormente fechou essa pendência.
 - material: o runtime multiagente real ainda não existe.
 - observation: um agente auditor separado revisou normas e código sem editar
   artifacts; seu primeiro parecer foi `revise` e originou novos testes.
@@ -112,14 +117,15 @@ foram preservados.
 
 ## Future decisions
 
-Ratificar, revisar ou rejeitar GOV-003/GRP-001. Depois, decidir se AP-0022 recebe
-uma slice própria de identidade, log append-only e adapters isolados.
+GOV-003/GRP-001 foram ratificados como candidatos experimentais por AD-011.
+Permanece decidir se AP-0022 recebe uma slice própria de identidade, log
+append-only e adapters isolados.
 
 ## Project status snapshot
 
 ```yaml
 V1-M02: in_progress
-IHR-0041: pending_review
+IHR-0041: reviewed_experimental_only
 GOV-003: experimental
 GRP-001: experimental
 AP-0022: proposed
@@ -128,6 +134,11 @@ runtime_multi_agent: not_started
 
 ## Pacote para revisão
 
-Recomendação do executor: aceitar o guard como proteção experimental e manter
-AP-0022 `proposed`. Esta recomendação não é aceite e não inicia a implementação
-do runtime multiagente.
+Disposição posterior em ASSESS-0003: aceito como proteção experimental, com
+AP-0022 `proposed`. O aceite não inicia runtime multiagente.
+
+## Nota pós-revisão sobre Git
+
+O commit posterior `7fe78f8` incluiu esta slice junto com outros artifacts e
+paths locais. O conteúdo foi revisado, mas rollback por unidade não está
+disponível por `git revert` simples. ASSESS-0003 registra o finding material.

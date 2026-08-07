@@ -47,8 +47,9 @@ autoaprovação de agente em Personal Mode. GOV-002 foi corrigido: a exceção �
 humano owner e nunca do agente/runtime.
 
 AD-007, AD-008 e AD-009 possuíam autorização literal do CVO para execução
-experimental. Porém, como CSA e CEA compartilharam contexto, seus IHRs continuam
-`pending_review`; nenhum parecer daquela sessão constitui revisão independente.
+experimental. Como CSA e CEA compartilharam contexto, nenhum parecer daquela
+sessão constituiu revisão independente. ASSESS-0003 depois revisou os IHRs em
+sessões separadas, aceitando-os somente nos escopos experimentais declarados.
 
 ## Limitações
 

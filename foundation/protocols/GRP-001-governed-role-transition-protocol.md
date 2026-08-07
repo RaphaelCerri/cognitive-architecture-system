@@ -5,7 +5,10 @@ kind: knowledge
 knowledge_type: architectural_protocol
 title: "Governed Role Transition and Handoff Protocol"
 status: experimental
-governance_state: pending_review
+governance_state: reviewed
+reviewed_at: 2026-08-07
+review_outcome: ratified_as_experimental_candidate_not_operational
+review_basis: ASSESS-0003
 version: "0.1"
 created_at: 2026-08-07
 owner: Architecture Council
@@ -21,8 +24,8 @@ relations:
 
 # GRP-001: transição e handoff governados
 
-> Protocolo candidato autorizado para experimentação por AD-010. Não constitui
-> contrato operacional canônico antes de revisão e ratificação competentes.
+> Protocolo candidato ratificado para experimentação por AD-011 após revisão
+> independente. Não constitui contrato operacional ou enforcement de produção.
 
 ## Fluxo obrigatório
 

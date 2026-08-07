@@ -57,7 +57,15 @@ test('repository evaluation uses the candidate contract on real artifacts', () =
   const report = evaluateRepository();
   assert.ok(report.contract_valid >= 180);
   assert.ok(report.coverage_percent >= 80);
-  assert.deepEqual(report.alias_occurrences, ['AD-006']);
+  assert.ok(report.alias_occurrences.includes('AD-006'));
+  assert.ok(report.alias_occurrences.includes('AD-011'));
+  assert.deepEqual(
+    report.migration_proposals.map((proposal) => proposal.artifact_ref),
+    report.alias_occurrences,
+  );
+  assert.ok(report.migration_proposals.every((proposal) => (
+    proposal.canonicality === 'proposal_only' && proposal.apply_automatically === false
+  )));
   assert.ok(report.relation_family_coverage_percent > 50);
   assert.ok(report.unclassified_relation_predicates.length > 0);
 });

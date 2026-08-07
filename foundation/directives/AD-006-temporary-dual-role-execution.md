@@ -4,7 +4,9 @@ id: AD-006
 kind: knowledge
 knowledge_type: architectural_directive
 title: "Temporary Dual-Role Execution Authorization (CVO)"
-status: operational
+status: closed
+closed_at: 2026-08-07
+closure_basis: AD-011
 created_at: 2026-07-23
 owner: "Raphael Caveagna — Founder & CVO"
 language: pt-BR
@@ -13,6 +15,8 @@ relations:
     target: GOV-001
   - type: related_to
     target: ARP-0009-E58
+  - type: closed_by
+    target: AD-011
 ---
 
 # AD-006 — Autorização Temporária de Papel Duplo (Executor + CSA incorporado)

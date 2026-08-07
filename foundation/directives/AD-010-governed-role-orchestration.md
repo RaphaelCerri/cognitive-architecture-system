@@ -45,9 +45,9 @@ mas nenhuma topologia pode converter execução em aprovação própria.
 ## Aplicação ao histórico recente
 
 AD-007, AD-008 e AD-009 foram emitidas após decisões literais do CVO e executadas
-no mesmo chat por transição CSA→CEA. Seus IHRs permanecem `pending_review` e não
-constituem aceite independente. Qualquer promoção resultante continua exigindo
-revisão conforme GOV-003/GRP-001.
+no mesmo chat por transição CSA→CEA. Seus IHRs permaneceram `pending_review` até
+a revisão independente ASSESS-0003. O aceite experimental não promove seus
+resultados nem autoriza V1-M03.
 
 ## Implementação autorizada
 

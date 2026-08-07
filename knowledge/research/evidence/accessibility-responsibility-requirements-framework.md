@@ -2,7 +2,12 @@
 schema_version: 0.1.0-experimental
 document_role: research_framework
 title: Accessibility Responsibility and Requirements Framework
-status: pending_review
+status: reviewed
+reviewed_at: 2026-08-07
+review_outcome: accepted_as_experimental_evidence
+acceptance_scope: experimental_evidence
+knowledge_maturity: experimental
+review_basis: ASSESS-0003
 created_at: 2026-07-22
 related_programs: [ARP-0009, ARP-0007]
 language: pt-BR

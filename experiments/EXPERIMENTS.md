@@ -13,7 +13,7 @@ Nenhum contrato interno destes diretórios é canônico
 | `interaction-protocol/` | espinha experimental de comunicação dos braços de capacidade, com rota por maturidade | Slice 1 + melhoria CVO 2026-08-07 | 5 | protótipo demonstrável, não canônico | — |
 | `process-arm/` | primeiro braço de domínio e teste dos contratos ARP-0008 | Slice 2 / visão autoextensível | sessão registrada | experimental, não canônico | interaction-protocol |
 | `bias-migration-fairness-assurance/` | compara superfícies de dano antes/depois e bloqueia claims/efeitos sem autoridade | CSA-BMFA-001 / CVO | 14 | prova executável, não integrada | — |
-| `ontology-framing/` | framing + kernel + envelope candidato de autoria de Knowledge Objects | AD-007/008/009 / AP-0006 | 21 | input experimental para V1-M03, sem schema canônico | — |
+| `ontology-framing/` | framing + kernel + envelope e Contract Readiness Plan de Knowledge Objects | AD-007/008/009/012 / AP-0006 | 27 | planejamento V1-M03, estabilização bloqueada | — |
 | `governed-role-orchestration/` | guard de envelopes, sessões e separação CSA/CEA/reviewer | AD-010 / GOV-003 / GRP-001 | 23 | prova executável, sem autenticação ou runtime multiagente | — |
 
 Divergência conhecida e permanente entre os dois domínios (por design, ver

@@ -4,7 +4,11 @@ id: IHR-0039
 kind: knowledge
 knowledge_type: implementation_handoff_report
 title: AP-0006 Minimal Ontology Kernel Consumer
-status: pending_review
+status: reviewed
+reviewed_at: 2026-08-07
+review_outcome: accepted_as_experimental_reference_remain_experimental
+acceptance_scope: experimental_reference
+review_basis: ASSESS-0003
 version: "1.0"
 created_at: 2026-08-07
 milestone: V1-M02

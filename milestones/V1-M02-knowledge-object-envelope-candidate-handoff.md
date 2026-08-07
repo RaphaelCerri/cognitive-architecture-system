@@ -4,7 +4,11 @@ id: IHR-0040
 kind: knowledge
 knowledge_type: implementation_handoff_report
 title: Knowledge Object Envelope Candidate
-status: pending_review
+status: reviewed
+reviewed_at: 2026-08-07
+review_outcome: accepted_as_v1m03_planning_input_only
+acceptance_scope: planning_input_only
+review_basis: ASSESS-0003
 version: "1.0"
 created_at: 2026-08-07
 milestone: V1-M02

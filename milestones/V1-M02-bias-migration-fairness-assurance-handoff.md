@@ -4,7 +4,11 @@ id: IHR-0036
 kind: knowledge
 knowledge_type: implementation_handoff_report
 title: Bias Migration & Fairness Assurance Experimental Slice
-status: pending_review
+status: reviewed
+reviewed_at: 2026-08-07
+review_outcome: accepted_as_experimental_evidence_only
+acceptance_scope: experimental_evidence_only
+review_basis: ASSESS-0003
 version: "1.0"
 created_at: 2026-08-07
 milestone: V1-M02

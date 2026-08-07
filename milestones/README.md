@@ -8,6 +8,10 @@ Um milestone implementado permanece `pending_review` até satisfazer o IHP-001 e
 
 Este índice é uma view derivada mantida manualmente; a fonte de verdade é o frontmatter de cada arquivo. (Índice reconstruído pela auditoria macro, Tier A, 2026-07-23.)
 
+Em 2026-08-07, AD-011/ASSESS-0003 reconciliaram IHR-0002..0041. Todos possuem
+disposição explícita `reviewed`; os aceites experimentais preservam limitações e
+não promovem propostas, Ontologia, schemas ou runtimes.
+
 ## V1
 
 - [V1-M01 — Architectural Decision Filter](V1-M01-architectural-decision-filter.md) — `completed`
@@ -56,3 +60,8 @@ Este índice é uma view derivada mantida manualmente; a fonte de verdade é o f
 - [IHR-0039 — AP-0006 Minimal Ontology Kernel Consumer](V1-M02-ap-0006-minimal-kernel-handoff.md)
 - [IHR-0040 — Knowledge Object Envelope Candidate](V1-M02-knowledge-object-envelope-candidate-handoff.md)
 - [IHR-0041 — Governed Role Orchestration Guard](V1-M02-governed-role-orchestration-handoff.md)
+- [IHR-0042 — V1-M03 Contract Readiness Planning](V1-M02-v1-m03-contract-readiness-planning-handoff.md)
+
+## V1-M03
+
+- [V1-M03 — Knowledge Object Contracts](V1-M03-knowledge-object-contracts.md) — `planning`; implementation `not_started`

@@ -15,27 +15,26 @@ project:
 
 repository:
   expected_branch: main
-  observed_head: af0401cd269416c676625004f26b9c4d21dac62c   # último checkpoint ACEITO (IHR-0034, via CSA sob AD-006); commits da slice corrente podem estar à frente — SEMPRE conferir com git rev-parse HEAD
-  status_generated_from: CSA acceptance of IHR-0034 under AD-006 (dual-role, disclosed) + omnibus Personal Mode Foundation slice
+  observed_head: 7fe78f8f2d8cf1ef7b0f819bf527a0a537d73b0a
+  status_generated_from: AD-012 + ASSESS-0004 V1-M03 planning review
   generated_at_policy: atualizado no commit de docs de cada checkpoint; nunca automático
 
 current_checkpoint:
-  id: system-wide-architecture-gap-audit
-  state: accepted
-  handoff: milestones/V1-M02-system-audit-handoff.md
+  id: v1-m03-contract-readiness-planning
+  state: reviewed
+  handoff: milestones/V1-M02-v1-m03-contract-readiness-planning-handoff.md
   notes:
-    - accepted_by_csa_incorporated_under_AD-006_dual_role_disclosed
-    - findings_csa_34_1_to_4_recorded_in_arp_0009
+    - planning_ready_schema_stabilization_blocked
+    - no_core_types_or_public_schema_promoted
+    - accepted_as_v1m03_planning_readiness_only
+    - previous_review_debt_resolution_preserved_in_ASSESS_0003
 
-pending_review_checkpoints:
-  - id: personal-mode-foundation
-    state: pending_review
-    handoff: milestones/V1-M02-personal-mode-foundation-handoff.md
+pending_review_checkpoints: []
 
 authorized_work:
-  state: completed_pending_review
-  title: Personal Mode Foundation (omnibus Tier-B Now/Next de E74, sob AD-006)
-  directive_reference: AD-006 + decisão CSA incorporada registrada em ARP-0009; entregas GOV-002, E75, E76, E77, backup operacional, Real Project Intake v0, ARCH-001 pointer
+  state: completed_reviewed
+  title: V1-M03 Knowledge Object Contract Readiness Planning
+  directive_reference: AD-012 + IHR-0040 + ARP-0010-E04
 
 human_decisions_outstanding:   # o resto irredutível — só o CVO responde
   - DH-intake criar_o_primeiro_projeto_REAL via scripts de intake (dogfooding — G-A15; em andamento pelo CVO em 2026-07-23)
@@ -52,7 +51,11 @@ deferred_by_cvo_to_backlog:    # decisão do CVO em 2026-07-23: "questões de pr
 
 decided_slice_sequence:
   - 1..4 aceitas (IHR-0029..0032); gate closure aceita (IHR-0033); auditoria aceita (IHR-0034)
-  - Personal Mode Foundation (esta slice — pending_review)
+  - Personal Mode Foundation revisada (IHR-0035)
+  - BMFA e maturidade revisados como experimentos (IHR-0036..0037)
+  - AP-0006 framing/kernel/envelope revisados, remain_experimental (IHR-0038..0040)
+  - Governed Role Orchestration revisado somente como experimento (IHR-0041)
+  - V1-M03 Contract Readiness Planning revisado; estabilização não iniciada (IHR-0042/ASSESS-0004)
   - Estudo mínimo: aguardando DH-1..7
   - Slice 5 Real Execution Boundary: ESPECIFICADA em E77; implementação (Supervised Execution Engine) proposta, não autorizada
   - 6. Production Architecture Proposal (bloqueada; decidirá referência entre experimentos)
@@ -70,18 +73,23 @@ blocked_work:
 active_programs:
   - ARP-0008
   - ARP-0009
+  - ARP-0010
 
 operational_tools:
   - scripts/backup-repo.ps1 (+ scripts/BACKUP.md) — backup/restore testados 2026-07-23
   - experiments/clite-memory-adapter-feasibility/src/intake.ts — Real Project Intake v0 (saída em projects/, fora do Git)
 
 preserved_local_paths:
-  - .obsidian/
-  - knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md
   - projects/ (Memories de projetos reais — NUNCA versionar; CSA-34-3/G-A18)
 
+tracked_local_scope_finding:
+  commit: 7fe78f8f2d8cf1ef7b0f819bf527a0a537d73b0a
+  paths: [.obsidian/, graphify-out/, knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md]
+  impact: rollback_by_slice_not_available
+  disposition: preserved_as_committed_pending_separate_git_scope_decision
+
 next_required_decision:
-  type: csa_review_of_personal_mode_foundation_ihr_0035_then_cvo_answers_dh_list
+  type: cvo_authorizes_or_defers_v1_m03_contract_experiment
   automatic_continuation: false
 
 authority_notice:

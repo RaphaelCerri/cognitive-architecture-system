@@ -26,6 +26,8 @@ relations:
     target: ARP-0010-E02
   - type: informed_by
     target: ARP-0010-E03
+  - type: informed_by
+    target: ARP-0010-E04
 ---
 
 # AP-0003 — Type Registry

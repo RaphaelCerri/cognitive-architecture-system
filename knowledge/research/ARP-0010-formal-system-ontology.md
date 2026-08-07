@@ -66,5 +66,6 @@ estratégia de migração e nova avaliação ADF, inclusive se o resultado for
 ## Estado atual
 
 O framing foi executado em E01, o kernel/consumer em E02 e o envelope de autoria
-em E03. A pesquisa permanece ativa porque schema público, profiles e custo de
-autoria humana ainda não foram validados.
+em E03. E04 delimitou o Contract Readiness Plan da V1-M03. A pesquisa permanece
+ativa porque schema público, profiles, parser real, authority normalization e
+custo de autoria humana ainda não foram validados.

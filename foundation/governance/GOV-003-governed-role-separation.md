@@ -5,7 +5,10 @@ kind: knowledge
 knowledge_type: governance_policy
 title: "Governed Role Separation and Agent Orchestration"
 status: experimental
-governance_state: pending_review
+governance_state: reviewed
+reviewed_at: 2026-08-07
+review_outcome: ratified_as_experimental_candidate_not_operational
+review_basis: ASSESS-0003
 version: "0.1"
 created_at: 2026-08-07
 owner: Architecture Council
@@ -23,8 +26,8 @@ relations:
 
 # GOV-003: separação de papéis e orquestração
 
-> Candidato autorizado para experimentação por AD-010. Permanece não canônico e
-> `pending_review` até ratificação competente independente.
+> Candidato ratificado para experimentação por AD-011 após revisão independente.
+> Permanece não operacional e não constitui enforcement de produção.
 
 ## Invariante
 
