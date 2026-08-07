@@ -1,0 +1,12 @@
+{
+  "name": "formal-system-ontology-framing-experiment",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "scripts": {
+    "examples": "node examples.js",
+    "evaluate:envelope": "node evaluate-envelope.js",
+    "evaluate": "node evaluate.js",
+    "inventory": "node inventory.js",
+    "test": "node --test --test-isolation=none"
+  }
+}

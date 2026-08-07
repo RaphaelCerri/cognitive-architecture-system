@@ -101,6 +101,7 @@ Nenhum claim será registrado sem evidência primária. Avaliações futuras pod
 - `ARP-0007`: Security Architecture, Guardrails and Assurance.
 - `ARP-0008`: Cognitive Artifact Engineering.
 - `ARP-0009`: Experience Engineering and Interface Architecture.
+- `ARP-0010`: Formal System Ontology and Constitutional Metamodel.
 
 Os evidence artifacts vivem em [`evidence/`](evidence/) com IDs lógicos
 `ARP-xxxx-Eyy` declarados no frontmatter (os nomes de arquivo são descritivos

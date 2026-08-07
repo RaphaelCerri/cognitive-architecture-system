@@ -1,0 +1,9 @@
+{
+  "name": "bias-migration-fairness-assurance-experiment",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "scripts": {
+    "demo": "node demo.js",
+    "test": "node --test --test-isolation=none"
+  }
+}

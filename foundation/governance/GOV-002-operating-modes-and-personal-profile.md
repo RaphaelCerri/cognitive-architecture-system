@@ -58,7 +58,7 @@ O que o perfil MUDA (proporcionalidade, E73 §6):
 |---|---|---|
 | Autorização prévia | diretiva formal do Council | intenção registrada em 1 linha no PROJECT_STATUS ou no IHR reduzido |
 | Handoff | IHR 12/12 | **IHR-lite**: contexto (2–3 linhas) + arquivos + validação executada + desvio/risco + rollback |
-| Revisão | CSA por checkpoint | autoaprovação com `solo_operator_exception` registrada; CSA revisa **em lote** no próximo checkpoint integral |
+| Revisão | CSA por checkpoint | o **humano owner** pode aceitar ação local própria com `solo_operator_exception`; agente/runtime nunca autoaprova; CSA revisa **em lote** no próximo checkpoint integral |
 | Retorno | RETURN_SCHEMA 2 camadas | Layer 1 apenas |
 | Budgets | por diretiva | default: ≤5 arquivos, ≤2 commits por unidade; acima disso, sobe para o processo integral |
 
@@ -73,6 +73,10 @@ Cada uso do perfil registra no commit ou IHR-lite: `profile:
 personal-low-risk` + a exceção de operador único. O CSA pode, em revisão de
 lote, reclassificar um uso como indevido — o que reabre o item no processo
 integral. Abuso recorrente do perfil suspende-o (decisão do Council).
+
+`solo_operator_exception` descreve acumulação humana no Personal Mode. Não
+concede a um agente ou à mesma sessão de runtime authority para aceitar o
+próprio desenho ou execução. Transições CSA/CEA seguem GOV-003 e GRP-001.
 
 ## 4. Limitação
 

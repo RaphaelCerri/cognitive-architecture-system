@@ -1,0 +1,1392 @@
+{
+  ".obsidian/app.json": {
+    "mtime": 1784836586.6697073,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  ".obsidian/appearance.json": {
+    "mtime": 1784836586.6805162,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  ".obsidian/core-plugins.json": {
+    "mtime": 1784836584.893833,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": "7c877bea49eaeabb100563bd157b9051"
+  },
+  ".obsidian/graph.json": {
+    "mtime": 1784836637.796,
+    "ast_hash": "56443517431f5cc3e7805c449f967bcb",
+    "semantic_hash": "56443517431f5cc3e7805c449f967bcb"
+  },
+  ".obsidian/workspace.json": {
+    "mtime": 1784836635.9540362,
+    "ast_hash": "54d4ae5b6544e7c3d2606ee4533f3ec6",
+    "semantic_hash": "54d4ae5b6544e7c3d2606ee4533f3ec6"
+  },
+  "experiments/clite-domain-extraction-feasibility/package.json": {
+    "mtime": 1784826100.153415,
+    "ast_hash": "97479f3d846e805196ce49575c4b2712",
+    "semantic_hash": "97479f3d846e805196ce49575c4b2712"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/commands.ts": {
+    "mtime": 1784825990.6178331,
+    "ast_hash": "b5ce450bc8bad9513ae52d66efd0ed12",
+    "semantic_hash": "b5ce450bc8bad9513ae52d66efd0ed12"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/events.ts": {
+    "mtime": 1784825869.0955915,
+    "ast_hash": "b40a0a0df3b38c6115a248c621395cd9",
+    "semantic_hash": "b40a0a0df3b38c6115a248c621395cd9"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/fixture-contract.ts": {
+    "mtime": 1784825822.0551603,
+    "ast_hash": "3fe941d669e4d1e3eeede49a5f0fe6eb",
+    "semantic_hash": "3fe941d669e4d1e3eeede49a5f0fe6eb"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/fixtures/estufa-vertical.ts": {
+    "mtime": 1784826091.265113,
+    "ast_hash": "3f9404e14dc6d06dae022e0ee846dc6f",
+    "semantic_hash": "3f9404e14dc6d06dae022e0ee846dc6f"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/fixtures/oficina-horizonte.ts": {
+    "mtime": 1784826345.0018363,
+    "ast_hash": "164ecc95810532e1199ad60703de7ec6",
+    "semantic_hash": "164ecc95810532e1199ad60703de7ec6"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/machine.ts": {
+    "mtime": 1784825941.4421294,
+    "ast_hash": "5cbc96462be17cd4c9f2b23e79308f7f",
+    "semantic_hash": "5cbc96462be17cd4c9f2b23e79308f7f"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/memory.ts": {
+    "mtime": 1784826011.8500192,
+    "ast_hash": "6ed7d71f9d954b46359b080e371755b3",
+    "semantic_hash": "6ed7d71f9d954b46359b080e371755b3"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/persistence.ts": {
+    "mtime": 1784826280.25436,
+    "ast_hash": "d2a981bb2ffd334f535aca2f9ccc2c1f",
+    "semantic_hash": "d2a981bb2ffd334f535aca2f9ccc2c1f"
+  },
+  "experiments/clite-domain-extraction-feasibility/src/types.ts": {
+    "mtime": 1784825847.2870653,
+    "ast_hash": "b539059c504fff9d28dd363fadcd994f",
+    "semantic_hash": "b539059c504fff9d28dd363fadcd994f"
+  },
+  "experiments/clite-domain-extraction-feasibility/tests/helpers.ts": {
+    "mtime": 1784826311.52626,
+    "ast_hash": "1c606b11839c906963cdb0cd9a5df4ba",
+    "semantic_hash": "1c606b11839c906963cdb0cd9a5df4ba"
+  },
+  "experiments/clite-domain-extraction-feasibility/tests/independence.test.ts": {
+    "mtime": 1784826264.463162,
+    "ast_hash": "d892f8607c9af976643b2b37a13c6938",
+    "semantic_hash": "d892f8607c9af976643b2b37a13c6938"
+  },
+  "experiments/clite-domain-extraction-feasibility/tests/invalid-transitions.test.ts": {
+    "mtime": 1784826204.729246,
+    "ast_hash": "288865ba3ffe7b8d56887b431ee47f7e",
+    "semantic_hash": "288865ba3ffe7b8d56887b431ee47f7e"
+  },
+  "experiments/clite-domain-extraction-feasibility/tests/machine.test.ts": {
+    "mtime": 1784826180.1147604,
+    "ast_hash": "bf77d11161f67ed6e72fe6e4bf0fa5c5",
+    "semantic_hash": "bf77d11161f67ed6e72fe6e4bf0fa5c5"
+  },
+  "experiments/clite-domain-extraction-feasibility/tests/memory-review.test.ts": {
+    "mtime": 1784826233.9530935,
+    "ast_hash": "6c52dd046a1c2ba10f46ab2de052bf4f",
+    "semantic_hash": "6c52dd046a1c2ba10f46ab2de052bf4f"
+  },
+  "experiments/clite-domain-extraction-feasibility/tsconfig.json": {
+    "mtime": 1784826102.9824836,
+    "ast_hash": "083545e41f4280909108b928278c5281",
+    "semantic_hash": "083545e41f4280909108b928278c5281"
+  },
+  "experiments/clite-memory-adapter-feasibility/package.json": {
+    "mtime": 1784827987.4335713,
+    "ast_hash": "27459ceb050eb1b5b63dafebb88c194e",
+    "semantic_hash": "27459ceb050eb1b5b63dafebb88c194e"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/initialize.ts": {
+    "mtime": 1784834626.382744,
+    "ast_hash": "a2a6e02ca082e851b3af103a91e3c06f",
+    "semantic_hash": "a2a6e02ca082e851b3af103a91e3c06f"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/intake.ts": {
+    "mtime": 1784834658.2123444,
+    "ast_hash": "4ce0a353b5647cd6e4ce9259b98aca73",
+    "semantic_hash": "4ce0a353b5647cd6e4ce9259b98aca73"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/memory-types.ts": {
+    "mtime": 1784828290.4955733,
+    "ast_hash": "3e7d5deb2e55043c55d26e5997ef7e34",
+    "semantic_hash": "3e7d5deb2e55043c55d26e5997ef7e34"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/normalize.ts": {
+    "mtime": 1784827902.7323995,
+    "ast_hash": "735dcf4fed278f6d3063e31a0aa3ec07",
+    "semantic_hash": "735dcf4fed278f6d3063e31a0aa3ec07"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/project-fixture.ts": {
+    "mtime": 1784834736.8453808,
+    "ast_hash": "beea173363239d6bfb7db2f0357e024a",
+    "semantic_hash": "beea173363239d6bfb7db2f0357e024a"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/proposal.ts": {
+    "mtime": 1784827973.3530085,
+    "ast_hash": "42043dba0ffee40f85bbb65897b8518c",
+    "semantic_hash": "42043dba0ffee40f85bbb65897b8518c"
+  },
+  "experiments/clite-memory-adapter-feasibility/src/reader.ts": {
+    "mtime": 1784833126.4545617,
+    "ast_hash": "3af694c7216deaab51b63922fbadcb1f",
+    "semantic_hash": "3af694c7216deaab51b63922fbadcb1f"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/independence.test.ts": {
+    "mtime": 1784834742.7807584,
+    "ast_hash": "65914b3111dcfeb9729b7b25db4de5ef",
+    "semantic_hash": "65914b3111dcfeb9729b7b25db4de5ef"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/initialize.test.ts": {
+    "mtime": 1784828168.580375,
+    "ast_hash": "23cef61dfc419c4f0293ee20c94d1bcf",
+    "semantic_hash": "23cef61dfc419c4f0293ee20c94d1bcf"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/intake.test.ts": {
+    "mtime": 1784834681.1589086,
+    "ast_hash": "588e431c2765ddba0cca63a1c5f7de2b",
+    "semantic_hash": "588e431c2765ddba0cca63a1c5f7de2b"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/proposal.test.ts": {
+    "mtime": 1784828218.6256082,
+    "ast_hash": "7e751b960dc47ff8cb16a15a6c87be8e",
+    "semantic_hash": "7e751b960dc47ff8cb16a15a6c87be8e"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/reader.test.ts": {
+    "mtime": 1784833130.714064,
+    "ast_hash": "031cbd0bda118f1dae435e58bc9aaea6",
+    "semantic_hash": "031cbd0bda118f1dae435e58bc9aaea6"
+  },
+  "experiments/clite-memory-adapter-feasibility/tests/staleness-conflict.test.ts": {
+    "mtime": 1784828195.4174194,
+    "ast_hash": "44d04fc1de6b7ccb6c051bf8af09b4a5",
+    "semantic_hash": "44d04fc1de6b7ccb6c051bf8af09b4a5"
+  },
+  "experiments/clite-memory-adapter-feasibility/tsconfig.json": {
+    "mtime": 1784827990.1974528,
+    "ast_hash": "a6a8c4eb39a220a7bcbb4574dfd7262b",
+    "semantic_hash": "a6a8c4eb39a220a7bcbb4574dfd7262b"
+  },
+  "experiments/clite-stage3-vertical-slice/package.json": {
+    "mtime": 1784816010.5133402,
+    "ast_hash": "fbbaf99b6caa594597b8e12f2e74e111",
+    "semantic_hash": "fbbaf99b6caa594597b8e12f2e74e111"
+  },
+  "experiments/clite-stage3-vertical-slice/src/app/main.ts": {
+    "mtime": 1784816219.6392436,
+    "ast_hash": "283688d03df09d1e69da974ecdf1d96b",
+    "semantic_hash": "283688d03df09d1e69da974ecdf1d96b"
+  },
+  "experiments/clite-stage3-vertical-slice/src/app/persistence.ts": {
+    "mtime": 1784815802.4284532,
+    "ast_hash": "5182f79a7b0fc4e22594e91b53cb2383",
+    "semantic_hash": "5182f79a7b0fc4e22594e91b53cb2383"
+  },
+  "experiments/clite-stage3-vertical-slice/src/app/views.ts": {
+    "mtime": 1784816197.4339917,
+    "ast_hash": "3c5c03727163a5ff782a0df105d11f75",
+    "semantic_hash": "3c5c03727163a5ff782a0df105d11f75"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/commands.ts": {
+    "mtime": 1784815745.9244535,
+    "ast_hash": "ff7a104de766ab0d138bea4728226b7a",
+    "semantic_hash": "ff7a104de766ab0d138bea4728226b7a"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/events.ts": {
+    "mtime": 1784815597.3515067,
+    "ast_hash": "1210b9e5f388b47092e50024f7e9100c",
+    "semantic_hash": "1210b9e5f388b47092e50024f7e9100c"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/fixture.ts": {
+    "mtime": 1784815575.2606082,
+    "ast_hash": "57cc04c001555d8f3b0ff76cd8bf3b7d",
+    "semantic_hash": "57cc04c001555d8f3b0ff76cd8bf3b7d"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/machine.ts": {
+    "mtime": 1784815939.4185002,
+    "ast_hash": "7f4637b2f515f6fa779ea8bd598b6684",
+    "semantic_hash": "7f4637b2f515f6fa779ea8bd598b6684"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/memory.ts": {
+    "mtime": 1784815761.6984546,
+    "ast_hash": "1fcd5fc4c4773897dbc83b0024fe7187",
+    "semantic_hash": "1fcd5fc4c4773897dbc83b0024fe7187"
+  },
+  "experiments/clite-stage3-vertical-slice/src/domain/types.ts": {
+    "mtime": 1784815533.6731515,
+    "ast_hash": "0c8153a2c824fd31937d17f07f8acdea",
+    "semantic_hash": "0c8153a2c824fd31937d17f07f8acdea"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/bundle.test.ts": {
+    "mtime": 1784816349.4362576,
+    "ast_hash": "9c0708b56f6b54f362579405e523a821",
+    "semantic_hash": "9c0708b56f6b54f362579405e523a821"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/fixture.test.ts": {
+    "mtime": 1784815885.2604983,
+    "ast_hash": "984feae19c6498cf5bdd20419ad22be8",
+    "semantic_hash": "984feae19c6498cf5bdd20419ad22be8"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/helpers.ts": {
+    "mtime": 1784815818.6851566,
+    "ast_hash": "b684a36418fa8282cda0de9f6fcc4ebf",
+    "semantic_hash": "b684a36418fa8282cda0de9f6fcc4ebf"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/invalid-transitions.test.ts": {
+    "mtime": 1784815859.3615007,
+    "ast_hash": "abac52050ec3e01262db5ac8c4673449",
+    "semantic_hash": "abac52050ec3e01262db5ac8c4673449"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/machine.test.ts": {
+    "mtime": 1784815842.1442165,
+    "ast_hash": "a05c4862a2ef048e3904cd1e001964f0",
+    "semantic_hash": "a05c4862a2ef048e3904cd1e001964f0"
+  },
+  "experiments/clite-stage3-vertical-slice/tests/memory-review.test.ts": {
+    "mtime": 1784815903.7612102,
+    "ast_hash": "c466b138344e1c68dea242fd2a2f60be",
+    "semantic_hash": "c466b138344e1c68dea242fd2a2f60be"
+  },
+  "experiments/clite-stage3-vertical-slice/tsconfig.json": {
+    "mtime": 1784815987.8294768,
+    "ast_hash": "52ab1957a04133ff7cdfcea7490ccb22",
+    "semantic_hash": "52ab1957a04133ff7cdfcea7490ccb22"
+  },
+  "scripts/backup-repo.ps1": {
+    "mtime": 1784834475.9075634,
+    "ast_hash": "3f588f50e6c0277950ac3b400ca53b9f",
+    "semantic_hash": "3f588f50e6c0277950ac3b400ca53b9f"
+  },
+  "AGENT_START_HERE.md": {
+    "mtime": 1784822215.4648125,
+    "ast_hash": "dd2f31e0c9299454f0020a741f119391",
+    "semantic_hash": "dd2f31e0c9299454f0020a741f119391"
+  },
+  "README.md": {
+    "mtime": 1784823390.6022139,
+    "ast_hash": "de75b825cc99bbfc75d5c9dff89ca3c6",
+    "semantic_hash": "de75b825cc99bbfc75d5c9dff89ca3c6"
+  },
+  "architecture/system-overview.md": {
+    "mtime": 1784834777.9638994,
+    "ast_hash": "63e70f59b13ddec54fd7817df6b9a1fd",
+    "semantic_hash": "63e70f59b13ddec54fd7817df6b9a1fd"
+  },
+  "experiments/EXPERIMENTS.md": {
+    "mtime": 1784833098.6422062,
+    "ast_hash": "1067b148e24e171ea1164f3f220c969f",
+    "semantic_hash": "1067b148e24e171ea1164f3f220c969f"
+  },
+  "experiments/clite-domain-extraction-feasibility/README.md": {
+    "mtime": 1784826127.220629,
+    "ast_hash": "34c5696c23f9da64985b358a3e9b941d",
+    "semantic_hash": "34c5696c23f9da64985b358a3e9b941d"
+  },
+  "experiments/clite-memory-adapter-feasibility/README.md": {
+    "mtime": 1784828058.6658723,
+    "ast_hash": "027467ad123f3ff656f359cca4e73a7b",
+    "semantic_hash": "027467ad123f3ff656f359cca4e73a7b"
+  },
+  "experiments/clite-memory-adapter-feasibility/memories/estufa-vertical-memory.md": {
+    "mtime": 1784828043.0988371,
+    "ast_hash": "77ceccc3a469a80eb0088af6e57001dc",
+    "semantic_hash": "77ceccc3a469a80eb0088af6e57001dc"
+  },
+  "experiments/clite-memory-adapter-feasibility/memories/oficina-horizonte-memory.md": {
+    "mtime": 1784828020.2325556,
+    "ast_hash": "60617342c97376b207062a1b0fdb76b8",
+    "semantic_hash": "60617342c97376b207062a1b0fdb76b8"
+  },
+  "experiments/clite-stage3-vertical-slice/README.md": {
+    "mtime": 1784816241.057869,
+    "ast_hash": "810277a386654e9af4134355ccf1c711",
+    "semantic_hash": "810277a386654e9af4134355ccf1c711"
+  },
+  "experiments/clite-stage3-vertical-slice/index.html": {
+    "mtime": 1784816066.905774,
+    "ast_hash": "9407132bb3e8a74a52512a5893a1b06f",
+    "semantic_hash": "9407132bb3e8a74a52512a5893a1b06f"
+  },
+  "foundation/README.md": {
+    "mtime": 1784833050.601226,
+    "ast_hash": "09759a8056fd2c648b9e07acf9b26dc8",
+    "semantic_hash": "09759a8056fd2c648b9e07acf9b26dc8"
+  },
+  "foundation/bootstrap/EXECUTION_CONTRACT.md": {
+    "mtime": 1784822337.5670934,
+    "ast_hash": "fa8abe513c7d1793132d268f2f34f523",
+    "semantic_hash": "fa8abe513c7d1793132d268f2f34f523"
+  },
+  "foundation/bootstrap/PROJECT_CHARTER.md": {
+    "mtime": 1784822252.3446317,
+    "ast_hash": "2b6fa848bee63bc3e9c72d99a8a4a76d",
+    "semantic_hash": "2b6fa848bee63bc3e9c72d99a8a4a76d"
+  },
+  "foundation/bootstrap/PROJECT_STATUS.yaml": {
+    "mtime": 1784836082.328312,
+    "ast_hash": "dfad3db9ac25788c7c558bbcceef0f16",
+    "semantic_hash": "dfad3db9ac25788c7c558bbcceef0f16"
+  },
+  "foundation/bootstrap/REPOSITORY_MAP.yaml": {
+    "mtime": 1784833069.2533495,
+    "ast_hash": "48ef2430e76d79f7c27f58e983d7c849",
+    "semantic_hash": "48ef2430e76d79f7c27f58e983d7c849"
+  },
+  "foundation/bootstrap/RETURN_SCHEMA.yaml": {
+    "mtime": 1784822359.2003894,
+    "ast_hash": "5c07d7cda723e4bfb9fd85c23044e339",
+    "semantic_hash": "5c07d7cda723e4bfb9fd85c23044e339"
+  },
+  "foundation/bootstrap/manifests/CM-0001-clite-directed-accessibility-session.yaml": {
+    "mtime": 1784822383.9633217,
+    "ast_hash": "5da78aed029dbff80d3b1c184e7de004",
+    "semantic_hash": "5da78aed029dbff80d3b1c184e7de004"
+  },
+  "foundation/decisions/ADR-0001-canonical-knowledge-object-format.md": {
+    "mtime": 1784666006.1298091,
+    "ast_hash": "032dd0f661d47e97b52a5b3c7ce0d4c1",
+    "semantic_hash": "032dd0f661d47e97b52a5b3c7ce0d4c1"
+  },
+  "foundation/decisions/ADR-0002-declared-and-inferred-relations.md": {
+    "mtime": 1784666006.1298091,
+    "ast_hash": "a45e8faaba33ddf59dab9f8bf0e28ef5",
+    "semantic_hash": "a45e8faaba33ddf59dab9f8bf0e28ef5"
+  },
+  "foundation/decisions/ADR-0003-language-convention.md": {
+    "mtime": 1784666006.1298091,
+    "ast_hash": "8d95789af78266dc196d0c03497b667d",
+    "semantic_hash": "8d95789af78266dc196d0c03497b667d"
+  },
+  "foundation/decisions/ADR-0004-core-platform-language-boundary.md": {
+    "mtime": 1784666006.1372752,
+    "ast_hash": "4a0be6d39fc456a894d3acdbb4af4fb6",
+    "semantic_hash": "4a0be6d39fc456a894d3acdbb4af4fb6"
+  },
+  "foundation/decisions/ADR-0005-artifact-and-versioning-policy.md": {
+    "mtime": 1784666006.1372752,
+    "ast_hash": "7f1be894dae67a61a2cf23e340e50527",
+    "semantic_hash": "7f1be894dae67a61a2cf23e340e50527"
+  },
+  "foundation/decisions/ADR-0006-independent-canonical-repository.md": {
+    "mtime": 1784666006.141617,
+    "ast_hash": "ae64b230e6df350f0ba9e26c3755b234",
+    "semantic_hash": "ae64b230e6df350f0ba9e26c3755b234"
+  },
+  "foundation/decisions/ADR-0007-logical-status-and-derived-views.md": {
+    "mtime": 1784666006.1431408,
+    "ast_hash": "0c0ae87232704f6f56b59511a98ec34b",
+    "semantic_hash": "0c0ae87232704f6f56b59511a98ec34b"
+  },
+  "foundation/decisions/ADR-0008-human-governed-evolution.md": {
+    "mtime": 1784666006.1446612,
+    "ast_hash": "b1e6bd6b46351cfca7abd637ece46053",
+    "semantic_hash": "b1e6bd6b46351cfca7abd637ece46053"
+  },
+  "foundation/decisions/ADR-0009-logical-versioned-taxonomy.md": {
+    "mtime": 1784666006.1464508,
+    "ast_hash": "92d390921c55975a415bd55cf1aebd5b",
+    "semantic_hash": "92d390921c55975a415bd55cf1aebd5b"
+  },
+  "foundation/decisions/ADR-0010-adopt-architectural-decision-filter.md": {
+    "mtime": 1784666243.13713,
+    "ast_hash": "5fb9b063f0d5978d63df620e3cb5f08a",
+    "semantic_hash": "5fb9b063f0d5978d63df620e3cb5f08a"
+  },
+  "foundation/decisions/ADR-0011-adopt-implementation-handoff-protocol.md": {
+    "mtime": 1784670309.755357,
+    "ast_hash": "28f12926abb663f181ca95c82fa2659e",
+    "semantic_hash": "28f12926abb663f181ca95c82fa2659e"
+  },
+  "foundation/decisions/ADR-0012-prioritize-system-overview.md": {
+    "mtime": 1784721307.326354,
+    "ast_hash": "ae2e2d5cf14b10dbe288788091bc09ff",
+    "semantic_hash": "ae2e2d5cf14b10dbe288788091bc09ff"
+  },
+  "foundation/decisions/ADR-0013-rfc-as-specialized-knowledge.md": {
+    "mtime": 1784723150.8089612,
+    "ast_hash": "844fc326f5ce13a7400b44d9b2bb57c9",
+    "semantic_hash": "844fc326f5ce13a7400b44d9b2bb57c9"
+  },
+  "foundation/decisions/README.md": {
+    "mtime": 1784723244.1699574,
+    "ast_hash": "9266e6632c007e388ac1b5650dc5b195",
+    "semantic_hash": "9266e6632c007e388ac1b5650dc5b195"
+  },
+  "foundation/directives/ACD-001-transition-to-execution.md": {
+    "mtime": 1784665559.590071,
+    "ast_hash": "7e88bbd7fb943b56a4d22492c663a67f",
+    "semantic_hash": "7e88bbd7fb943b56a4d22492c663a67f"
+  },
+  "foundation/directives/AD-001-v1-execution.md": {
+    "mtime": 1784666243.120782,
+    "ast_hash": "a178b34a7a5db9a453dcf8f266c7b216",
+    "semantic_hash": "a178b34a7a5db9a453dcf8f266c7b216"
+  },
+  "foundation/directives/AD-002-implementation-handoff-protocol.md": {
+    "mtime": 1784670309.730306,
+    "ast_hash": "1322917ada5cb4715fc060f116ec7df8",
+    "semantic_hash": "1322917ada5cb4715fc060f116ec7df8"
+  },
+  "foundation/directives/AD-003-v1-m02-system-overview.md": {
+    "mtime": 1784723150.7860088,
+    "ast_hash": "90f6191cae6345ee17394e24ccbe4d4f",
+    "semantic_hash": "90f6191cae6345ee17394e24ccbe4d4f"
+  },
+  "foundation/directives/AD-004-architectural-research-program.md": {
+    "mtime": 1784737222.6521766,
+    "ast_hash": "8a03c57991dc267239d34a57df9fa270",
+    "semantic_hash": "8a03c57991dc267239d34a57df9fa270"
+  },
+  "foundation/directives/AD-005-bootstrap-continuity-maintenance.md": {
+    "mtime": 1784823414.4160173,
+    "ast_hash": "b315bb9407e9f989c77ae61da3a7158a",
+    "semantic_hash": "b315bb9407e9f989c77ae61da3a7158a"
+  },
+  "foundation/directives/AD-006-temporary-dual-role-execution.md": {
+    "mtime": 1784834218.7695165,
+    "ast_hash": "ccb3ca90dc95d1f4e8d40c5be5a8d791",
+    "semantic_hash": "ccb3ca90dc95d1f4e8d40c5be5a8d791"
+  },
+  "foundation/governance/GOV-001-architecture-council-roles.md": {
+    "mtime": 1784823385.1005785,
+    "ast_hash": "57ad19b6684362a6bceb31c26f93938b",
+    "semantic_hash": "57ad19b6684362a6bceb31c26f93938b"
+  },
+  "foundation/governance/GOV-002-operating-modes-and-personal-profile.md": {
+    "mtime": 1784834296.5097914,
+    "ast_hash": "1ebad514ef3c180f432233c148f40301",
+    "semantic_hash": "1ebad514ef3c180f432233c148f40301"
+  },
+  "foundation/manifestos/PMM-001-project-memory-manifesto.md": {
+    "mtime": 1784665937.0860977,
+    "ast_hash": "fe24e8d5bb4b950195703d01161770de",
+    "semantic_hash": "fe24e8d5bb4b950195703d01161770de"
+  },
+  "foundation/principles/AIP-001-architectural-integrity-principle.md": {
+    "mtime": 1784665559.6408174,
+    "ast_hash": "1568d35ba3ae2545f9a91e4e0b2da753",
+    "semantic_hash": "1568d35ba3ae2545f9a91e4e0b2da753"
+  },
+  "foundation/protocols/ACP-001-architectural-challenge-protocol.md": {
+    "mtime": 1784665559.6470277,
+    "ast_hash": "9867de310289f3fc15352eb4e393b6e7",
+    "semantic_hash": "9867de310289f3fc15352eb4e393b6e7"
+  },
+  "foundation/protocols/ADF-001-architectural-decision-filter.md": {
+    "mtime": 1784666243.120782,
+    "ast_hash": "6a30413f8087a08008f5e508809e88ea",
+    "semantic_hash": "6a30413f8087a08008f5e508809e88ea"
+  },
+  "foundation/protocols/IHP-001-implementation-handoff-protocol.md": {
+    "mtime": 1784721307.315244,
+    "ast_hash": "67a56a1071f8b74a84a2961cdd73166f",
+    "semantic_hash": "67a56a1071f8b74a84a2961cdd73166f"
+  },
+  "foundation/protocols/_templates/adf-assessment.md": {
+    "mtime": 1784666243.1284616,
+    "ast_hash": "e6010206f76263eaf6ec5d511f953357",
+    "semantic_hash": "e6010206f76263eaf6ec5d511f953357"
+  },
+  "foundation/protocols/_templates/implementation-handoff-report.md": {
+    "mtime": 1784670309.7409594,
+    "ast_hash": "1c6ae50fb59ab189625050c9695ae72c",
+    "semantic_hash": "1c6ae50fb59ab189625050c9695ae72c"
+  },
+  "knowledge/assessments/ASSESS-0001-ap-0006.md": {
+    "mtime": 1784666382.1763651,
+    "ast_hash": "3e7292e1fabd138f55585d0fdaf0e2c2",
+    "semantic_hash": "3e7292e1fabd138f55585d0fdaf0e2c2"
+  },
+  "knowledge/assessments/DRAFT-arp-kmm-governed-cognitive-loops-review.md": {
+    "mtime": 1784732584.692107,
+    "ast_hash": "6f07f572c9feb49d4af6242fc30ab9ba",
+    "semantic_hash": "6f07f572c9feb49d4af6242fc30ab9ba"
+  },
+  "knowledge/backlog/README.md": {
+    "mtime": 1784665559.6670856,
+    "ast_hash": "576b2b9be44a736e55bf99cf43a80985",
+    "semantic_hash": "576b2b9be44a736e55bf99cf43a80985"
+  },
+  "knowledge/backlog/_templates/architectural-proposal.md": {
+    "mtime": 1784664933.151575,
+    "ast_hash": "d0c1bced38de53573c2867d7938ae352",
+    "semantic_hash": "d0c1bced38de53573c2867d7938ae352"
+  },
+  "knowledge/backlog/proposals/AP-0001-architectural-evolution-backlog.md": {
+    "mtime": 1784665559.6717393,
+    "ast_hash": "b4991a66405dbb12602b8cdd5fc23bf5",
+    "semantic_hash": "b4991a66405dbb12602b8cdd5fc23bf5"
+  },
+  "knowledge/backlog/proposals/AP-0002-constitution-layer.md": {
+    "mtime": 1784665559.6732492,
+    "ast_hash": "fed708cc08018fccf95d86e66a2ffeee",
+    "semantic_hash": "fed708cc08018fccf95d86e66a2ffeee"
+  },
+  "knowledge/backlog/proposals/AP-0003-type-registry.md": {
+    "mtime": 1784665559.6772647,
+    "ast_hash": "69432c562faf1c03aedb5887402ef795",
+    "semantic_hash": "69432c562faf1c03aedb5887402ef795"
+  },
+  "knowledge/backlog/proposals/AP-0004-idea-lifecycle-engine.md": {
+    "mtime": 1784665559.67969,
+    "ast_hash": "8499d5b8c4d068e0e49d3e8cad2fbb86",
+    "semantic_hash": "8499d5b8c4d068e0e49d3e8cad2fbb86"
+  },
+  "knowledge/backlog/proposals/AP-0005-architectural-evolution-pipeline.md": {
+    "mtime": 1784665559.6817777,
+    "ast_hash": "d0142101db25dfe36c04b4c9a76a2ad0",
+    "semantic_hash": "d0142101db25dfe36c04b4c9a76a2ad0"
+  },
+  "knowledge/backlog/proposals/AP-0006-formal-system-ontology.md": {
+    "mtime": 1784721307.3551621,
+    "ast_hash": "bdde154d617ff641a119f0a32809a2d0",
+    "semantic_hash": "bdde154d617ff641a119f0a32809a2d0"
+  },
+  "knowledge/backlog/proposals/AP-0007-runtime-agnostic-core.md": {
+    "mtime": 1784665559.6853528,
+    "ast_hash": "41a8ab55be49be2183d4fb5788807c3c",
+    "semantic_hash": "41a8ab55be49be2183d4fb5788807c3c"
+  },
+  "knowledge/backlog/proposals/AP-0008-project-of-architectural-validation.md": {
+    "mtime": 1784665559.687359,
+    "ast_hash": "8b6b67c0528a96d8f0c779b600eab7cc",
+    "semantic_hash": "8b6b67c0528a96d8f0c779b600eab7cc"
+  },
+  "knowledge/backlog/proposals/AP-0009-architectural-decision-filter.md": {
+    "mtime": 1784666243.1568825,
+    "ast_hash": "e678f91b8fcf3d7ca141c166d1fdebea",
+    "semantic_hash": "e678f91b8fcf3d7ca141c166d1fdebea"
+  },
+  "knowledge/backlog/proposals/AP-0010-implementation-handoff-protocol.md": {
+    "mtime": 1784670309.7669067,
+    "ast_hash": "d472fe511419eb3f69922409150d4c44",
+    "semantic_hash": "d472fe511419eb3f69922409150d4c44"
+  },
+  "knowledge/backlog/proposals/AP-0011-ai-developer-experience.md": {
+    "mtime": 1784721307.3445666,
+    "ast_hash": "5a70d6c1bb81314a809a82623fb8d956",
+    "semantic_hash": "5a70d6c1bb81314a809a82623fb8d956"
+  },
+  "knowledge/backlog/proposals/AP-0012-orchestrator.md": {
+    "mtime": 1784723150.8251054,
+    "ast_hash": "084eb174060545d997a90d82c4dde5b8",
+    "semantic_hash": "084eb174060545d997a90d82c4dde5b8"
+  },
+  "knowledge/backlog/proposals/AP-0013-architecture-interview.md": {
+    "mtime": 1784723150.840456,
+    "ast_hash": "c562c000403dcdd6e89b67aa0c0ffab2",
+    "semantic_hash": "c562c000403dcdd6e89b67aa0c0ffab2"
+  },
+  "knowledge/backlog/proposals/AP-0014-cognitive-pipeline.md": {
+    "mtime": 1784723395.086146,
+    "ast_hash": "1526366d62f37b1851046ace57c42a8b",
+    "semantic_hash": "1526366d62f37b1851046ace57c42a8b"
+  },
+  "knowledge/backlog/proposals/AP-0015-architecture-visualization-frontend.md": {
+    "mtime": 1784723150.8511176,
+    "ast_hash": "c0e869f1bad9250b120989c30cdb14f9",
+    "semantic_hash": "c0e869f1bad9250b120989c30cdb14f9"
+  },
+  "knowledge/backlog/proposals/AP-0016-interactive-onboarding-experience.md": {
+    "mtime": 1784723150.8563516,
+    "ast_hash": "36b8f08e8a32b9193427dba660a9f7b4",
+    "semantic_hash": "36b8f08e8a32b9193427dba660a9f7b4"
+  },
+  "knowledge/backlog/proposals/AP-0017-notebooklm-documentation-consumer.md": {
+    "mtime": 1784723150.8648903,
+    "ast_hash": "33560d1146c4fc7d8d75fb1a06a98d17",
+    "semantic_hash": "33560d1146c4fc7d8d75fb1a06a98d17"
+  },
+  "knowledge/backlog/proposals/AP-0018-intent-driven-cognitive-augmentation.md": {
+    "mtime": 1784728144.6207037,
+    "ast_hash": "5de54792a86f8c370b80d0d505a390e7",
+    "semantic_hash": "5de54792a86f8c370b80d0d505a390e7"
+  },
+  "knowledge/backlog/proposals/AP-0019-cognitive-discovery.md": {
+    "mtime": 1784728175.070037,
+    "ast_hash": "610618d56aa5d69c2df3939ce6355688",
+    "semantic_hash": "610618d56aa5d69c2df3939ce6355688"
+  },
+  "knowledge/backlog/proposals/AP-0020-cognitive-augmentation-layer.md": {
+    "mtime": 1784728208.478539,
+    "ast_hash": "b62fd96987df8f117cbacd9d6217d062",
+    "semantic_hash": "b62fd96987df8f117cbacd9d6217d062"
+  },
+  "knowledge/research/ARP-0001-context-retrieval-and-compression.md": {
+    "mtime": 1784736990.6604593,
+    "ast_hash": "abdd8a433fd06ea6e72acaa79a06f39f",
+    "semantic_hash": "abdd8a433fd06ea6e72acaa79a06f39f"
+  },
+  "knowledge/research/ARP-0002-compilation-planning-and-cognitive-systems.md": {
+    "mtime": 1784736990.6623776,
+    "ast_hash": "d650f4ed7d6a0a84515c77457c88c5fd",
+    "semantic_hash": "d650f4ed7d6a0a84515c77457c88c5fd"
+  },
+  "knowledge/research/ARP-0003-graph-memory-and-provenance.md": {
+    "mtime": 1784736990.6649363,
+    "ast_hash": "907f19fc69a5560bf98b826c8b28b225",
+    "semantic_hash": "907f19fc69a5560bf98b826c8b28b225"
+  },
+  "knowledge/research/ARP-0004-runtime-augmentation-and-context-economics.md": {
+    "mtime": 1784736990.6679823,
+    "ast_hash": "1ed5034e699ec45398ba78c97428a8d6",
+    "semantic_hash": "1ed5034e699ec45398ba78c97428a8d6"
+  },
+  "knowledge/research/ARP-0005-graphify-research-case.md": {
+    "mtime": 1784736990.6709964,
+    "ast_hash": "4d0d21834fc85682189a839dd861c06a",
+    "semantic_hash": "4d0d21834fc85682189a839dd861c06a"
+  },
+  "knowledge/research/ARP-0006-context-retrieval-engine-hypothesis.md": {
+    "mtime": 1784736990.6733024,
+    "ast_hash": "32dbb1b0d88aa2453de4c3af71e6011a",
+    "semantic_hash": "32dbb1b0d88aa2453de4c3af71e6011a"
+  },
+  "knowledge/research/ARP-0007-security-architecture-guardrails-and-assurance.md": {
+    "mtime": 1784738592.6184514,
+    "ast_hash": "b795c1672c6dfbc254e013ecac795bca",
+    "semantic_hash": "b795c1672c6dfbc254e013ecac795bca"
+  },
+  "knowledge/research/ARP-0008-cognitive-artifact-engineering.md": {
+    "mtime": 1784745819.0018046,
+    "ast_hash": "4d67072b9bb11455a2bde57067308024",
+    "semantic_hash": "4d67072b9bb11455a2bde57067308024"
+  },
+  "knowledge/research/ARP-0009-experience-engineering-and-interface-architecture.md": {
+    "mtime": 1784834813.4045439,
+    "ast_hash": "bf15a5244e3f8ca5c53f6a06360dec94",
+    "semantic_hash": "bf15a5244e3f8ca5c53f6a06360dec94"
+  },
+  "knowledge/research/README.md": {
+    "mtime": 1784833046.224072,
+    "ast_hash": "e730e61da4372a2deef4361d814cb093",
+    "semantic_hash": "e730e61da4372a2deef4361d814cb093"
+  },
+  "knowledge/research/_templates/architectural-research-program.md": {
+    "mtime": 1784736961.3688219,
+    "ast_hash": "a7a2dcb14311028984d8fe53c99666a5",
+    "semantic_hash": "a7a2dcb14311028984d8fe53c99666a5"
+  },
+  "knowledge/research/evidence/accessibility-evaluation-evidence-model.md": {
+    "mtime": 1784752247.963982,
+    "ast_hash": "5d0163f87b4d3cf6773999c25e035d76",
+    "semantic_hash": "5d0163f87b4d3cf6773999c25e035d76"
+  },
+  "knowledge/research/evidence/accessibility-inclusive-experience-research-report.md": {
+    "mtime": 1784752517.4399283,
+    "ast_hash": "e38e75882a27065483224b6fa4390fcf",
+    "semantic_hash": "e38e75882a27065483224b6fa4390fcf"
+  },
+  "knowledge/research/evidence/accessibility-responsibility-requirements-framework.md": {
+    "mtime": 1784752517.4414403,
+    "ast_hash": "c22adbd8986b08970a42a8efc24f4cb4",
+    "semantic_hash": "c22adbd8986b08970a42a8efc24f4cb4"
+  },
+  "knowledge/research/evidence/accessibility-technology-procurement-criteria.md": {
+    "mtime": 1784752306.5153172,
+    "ast_hash": "a2fe6c3677deba5f86686ff4f3046e96",
+    "semantic_hash": "a2fe6c3677deba5f86686ff4f3046e96"
+  },
+  "knowledge/research/evidence/audit-event-artifact-design.md": {
+    "mtime": 1784834348.421956,
+    "ast_hash": "c4cec83ef66aa6b68d26b970742995cd",
+    "semantic_hash": "c4cec83ef66aa6b68d26b970742995cd"
+  },
+  "knowledge/research/evidence/benchmark-experience-flow-specification.md": {
+    "mtime": 1784763202.2249544,
+    "ast_hash": "3fdedb4947c00daced501153d21f9d11",
+    "semantic_hash": "3fdedb4947c00daced501153d21f9d11"
+  },
+  "knowledge/research/evidence/benchmark-quality-scenarios-evidence-plan.md": {
+    "mtime": 1784763202.226926,
+    "ast_hash": "98331fee3508b6a5895336d497ad3081",
+    "semantic_hash": "98331fee3508b6a5895336d497ad3081"
+  },
+  "knowledge/research/evidence/benchmark-stages-governance-execution-readiness.md": {
+    "mtime": 1784763202.228938,
+    "ast_hash": "619f5d355c7e3d12089bda8d6cc8eb20",
+    "semantic_hash": "619f5d355c7e3d12089bda8d6cc8eb20"
+  },
+  "knowledge/research/evidence/capability-authority-permission-approval-model.md": {
+    "mtime": 1784827182.4422278,
+    "ast_hash": "b91556ca0ce46ee32e63284a628b70b2",
+    "semantic_hash": "b91556ca0ce46ee32e63284a628b70b2"
+  },
+  "knowledge/research/evidence/clite-accessibility-renderer-specialist-readiness-plan.md": {
+    "mtime": 1784811072.5427313,
+    "ast_hash": "03a6c400b00138af5ed61d5a42421a54",
+    "semantic_hash": "03a6c400b00138af5ed61d5a42421a54"
+  },
+  "knowledge/research/evidence/clite-consent-compensation-privacy-data-handling-specification.md": {
+    "mtime": 1784810992.2497709,
+    "ast_hash": "3f714596a66b9fd3026bf0cb6cde4acc",
+    "semantic_hash": "3f714596a66b9fd3026bf0cb6cde4acc"
+  },
+  "knowledge/research/evidence/clite-content-accessibility-security-ai-native-requirements.md": {
+    "mtime": 1784764432.5275126,
+    "ast_hash": "2fd3bab2482013251e7254dc78b487e2",
+    "semantic_hash": "2fd3bab2482013251e7254dc78b487e2"
+  },
+  "knowledge/research/evidence/clite-domain-extraction-feasibility-report.md": {
+    "mtime": 1784826441.5656688,
+    "ast_hash": "f9447fcb9a44d67743853f00f01edc2f",
+    "semantic_hash": "f9447fcb9a44d67743853f00f01edc2f"
+  },
+  "knowledge/research/evidence/clite-evaluation-evidence-prototype-readiness.md": {
+    "mtime": 1784764432.535023,
+    "ast_hash": "e6ba3a9396a100fc5098ac8cc8398e5a",
+    "semantic_hash": "e6ba3a9396a100fc5098ac8cc8398e5a"
+  },
+  "knowledge/research/evidence/clite-evaluation-governance-authorization-readiness.md": {
+    "mtime": 1784810188.7640917,
+    "ast_hash": "8d1ace934e8277862a3b90ecd520d4ce",
+    "semantic_hash": "8d1ace934e8277862a3b90ecd520d4ce"
+  },
+  "knowledge/research/evidence/clite-evaluation-launch-gates-authorization-readiness.md": {
+    "mtime": 1784811072.5449278,
+    "ast_hash": "cf9ea4255569c5b318e79251e61056ba",
+    "semantic_hash": "cf9ea4255569c5b318e79251e61056ba"
+  },
+  "knowledge/research/evidence/clite-evaluation-operations-plan.md": {
+    "mtime": 1784810992.2467728,
+    "ast_hash": "0e98381cf9cdb1c2c90d75aa8b032664",
+    "semantic_hash": "0e98381cf9cdb1c2c90d75aa8b032664"
+  },
+  "knowledge/research/evidence/clite-evaluation-package-draft.md": {
+    "mtime": 1784808654.2450285,
+    "ast_hash": "9c7f5d02f6146aeb277b8f34375a70d8",
+    "semantic_hash": "9c7f5d02f6146aeb277b8f34375a70d8"
+  },
+  "knowledge/research/evidence/clite-evaluation-protocol.md": {
+    "mtime": 1784810318.1269958,
+    "ast_hash": "769424cbbc46c6bf7396548626cb7c26",
+    "semantic_hash": "769424cbbc46c6bf7396548626cb7c26"
+  },
+  "knowledge/research/evidence/clite-evidence-findings-synthesis-framework.md": {
+    "mtime": 1784810409.272546,
+    "ast_hash": "abdb57aee2fafc8035e1c575972778a0",
+    "semantic_hash": "abdb57aee2fafc8035e1c575972778a0"
+  },
+  "knowledge/research/evidence/clite-human-operated-accessibility-verification-report.md": {
+    "mtime": 1784821794.902885,
+    "ast_hash": "77b5bf564f8f11cff5c8efb2e6c80933",
+    "semantic_hash": "77b5bf564f8f11cff5c8efb2e6c80933"
+  },
+  "knowledge/research/evidence/clite-internal-walkthrough-assisted-review-findings.md": {
+    "mtime": 1784813453.094621,
+    "ast_hash": "c9cb67a1249acf00161f394751e939e9",
+    "semantic_hash": "c9cb67a1249acf00161f394751e939e9"
+  },
+  "knowledge/research/evidence/clite-journeys-flows-states-authority-specification.md": {
+    "mtime": 1784764432.5275126,
+    "ast_hash": "42fb79d086a1073683fc495ddeb54a20",
+    "semantic_hash": "42fb79d086a1073683fc495ddeb54a20"
+  },
+  "knowledge/research/evidence/clite-minimal-study-launch-readiness.md": {
+    "mtime": 1784830781.073513,
+    "ast_hash": "ba23229058e599eabc879d9a4e1a36d3",
+    "semantic_hash": "ba23229058e599eabc879d9a4e1a36d3"
+  },
+  "knowledge/research/evidence/clite-minimal-study-operations-plan.md": {
+    "mtime": 1784830733.8926716,
+    "ast_hash": "2f0faa9a5cfff020207be80cfef7c5ad",
+    "semantic_hash": "2f0faa9a5cfff020207be80cfef7c5ad"
+  },
+  "knowledge/research/evidence/clite-minimal-user-study-protocol.md": {
+    "mtime": 1784830686.8947313,
+    "ast_hash": "4970a5f804a9477494c4172d4f372d10",
+    "semantic_hash": "4970a5f804a9477494c4172d4f372d10"
+  },
+  "knowledge/research/evidence/clite-non-functional-prototype-proposal.md": {
+    "mtime": 1784807388.2698774,
+    "ast_hash": "43934721b0b959dbae27a8472d44e29a",
+    "semantic_hash": "43934721b0b959dbae27a8472d44e29a"
+  },
+  "knowledge/research/evidence/clite-participants-consent-privacy-accessibility-plan.md": {
+    "mtime": 1784810101.4080527,
+    "ast_hash": "e795232f23219853ca450c3256fb25b7",
+    "semantic_hash": "e795232f23219853ca450c3256fb25b7"
+  },
+  "knowledge/research/evidence/clite-product-experience-baseline.md": {
+    "mtime": 1784764432.5275126,
+    "ast_hash": "6c64c27571967e58c02e07587a4bfade",
+    "semantic_hash": "6c64c27571967e58c02e07587a4bfade"
+  },
+  "knowledge/research/evidence/clite-product-experience-gap-hypothesis-matrix.md": {
+    "mtime": 1784830615.497919,
+    "ast_hash": "ffa7e6d57f3c1a14be188a3ff6fe3e4d",
+    "semantic_hash": "ffa7e6d57f3c1a14be188a3ff6fe3e4d"
+  },
+  "knowledge/research/evidence/clite-project-memory-adapter-feasibility-report.md": {
+    "mtime": 1784828412.5859652,
+    "ast_hash": "7e71cfea9d401f64c6d29cc7e9502a24",
+    "semantic_hash": "7e71cfea9d401f64c6d29cc7e9502a24"
+  },
+  "knowledge/research/evidence/clite-prototype-annotation-pack.md": {
+    "mtime": 1784809101.6929395,
+    "ast_hash": "b0caa53fc52cbc94a6fc16ea5ac4d565",
+    "semantic_hash": "b0caa53fc52cbc94a6fc16ea5ac4d565"
+  },
+  "knowledge/research/evidence/clite-prototype-content-state-interaction-plan.md": {
+    "mtime": 1784807388.2794888,
+    "ast_hash": "8b5305fc80590cd9f29ad092a52419a7",
+    "semantic_hash": "8b5305fc80590cd9f29ad092a52419a7"
+  },
+  "knowledge/research/evidence/clite-prototype-evaluation-participants-ethics-plan.md": {
+    "mtime": 1784807482.1621492,
+    "ast_hash": "0a9c8c2e43e33de45b2c3b7bbeed07ab",
+    "semantic_hash": "0a9c8c2e43e33de45b2c3b7bbeed07ab"
+  },
+  "knowledge/research/evidence/clite-renderer-validation-report.md": {
+    "mtime": 1784813384.650664,
+    "ast_hash": "4b3ad11d12b6e1f3d8d8b974091ca78f",
+    "semantic_hash": "4b3ad11d12b6e1f3d8d8b974091ca78f"
+  },
+  "knowledge/research/evidence/clite-scenario-content-pack.md": {
+    "mtime": 1784808540.5387712,
+    "ast_hash": "9140284ae0f5d0f12ec1301b0f65281d",
+    "semantic_hash": "9140284ae0f5d0f12ec1301b0f65281d"
+  },
+  "knowledge/research/evidence/clite-stage2-governance-budget-authorization-readiness.md": {
+    "mtime": 1784807482.1654413,
+    "ast_hash": "f142b4c77a467c4d2f24772affca0e14",
+    "semantic_hash": "f142b4c77a467c4d2f24772affca0e14"
+  },
+  "knowledge/research/evidence/clite-stage3-architecture-limitation-report.md": {
+    "mtime": 1784821809.9454877,
+    "ast_hash": "66f74bd3754842baf36fd532b255649f",
+    "semantic_hash": "66f74bd3754842baf36fd532b255649f"
+  },
+  "knowledge/research/evidence/clite-stage3-executable-vertical-slice-proposal.md": {
+    "mtime": 1784814128.6602933,
+    "ast_hash": "dd51a8c3c8f962fe72183e48d1f5bb42",
+    "semantic_hash": "dd51a8c3c8f962fe72183e48d1f5bb42"
+  },
+  "knowledge/research/evidence/clite-stage3-readiness-assessment.md": {
+    "mtime": 1784813500.4961617,
+    "ast_hash": "73103000a8c0c7f0819310a6888e611a",
+    "semantic_hash": "73103000a8c0c7f0819310a6888e611a"
+  },
+  "knowledge/research/evidence/clite-stage3-testing-risk-authorization-readiness.md": {
+    "mtime": 1784814296.6193552,
+    "ast_hash": "04212e88f6da95d8cd5f87693e4e5f10",
+    "semantic_hash": "04212e88f6da95d8cd5f87693e4e5f10"
+  },
+  "knowledge/research/evidence/clite-stage4-asset-reuse-and-disposal-assessment.md": {
+    "mtime": 1784823971.198207,
+    "ast_hash": "e6f51f894343e165f8bfd86c5aceac75",
+    "semantic_hash": "e6f51f894343e165f8bfd86c5aceac75"
+  },
+  "knowledge/research/evidence/clite-stage4-candidate-slices-and-authorization-readiness.md": {
+    "mtime": 1784824130.643765,
+    "ast_hash": "0e194dda7ecc4a5e6026b2c4ca28b9c5",
+    "semantic_hash": "0e194dda7ecc4a5e6026b2c4ca28b9c5"
+  },
+  "knowledge/research/evidence/clite-stage4-evidence-ux-production-gaps.md": {
+    "mtime": 1784824085.4142888,
+    "ast_hash": "cd7ea8d5dacc477e8dafc63411d9d396",
+    "semantic_hash": "cd7ea8d5dacc477e8dafc63411d9d396"
+  },
+  "knowledge/research/evidence/clite-stage4-productization-architecture-options.md": {
+    "mtime": 1784824035.9655588,
+    "ast_hash": "95fdc4959c7693b553cec04775be8e81",
+    "semantic_hash": "95fdc4959c7693b553cec04775be8e81"
+  },
+  "knowledge/research/evidence/clite-state-event-data-contract-candidates.md": {
+    "mtime": 1784814199.9247193,
+    "ast_hash": "731c955e828d3ce7a9ba5a9b9fe660a9",
+    "semantic_hash": "731c955e828d3ce7a9ba5a9b9fe660a9"
+  },
+  "knowledge/research/evidence/clite-structured-interactive-prototype.md": {
+    "mtime": 1784809163.0689237,
+    "ast_hash": "308847e6083b6cb6d0b0a48340dd0fa9",
+    "semantic_hash": "308847e6083b6cb6d0b0a48340dd0fa9"
+  },
+  "knowledge/research/evidence/clite-study-compensation-storage-incident-ops.md": {
+    "mtime": 1784831400.200682,
+    "ast_hash": "93b3340f2969e6055a0b879d88759699",
+    "semantic_hash": "93b3340f2969e6055a0b879d88759699"
+  },
+  "knowledge/research/evidence/clite-study-gate-closure-g17-readiness.md": {
+    "mtime": 1784831524.8572488,
+    "ast_hash": "291c66f2afcedc305bcce5ac78789ad6",
+    "semantic_hash": "291c66f2afcedc305bcce5ac78789ad6"
+  },
+  "knowledge/research/evidence/clite-study-roles-session-log-accessibility.md": {
+    "mtime": 1784831435.455437,
+    "ast_hash": "4b78fdb7706abd68c46b152cdb3879f2",
+    "semantic_hash": "4b78fdb7706abd68c46b152cdb3879f2"
+  },
+  "knowledge/research/evidence/clite-study-screener-and-consent.md": {
+    "mtime": 1784831355.412923,
+    "ast_hash": "228bb1cf1e2f7a86516f2c8c6737e354",
+    "semantic_hash": "228bb1cf1e2f7a86516f2c8c6737e354"
+  },
+  "knowledge/research/evidence/clite-study-stimulus-validation-report.md": {
+    "mtime": 1784831472.6937075,
+    "ast_hash": "b2143d7cccf08f0ce4fbe57294213bf1",
+    "semantic_hash": "b2143d7cccf08f0ce4fbe57294213bf1"
+  },
+  "knowledge/research/evidence/clite-technical-architecture-persistence-technology-options.md": {
+    "mtime": 1784814259.6294806,
+    "ast_hash": "9c5572654885bf8fcd124d42ebe5e67a",
+    "semantic_hash": "9c5572654885bf8fcd124d42ebe5e67a"
+  },
+  "knowledge/research/evidence/cognitive-architecture-frontend-benchmark-definition.md": {
+    "mtime": 1784763202.2165408,
+    "ast_hash": "4de36ec55f01126ca828bc80b8a35951",
+    "semantic_hash": "4de36ec55f01126ca828bc80b8a35951"
+  },
+  "knowledge/research/evidence/cognitive-artifact-boundary-report.md": {
+    "mtime": 1784745496.8162377,
+    "ast_hash": "b14cb004b84793612a87c5ec81b0049d",
+    "semantic_hash": "b14cb004b84793612a87c5ec81b0049d"
+  },
+  "knowledge/research/evidence/cognitive-artifact-external-model-comparison.md": {
+    "mtime": 1784745649.9142566,
+    "ast_hash": "e44bed7fc6d848a1d55c929e179cdd61",
+    "semantic_hash": "e44bed7fc6d848a1d55c929e179cdd61"
+  },
+  "knowledge/research/evidence/cognitive-artifact-relationship-map.md": {
+    "mtime": 1784745559.890913,
+    "ast_hash": "2521d16348bac5759a0894d583876cf9",
+    "semantic_hash": "2521d16348bac5759a0894d583876cf9"
+  },
+  "knowledge/research/evidence/cognitive-artifact-responsibility-matrix.md": {
+    "mtime": 1784745528.6271927,
+    "ast_hash": "f4d552447f889633a071377f70388edf",
+    "semantic_hash": "f4d552447f889633a071377f70388edf"
+  },
+  "knowledge/research/evidence/component-pattern-responsibility-framework.md": {
+    "mtime": 1784751214.036508,
+    "ast_hash": "5cc0a546c6e0d3e594792843c5355b23",
+    "semantic_hash": "5cc0a546c6e0d3e594792843c5355b23"
+  },
+  "knowledge/research/evidence/context-architecture-options.md": {
+    "mtime": 1784742837.9713354,
+    "ast_hash": "b41c56e7c02dff95c052bda8330e00f1",
+    "semantic_hash": "b41c56e7c02dff95c052bda8330e00f1"
+  },
+  "knowledge/research/evidence/context-retrieval-evidence-report.md": {
+    "mtime": 1784742837.9661052,
+    "ast_hash": "19d0c8c886f60c7495dd49b3aa96f20d",
+    "semantic_hash": "19d0c8c886f60c7495dd49b3aa96f20d"
+  },
+  "knowledge/research/evidence/context-retrieval-technology-matrix.md": {
+    "mtime": 1784742837.9691145,
+    "ast_hash": "644f568be49981112e448723d45b988c",
+    "semantic_hash": "644f568be49981112e448723d45b988c"
+  },
+  "knowledge/research/evidence/context-security-assessment.md": {
+    "mtime": 1784742837.9743333,
+    "ast_hash": "abdff0127bf33d3dfde52b2f0da3aabc",
+    "semantic_hash": "abdff0127bf33d3dfde52b2f0da3aabc"
+  },
+  "knowledge/research/evidence/context-token-economics.md": {
+    "mtime": 1784743243.894137,
+    "ast_hash": "8fb9677b3ebb16a41fbab2f74a428ade",
+    "semantic_hash": "8fb9677b3ebb16a41fbab2f74a428ade"
+  },
+  "knowledge/research/evidence/cross-executor-response-portability-assessment.md": {
+    "mtime": 1784822456.6471364,
+    "ast_hash": "593b99ffb4bfcd356292e293f914d3dd",
+    "semantic_hash": "593b99ffb4bfcd356292e293f914d3dd"
+  },
+  "knowledge/research/evidence/delegation-accountability-audit-risk-boundaries.md": {
+    "mtime": 1784827229.714491,
+    "ast_hash": "a3c2501f72e5d704c09547a1d8d3e93f",
+    "semantic_hash": "a3c2501f72e5d704c09547a1d8d3e93f"
+  },
+  "knowledge/research/evidence/design-language-design-system-research-report.md": {
+    "mtime": 1784751070.494945,
+    "ast_hash": "691a77bdfadb22feee2459f0a3a607c2",
+    "semantic_hash": "691a77bdfadb22feee2459f0a3a607c2"
+  },
+  "knowledge/research/evidence/design-system-governance-risk-assessment.md": {
+    "mtime": 1784751275.1505442,
+    "ast_hash": "1cf31eef7550ef1249a0693baf0aef4e",
+    "semantic_hash": "1cf31eef7550ef1249a0693baf0aef4e"
+  },
+  "knowledge/research/evidence/design-token-architecture-options.md": {
+    "mtime": 1784751153.8563375,
+    "ast_hash": "e72a5cc93b3fc88195db199ec22a0d9d",
+    "semantic_hash": "e72a5cc93b3fc88195db199ec22a0d9d"
+  },
+  "knowledge/research/evidence/evaluation-methods-assurance-profiles.md": {
+    "mtime": 1784757745.0700126,
+    "ast_hash": "bab38c5f13b9a64c05bd88d2cae4c7e3",
+    "semantic_hash": "bab38c5f13b9a64c05bd88d2cae4c7e3"
+  },
+  "knowledge/research/evidence/experience-architecture-package-options.md": {
+    "mtime": 1784748016.9361508,
+    "ast_hash": "29553d505bfa9b6721f5e0129b3c1e2e",
+    "semantic_hash": "29553d505bfa9b6721f5e0129b3c1e2e"
+  },
+  "knowledge/research/evidence/experience-discovery-question-framework.md": {
+    "mtime": 1784747915.1994867,
+    "ast_hash": "37cb6a47655d57fdf30933ad6ec95fb1",
+    "semantic_hash": "37cb6a47655d57fdf30933ad6ec95fb1"
+  },
+  "knowledge/research/evidence/experience-foundations-research-report.md": {
+    "mtime": 1784747850.8581645,
+    "ast_hash": "5f7303d4210c17bf66bd32e2b891232b",
+    "semantic_hash": "5f7303d4210c17bf66bd32e2b891232b"
+  },
+  "knowledge/research/evidence/frontend-architecture-options-decision-matrix.md": {
+    "mtime": 1784755223.7047236,
+    "ast_hash": "7b8f20b4e5d42a12f403b461dd06c65b",
+    "semantic_hash": "7b8f20b4e5d42a12f403b461dd06c65b"
+  },
+  "knowledge/research/evidence/frontend-architecture-research-report.md": {
+    "mtime": 1784755512.2638924,
+    "ast_hash": "419973307708682d98f8f93e06de2109",
+    "semantic_hash": "419973307708682d98f8f93e06de2109"
+  },
+  "knowledge/research/evidence/frontend-quality-risk-evaluation-framework.md": {
+    "mtime": 1784755306.165387,
+    "ast_hash": "7843325c2ecd79a21cfd547051f286ff",
+    "semantic_hash": "7843325c2ecd79a21cfd547051f286ff"
+  },
+  "knowledge/research/evidence/frontend-responsibility-boundary-framework.md": {
+    "mtime": 1784755162.6732774,
+    "ast_hash": "ec93abe777098725c28fed02503f0fa8",
+    "semantic_hash": "ec93abe777098725c28fed02503f0fa8"
+  },
+  "knowledge/research/evidence/governed-ui-technology-catalog-framework.md": {
+    "mtime": 1784754252.1440928,
+    "ast_hash": "cb87d0c3cfb9eb74c531dfc2237814b3",
+    "semantic_hash": "cb87d0c3cfb9eb74c531dfc2237814b3"
+  },
+  "knowledge/research/evidence/ia-flow-artifact-selection-guide.md": {
+    "mtime": 1784749053.0275767,
+    "ast_hash": "cb2dbdee079c746fc595f0f87bd738bf",
+    "semantic_hash": "cb2dbdee079c746fc595f0f87bd738bf"
+  },
+  "knowledge/research/evidence/identity-actor-role-model.md": {
+    "mtime": 1784827133.5150392,
+    "ast_hash": "3f0f4d10699bed8c22335dd107e00c67",
+    "semantic_hash": "3f0f4d10699bed8c22335dd107e00c67"
+  },
+  "knowledge/research/evidence/identity-authority-implementation-readiness.md": {
+    "mtime": 1784827276.9392583,
+    "ast_hash": "bd5cb533e0408335a5aa672f82196ccd",
+    "semantic_hash": "bd5cb533e0408335a5aa672f82196ccd"
+  },
+  "knowledge/research/evidence/information-architecture-navigation-research-report.md": {
+    "mtime": 1784749400.6001,
+    "ast_hash": "8f736220ad5187e2056795a6a93cdfce",
+    "semantic_hash": "8f736220ad5187e2056795a6a93cdfce"
+  },
+  "knowledge/research/evidence/integrated-experience-evaluation-research-report.md": {
+    "mtime": 1784757593.9527595,
+    "ast_hash": "ba100782ba4c070aa4efc6432819455c",
+    "semantic_hash": "ba100782ba4c070aa4efc6432819455c"
+  },
+  "knowledge/research/evidence/memory-update-acceptance-process.md": {
+    "mtime": 1784834321.185427,
+    "ast_hash": "5d3575cf5f9d34af0c4836e950e3895f",
+    "semantic_hash": "5d3575cf5f9d34af0c4836e950e3895f"
+  },
+  "knowledge/research/evidence/navigation-model-decision-matrix.md": {
+    "mtime": 1784748989.6033573,
+    "ast_hash": "d2f75f60dbe5abb53fb9831348a833f0",
+    "semantic_hash": "d2f75f60dbe5abb53fb9831348a833f0"
+  },
+  "knowledge/research/evidence/prd-experience-responsibility-matrix.md": {
+    "mtime": 1784747959.4501846,
+    "ast_hash": "133807bec765824d961595ddcd83837f",
+    "semantic_hash": "133807bec765824d961595ddcd83837f"
+  },
+  "knowledge/research/evidence/quality-gates-release-production-feedback-framework.md": {
+    "mtime": 1784757806.6101732,
+    "ast_hash": "d2215a96cb52272dd71e1fa0227ac8f9",
+    "semantic_hash": "d2215a96cb52272dd71e1fa0227ac8f9"
+  },
+  "knowledge/research/evidence/real-execution-boundary-specification.md": {
+    "mtime": 1784834388.1406999,
+    "ast_hash": "fc72a2dda58e6c51e928617573f14c58",
+    "semantic_hash": "fc72a2dda58e6c51e928617573f14c58"
+  },
+  "knowledge/research/evidence/reference-risk-guardrail-assessment.md": {
+    "mtime": 1784750111.6322477,
+    "ast_hash": "e79b6f1c74250c889588d7f700f5c642",
+    "semantic_hash": "e79b6f1c74250c889588d7f700f5c642"
+  },
+  "knowledge/research/evidence/reference-translation-decision-framework.md": {
+    "mtime": 1784750046.3953557,
+    "ast_hash": "022fc4e62a1c2f85e55814eb78285290",
+    "semantic_hash": "022fc4e62a1c2f85e55814eb78285290"
+  },
+  "knowledge/research/evidence/representative-technology-decision-matrices.md": {
+    "mtime": 1784754360.8767734,
+    "ast_hash": "13ed73047459c988da5d1ad4935ef051",
+    "semantic_hash": "13ed73047459c988da5d1ad4935ef051"
+  },
+  "knowledge/research/evidence/requirement-evaluation-evidence-traceability-framework.md": {
+    "mtime": 1784757670.1776125,
+    "ast_hash": "e4abb0eabc86daba5703c06977807c25",
+    "semantic_hash": "e4abb0eabc86daba5703c06977807c25"
+  },
+  "knowledge/research/evidence/system-audit-architecture-coherence.md": {
+    "mtime": 1784832607.7280219,
+    "ast_hash": "d032dfb9eb84c06ae9f7063d9dab5a0d",
+    "semantic_hash": "d032dfb9eb84c06ae9f7063d9dab5a0d"
+  },
+  "knowledge/research/evidence/system-audit-capability-maturity-map.md": {
+    "mtime": 1784832777.993698,
+    "ast_hash": "ac92ba7ef43907e0a8a16ab8f277f2a7",
+    "semantic_hash": "ac92ba7ef43907e0a8a16ab8f277f2a7"
+  },
+  "knowledge/research/evidence/system-audit-gap-register-and-portfolio.md": {
+    "mtime": 1784832942.2592237,
+    "ast_hash": "94e670f55a6981566cf17f1d50d1f7e0",
+    "semantic_hash": "94e670f55a6981566cf17f1d50d1f7e0"
+  },
+  "knowledge/research/evidence/system-audit-threat-model.md": {
+    "mtime": 1784832505.6504233,
+    "ast_hash": "ae17d0a791adc365696c2e3ec9099dba",
+    "semantic_hash": "ae17d0a791adc365696c2e3ec9099dba"
+  },
+  "knowledge/research/evidence/system-audit-ux-ops-testing-governance.md": {
+    "mtime": 1784832838.151489,
+    "ast_hash": "0a9b693d148459aa49f5e84df18128b9",
+    "semantic_hash": "0a9b693d148459aa49f5e84df18128b9"
+  },
+  "knowledge/research/evidence/technology-selection-decision-framework.md": {
+    "mtime": 1784754306.046868,
+    "ast_hash": "91684d8277e5976283999d16b763df08",
+    "semantic_hash": "91684d8277e5976283999d16b763df08"
+  },
+  "knowledge/research/evidence/ui-technology-landscape-research-report.md": {
+    "mtime": 1784754201.8103485,
+    "ast_hash": "f85ad683f916cf0f6af96e5d1e5eec77",
+    "semantic_hash": "f85ad683f916cf0f6af96e5d1e5eec77"
+  },
+  "knowledge/research/evidence/user-flow-state-modeling-framework.md": {
+    "mtime": 1784748989.6053631,
+    "ast_hash": "5da1c6b1e291e37a85da9d70b0fe2111",
+    "semantic_hash": "5da1c6b1e291e37a85da9d70b0fe2111"
+  },
+  "knowledge/research/evidence/visual-decomposition-framework.md": {
+    "mtime": 1784750046.3838952,
+    "ast_hash": "5c0f956d1487b025e9c7eefc14f0f13a",
+    "semantic_hash": "5c0f956d1487b025e9c7eefc14f0f13a"
+  },
+  "knowledge/research/evidence/visual-reference-interpretation-research-report.md": {
+    "mtime": 1784749934.8737452,
+    "ast_hash": "04a8e65131a26a139fb0cd0521193a60",
+    "semantic_hash": "04a8e65131a26a139fb0cd0521193a60"
+  },
+  "milestones/README.md": {
+    "mtime": 1784833030.7585838,
+    "ast_hash": "73ef1e28d466a29c735fcd65b6ba6171",
+    "semantic_hash": "73ef1e28d466a29c735fcd65b6ba6171"
+  },
+  "milestones/V1-M01-architectural-decision-filter.md": {
+    "mtime": 1784721307.3685622,
+    "ast_hash": "c5fe69e01d7d1cb206913b8ffe2fb79d",
+    "semantic_hash": "c5fe69e01d7d1cb206913b8ffe2fb79d"
+  },
+  "milestones/V1-M01-implementation-handoff.md": {
+    "mtime": 1784721562.6786435,
+    "ast_hash": "ee958838e42ef48d7f115e857ac3e1f5",
+    "semantic_hash": "ee958838e42ef48d7f115e857ac3e1f5"
+  },
+  "milestones/V1-M02-accessibility-inclusive-experience-research-handoff.md": {
+    "mtime": 1784752537.1008873,
+    "ast_hash": "b42c954fe3f6bb275e36ec6c0ae809f1",
+    "semantic_hash": "b42c954fe3f6bb275e36ec6c0ae809f1"
+  },
+  "milestones/V1-M02-agent-agnostic-bootstrap-handoff.md": {
+    "mtime": 1784822556.1269524,
+    "ast_hash": "efd7091f5c84957182bb574ce5ef88f0",
+    "semantic_hash": "efd7091f5c84957182bb574ce5ef88f0"
+  },
+  "milestones/V1-M02-architectural-research-program-handoff.md": {
+    "mtime": 1784737211.836901,
+    "ast_hash": "76556cdbf8ce3b942138ee4d3a1e9ae6",
+    "semantic_hash": "76556cdbf8ce3b942138ee4d3a1e9ae6"
+  },
+  "milestones/V1-M02-bootstrap-continuity-maintenance-handoff.md": {
+    "mtime": 1784823494.6382818,
+    "ast_hash": "a041a08d9d143e8cff76e5d0a3b3beb1",
+    "semantic_hash": "a041a08d9d143e8cff76e5d0a3b3beb1"
+  },
+  "milestones/V1-M02-clite-domain-extraction-feasibility-handoff.md": {
+    "mtime": 1784826561.406167,
+    "ast_hash": "050fe114aa7718adcbd3171c0a5f1600",
+    "semantic_hash": "050fe114aa7718adcbd3171c0a5f1600"
+  },
+  "milestones/V1-M02-clite-internal-pre-evaluation-handoff.md": {
+    "mtime": 1784813612.9503717,
+    "ast_hash": "913ed6828aea31a3376bb381c12f77ab",
+    "semantic_hash": "913ed6828aea31a3376bb381c12f77ab"
+  },
+  "milestones/V1-M02-clite-stage2-evaluation-operational-readiness-handoff.md": {
+    "mtime": 1784811157.387859,
+    "ast_hash": "774205061d19f239104d1c0df148db4d",
+    "semantic_hash": "774205061d19f239104d1c0df148db4d"
+  },
+  "milestones/V1-M02-clite-stage2-evaluation-protocol-handoff.md": {
+    "mtime": 1784810282.0252397,
+    "ast_hash": "933177bc82b86762b04fbb78d6ac7233",
+    "semantic_hash": "933177bc82b86762b04fbb78d6ac7233"
+  },
+  "milestones/V1-M02-clite-stage2-prototype-creation-handoff.md": {
+    "mtime": 1784808783.9075181,
+    "ast_hash": "a2dcd6cf0a77afe7a040c57337f99e58",
+    "semantic_hash": "a2dcd6cf0a77afe7a040c57337f99e58"
+  },
+  "milestones/V1-M02-clite-stage2-prototype-proposal-handoff.md": {
+    "mtime": 1784807566.5159583,
+    "ast_hash": "4f21cd48dcae14ac1ef5e5ba9a38faf0",
+    "semantic_hash": "4f21cd48dcae14ac1ef5e5ba9a38faf0"
+  },
+  "milestones/V1-M02-clite-stage3-accessibility-verification-handoff.md": {
+    "mtime": 1784821883.832764,
+    "ast_hash": "94b4bbaa6d525bc811d588ea17d9fef5",
+    "semantic_hash": "94b4bbaa6d525bc811d588ea17d9fef5"
+  },
+  "milestones/V1-M02-clite-stage3-implementation-handoff.md": {
+    "mtime": 1784816545.9981902,
+    "ast_hash": "9e3a3b5324f25753d6e23feac4b1e9fd",
+    "semantic_hash": "9e3a3b5324f25753d6e23feac4b1e9fd"
+  },
+  "milestones/V1-M02-clite-stage3-vertical-slice-proposal-handoff.md": {
+    "mtime": 1784814397.7275596,
+    "ast_hash": "359ccd08f92974a36ed02c84d2be5ef9",
+    "semantic_hash": "359ccd08f92974a36ed02c84d2be5ef9"
+  },
+  "milestones/V1-M02-clite-stage4-productization-boundary-proposal-handoff.md": {
+    "mtime": 1784824246.188891,
+    "ast_hash": "69612afcbd6b51cdd7410fb78c9a33ff",
+    "semantic_hash": "69612afcbd6b51cdd7410fb78c9a33ff"
+  },
+  "milestones/V1-M02-cognitive-artifact-engineering-handoff.md": {
+    "mtime": 1784744824.9822583,
+    "ast_hash": "952bb51fcff991739700267e11fca132",
+    "semantic_hash": "952bb51fcff991739700267e11fca132"
+  },
+  "milestones/V1-M02-cognitive-artifact-foundations-research-handoff.md": {
+    "mtime": 1784745944.2013888,
+    "ast_hash": "10eea255b96076643594907ab0a6d579",
+    "semantic_hash": "10eea255b96076643594907ab0a6d579"
+  },
+  "milestones/V1-M02-cognitive-frontend-benchmark-definition-handoff.md": {
+    "mtime": 1784763001.6335368,
+    "ast_hash": "bf57401f68ebcf7f5def6319eae71906",
+    "semantic_hash": "bf57401f68ebcf7f5def6319eae71906"
+  },
+  "milestones/V1-M02-cognitive-frontend-stage1-documentary-baseline-handoff.md": {
+    "mtime": 1784764275.3911245,
+    "ast_hash": "e0c7da94abd6afda95e2035c16fa560c",
+    "semantic_hash": "e0c7da94abd6afda95e2035c16fa560c"
+  },
+  "milestones/V1-M02-context-retrieval-research-handoff.md": {
+    "mtime": 1784742837.9763434,
+    "ast_hash": "3fcd696911de816682471e98d78bff0c",
+    "semantic_hash": "3fcd696911de816682471e98d78bff0c"
+  },
+  "milestones/V1-M02-design-language-design-systems-research-handoff.md": {
+    "mtime": 1784751582.956452,
+    "ast_hash": "6ddd8811da0b618efed0bea77298428c",
+    "semantic_hash": "6ddd8811da0b618efed0bea77298428c"
+  },
+  "milestones/V1-M02-experience-engineering-research-program-handoff.md": {
+    "mtime": 1784746686.4994555,
+    "ast_hash": "6d34399ee4e55c763761bcf609e94db9",
+    "semantic_hash": "6d34399ee4e55c763761bcf609e94db9"
+  },
+  "milestones/V1-M02-experience-foundations-research-handoff.md": {
+    "mtime": 1784748139.2174263,
+    "ast_hash": "b0fbc7e0cc116275eab29fb44fe6906b",
+    "semantic_hash": "b0fbc7e0cc116275eab29fb44fe6906b"
+  },
+  "milestones/V1-M02-frontend-architecture-interface-runtime-research-handoff.md": {
+    "mtime": 1784755405.832344,
+    "ast_hash": "647af95baba888ca1262403a929dd6df",
+    "semantic_hash": "647af95baba888ca1262403a929dd6df"
+  },
+  "milestones/V1-M02-identity-and-authority-model-handoff.md": {
+    "mtime": 1784827380.813393,
+    "ast_hash": "9804972a35f4b34cdb689eb4a3027903",
+    "semantic_hash": "9804972a35f4b34cdb689eb4a3027903"
+  },
+  "milestones/V1-M02-information-architecture-user-flow-research-handoff.md": {
+    "mtime": 1784749400.608564,
+    "ast_hash": "486f5c29012df14e3ec59b8e68374069",
+    "semantic_hash": "486f5c29012df14e3ec59b8e68374069"
+  },
+  "milestones/V1-M02-integrated-experience-evaluation-research-handoff.md": {
+    "mtime": 1784757919.3676434,
+    "ast_hash": "3bff625ef13a7b2d35940f24191b8bb0",
+    "semantic_hash": "3bff625ef13a7b2d35940f24191b8bb0"
+  },
+  "milestones/V1-M02-minimal-study-gate-closure-handoff.md": {
+    "mtime": 1784831657.6830733,
+    "ast_hash": "4e8e067fb247200b7009c007c8a093fe",
+    "semantic_hash": "4e8e067fb247200b7009c007c8a093fe"
+  },
+  "milestones/V1-M02-personal-mode-foundation-handoff.md": {
+    "mtime": 1784834900.0073755,
+    "ast_hash": "898d97988abb1ce77fd6a9bddf742277",
+    "semantic_hash": "898d97988abb1ce77fd6a9bddf742277"
+  },
+  "milestones/V1-M02-product-experience-study-readiness-handoff.md": {
+    "mtime": 1784830900.4951413,
+    "ast_hash": "8b8dbc6f96c830315830095315aa25b2",
+    "semantic_hash": "8b8dbc6f96c830315830095315aa25b2"
+  },
+  "milestones/V1-M02-project-memory-adapter-feasibility-handoff.md": {
+    "mtime": 1784828542.0018816,
+    "ast_hash": "b3cc5fb9429562ddba12f565b187bca2",
+    "semantic_hash": "b3cc5fb9429562ddba12f565b187bca2"
+  },
+  "milestones/V1-M02-system-audit-handoff.md": {
+    "mtime": 1784833313.7507977,
+    "ast_hash": "43c17196053f5fc68925d23b856605e7",
+    "semantic_hash": "43c17196053f5fc68925d23b856605e7"
+  },
+  "milestones/V1-M02-system-overview-and-ontology-framing.md": {
+    "mtime": 1784723244.1739576,
+    "ast_hash": "2fc1050afc8bd7871ce85fe5bb7c73bd",
+    "semantic_hash": "2fc1050afc8bd7871ce85fe5bb7c73bd"
+  },
+  "milestones/V1-M02-system-overview-structure-handoff.md": {
+    "mtime": 1784723463.1938643,
+    "ast_hash": "449294f572526209ed4b323923d4f70e",
+    "semantic_hash": "449294f572526209ed4b323923d4f70e"
+  },
+  "milestones/V1-M02-ui-technology-catalog-selection-research-handoff.md": {
+    "mtime": 1784754485.2363284,
+    "ast_hash": "45feb71b668c2380ed535a6e65a06307",
+    "semantic_hash": "45feb71b668c2380ed535a6e65a06307"
+  },
+  "milestones/V1-M02-visual-reference-interpretation-research-handoff.md": {
+    "mtime": 1784750225.792415,
+    "ast_hash": "8c49af70eee9b03e0942ed7d32dc0501",
+    "semantic_hash": "8c49af70eee9b03e0942ed7d32dc0501"
+  },
+  "roadmap/V1.md": {
+    "mtime": 1784833089.3268619,
+    "ast_hash": "557c0c829bf30f233f51e0b69340f554",
+    "semantic_hash": "557c0c829bf30f233f51e0b69340f554"
+  },
+  "scripts/BACKUP.md": {
+    "mtime": 1784836077.9828308,
+    "ast_hash": "a0eed9f30c1a3195fa0bb2c3cb972c7d",
+    "semantic_hash": "a0eed9f30c1a3195fa0bb2c3cb972c7d"
+  }
+}

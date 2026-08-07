@@ -5,6 +5,7 @@ kind: knowledge
 knowledge_type: architectural_proposal
 title: "Formal System Ontology and Constitutional Metamodel"
 status: scheduled
+updated_at: 2026-08-07
 created_at: 2026-07-21
 author: "Raphael Caveagna — Founder & Chief Vision Officer"
 language: pt-BR
@@ -19,7 +20,7 @@ dependencies:
 scheduled_milestone: V1-M02
 ideal_implementation_time: "Após a revisão estrutural do System Overview e antes de estabilizar schemas, Core Types, Type Registry ou contratos públicos."
 acceptance_criteria: ["Responde às perguntas de competência do sistema.", "Separa metamodelo, ontologia e representação.", "Permite extensões sem alterar o Core.", "É runtime e model agnostic."]
-observations: "ADF aplicado em ASSESS-0001: remain_experimental. V1-M02 foi autorizada, mas nenhuma promoção permanente ocorreu."
+observations: "ASSESS-0001 e ASSESS-0002: remain_experimental. AD-007/E01 separaram as três camadas; AD-008/E02 provaram um kernel consumido por 186 artifacts. Nenhuma promoção permanente ocorreu."
 relations:
   - type: assessed_by
     target: ASSESS-0001
@@ -29,6 +30,12 @@ relations:
     target: AD-003
   - type: contextualized_by
     target: ARCH-001
+  - type: informed_by
+    target: ARP-0010-E01
+  - type: informed_by
+    target: ARP-0010-E02
+  - type: assessed_by
+    target: ASSESS-0002
 ---
 
 # AP-0006 — Formal System Ontology and Constitutional Metamodel

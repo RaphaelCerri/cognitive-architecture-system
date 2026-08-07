@@ -27,7 +27,7 @@ acceptance_criteria:
   - "Explica seleção de processos, Capabilities, Skills e Agents com rastreabilidade."
   - "Explica quando exigir RFC, escalar ao Conselho ou permitir autonomia."
   - "Passa pelo ADF antes de qualquer promoção permanente."
-observations: "Não implementar durante o checkpoint estrutural do System Overview. As responsabilidades listadas são hipóteses, não contrato."
+observations: "Não implementar durante o checkpoint estrutural do System Overview. As responsabilidades listadas são hipóteses, não contrato. AP-0022 delimita o Governance Gateway sem authority; coordenação cognitiva ampla não pode absorver autorização, review ou aceite."
 relations:
   - type: introduced_by
     target: AD-003
@@ -39,6 +39,8 @@ relations:
     target: AP-0007
   - type: depends_on
     target: AP-0014
+  - type: refined_by
+    target: AP-0022
 ---
 
 # AP-0012 — Orchestrator
@@ -54,3 +56,10 @@ Proposta para amadurecer a responsabilidade de coordenação contextual do proce
 - decidir autonomia ou escalada conforme contratos de governança.
 
 Nenhuma dessas hipóteses autoriza implementação.
+
+## Boundary de governança
+
+AP-0022 separa do Orchestrator uma responsabilidade mínima de gateway. Mesmo que
+as duas responsabilidades compartilhem infraestrutura futura, o coordenador não
+recebe authority institucional: ele roteia e aplica gates, sem autorizar,
+executar trabalho de domínio, revisar ou aceitar.

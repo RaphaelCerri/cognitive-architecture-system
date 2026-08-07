@@ -1,0 +1,9 @@
+{
+  "name": "interaction-protocol-experiment",
+  "version": "0.2.0-experimental",
+  "private": true,
+  "scripts": {
+    "demo": "node demo.js",
+    "test": "node --test --test-isolation=none"
+  }
+}

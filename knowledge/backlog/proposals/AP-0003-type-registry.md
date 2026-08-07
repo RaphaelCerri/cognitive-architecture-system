@@ -5,6 +5,7 @@ kind: knowledge
 knowledge_type: architectural_proposal
 title: "Type Registry"
 status: proposed
+updated_at: 2026-08-07
 created_at: 2026-07-21
 author: "Architecture Council"
 language: pt-BR
@@ -17,10 +18,14 @@ estimated_complexity: high
 dependencies: ["Formal Ontology", "Stable Knowledge Object schema"]
 ideal_implementation_time: "Depois da Ontologia V1 e antes de permitir extensões executáveis."
 acceptance_criteria: ["Distingue Core Types de extensões.", "Suporta versionamento e migração.", "Não depende de runtime ou linguagem."]
-observations: "Não promover Tool, MCP, Agent ou outros tipos antes desta avaliação."
+observations: "Não promover Tool, MCP, Agent ou outros tipos antes desta avaliação. ARP-0010-E02 informa o futuro registry com alias não destrutivo e famílias derivadas, mas não autoriza implementação."
 relations:
   - type: depends_on
     target: AP-0006
+  - type: informed_by
+    target: ARP-0010-E02
+  - type: informed_by
+    target: ARP-0010-E03
 ---
 
 # AP-0003 — Type Registry

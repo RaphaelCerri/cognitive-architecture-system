@@ -33,6 +33,10 @@ GOV-001 (papéis) nem IHP-001 (handoff) — ele os operacionaliza.
 - artifact ≠ evidence; prototype ≠ runtime; derived state ≠ canonical decision;
 - visible permission ≠ security enforcement; internal review ≠ user evidence;
 - **não iniciar a etapa seguinte** (estágio, slice, sessão) por iniciativa própria.
+- trocar o papel declarado não troca identidade/session nem cria independência;
+- transição CSA/CEA segue GOV-003/GRP-001; mesma sessão produz no máximo review
+  provisório e nunca aceita o próprio desenho ou execução;
+- Governance Router coordena, mas não autoriza, executa, revisa ou aceita.
 
 ## Preflight obrigatório
 

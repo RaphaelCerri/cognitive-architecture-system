@@ -1,5 +1,5 @@
 ---
-title: "Experimento — Protocolo de Interação (Slice 1)"
+title: "Experimento — Protocolo de Interação"
 status: experimental
 canonicality: experimental_prototype_not_canon
 created_at: 2026-07-23
@@ -16,12 +16,30 @@ futuros Braços de Capacidade (Processos, Marketing, ...) vão reutilizar.
 
 `Especificar != Provar` — este diretório existe para **provar rodando**, não só descrever.
 
+## Primeira decisão depois da intenção
+
+Depois de o usuário dizer o que quer, o protocolo faz **uma única pergunta de
+calibração**, antes de pedir definições:
+
+> Em que ponto essa iniciativa está hoje?
+
+1. **Só tenho a ideia (Semente):** discovery do problema, contexto e direção.
+2. **Já organizei uma parte (Estruturada):** consolidar decisões e fechar lacunas.
+3. **Já tenho algo concreto (Concreta):** inspecionar pasta, código, site,
+   protótipo ou especificação e ir direto a refinamento e insights.
+4. **Já está em uso (Em operação):** auditar evidência real, otimizar e evoluir.
+
+Os nomes classificam o estado da iniciativa, não o conhecimento da pessoa. A
+resposta escolhe a rota e impede que iniciativas concretas sejam obrigadas a
+repetir definições básicas.
+
 ## Fases do loop
 
 1. **Enquadrar** — 1-2 frases dizendo o que vamos fazer e quantas etapas.
-2. **Elicitar** — 1 a 3 perguntas amplas por turno. Nunca despejar lista.
-3. **Ramificar** — a resposta anterior escolhe o próximo conjunto de perguntas
-   (árvore, não lista fixa).
+2. **Calibrar maturidade** — a primeira pergunta após a intenção escolhe entre
+   discovery, estruturação, refinamento ou evolução.
+3. **Elicitar adaptativamente** — perguntar somente o que falta para a rota;
+   artefatos e decisões já existentes substituem perguntas de definição.
 4. **Aprofundar** — depois das respostas de superfície, sonda ativamente algo
    que **ainda não foi perguntado** (o que o usuário pode ter esquecido).
 5. **Brainstorm/Insight** — devolve padrões vistos nos dados e os discute
@@ -33,6 +51,8 @@ futuros Braços de Capacidade (Processos, Marketing, ...) vão reutilizar.
 ## Regras de comunicação (transversais a todas as fases)
 
 - uma coisa de cada vez; máximo 3 perguntas por turno;
+- a primeira pergunta após a intenção é sempre a maturidade da iniciativa;
+- nunca pedir ao usuário para redefinir algo que um artefato já demonstra;
 - sempre mostrar progresso (`Etapa N de 6`);
 - linguagem simples, zero jargão sem explicação;
 - todo turno termina com uma ação/decisão clara para o usuário;
@@ -42,6 +62,8 @@ futuros Braços de Capacidade (Processos, Marketing, ...) vão reutilizar.
 ## Estado rastreado
 
 - `fase_atual`
+- `maturity_level`
+- `route`
 - `respostas_coletadas` (estruturado)
 - `threads_abertas` (o que ainda falta perguntar — pode terminar não-vazio;
   isso é honesto, não é bug)
@@ -59,15 +81,14 @@ contrato a canon. Serve de ponte para um formato de Memory futuro, não é Memor
 
 Sem dependências, sem rede, sem instalação:
 
-```bash
-node demo.js
+```powershell
+npm test
+npm run demo
 ```
 
-`demo.js` conduz uma elicitação de exemplo (mapear um mini-processo neutro —
-"preparar café de manhã") com respostas de exemplo roteirizadas, e imprime:
-a sequência de perguntas ramificadas, as transições de fase com recap, a
-sondagem de aprofundamento, os insights gerados, as lacunas detectadas e o
-registro estruturado final.
+`demo.js` recebe uma intenção, pergunta a maturidade como primeiro follow-up e
+seleciona a rota `tangible`. Como já existe uma pasta com CLI e README, ele pula
+definições básicas, investiga o refinamento desejado e imprime o registro final.
 
 ## Limites deste experimento
 
@@ -76,3 +97,9 @@ registro estruturado final.
   o objetivo desta slice é provar a forma do protocolo, não construir um CLI interativo.
 - Não inicia o Braço de Processos (próxima slice, não autorizada aqui).
 - Nada aqui é canon: é descartável, substituível, e não referenciado por ARCH-001.
+
+## Evolução
+
+- **v0.2, 2026-08-07:** adiciona calibração de maturidade como primeira pergunta
+  após a intenção e roteamento que reduz definições desnecessárias.
+- **v0.1, 2026-07-23:** prova original do loop de interação em seis fases.

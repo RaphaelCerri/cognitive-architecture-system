@@ -1,0 +1,9 @@
+{
+  "name": "governed-role-orchestration-experiment",
+  "version": "0.1.0-experimental",
+  "private": true,
+  "scripts": {
+    "test": "node guard.test.js",
+    "demo": "node demo.js"
+  }
+}
