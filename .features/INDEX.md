@@ -2,6 +2,7 @@
 
 | Data | Tipo | Escopo | Título | Arquivo |
 |------|------|--------|--------|---------|
+| 2026-08-25 | melhoria | experiments, foundation, knowledge, milestones | READMEs internos bilíngues | [.](2026-08-25-bilingual-internal-readmes.md) |
 | 2026-08-25 | melhoria | raiz | README bilíngue orientado à revisão técnica | [.](2026-08-25-bilingual-readme.md) |
 | 2026-08-21 | melhoria | raiz | README técnico orientado a portfólio de engenharia de IA | [.](2026-08-21-readme-portfolio-tecnico.md) |
 | 2026-08-07 | feature | experiments/ontology-framing | Experimento read-only de parser e corpus V1-M03 | [.](2026-08-07-experimento-parser-corpus-v1-m03.md) |

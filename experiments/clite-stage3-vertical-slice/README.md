@@ -1,61 +1,45 @@
-# C-lite Stage 3 — Vertical Slice Executável (experimental)
+# C-lite Stage 3 Executable Vertical Slice
 
-Implementação experimental local do menor ciclo governado do C-lite:
-ideia → descoberta → suposições → entendimento → plano → aprovação → fila →
-execução → pendência → falha → recuperação → conclusão → resultado → evidências →
-aceitar/revisar/rejeitar → memória do projeto → retorno.
+> **English** · [Português](README.pt-BR.md)
 
-**Fronteira:** local-only, single-user, dados 100% sintéticos, comportamento
-determinístico. Zero backend, zero rede em runtime, nenhuma autenticação,
-nenhum agente real, nenhum deploy. A interface demonstra fluxo e compreensão;
-**não aplica controle de acesso real** e não constitui claim de segurança,
-acessibilidade ou usabilidade. Não é produto nem frontend de produção.
+A local experimental implementation of the smallest governed C-lite cycle:
 
-Autorização: Council Decision sobre o checkpoint `4e9ec43` (proposta E44–E47).
-Conteúdo derivado de ARP-0009-E29 com o finding F-01 corrigido
-(`Responsável pela pesquisa` como label do executor).
-
-## Executar
-
-Pré-requisito: Node.js 24+ (o repositório não exige mais nada globalmente).
-
-```bash
-npm install        # instala somente devDependencies (typescript, esbuild, @types/node)
-npm run build      # gera dist/app.js (bundle único, sem dependências de runtime)
+```text
+idea -> discovery -> assumptions -> understanding -> plan -> approval -> queue
+-> execution -> pending -> failure -> recovery -> completion -> result -> evidence
+-> accept / revise / reject -> project memory -> return
 ```
 
-Abra `index.html` diretamente no navegador (duplo clique / `file://`).
-Não há servidor: a página é estática e a CSP bloqueia qualquer recurso externo.
+Failure, retry, cancellation, and recovery are first-class states rather than hidden exceptions.
 
-## Verificar
+## Boundary
+
+Local-only, single-user, deterministic, and based on synthetic data. There is no backend, runtime
+network, authentication, real agent execution, or deployment. The interface demonstrates workflow
+and state transitions; it does not enforce real access control or make production security claims.
+
+## Run
 
 ```bash
-npm run typecheck  # tsc --noEmit (strict)
-npm test           # node --test — domínio, transições inválidas, fixture, memória, persistência
+npm install
+npm test
+npm run build
 ```
 
-Não há lint configurado (decisão registrada no architecture and limitation report).
+## Verified behavior
 
-## Estrutura
+- Governed transitions from proposal through acceptance.
+- Routed pending, failure, retry, cancellation, and recovery states.
+- Separate artifact and evidence records linked by claims.
+- Versioned local snapshots and history.
+- CSP, no external runtime assets, semantic structure, and basic accessibility checks.
 
-- `src/domain/` — state machine, eventos, commands, guards, fixture e derivação
-  da Project Memory. Independente da camada visual; testável sem navegador.
-- `src/app/` — persistência (Option D: fixture canônico + estado em memória +
-  snapshot local descartável) e as seis views (SF-01–SF-08).
-- `tests/` — transições válidas/inválidas, validação de fixture (incl. termos
-  proibidos F-01 e ausência de dados pessoais), consequências de revisão,
-  derivação da memória, snapshot/reset determinístico e varredura de fronteira
-  de segurança (sem rede, sem eval, sem innerHTML).
+## Reset and snapshot
 
-## Reset e snapshot
+The demonstration can reset synthetic state and restore its versioned local snapshot. This is a
+deterministic local convenience, not durable crash recovery or event sourcing.
 
-O estado é salvo em `localStorage` apenas para suportar o retorno ao projeto
-(reload). O snapshot carrega versões de fixture/contrato e é descartado
-automaticamente se qualquer versão mudar. "Reiniciar o protótipo" (na view
-Histórico) remove o snapshot e reconstrói o estado inicial do fixture de forma
-determinística. O snapshot nunca é Source of Truth.
+## Known limitations
 
-## Limitações conhecidas
-
-Registradas em `knowledge/research/evidence/clite-stage3-architecture-limitation-report.md`
-(E48), junto com o mapeamento para requisitos, findings e exit criteria do Stage 3.
+No real identity, RBAC, idempotent external work, timeout enforcement, backoff, distributed
+reliability, production observability, or PII sanitization is implemented.

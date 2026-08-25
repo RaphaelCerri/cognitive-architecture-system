@@ -1,105 +1,54 @@
 ---
-title: "Experimento — Protocolo de Interação"
+title: "Experiment: Interaction Protocol"
 status: experimental
 canonicality: experimental_prototype_not_canon
 created_at: 2026-07-23
 parent_directive: knowledge/DRAFT-DIRECTIVE-interaction-protocol-slice-1.md
 parent_vision: knowledge/DRAFT-VISION-self-extending-capability-arms.md
-language: pt-BR
+language: en
 ---
 
-# Protocolo de Interação — protótipo demonstrável
+# Interaction Protocol Demonstration
 
-Experimento descartável (não canônico). Implementa, sem redesenhar, o Protocolo
-de Interação desenhado na diretiva da Slice 1: a espinha de comunicação que os
-futuros Braços de Capacidade (Processos, Marketing, ...) vão reutilizar.
+> **English** · [Português](README.pt-BR.md)
 
-`Especificar != Provar` — este diretório existe para **provar rodando**, não só descrever.
+A disposable prototype that turns an open conversation into structured elicitation without
+redesigning the governing Slice 1 directive.
 
-## Primeira decisão depois da intenção
+## First decision after intent
 
-Depois de o usuário dizer o que quer, o protocolo faz **uma única pergunta de
-calibração**, antes de pedir definições:
+The protocol first identifies initiative maturity:
 
-> Em que ponto essa iniciativa está hoje?
+- **Idea:** no tangible artifact exists yet.
+- **Tangible work:** documents, code, or decisions already exist.
+- **Operation:** the initiative is running and has observed behavior.
 
-1. **Só tenho a ideia (Semente):** discovery do problema, contexto e direção.
-2. **Já organizei uma parte (Estruturada):** consolidar decisões e fechar lacunas.
-3. **Já tenho algo concreto (Concreta):** inspecionar pasta, código, site,
-   protótipo ou especificação e ir direto a refinamento e insights.
-4. **Já está em uso (Em operação):** auditar evidência real, otimizar e evoluir.
+Routing changes with maturity so the system does not prescribe a solution before understanding
+available evidence and constraints.
 
-Os nomes classificam o estado da iniciativa, não o conhecimento da pessoa. A
-resposta escolhe a rota e impede que iniciativas concretas sejam obrigadas a
-repetir definições básicas.
+## Loop
 
-## Fases do loop
-
-1. **Enquadrar** — 1-2 frases dizendo o que vamos fazer e quantas etapas.
-2. **Calibrar maturidade** — a primeira pergunta após a intenção escolhe entre
-   discovery, estruturação, refinamento ou evolução.
-3. **Elicitar adaptativamente** — perguntar somente o que falta para a rota;
-   artefatos e decisões já existentes substituem perguntas de definição.
-4. **Aprofundar** — depois das respostas de superfície, sonda ativamente algo
-   que **ainda não foi perguntado** (o que o usuário pode ter esquecido).
-5. **Brainstorm/Insight** — devolve padrões vistos nos dados e os discute
-   (provoca, não só coleta).
-6. **Sintetizar** — resumo digerível + **uma** próxima ação clara.
-
-(Otimizar é fase específica de cada braço de domínio — fica fora deste protocolo base.)
-
-## Regras de comunicação (transversais a todas as fases)
-
-- uma coisa de cada vez; máximo 3 perguntas por turno;
-- a primeira pergunta após a intenção é sempre a maturidade da iniciativa;
-- nunca pedir ao usuário para redefinir algo que um artefato já demonstra;
-- sempre mostrar progresso (`Etapa N de 6`);
-- linguagem simples, zero jargão sem explicação;
-- todo turno termina com uma ação/decisão clara para o usuário;
-- reconhecer o que já foi conquistado antes de pedir o próximo;
-- resumo antes de mudar de fase.
-
-## Estado rastreado
-
-- `fase_atual`
-- `maturity_level`
-- `route`
-- `respostas_coletadas` (estruturado)
-- `threads_abertas` (o que ainda falta perguntar — pode terminar não-vazio;
-  isso é honesto, não é bug)
-- `insights_gerados`
-- `lacunas_detectadas` (o que o usuário pode ter esquecido)
-
-## Contrato de saída
-
-Um registro estruturado (JSON aqui; equivalente a YAML) da sessão, reaproveitando
-a mesma taxonomia de campos usada nos artifacts YAML/frontmatter deste
-repositório (`schema_version`, `kind`, `canonicality`, ...) — sem promover este
-contrato a canon. Serve de ponte para um formato de Memory futuro, não é Memory.
-
-## Como rodar
-
-Sem dependências, sem rede, sem instalação:
-
-```powershell
-npm test
-npm run demo
+```text
+intent -> maturity -> evidence -> constraints -> assumptions -> bounded next action -> confirmation
 ```
 
-`demo.js` recebe uma intenção, pergunta a maturidade como primeiro follow-up e
-seleciona a rota `tangible`. Como já existe uma pasta com CLI e README, ele pula
-definições básicas, investiga o refinamento desejado e imprime o registro final.
+Communication rules apply across all phases: distinguish facts from assumptions, bring required
+content into the interaction, ask one decision at a time, and preserve unresolved uncertainty.
 
-## Limites deste experimento
+## Tracked state and output
 
-- Não é o Motor de Descoberta genérico nem um Braço de domínio — é só a espinha.
-- As respostas do "usuário" são roteirizadas (texto fixo), não input interativo real:
-  o objetivo desta slice é provar a forma do protocolo, não construir um CLI interativo.
-- Não inicia o Braço de Processos (próxima slice, não autorizada aqui).
-- Nada aqui é canon: é descartável, substituível, e não referenciado por ARCH-001.
+The prototype tracks maturity, confirmed facts, assumptions, open questions, evidence references,
+constraints, and the next authorized action. Output follows a bounded contract rather than a free
+form recommendation.
 
-## Evolução
+## Run
 
-- **v0.2, 2026-08-07:** adiciona calibração de maturidade como primeira pergunta
-  após a intenção e roteamento que reduz definições desnecessárias.
-- **v0.1, 2026-07-23:** prova original do loop de interação em seis fases.
+```bash
+npm install
+npm test
+```
+
+## Boundaries
+
+This is not a conversational product, autonomous planner, canonical protocol implementation, or
+proof of user experience quality. It validates routing and contract behavior over synthetic cases.

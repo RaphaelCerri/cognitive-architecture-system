@@ -1,67 +1,48 @@
 ---
-title: "Experimento: Bias Migration & Fairness Assurance"
+title: "Experiment: Bias Migration & Fairness Assurance"
 status: experimental
 canonicality: experimental_prototype_not_canon
 created_at: 2026-08-07
-authority: "Pedido direto do CVO, desenho CSA-BMFA-001"
-language: pt-BR
+authority: "Direct CVO request, CSA-BMFA-001 design"
+language: en
 ---
 
-# Bias Migration & Fairness Assurance (BMFA)
+# Bias Migration & Fairness Assurance
 
-Prova executável de um controle transversal para mudanças cognitivas. O
-experimento compara superfícies de dano antes e depois de uma transformação e
-classifica o resultado como `preserved`, `reduced`, `amplified`, `displaced`,
-`introduced`, `obscured` ou `unknown`.
+> **English** · [Português](README.pt-BR.md)
 
-O objetivo não é declarar um sistema "sem viés". É impedir que uma melhora
-local seja apresentada como fairness quando o dano apenas mudou de grupo,
-dimensão ou etapa do pipeline.
+An executable proof for evaluating cognitive changes by comparing harm surfaces before and after a
+transformation. It classifies the outcome as `preserved`, `reduced`, `amplified`, or `displaced`.
 
-## Controles demonstrados
+`Displaced` is the critical case: an aggregate metric improves while harm moves to another group or
+dimension.
 
-- baseline e mudança precisam ter referências versionadas;
-- proposer e approver precisam ser distintos;
-- atributos sensíveis exigem autoridade explícita;
-- alteração de Project Memory pode ser somente `proposal_only`;
-- claim de fairness exige comparação segmentada sem regressão escondida;
-- desaparecimento de uma métrica vira `obscured`, nunca melhoria presumida;
-- dano reduzido numa superfície e piorado em outra vira `displaced`.
+## Demonstrated controls
 
-## Como executar
+- Explicit baseline and candidate observations.
+- Group and dimension-aware comparison instead of aggregate-only averages.
+- Detection of omission bias and unauthorized sensitive segmentation.
+- Rejection of self-approval as independent assurance.
+- Detection of uncertainty displaced by memory compression.
+- Negative scenarios for improvements limited to the dominant source.
 
-Sem dependências externas:
+## Run
 
-```powershell
+```bash
+npm install
 npm test
-npm run demo
 ```
 
-O demo executa 11 cenários: compressão de memória, retrieval, troca de runtime,
-política, papel duplo, promoção indevida de hipótese, nova capability, regressão
-de subgrupo, fairness por recusa, atributo sensível sem autoridade e escrita
-automática na memória.
+## Minimum observation contract
 
-## Contrato mínimo de observação
+Each scenario declares the affected population, observed dimension, baseline harm, candidate harm,
+authority for the change, and evidence used for classification. Missing observation fields fail
+validation rather than being treated as neutral.
 
-Cada observação possui `subject`, `dimension`, `harm_score` normalizado e
-`evidence_refs`. O score é evidência específica do cenário, não definição
-universal de justiça. Comparações sem evidência suficiente resultam em
-`unknown`.
+## Boundaries
 
-## Fronteiras
+This is a deterministic experimental control over synthetic fixtures. It is not a statistical
+fairness certification, a production monitoring service, or proof that a deployed model is fair.
 
-- não é Core Type, protocolo canônico, Skill ou Agent;
-- não integra Runtime, Orchestrator ou memória real;
-- não coleta dados pessoais;
-- não escolhe métricas normativas sozinho;
-- não aprova mudança arquitetural;
-- não prova fairness no mundo real;
-- os cenários são fixtures deliberadamente pequenas para provar a mecânica.
-
-## Teste recursivo
-
-O próprio BMFA foi avaliado conceitualmente: ele privilegia danos mensuráveis,
-depende de quem escolhe sujeitos e dimensões, e pode obscurecer pessoas não
-representadas. Por isso toda saída inclui limitações, superfícies não medidas
-permanecem `unknown`, e a aprovação final continua humana.
+The recursive test applies the assurance mechanism to its own transformations so that a fairness
+control cannot silently exempt itself from the same review standard.

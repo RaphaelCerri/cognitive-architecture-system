@@ -1,70 +1,48 @@
 ---
-title: "Experimento: AP-0006 Ontology Framing"
+title: "Experiment: AP-0006 Ontology Framing"
 status: experimental
 canonicality: research_candidate_not_canon
 created_at: 2026-08-07
 authority: AD-007
-language: pt-BR
+language: en
 ---
 
-# AP-0006: framing executável
+# AP-0006 Executable Ontology Framing
 
-Este experimento testa a separação recomendada por ASSESS-0001:
+> **English** · [Português](README.pt-BR.md)
+
+An executable experiment that separates the constitutional metamodel, system ontology, and their
+representations.
 
 ```text
 Constitutional Metamodel
-  regras de identidade, autoridade, proveniência, mudança e extensão
-                 ↓ governa
+  identity, authority, provenance, change, extension
+                    -> governs
 System Ontology
-  vocabulário versionado, relações, constraints e dimensões de estado
-                 ↓ pode ser representada como
+  concepts, relations, constraints, state dimensions
+                    -> represented as
 Representations
-  Markdown/YAML, JSON, grafos, índices e views de runtime
+  Markdown/YAML, JSON, graphs, indexes, runtime views
 ```
 
-Nenhuma dessas estruturas é promovida a canon por existir neste diretório.
+## Contents
 
-## Conteúdo
+- A minimal ontology kernel and typed knowledge-object envelopes.
+- Declared and derived relations with explicit provenance.
+- Compatibility aliases and non-destructive migration proposals.
+- Rules preventing extensions from shadowing governing concepts.
+- A read-only YAML 1.2 parser exercised against the repository corpus.
+- Duplicate-key rejection, bounded alias expansion, and unknown-field preservation.
+- Negative fixtures for missing authority, missing provenance, and invalid extensions.
 
-- `model.js`: três camadas, 13 conceitos candidatos, 12 axiomas provenientes de
-  decisões existentes e 12 competency questions respondidas;
-- `kernel.js`: kernel mínimo com seis dimensões, alias não destrutivo e famílias
-  derivadas de relações;
-- `knowledge-object-contract.js`: consumidor candidato da V1-M03 que normaliza
-  uma view sem substituir o artifact fonte;
-- `migration.js`: gera somente proposals de migração;
-- `evaluate.js`: mede cobertura e ambiguidade residual sobre artifacts reais;
-- `envelope.js`: especificação candidata de autoria com campos mínimos, regras
-  condicionais e erros corrigíveis;
-- `authoring-criteria.js`: oito critérios humanos de autoria;
-- `fixtures/`: exemplos Markdown/YAML válidos e inválidos;
-- `evaluate-envelope.js`: mede compatibilidade do candidato no repositório.
-- `inventory.js`: inventário derivado do vocabulário que já existe no repo;
-- `yaml-frontmatter-reader.js`: parser YAML 1.2 real, limitado e read-only;
-- `corpus-classifier.js`: classifica o corpus em quatro categorias disjuntas;
-- `contract-profile-candidates.js`: avalia profiles composicionais sem registry;
-- `evaluate-contract-experiment.js`: prova invariantes e ausência de mutação;
-- `model.test.js`: valida fronteiras, proveniência, respostas, extensibilidade,
-  agnosticismo e ausência de promoção silenciosa.
+## Run
 
-## Execução
-
-```powershell
+```bash
+npm install
 npm test
-npm run inventory
-npm run evaluate
-npm run examples
-npm run evaluate:envelope
-npm run experiment:v1m03-contract
 ```
 
-## Limites
+## Boundaries
 
-- não cria Core Types;
-- não estabiliza enums ou schemas;
-- não corrige automaticamente drift encontrado;
-- não declara que os conceitos candidatos são completos;
-- não transforma paths físicos em semântica;
-- não inicia Compiler, Type Registry, Orchestrator ou Runtime Adapter.
-- o experimento E05 não transforma parsing bem-sucedido em schema, authority ou
-  validade semântica.
+The experiment is a research candidate, not the canonical ontology, compiler, runtime schema, or
+migration authority. It measures compatibility without rewriting source documents.

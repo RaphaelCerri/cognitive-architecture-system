@@ -1,55 +1,38 @@
-# Backlog de Evolução Arquitetural
+# Architectural Evolution Backlog
 
-Este backlog registra possíveis evoluções da arquitetura. Ele não é uma lista de tarefas, um sprint backlog ou um substituto para planejamento operacional.
+> **English** · [Português](README.pt-BR.md)
 
-Nenhuma ideia arquitetural deve permanecer apenas em conversas ou ser implementada diretamente. Toda ideia capaz de alterar princípios, Ontologia, contratos, capacidades fundamentais, governança, inteligência, runtime, evolução ou limites do sistema deve nascer como uma **Architectural Proposal (AP)**.
+This backlog records possible architectural evolution. It is not a task list, sprint backlog, or
+substitute for operational planning.
 
-## Fonte canônica
+Any idea that can change principles, ontology, contracts, core capabilities, governance,
+intelligence, runtime, evolution, or system boundaries must begin as an **Architectural Proposal
+(AP)**. It must not remain only in conversation or move directly to implementation.
 
-Todas as propostas ficam em [`proposals/`](proposals/), independentemente de seu estado. O caminho físico nunca representa status.
+## Canonical source
 
-O status é um atributo lógico no YAML. Visões como propostas aprovadas, agendadas, concluídas, rejeitadas ou substituídas serão produzidas pelo Compiler e nunca substituirão os objetos canônicos.
+All proposals live in [`proposals/`](proposals/) regardless of state. Physical paths do not encode
+status. Status is a logical YAML attribute; derived views may organize proposals but never replace
+canonical objects.
 
-Na V1, cada AP é um objeto de `Knowledge` especializado por `knowledge_type: architectural_proposal`. Architectural Proposal não é um Core Type; a Ontologia poderá redefinir essa classificação.
+## Initial states
 
-## Estados iniciais
+- `draft`: incomplete and not ready for review.
+- `proposed`: complete enough for evaluation.
+- `accepted`: approved in principle, not necessarily scheduled or implemented.
+- `rejected`: evaluated and declined with rationale.
+- `superseded`: replaced by an explicitly linked proposal.
+- `implemented`: delivered with evidence and review.
 
-- `proposed`: registrada e aguardando avaliação.
-- `approved`: aceita como direção arquitetural, sem compromisso de execução imediata.
-- `scheduled`: selecionada para uma milestone definida.
-- `completed`: implementada e validada pelos critérios de aceitação.
-- `rejected`: avaliada e recusada, com justificativa preservada.
-- `superseded`: substituída por outra proposta explicitamente relacionada.
+## Required content and flow
 
-## Conteúdo obrigatório
+Each AP identifies the problem, scope, affected principles or contracts, alternatives, risks,
+authority, validation strategy, and expected evidence. The official flow is proposal, architectural
+review, authority decision, bounded handoff, implementation evidence, and milestone review.
 
-Cada AP deve possuir ID único, título, status, data de criação, autor, motivação, benefícios esperados, impacto arquitetural, complexidade estimada, dependências, momento ideal para implementação, critérios de aceitação e observações.
+Milestone review is mandatory in V1 and remains manual until a compiler can derive trustworthy
+portfolio views.
 
-A estrutura de máquina é escrita em inglês no YAML. O conteúdo humano pode ser escrito em português, idioma padrão do projeto.
+## Identification
 
-## Fluxo oficial
-
-`Insight → Architectural Proposal → revisão do Conselho → aprovação → milestone adequada → implementação → ADR quando aplicável → Capability ou outro artefato permanente`
-
-1. Registrar a ideia em `proposed` antes de qualquer implementação.
-2. Avaliar a proposta com o ADF e registrar a decisão do Conselho.
-3. Alterar o status somente após a decisão exigida pela governança.
-4. Relacionar propostas que dependam, contradigam, substituam ou complementem outras.
-5. Preservar propostas rejeitadas e substituídas para manter o histórico.
-
-## Revisão obrigatória por milestone — V1 manual
-
-Ao concluir uma grande etapa, nenhuma nova implementação arquitetural deve começar antes da revisão de todas as APs pendentes. O resultado deve informar ao Conselho:
-
-1. Existe alguma proposta que agora faz sentido implementar?
-2. Alguma dependência foi resolvida?
-3. Alguma proposta ficou obsoleta?
-4. Alguma proposta pode ser fundida com outra?
-
-Na V1, a revisão é manual e obrigatória. A automação futura produzirá recomendações e visões derivadas; mudanças canônicas continuarão sujeitas à governança.
-
-## Identificação
-
-Os IDs seguem provisoriamente `AP-NNNN`, com numeração crescente, imutável e sem reutilização.
-
-Use o [template de Architectural Proposal](_templates/architectural-proposal.md) para registrar novas ideias.
+Proposal IDs use `AP-NNNN`. IDs are stable and never reused, even after rejection or supersession.

@@ -1,21 +1,25 @@
 # Foundation
 
-Foundation preserva os documentos fundamentais que orientam a arquitetura antes de qualquer decisão de implementação.
+> **English** · [Português](README.pt-BR.md)
 
-Project Memory é uma responsabilidade arquitetural, não um diretório. Todo conhecimento permanente deve ser persistido no tipo e local semanticamente adequados. A necessidade futura de uma camada física específica deverá nascer como Architectural Proposal.
+Foundation preserves the documents that govern architecture before implementation decisions are
+made.
 
-Nesta fase, os documentos são representados experimentalmente como especializações de `Knowledge`. A Ontologia futura decidirá sua classificação definitiva.
+Project Memory is an architectural responsibility, not a directory. Permanent knowledge must be
+stored in the semantically appropriate versioned artifact. A future physical memory layer must be
+introduced through an Architectural Proposal rather than assumed by the current folder structure.
 
-## Estrutura atual
+In V1, foundation documents are experimental specializations of `Knowledge`. A future ontology may
+change their final classification.
 
-- [`manifestos/`](manifestos/): compromissos filosóficos aprovados.
-- [`governance/`](governance/): autoridade, papéis e processos decisórios.
-- [`principles/`](principles/): princípios que governam todas as decisões.
-- [`protocols/`](protocols/): comportamentos obrigatórios derivados dos princípios.
-- [`decisions/`](decisions/): Architectural Decision Records.
-- [`directives/`](directives/): decisões emitidas pelo Conselho de Arquitetura.
-- [`bootstrap/`](bootstrap/): camada agent-agnostic de entrada de executores (Charter, Status derivado, mapa do repositório, contrato de execução, contrato de retorno, manifests).
+## Current structure
 
-Essa organização é física e evolutiva; não define a Ontologia nem cria Core Types.
+- [`manifestos/`](manifestos/): accepted philosophical commitments.
+- [`governance/`](governance/): authority, roles, and decision processes.
+- [`principles/`](principles/): constraints that govern all architectural decisions.
+- [`protocols/`](protocols/): mandatory behavior derived from principles.
+- [`directives/`](directives/): authorized implementation direction.
+- [`decisions/`](decisions/): accepted Architectural Decision Records.
 
-Foundation não contém convenções específicas de modelos, ferramentas ou runtimes.
+When documents disagree, canonical status, authority, and explicit supersession determine which
+artifact governs. Recency alone does not create authority.
