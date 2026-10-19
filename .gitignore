@@ -21,3 +21,12 @@ node_modules/
 Thumbs.db
 .idea/
 .vscode/
+
+# Conversation records of the owner's voice sessions with Max (architect / discussion / brainstorm modes):
+# private by nature, never published in this public repository.
+knowledge/sessions/
+**/*-max-*.md
+**/*transcript*
+**/*historico*
+**/*history*.jsonl
+**/episodes*.jsonl
